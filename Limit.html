@@ -41,6 +41,36 @@
         width: 60%;
         margin-left: 20%;
         }
+        .catalog {
+        width: 100%;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .catalog_left {
+        width: 15%;
+        height: 250px;
+        float: left;
+        background-color: #F8F8FF;
+        color: #778899;
+        text-align: center;
+        line-height: 175px;
+        }
+        .catalog_right {
+        width: 75%;
+        height: 250px;
+        float: left;
+        }
+        .catalog_right_column {
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        text-align: center;
+        width: 45%;
+        height: 250px;
+        float: left;
+        }
     </style>
 </head>
 <body style="overflow-x:hidden">
@@ -58,7 +88,34 @@
             <hr>
         </div>
         <div class="content">
-            <h2>1.1 简单的定义</h2>
+            <div class="catalog">
+                <div class="catalog_left">
+                    <h2>目录</h2>
+                </div>
+                <div class="catalog_right">
+                    <div class="catalog_right_column">
+                        <ul style="line-height:180%">
+                            <li><span><a href="#1.1" target="_self" style="text-decoration:none;color:blue;">1.1 简单的定义</a></span></li>
+                            <li><span><a href="#1.2" target="_self" style="text-decoration:none;color:blue;">1.2 极限不存在的情况</a></span></li>
+                            <li><span><a href="#1.3" target="_self" style="text-decoration:none;color:blue;">1.3 渐近线</a></span></li>
+                            <li><span><a href="#1.4" target="_self" style="text-decoration:none;color:blue;">1.4 真正的定义</a></span></li>
+                            <li><span><a href="#1.5" target="_self" style="text-decoration:none;color:blue;">1.5 极限运算法则</a></span></li>
+                            <li><span><a href="#1.6" target="_self" style="text-decoration:none;color:blue;">1.6 连续性</a></span></li>
+                        </ul>
+                    </div>
+                    <div class="catalog_right_column">
+                        <ul style="line-height:180%">
+                            <li><span><a href="#1.7" target="_self" style="text-decoration:none;color:blue;">1.7 有理函数的极限计算</a></span></li>
+                            <li><span><a href="#1.8" target="_self" style="text-decoration:none;color:blue;">1.8 三明治定理</a></span></li>
+                            <li><span><a href="#1.9" target="_self" style="text-decoration:none;color:blue;">1.9 两个重要的极限</a></span></li>
+                            <li><span><a href="#1.10" target="_self" style="text-decoration:none;color:blue;">1.10 介值定理</a></span></li>
+                            <li><span><a href="#1.11" target="_self" style="text-decoration:none;color:blue;">1.11 极限小结</a></span></li>
+                            <li><span><a href="#1.12" target="_self" style="text-decoration:none;color:blue;">1.12 一些极限练习</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h2><a name="1.1">1.1 简单的定义</a></h2>
             <p>对于一个函数`y=f(x)`，如果当`x`不断接近`a`的同时（注意这里是指无限接近`a`，但始终不会到达`a`，这个很重要），`f(x)`不断接近`L`，那么我们就说`\lim_{x\rightarrow a}f(x)=L`</p>
             <p>或者说`\lim_{x\rightarrow a^{-}}f(x)=\lim_{x\rightarrow a^{+}}f(x)=L`（其中`\lim_{x\rightarrow a^{-}}f(x)`是左极限，`\lim_{x\rightarrow a^{+}}f(x)`是右极限）</p>
             <p>⚠`\lim_{x\rightarrow a}f(x)`<span style="color:red;font-weight:bold">不一定等于</span>`f(a)`</p>
@@ -68,7 +125,7 @@
                 <img src="https://img-blog.csdnimg.cn/ff4233af9e91401bb6b1ab0160d0909f.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQWVyb2JhdGljcw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" width="100%">
             </div>
             <p style="text-align:center">图 1-1</p>
-            <h2>1.2 极限不存在的情况</h2>
+            <h2><a name="1.2">1.2 极限不存在的情况</a></h2>
             <p>极限不存在可以用`DNE`（Does not exist）表示</p>
             <p>按定义来讲，极限不存在有两种情况：1.左极限或右极限不存在（图1-2(b)和(c)） 2.左极限和右极限存在但是不相等（图1-2(a)）</p>
             <p>下图是细分的三种情况（例子），图上的字要仔细阅读</p>
@@ -76,7 +133,7 @@
                 <img src="https://img-blog.csdnimg.cn/c0aefa57d30b435ea9c5210697e80b1c.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQWVyb2JhdGljcw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" width="100%">
             </div>
             <p style="text-align:center">图 1-2</p>
-            <h2>1.3 渐近线 Asymptote</h2>
+            <h2><a name="1.3">1.3 渐近线 Asymptote</a></h2>
             <p>对于函数`y=f(x)`</p>
             <br>
             <p>在`x=a`有垂直渐近线：`\lim_{x\rightarrow a^{-}}f(x)`和`\lim_{x\rightarrow a^{+}}f(x)`中，至少有一个极限是`+\infty`或`-\infty`（后文用`\infty`将代替`+\infty`）</p>
@@ -89,16 +146,16 @@
             <p>一个函数<span style="color:red;font-weight:bold">最多两条</span>水平渐近线，比如`f(x)=arctan(x)`</p>
             <p>e.g. `\lim_{x\rightarrow-\infty}\frac{1}{x}=\lim_{x\rightarrow\infty}\frac{1}{x}=0`</p>
             <p>所以`f(x)=\frac{1}{x}`有一条水平渐近线`y=0`</p>
-            <h2>1.4 真正的定义（严格但是不需要掌握）</h2>
+            <h2><a name="1.4">1.4 真正的定义（严格但是不需要掌握）</a></h2>
             <p>`\lim_{x\rightarrow a}f(x)=L`表示，对于任选的`\varepsilon>0`，可以选取`\delta>0`，使得：对于所有满足`0<|x-a|<\delta`的`x`，有`|f(x)-L|<\varepsilon`</p>
-            <h2>1.5 极限运算法则</h2>
+            <h2><a name="1.5">1.5 极限运算法则</a></h2>
             <p>重要！尽管只有一张图</p>
             <p>你会发现它和实数/函数的运算比较类似</p>
             <div align="center">
                 <img src="https://img-blog.csdnimg.cn/73ed8fffcae5455ca42cf128850677d9.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQWVyb2JhdGljcw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" width="100%">
             </div>
             <p style="text-align:center">图 1-3</p>
-            <h2>1.6 连续性 Continuity</h2>
+            <h2><a name="1.6">1.6 连续性 Continuity</a></h2>
             <h3>1.6.1 在一点连续</h3>
             <p>定义：如果`\lim_{x\rightarrow a}f(x)=f(a)`，那么`y=f(x)`在点`x=a`处连续（`\lim_{x\rightarrow a}f(x)`和`f(a)`都存在时）</p>
             <h3>1.6.2 在一个区间上连续</h3>
@@ -111,7 +168,7 @@
                 <img src="https://img-blog.csdnimg.cn/190661ba77d74761825061e4259f02ed.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQWVyb2JhdGljcw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" width="100%">
             </div>
             <p style="text-align:center">图 1-4</p>
-            <h2>1.7 有理函数的极限计算</h2>
+            <h2><a name="1.7">1.7 有理函数的极限计算</a></h2>
             <p>根据极限的运算法则及连续性的定义，我们可以计算一些有理函数的极限</p>
             <p style="font-weight:bold">1. `x\rightarrow a`时的有理函数的极限</p>
             <p>这里有个简单的例子，如图1-5所示</p>
@@ -134,7 +191,7 @@
             <p>此外，还有其他有理函数的极限和多项式的极限需要用其他方法进行计算</p>
             <p>比如对于带有根式的函数（分式）求极限可能需要上下同乘共轭表达式（共轭根式）</p>
             <p>在导数一章我们会介绍一种极限计算的好办法，即洛必达法则</p>
-            <h2>1.8 三明治定理（夹逼定理） Squeeze Theorem</h2>
+            <h2><a name="1.8">1.8 三明治定理（夹逼定理） Squeeze Theorem</a></h2>
             <p>如果对于所有`a`附近的`x`都有`g(x)\leq f(x)\leq h(x)`，且`\lim_{x\rightarrow a}g(x)=\lim_{x\rightarrow a}h(x)=L`，则`\lim_{x\rightarrow a}f(x)=L`</p>
             <div align="center">
                 <img src="https://img-blog.csdnimg.cn/4097d9c6f26a478d9b4a3b5b46563829.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQWVyb2JhdGljcw==,size_14,color_FFFFFF,t_70,g_se,x_16#pic_center" width="70%">
@@ -149,7 +206,7 @@
                 <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.51wendang.com%2Fpic%2F3a59d0387edf8eedf3ef140c%2F29-538-png_6_0_0_42_279_732_477_892.979_1262.879-826-0-1268-826.jpg&refer=http%3A%2F%2Fwww.51wendang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1657515774&t=70dba65cf52c48945451b383b665e878" width="70%">
             </div>
             <p style="text-align:center">图 1-8</p>
-            <h2>1.9 两个重要的极限</h2>
+            <h2><a name="1.9">1.9 两个重要的极限</a></h2>
             <p>1. `\lim_{x\rightarrow 0} \frac{sin(x)}{x}=1`（看图1-8）</p>
             <p>下面是证明：</p>
             <div align="center">
@@ -159,7 +216,7 @@
             <p>证明完了右极限，左极限只需要令`t=-x`就可以证明，双侧极限也就证明完毕了</p>
             <br>
             <p>2. `\lim_{n\rightarrow \infty}(1+\frac{1}{n})^{n}=e`（这是`e`的一个定义）</p>
-            <h2>1.10 介值定理 Intermediate Value Theorem(IVT)</h2>
+            <h2><a name="1.10">1.10 介值定理 Intermediate Value Theorem(IVT)</a></h2>
             <p>在引入介值定理之前，我们来说一下零点定理：</p>
             <p>`f(x)`在`[a,b]`上<span style="color:red;font-weight:bold">连续</span>并且`f(a)<0`且`f(b)>0`（或`f(a)>0`且`f(b)<0`），那么在区间`(a,b)`上至少有一点`c`，使得`f(c)=0`</p>
             <p>下面是真正的介值定理：</p>
@@ -167,7 +224,7 @@
                 <img src="https://img-blog.csdnimg.cn/2f7786e9d30e4667a8e6a15805943500.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQWVyb2JhdGljcw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" width="100%">
             </div>
             <p style="text-align:center">图 1-10</p>
-            <h2>1.11 极限小结</h2>
+            <h2><a name="1.11">1.11 极限小结</a></h2>
             <p>在`x=a`时的右极限（这时`x\leq a`时`f(x)`的行为是无关紧要的）</p>
             <div align="center">
                 <img src="https://img-blog.csdnimg.cn/85d679d850ab4f46be8318f5a82eb453.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQWVyb2JhdGljcw==,size_20,color_FFFFFF,t_70,g_se,x_16" width="100%">
@@ -194,7 +251,7 @@
             </div>
             <p style="text-align:center">图 1-15</p>
             <br>
-            <h2>1.12 一些极限练习</h2>
+            <h2><a name="1.12">1.12 一些极限练习</a></h2>
             <object data="Tricky Limit Problems with Solutions.pdf" type="application/pdf" width="100%" height="700px"></object>
             <br><br><br><br>
             <div align="center">

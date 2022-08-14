@@ -41,6 +41,36 @@
         width: 60%;
         margin-left: 20%;
         }
+        .catalog {
+        width: 100%;
+        height: 225px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .catalog_left {
+        width: 15%;
+        height: 225px;
+        float: left;
+        background-color: #F8F8FF;
+        color: #778899;
+        text-align: center;
+        line-height: 150px;
+        }
+        .catalog_right {
+        width: 75%;
+        height: 225px;
+        float: left;
+        }
+        .catalog_right_column {
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        text-align: center;
+        width: 45%;
+        height: 250px;
+        float: left;
+        }
     </style>
 </head>
 <body style="overflow-x:hidden">
@@ -58,7 +88,32 @@
             <hr>
         </div>
         <div class="content">
-            <h2>3.1 求和符号</h2>
+            <div class="catalog">
+                <div class="catalog_left">
+                    <h2>目录</h2>
+                </div>
+                <div class="catalog_right">
+                    <div class="catalog_right_column">
+                        <ul style="line-height:180%">
+                            <li><span><a href="#3.1" target="_self" style="text-decoration:none;color:blue;">3.1 求和符号</a></span></li>
+                            <li><span><a href="#3.2" target="_self" style="text-decoration:none;color:blue;">3.2 速度与位移</a></span></li>
+                            <li><span><a href="#3.3" target="_self" style="text-decoration:none;color:blue;">3.3 定积分</a></span></li>
+                            <li><span><a href="#3.4" target="_self" style="text-decoration:none;color:blue;">3.4 微积分第一基本定理</a></span></li>
+                            <li><span><a href="#3.5" target="_self" style="text-decoration:none;color:blue;">3.5 原函数</a></span></li>
+                        </ul>
+                    </div>
+                    <div class="catalog_right_column">
+                        <ul style="line-height:180%">
+                            <li><span><a href="#3.6" target="_self" style="text-decoration:none;color:blue;">3.6 微积分第二基本定理</a></span></li>
+                            <li><span><a href="#3.7" target="_self" style="text-decoration:none;color:blue;">3.7 不定积分</a></span></li>
+                            <li><span><a href="#3.8" target="_self" style="text-decoration:none;color:blue;">3.8 积分的方法</a></span></li>
+                            <li><span><a href="#3.9" target="_self" style="text-decoration:none;color:blue;">3.9 积分的平均值和积分中值定理</a></span></li>
+                            <li><span><a href="#3.10" target="_self" style="text-decoration:none;color:blue;">3.10 积分练习</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h2><a name="3.1">3.1 求和符号</a></h2>
             <p>在学习积分和无穷级数之前，了解求和符号是很重要的</p>
             <p>它是这样用的：`\sum_{i=m}^{n}a_i=a_{m}+a_{m+1}+a_{m+2}+...+a_{n-2}+a_{n-1}+a_{n}`（`m`一般小于`n`）</p>
             <p>比如：`\sum_{i=1}^{6}i^2=1^2+2^2+3^2+4^2+5^2+6^2`</p>
@@ -69,7 +124,7 @@
             <p>`\sum_{i=m}^{n}(C*a_i)=C\sum_{i=m}^{n}a_i`（`C`是常数）</p>
             <p>最后我还要给一个待会会用到的求和（可以根据上面的知识自行证明）</p>
             <p>`\sum_{i=1}^{n}i^2=\frac{n(n+1)(2n+1)}{6}`</p>
-            <h2>3.2 速度与位移</h2>
+            <h2><a name="3.2">3.2 速度与位移</a></h2>
             <p>给你一张位置-时间图，你应该可以根据导数的知识求出在某一时间点的瞬时速度</p>
             <p>那如果给你一张速度-时间图，你可以求出在一段时间内的位移吗？</p>
             <p>假设有一辆车沿着一条笔直的路前行，从下午三点钟到四点钟以`40\text{km/h}`的速度匀速行驶，在四点钟突然加速到`60\text{km/h}`并保持该速度一个小时至五点钟，那么它从下午三点到五点内的总位移是多少？</p>
@@ -87,7 +142,7 @@
                 <img src="https://img-blog.csdnimg.cn/059ea66365724233bc4fafbb3b94d6c4.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQWVyb2JhdGljcw==,size_12,color_FFFFFF,t_70,g_se,x_16#pic_center" width="60%">
             </div>
             <p style="text-align:center">图 3-2</p>
-            <h2>3.3 定积分 Definite Integral</h2>
+            <h2><a name="3.3">3.3 定积分 Definite Integral</a></h2>
             <p>我们引入一个记号`\int_{a}^{b}f(x)dx`来表示函数曲线`y=f(x)`，`x`轴，`x=a`和`x=b`所围成的有向面积</p>
             <p>我们可以把`\int_{a}^{b}f(x)dx`读作”函数`y=f(x)`对于`x`从`a`到`b`的积分“</p>
             <p>其中`f(x)`叫做被积函数（它也可以换成其他函数，如`g(x)`，`h(x)`等），`a`是积分下限，`b`是积分上限，`x`是积分变量（可以用任意其他字母代替，如`t`）</p>
@@ -137,7 +192,7 @@
                 <img src="https://img-blog.csdnimg.cn/505685af2b1d4082afd05dd0ecc84879.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQWVyb2JhdGljcw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" width="100%">
             </div>
             <p style="text-align:center">图 3-9</p>
-            <h2>3.4 微积分第一基本定理</h2>
+            <h2><a name="3.4">3.4 微积分第一基本定理</a></h2>
             <p>（这只是大致证明）</p>
             <p>我们定义一个函数`F(x)=\int_{a}^{x}f(t)dt`</p>
             <p>然后求`F(x)`关于`x`的导数</p>
@@ -154,7 +209,7 @@
             </div>
             <p style="text-align:center">图 3-11</p>
             <!--<p>常数`a`的选择并不会影响求导的结果，你可以这样理解：汽车的初始时间（`a`）不会影响它的速度（求导结果）</p>-->
-            <h2>3.5 原函数 Antiderivative</h2>
+            <h2><a name="3.5">3.5 原函数 Antiderivative</a></h2>
             <p>假设我们有`f(t)=t^2,a=0`，那么`F(x)=\int_{0}^{x}t^2dt`</p>
             <p>根据微积分第一基本定理，我们知道`F^{'}(x)=f(x)=x^2`</p>
             <p>函数`F(x)`的导数是`x^2`，我们就说`F(x)`是`x^2`的原函数</p>
@@ -163,7 +218,7 @@
             <p>这样就有`\int_{0}^{x}t^2dt=\frac{x^3}{3}+C`</p>
             <p>当`x=0`时，`\int_{0}^{0}t^2dt=0\Rightarrow C=0\Rightarrow \int_{0}^{x}t^2dt=\frac{x^3}{3}`</p>
             <p>这样分别代入`x=1`和`x=2`，我们就有`\int_{0}^{1}t^2dt=\frac{1}{3}`和`\int_{0}^{2}t^2dt=\frac{8}{3}`，是不是很熟悉？</p>
-            <h2>3.6 微积分第二基本定理</h2>
+            <h2><a name="3.6">3.6 微积分第二基本定理</a></h2>
             <p>相比`\int_{a}^{x}f(t)dt`，我们更希望了解`\int_{a}^{b}f(t)dt`</p>
             <p>我们假设`G(x)=\int_{a}^{x}f(t)dt`</p>
             <p>如果`F(x)`作为`f(x)`任意一个原函数，那么它与`G(x)`只会相差一个常数`C`，即`F(x)=G(x)+C`</p>
@@ -176,7 +231,7 @@
             <p>（2）求`\int_{0}^{\pi}sin(x)dx`</p>
             <p>我们知道`-cos(x)`是`sin(x)`的一个原函数</p>
             <p>所以`\int_{0}^{\pi}sin(x)dx=(-cos(x))|_{0}^{\pi}``=(-cos(\pi))-(-cos(0))=2`</p>
-            <h2>3.7 不定积分 Indefinite Integral</h2>
+            <h2><a name="3.7">3.7 不定积分 Indefinite Integral</a></h2>
             <p>为了更简单的表示原函数，我们引入了一个记号`\int f(x)dx`，它指的是”函数`f(x)`的原函数的集合“</p>
             <p>如果`\frac{d}{dx}F(x)=f(x)`，那么`\int f(x)dx=F(x)+C`</p>
             <p>比如`\frac{d}{dx}(\frac{x^3}{3})=x^2\Rightarrow \int x^2dx=\frac{x^3}{3}+C`，`\frac{d}{dx}(\frac{x^4}{4})=x^3\Rightarrow\int x^3dx=\frac{x^4}{4}+C`</p>
@@ -214,7 +269,7 @@
             <p>比如：`\frac{d}{dx}e^{2x}=2e^{2x}`</p>
             <p>那如果是积分，我们只需要把结果除以`a`</p>
             <p>比如：`\int e^{2x}dx=\frac{1}{2}e^{2x}+C`</p>
-            <h2>3.8 积分的方法</h2>
+            <h2><a name="3.8">3.8 积分的方法</a></h2>
             <p style="font-weight:bold">1.换元法</p>
             <p>考虑一个不定积分：`\int x^2cos(x^3)dx`</p>
             <p>这里我们可以用换元法：令`u=x^3`</p>
@@ -405,7 +460,7 @@
                 <img src="https://img-blog.csdnimg.cn/2edaf45d690a42aea72f211d3242235a.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQWVyb2JhdGljcw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" width="100%">
             </div>
             <p style="text-align:center">图 3-13</p>
-            <h2>3.9 积分的平均值和积分中值定理</h2>
+            <h2><a name="3.9">3.9 积分的平均值和积分中值定理</a></h2>
             <p>我们知道平均速度等于总位移除以总时间</p>
             <p>假设时间从`a`到`b`，在`t`时刻的速度为`v(t)`，那么在这段时间里总位移就为`\int_{a}^{b} v(t)dt`，总时间为`(b-a)`</p>
             <p>平均速度也就是`\frac{\int_{a}^{b} v(t)dt}{b-a}`</p>
@@ -428,12 +483,14 @@
             </div>
             <p style="text-align:center">图 3-16</p>
             <p></p>
-            <h2>3.10 积分练习</h2>
+            <h2><a name="3.10">3.10 积分练习</a></h2>
             <object data="Definite Integral to Riemann Sum.pdf" type="application/pdf" width="100%" height="700px"></object>
             <br><br><br><br>
             <object data="Long Division, Comp Sq.pdf" type="application/pdf" width="100%" height="700px"></object>
             <br><br><br><br>
             <a href="https://zhuanlan.zhihu.com/p/33047747" target="_blank">72道积分题</a>
+            <hr>
+            <h1>积分是微分的逆运算</h1>
         </div>
     </div>
 </body>

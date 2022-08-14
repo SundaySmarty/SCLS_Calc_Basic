@@ -41,6 +41,36 @@
         width: 60%;
         margin-left: 20%;
         }
+        .catalog {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .catalog_left {
+        width: 15%;
+        height: 300px;
+        float: left;
+        background-color: #F8F8FF;
+        color: #778899;
+        text-align: center;
+        line-height: 225px;
+        }
+        .catalog_right {
+        width: 75%;
+        height: 300px;
+        float: left;
+        }
+        .catalog_right_column {
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        text-align: center;
+        width: 45%;
+        height: 250px;
+        float: left;
+        }
     </style>
 </head>
 <body style="overflow-x:hidden">
@@ -58,7 +88,38 @@
             <hr>
         </div>
         <div class="content">
-            <h2>2.1 割线和平均变化率 Secant Line and Average Rate of Change</h2>
+            <div class="catalog">
+                <div class="catalog_left">
+                    <h2>目录</h2>
+                </div>
+                <div class="catalog_right">
+                    <div class="catalog_right_column">
+                        <ul style="line-height:180%">
+                            <li><span><a href="#2.1" target="_self" style="text-decoration:none;color:blue;">2.1 割线和平均变化率</a></span></li>
+                            <li><span><a href="#2.2" target="_self" style="text-decoration:none;color:blue;">2.2 切线和瞬时变化率</a></span></li>
+                            <li><span><a href="#2.3" target="_self" style="text-decoration:none;color:blue;">2.3 导数</a></span></li>
+                            <li><span><a href="#2.4" target="_self" style="text-decoration:none;color:blue;">2.4 可导性和连续性的关系</a></span></li>
+                            <li><span><a href="#2.5" target="_self" style="text-decoration:none;color:blue;">2.5 求导</a></span></li>
+                            <li><span><a href="#2.6" target="_self" style="text-decoration:none;color:blue;">2.6 线性估算</a></span></li>
+                            <li><span><a href="#2.7" target="_self" style="text-decoration:none;color:blue;">2.7 导数的运算法则</a></span></li>
+                            <li><span><a href="#2.8" target="_self" style="text-decoration:none;color:blue;">2.8 隐函数求导</a></span></li>
+                        </ul>
+                    </div>
+                    <div class="catalog_right_column">
+                        <ul style="line-height:180%">
+                            <li><span><a href="#2.9" target="_self" style="text-decoration:none;color:blue;">2.9 反函数的导数</a></span></li>
+                            <li><span><a href="#2.10" target="_self" style="text-decoration:none;color:blue;">2.10 三角函数的导数</a></span></li>
+                            <li><span><a href="#2.11" target="_self" style="text-decoration:none;color:blue;">2.11 指数函数和对数函数的导数</a></span></li>
+                            <li><span><a href="#2.12" target="_self" style="text-decoration:none;color:blue;">2.12 洛必达法则</a></span></li>
+                            <li><span><a href="#2.13" target="_self" style="text-decoration:none;color:blue;">2.13 极值定理</a></span></li>
+                            <li><span><a href="#2.14" target="_self" style="text-decoration:none;color:blue;">2.14 中值定理</a></span></li>
+                            <li><span><a href="#2.15" target="_self" style="text-decoration:none;color:blue;">2.15 常用函数的导数总结</a></span></li>
+                            <li><span><a href="#2.16" target="_self" style="text-decoration:none;color:blue;">2.16 一些导数练习</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h2><a name="2.1">2.1 割线和平均变化率 Secant Line and Average Rate of Change</a></h2>
             <p>假设函数`y=f(x)`图像上有两点`(x_1,f(x_1))`和`(x_2,f(x_2))`，则过这两点的直线（割线）的斜率为`\frac{f(x_2)-f(x_1)}{x_2-x_1}`</p>
             <p>其<span style="color:red;font-weight:bold">斜率</span>也可以写成下图的形式：`\frac{f(x+\Delta x)-f(x)}{\Delta x}=\frac{\Delta y}{\Delta x}`</p>
             <p>`\frac{\Delta y}{\Delta x}`就是函数`f(x)`在某点`(x,f(x))`处增量为`\Delta x`的<span style="color:red;font-weight:bold">平均变化率</span></p>
@@ -67,7 +128,7 @@
             </div>
             <p style="text-align:center">图 2-1</p>
             <p>此处可以联想到平均速度的概念：`\bar v=\frac{\Delta x}{\Delta t}`（`\Delta x`是位移）</p>
-            <h2>2.2 切线和瞬时变化率 Tangent Line and Instantaneous Rate of Change</h2>
+            <h2><a name="2.2">2.2 切线和瞬时变化率 Tangent Line and Instantaneous Rate of Change</a></h2>
             <p>当`\Delta x`越来越接近于0的时候，割线就越来越靠近过点`(x,f(x))`的切线</p>
             <p>在这里我们姑且把（微小的）增量叫做`h`好了</p>
             <p>用极限表示这条过`(x,f(x))`<span style="color:red;font-weight:bold">切线的斜率</span>就是：`\lim_{h\rightarrow 0}\frac{f(x+h)-f(x)}{h}`</p>
@@ -85,7 +146,7 @@
             </div>
             <p style="text-align:center">图 2-3</p>
             <p>此处又可以联想到瞬时速度的概念：`v=\lim_{\Delta t\rightarrow 0}\frac{\Delta x}{\Delta t}`</p>
-            <h2>2.3 导数 Derivative</h2>
+            <h2><a name="2.3">2.3 导数 Derivative</a></h2>
             <p>对于`y=f(x)`，通过`(x,f(x))`的切线的斜率也可以是关于`x`的一个函数，这个函数叫做导函数，简称导数（所以它不是一个数），记作`f^{'}(x)`（现在你应该知道这是啥了）</p>
             <p>我们说：对`f(x)`关于变量`x`求导得到函数`f^{'}(x)`</p>
             <p>上一节的<span style="color:red;font-weight:bold">平均变化率的极限</span>即是导数，我们表示为`f^{'}(x)=\lim_{h\rightarrow 0}\frac{f(x+h)-f(x)}{h}`（比较常用）</p>
@@ -102,14 +163,14 @@
             <p>如果函数是`x=u(t)`，那么它的导数就是`u^{'}(t)`或者`\frac{dx}{dt}`或者`\frac{d}{dt}u(t)`</p>
             <br>
             <p>这两种表示形式都有各自的好处，以后就知道了（你可别以为`f^{'}(x)`写的方便只需要加一个小撇就一直用它了）</p>
-            <h2>2.4 可导性和连续性的关系 The Relationship between differentiability and continuity</h2>
+            <h2><a name="2.4">2.4 可导性和连续性的关系 The Relationship between differentiability and continuity</a></h2>
             <p>对于一个函数，<span style="color:red;font-weight:bold">可导必连续，不连续必不可导，连续不一定可导</span></p>
             <p>下面是证明：</p>
             <div align="center">
                 <img src="https://img-blog.csdnimg.cn/4d901c883c684cf2ad62c24a0b0473a2.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQWVyb2JhdGljcw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" width="100%">
             </div>
             <p style="text-align:center">图 2-4</p>
-            <h2>2.5 求导 Derivation</h2>
+            <h2><a name="2.5">2.5 求导 Derivation</a></h2>
             <p>不好意思概念讲了那么多，现在来点具体点的东西</p>
             <p>举例子的时间到了</p>
             <p><span style="font-weight:bold">1.</span>假设有一个<span style="font-weight:bold">常值函数</span>`y=f(x)=C`（`C`是常数），我们来求它的导数</p>
@@ -183,7 +244,7 @@
             <p>e.g. 求函数`y=f(x)=x^2`图像在`x=1`处的切线方程</p>
             <p>我们已经知道了点的坐标是`(1,1)`，切线的斜率是`k=f^{'}(1)=\frac{dy}{dx}|_{x=1}=2`（`|_{x=1}`就是当`x=1`的时候），所以切线方程就是：`y-1=2(x-1)`</p>
             <p>现在轮到你来写出函数`y=f(x)=\frac{1}{x}`图像在`x=1`处的切线方程啦！（别想着偷懒直接照图写！）快试一试叭！</p>
-            <h2>2.6 线性估算 Linear Approximation</h2>
+            <h2><a name="2.6">2.6 线性估算 Linear Approximation</a></h2>
             <p>有了切线方程，我们就可以来做一些函数值的估算了</p>
             <p>假设我们一直一个函数`y=f(x)`和一个特殊值`a`</p>
             <p>我们找出通过`y=f(x)`函数图像上点`(a,f(a))`的切线，其斜率为`f^{'}(a)`，则它的方程是：`y-f(a)=f^{'}(a)*(x-a)`</p>
@@ -206,7 +267,7 @@
             <p>大家可以自行检验这个近似值和计算器的结果有多大差别哦</p>
             <br>
             <p>自行练习：用线性化求`root[3]{25}`的近似值</p>
-            <h2>2.7 导数的运算法则</h2>
+            <h2><a name="2.7">2.7 导数的运算法则</a></h2>
             <p style="font-weight:bold">1.函数的常数倍</p>
             <p>一个函数的常数倍的导数等于这个常数乘以该函数的导数</p>
             <p>假设有一个函数`u=f(x)`，我们就叫它`u`，那么`\frac{d}{dx}(Cu)=C\frac{du}{dx}`（`C`是常数）</p>
@@ -263,7 +324,7 @@
             <p>`\frac{dy}{dx}=\frac{dy}{du} \frac{du}{dx}=99u^98*2x=198xu^98=198x(x^2+1)^98`</p>
             <br>
             <p>这样我们导数的运算法则就介绍完啦！你可能会有疑问：为什么不给我们看证明过程？那我告诉你：AP微积分里会给你推的，这里只要熟记结论即可！</p>
-            <h2>2.8 隐函数求导 Implicit Differentiation</h2>
+            <h2><a name="2.8">2.8 隐函数求导 Implicit Differentiation</a></h2>
             <p>假设`y`是`x`的函数，那么`\frac{d}{dx}(x^2)`和`\frac{d}{dx}(y^2)`一样吗？</p>
             <p>这两个显然是不一样的，第一个等于`2x`，那第二个呢？</p>
             <p>我们可以根据链式求导法则来求`\frac{d}{dx}(y^2)`等于什么</p>
@@ -275,7 +336,7 @@
             <p>`2x+2y\frac{dy}{dx}=0`</p>
             <p>`\frac{dy}{dx}=-\frac{x}{y}`</p>
             <p>这说明在这个圆上的点`(x,y)`处的切线的斜率是`-\frac{x}{y}`，大家可以手动验证一下</p>
-            <h2>2.9 反函数的导数</h2>
+            <h2><a name="2.9">2.9 反函数的导数</a></h2>
             <p>在讨论反函数的导数之前，我们得先判断一个函数是否有反函数</p>
             <p>假设有一个函数，它的导数（在定义域内）总是正的，那么（想象一下它的图像）它一定是单调递增函数，这种情况下它在定义域内一定有反函数</p>
             <p>假设有一个函数，它的导数（在定义域内）总是负的，那么（想象一下它的图像）它一定是单调递减函数，这种情况下它在定义域内一定有反函数</p>
@@ -299,7 +360,7 @@
             <p>假设`f(x)=x^3`，我们知道它在定义域上有反函数，即`y=f^{-1}(x)=x^{\frac{1}{3}}`</p>
             <p>那么`\frac{dy}{dx}=\frac{1}{f^{'}(y)}=\frac{1}{3y^2}=\frac{1}{3(x^{\frac{1}{3}})^2}=\frac{1}{3x^\frac{2}{3}}`</p>
             <p>看到没，这方法管用吧！</p>
-            <h2>2.10 三角函数的导数</h2>
+            <h2><a name="2.10">2.10 三角函数的导数</a></h2>
             <p>我们现在已经知道了一个形如`f(x)=x^a`的函数的导数为`f^{'}(x)=ax^{a-1}`（`a\in R`）</p>
             <p>现在让我们来看看三角函数的导数如何求</p>
             <p>既然极限是导数的前提，那么我们就先来看一下三角函数的极限</p>
@@ -347,7 +408,7 @@
             <p>同理，我们还可以知道（一定要自己算哦）：</p>
             <p>`\frac{d}{dx}arccos(x)=-\frac{1}{\sqrt{1-x^2}}(x\in (-1,1))`</p>
             <p>`\frac{d}{dx}arctan(x)=\frac{1}{1+x^2}(x\in R)`</p>
-            <h2>2.11 指数函数和对数函数的导数</h2>
+            <h2><a name="2.11">2.11 指数函数和对数函数的导数</a></h2>
             <p>回忆一下上一章那个极其重要的极限：`e=\lim_{n\rightarrow \infty}(1+\frac{1}{n})^n`</p>
             <p>我们还可以表示为`e=\lim_{h\rightarrow 0^{+}}(1+h)^{\frac{1}{h}}`</p>
             <p>现在我们要计算`\lim_{n\rightarrow \infty}(1+\frac{x}{n})^n`（这里可以当`x`是个大于`0`的常数）</p>
@@ -369,7 +430,7 @@
             <p>`\frac{dy}{dx}=\frac{1}{\frac{1}{y\ln(a)}}=y\ln(a)=a^x \ln(a)`</p>
             <p>这样我们就有：`\frac{d}{dx}(a^x)=a^x \ln(a)`</p>
             <p>特殊地，当`a=e`时，我们有`\frac{d}{dx}(e^x)=e^x`（这是相当好玩的，因为它的导数就等于自己！）</p>
-            <h2>2.12 洛必达法则 L’Hospital’s Rule</h2>
+            <h2><a name="2.12">2.12 洛必达法则 L’Hospital’s Rule</a></h2>
             <p>上一章计算极限的时候跟你说过我要介绍一个特别好的方法，现在就是兑现承诺的时候啦！</p>
             <p>如果`f(a)=g(a)=0`或者`\lim_{x\rightarrow a}f(x)=\pm \infty and \lim_{x\rightarrow a}g(x)=\pm \infty`，那么`lim_{x\rightarrow a}\frac{f(x)}{g(x)}=lim_{x\rightarrow a}\frac{f^{'}(x)}{g^{'}(x)}`</p>
             <p>第一个例子：求`\lim_{x\rightarrow 0}\frac{x-sin(x)}{x^3}`</p>
@@ -381,7 +442,7 @@
             <p>同样地，我们发现`\lim_{x\rightarrow \infty}(x^3)=\infty and \lim_{x\rightarrow \infty}(e^x)=\infty`，这才可以用洛必达法则</p>
             <p>`\lim_{x\rightarrow \infty}\frac{x^3}{e^x}=\lim_{x\rightarrow \infty}\frac{3x^2}{e^x}=\lim_{x\rightarrow \infty}\frac{6x}{e^x}=\lim_{x\rightarrow \infty}\frac{6}{e^x}=0`</p>
             <p>一些其他的极限形式也可以用洛必达法则，但是我们在这里不会提到</p>
-            <h2>2.13 极值定理 Extreme Value Theorem(EVT)</h2>
+            <h2><a name="2.13">2.13 极值定理 Extreme Value Theorem(EVT)</a></h2>
             <p>先说一下临界点（Critical points）的概念：在`x=c`处的导数为`0`或者不存在，我们就称`x=c`为临界点</p>
             <p>再说一下最值和极值的区别，以最大值为例（对于函数`y=f(x)`来说）：</p>
             <p>如果当`x=a`时，在包含`a`的某一小段区间里，`f(x)`在`x=a`处取得最大值，我们称`f(a)`为极大值（Local Maximum）（如下图在`x=x_1`和`x=x_3`处），注意：极值的概念是局部的，如果`f(a)`是函数`f(x)`的一个极值，那只是就`a`附近的一个局部范围来说</p>
@@ -452,13 +513,13 @@
                 <iframe src="https://www.desmos.com/calculator/2i6qgehfwh?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
             </div>
             <p>除了用导数判断，我们还可以用二阶导（即导数的导数），但我不会在这里提及，因为在AP微积分里会详细讲</p>
-            <h2>2.14 中值定理 Mean Value Theorem(MVT)</h2>
+            <h2><a name="2.14">2.14 中值定理 Mean Value Theorem(MVT)</a></h2>
             <p>假设函数`y=f(x)`在闭区间`[a,b]`连续，在开区间`(a,b)`内可导，那么在开区间`(a,b)`内至少有一点`c`使得`f^{'}(c)=\frac{f(b)-f(a)}{b-a}`</p>
             <div align="center">
                 <img src="https://ss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/baike/s=220/sign=7875307cf8dcd100c99cff23428a47be/83025aafa40f4bfbb85f0425034f78f0f7361837.jpg" width="50%">
             </div>
             <p style="text-align:center">图 2-9</p>
-            <h2>2.15 常用函数的导数总结</h2>
+            <h2><a name="2.15">2.15 常用函数的导数总结</a></h2>
             <p>`\frac{d}{dx}x^a=ax^{a-1}`</p>
             <br>
             <p>`\frac{d}{dx}sin(x)=cos(x)`</p>
@@ -476,7 +537,7 @@
             <p>`\frac{d}{dx}\ln(x)=\frac{1}{x}`</p>
             <p>`\frac{d}{dx}(a^x)=a^x \ln(a)`</p>
             <p>`\frac{d}{dx}(e^x)=e^x`</p>
-            <h2>2.16 一些导数练习</h2>
+            <h2><a name="2.16">2.16 一些导数练习</a></h2>
             <p>能做多少就做多少哦</p>
             <a href="https://www.khanacademy.org/math/ap-calculus-bc/bc-differentiation-1-new/test/bc-differentiation-1-new-unit-test?modal=1" target="_blank">导数练习1</a>
             <a href="https://www.khanacademy.org/math/ap-calculus-bc/bc-differentiation-2-new/quiz/bc-differentiation-2-new-quiz-1?modal=1" target="_blank">导数练习2</a>
