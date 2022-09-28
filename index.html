@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
     <title>Calculus Basic</title>
     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
     <style>
@@ -52,6 +52,9 @@
         float: left;
         width: 20%;
         }
+        .footer {
+        margin-left: 20%;
+        }
     </style>
 </head>
 <body style="overflow-x:hidden">
@@ -69,21 +72,64 @@
         </div>
         <div class="content">
             <div class="content_text">
-                <a href="Limit.html" target="_blank" style="line-height:2em">1.Limit&nbsp;&nbsp;&nbsp;&nbsp;极限</a>
+                <a href="Limit.html" target="_blank" style="line-height:2em;">1.Limit&nbsp;&nbsp;&nbsp;&nbsp;极限</a>
                 <br>
-                <a href="Derivative.html" target="_blank" style="line-height:2em">2.Derivative&nbsp;&nbsp;&nbsp;&nbsp;导数</a>
+                <a href="Derivative.html" target="_blank" style="line-height:2em;">2.Derivative&nbsp;&nbsp;&nbsp;&nbsp;导数</a>
                 <br>
-                <a href="Integral.html" target="_blank" style="line-height:2em">3.Integral&nbsp;&nbsp;&nbsp;&nbsp;积分</a>
+                <a href="Integral.html" target="_blank" style="line-height:2em;">3.Integral&nbsp;&nbsp;&nbsp;&nbsp;积分</a>
                 <br>
                 <!--<a href="Infinite Series.html" target="_blank" style="line-height:2em">4.Infinite Series&nbsp;&nbsp;&nbsp;&nbsp;无穷级数</a>-->
                 <p>感谢潘老师的AP微积分知识点汇总、班纳的微积分读本、CSDN、蕊蕊老师和李拜天同学的辛勤付出！</p>
-                <p>不懂就去问蕊蕊老师</p>
-                <p>每天学一点，脑袋不会乱</p>
             </div>
             <div class="content_pic">
                 <img src="https://tse3-mm.cn.bing.net/th/id/OIP-C.ZFlsNyCxUsosNEazwqt67AHaHa?pid=ImgDet&rs=1" alt="Calculus" width="30%" height="30%">
             </div>
         </div>
+    </div>
+    <div class="footer">
+        <script language="JavaScript">
+            var caution = false
+            function setCookie(name, value, expires, path, domain, secure) {
+                var curCookie = name + "=" + escape(value) +((expires) ? "; expires=" + expires.toGMTString() : "") +((path) ? "; path=" + path : "") +((domain) ? "; domain=" + domain : "") +((secure) ? "; secure" : "")
+                if (!caution || (name + "=" + escape(value)).length <= 4000)
+                    document.cookie = curCookie
+                else if (confirm("Cookie exceeds 4KB and will be cut!"))
+                    document.cookie = curCookie
+            }
+            function getCookie(name) {
+                var prefix = name + "="
+                var cookieStartIndex = document.cookie.indexOf(prefix)
+                if (cookieStartIndex == -1)
+                    return null
+                var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
+                if (cookieEndIndex == -1)
+                    cookieEndIndex = document.cookie.length
+                return unescape(document.cookie.substring(cookieStartIndex + prefix.length,
+                    cookieEndIndex))
+            }
+            function deleteCookie(name, path, domain) {
+                if (getCookie(name)) {
+                    document.cookie = name + "=" +((path) ? "; path=" + path : "") +((domain) ? "; domain=" + domain : "") +"; expires=Thu, 01-Jan-70 00:00:01 GMT"
+                }
+            }
+            function fixDate(date) {
+                var base = new Date(0)
+                var skew = base.getTime()
+                if (skew > 0)
+                    date.setTime(date.getTime() - skew)
+            }
+            var now = new Date()
+            fixDate(now)
+            now.setTime(now.getTime() + 730 * 24 * 60 * 60 * 1000)
+            var visits = getCookie("counter")
+            if (!visits)
+                visits = 1
+            else
+                visits = parseInt(visits) + 1
+            setCookie("counter", visits, now)
+            document.write("<font size=2>访问次数：" + visits + "次")
+            // -->
+        </script>
     </div>
 </body>
 </html>
