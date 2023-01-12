@@ -103,15 +103,17 @@
                             <li><span><a href="#3.3" target="_self" style="text-decoration:none;color:blue;">3.3 定积分</a></span></li>
                             <li><span><a href="#3.4" target="_self" style="text-decoration:none;color:blue;">3.4 微积分第一基本定理</a></span></li>
                             <li><span><a href="#3.5" target="_self" style="text-decoration:none;color:blue;">3.5 原函数</a></span></li>
+                            <li><span><a href="#3.6" target="_self" style="text-decoration:none;color:blue;">3.6 微积分第二基本定理</a></span></li>
                         </ul>
                     </div>
                     <div class="catalog_right_column">
                         <ul style="line-height:180%">
-                            <li><span><a href="#3.6" target="_self" style="text-decoration:none;color:blue;">3.6 微积分第二基本定理</a></span></li>
                             <li><span><a href="#3.7" target="_self" style="text-decoration:none;color:blue;">3.7 不定积分</a></span></li>
                             <li><span><a href="#3.8" target="_self" style="text-decoration:none;color:blue;">3.8 积分的方法</a></span></li>
                             <li><span><a href="#3.9" target="_self" style="text-decoration:none;color:blue;">3.9 积分的平均值和积分中值定理</a></span></li>
-                            <li><span><a href="#3.10" target="_self" style="text-decoration:none;color:blue;">3.10 积分练习</a></span></li>
+                            <li><span><a href="#3.10" target="_self" style="text-decoration:none;color:blue;">3.10 反常积分</a></span></li>
+                            <li><span><a href="#3.11" target="_self" style="text-decoration:none;color:blue;">3.11 反常积分的敛散性判别</a></span></li>
+                            <li><span><a href="#3.12" target="_self" style="text-decoration:none;color:blue;">3.12 积分练习</a></span></li>
                         </ul>
                     </div>
                 </div>
@@ -485,8 +487,85 @@
                 <img src="https://img-blog.csdnimg.cn/016473b293cf41f5b7215fe4442e6ae6.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQWVyb2JhdGljcw==,size_19,color_FFFFFF,t_70,g_se,x_16#pic_center" width="80%">
             </div>
             <p style="text-align:center">图 3-16</p>
-            <p></p>
-            <h2><a name="3.10">3.10 积分练习</a></h2>
+            <h2><a name="3.10">3.10 反常积分 Improper Integral</a></h2>
+            <p style="font-weight:bold">1.无穷限的反常积分（第一类反常积分）</p>
+            <p>设函数`f(x)`在区间`[a,\infty)`上连续，取`t>a`，如果`\lim_{t\rightarrow \infty}\int_{a}^{t}f(x)dx`存在，则称此极限为`f(x)`在`[a,\infty)`上的反常积分，记作`\int_{a}^{\infty}f(x)dx`，即`\int_{a}^{\infty}f(x)dx=\lim_{t\rightarrow \infty}\int_{a}^{t}f(x)dx`</p>
+            <p>这是也称反常积分`\int_{a}^{\infty}f(x)dx`收敛；若极限不存在，则称其发散</p>
+            <p>同理，如果`f(x)`在`(-\infty,b]`上连续且极限`\lim_{t\rightarrow -\infty}\int_{t}^{b}f(x)dx`存在（取`t< b`），那么`\int_{-\infty}^{b}f(x)dx=\lim_{t\rightarrow -\infty}\int_{t}^{b}f(x)dx`收敛；若极限不存在则称其发散</p>
+            <p>如果`f(x)`在`(-\infty,\infty)`上连续且`\int_{-\infty}^{0}f(x)dx`和`\int_{0}^{\infty}f(x)dx`都收敛，则`\int_{-\infty}^{\infty}f(x)dx=\int_{-\infty}^{0}f(x)dx+\int_{0}^{\infty}f(x)dx`收敛；若有一个发散则称其发散</p>
+            <br>
+            <p>e.g. 判断反常积分`\int_{a}^{\infty}\frac{1}{x^p}dx(a>0)`的敛散性（收敛还是发散）</p>
+            <p>当`p=1`时，`\int_{a}^{\infty}\frac{1}{x^p}dx=\int_{a}^{\infty}\frac{1}{x}dx=ln(x)|_{a}^{\infty}``=\infty` 显然发散</p>
+            <p>当`p<1`时，`\int_{a}^{\infty}\frac{1}{x^p}dx=\frac{x^{1-p}}{1-p}|_{a}^{\infty}``=\infty` 显然发散</p>
+            <p>当`p>1`时，`\int_{a}^{\infty}\frac{1}{x^p}dx=\frac{x^{1-p}}{1-p}|_{a}^{\infty}``=frac{a^{1-p}}{p-1}`</p>
+            <p>因此，当`p>1`时，`\int_{a}^{\infty}\frac{1}{x^p}dx(a>0)`收敛；当`p\leq 1`时，`\int_{a}^{\infty}\frac{1}{x^p}dx(a>0)`发散</p>
+            <div align="center">
+                <iframe src="https://www.desmos.com/calculator/xjbixcvixm?embed" width="650" height="650" style="border: 1px solid #ccc" frameborder=0></iframe>
+            </div>
+            <p style="font-weight:bold">2.无界函数的反常积分（第二类反常积分）</p>
+            <p>如果函数`f(x)`在点`a`的任一邻域内都无界，那么点`a`称为`f(x)`的瑕点</p>
+            <p>设函数`f(x)`在`(a,b]`上连续，点`a`为`f(x)`的瑕点，取`t>a`，若`\lim_{t\rightarrow a^{+}}\int_{t}^{b}f(x)dx`存在，则称此极限为`f(x)`在`(a,b]`上的反常积分，记作`\int_{a}^{b}f(x)dx`，且该反常积分收敛；否则称其发散</p>
+            <p>同理，设函数`f(x)`在`[a,b)`上连续，点`b`为`f(x)`的瑕点，取`t< b`，若`\lim_{t\rightarrow b^{-}}\int_{a}^{t}f(x)dx`存在，则称此极限为`f(x)`在`[a,b)`上的反常积分，记作`\int_{a}^{b}f(x)dx`，且该反常积分收敛；否则称其发散</p>
+            <p>类似地，设函数`f(x)`在`[a,b]`除点`c(c\in [a,b])`连续，点`c`为`f(x)`的瑕点，如果`\int_{a}^{c}f(x)dx`和`\int_{c}^{b}f(x)dx`都收敛，则`\int_{a}^{b}f(x)dx=\int_{a}^{c}f(x)dx+\int_{c}^{b}f(x)dx`收敛；否则称其发散</p>
+            <p>e.g. 判断反常积分`\int_{0}^{a}\frac{1}{x^p}dx(a>0)`的敛散性</p>
+            <p>当`p=1`时，`\int_{0}^{a}\frac{1}{x^p}dx=\int_{0}^{a}\frac{1}{x}dx=ln(x)|_{0}^{a}``=\infty` 显然发散</p>
+            <p>当`p<1`时，`\int_{0}^{a}\frac{1}{x^p}dx=\frac{x^{1-p}}{1-p}|_{0}^{a}``=\frac{a^{1-p}}{1-p}` 显然收敛</p>
+            <p>当`p>1`时，`\int_{0}^{a}\frac{1}{x^p}dx=\frac{x^{1-p}}{1-p}|_{0}^{a}``=\infty` 显然发散</p>
+            <p>因此，当`p<1`时，`\int_{0}^{a}\frac{1}{x^p}dx(a>0)`收敛；当`p\geq 1`时，`\int_{0}^{a}\frac{1}{x^p}dx(a>0)`发散</p>
+            <h2><a name="3.11">3.11 反常积分的敛散性判别</a></h2>
+            <p>尽管有很多反常积分不易求解，我们仍然可以判断它们的敛散性</p>
+            <p>我们主要考虑的是对于非负函数的反常积分；如果函数是非正的，可以把负号提出来归为非负函数的情况</p>
+            <p>下面将提供一些判别法的结论，过程可以自行证明</p>
+            <p style="font-weight:bold">1.`p`判别法</p>
+            <p>根据3.10的内容，我们知道：</p>
+            <p>当`p>1`时，`\int_{a}^{\infty}\frac{1}{x^p}dx(a>0)`收敛；当`p\leq 1`时，`\int_{a}^{\infty}\frac{1}{x^p}dx(a>0)`发散</p>
+            <p>当`p<1`时，`\int_{0}^{a}\frac{1}{x^p}dx(a>0)`收敛；当`p\geq 1`时，`\int_{0}^{a}\frac{1}{x^p}dx(a>0)`发散</p>
+            <p style="font-weight:bold">2.比较判别法的一般形式</p>
+            <p>我们在这里把`f(x)`当作待判别的函数</p>
+            <p>对于无穷限的反常积分，设两个非负函数`f(x)`和`g(x)`在`[a,\infty)`上连续，</p>
+            <p>(1)如果在`[a,\infty)`上有`f(x)\geq g(x)`且`\int_{a}^{\infty}g(x)dx`发散，那么`\int_{a}^{\infty}f(x)dx`也发散（小发大必发）</p>
+            <p>(2)如果在`[a,\infty)`上有`f(x)\leq g(x)`且`\int_{a}^{\infty}g(x)dx`收敛，那么`\int_{a}^{\infty}f(x)dx`也收敛（大收小必收）</p>
+            <br>
+            <p>对于无界函数的反常积分，设两个非负函数`f(x)`和`g(x)`在`(a,b]`上连续且点`a`是`f(x)`的瑕点，</p>
+            <p>(1)如果在`(a,b]`上有`f(x)\geq g(x)`且`\int_{a}^{b}g(x)dx`发散，那么`\int_{a}^{b}f(x)dx`也发散（小发大必发）</p>
+            <p>(2)如果在`(a,b]`上有`f(x)\leq g(x)`且`\int_{a}^{b}g(x)dx`收敛，那么`\int_{a}^{b}f(x)dx`也收敛（大收小必收）</p>
+            <div align="center">
+                <img src="https://img-blog.csdnimg.cn/5f90237314bd4da8bd35322eca4313cd.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQWVyb2JhdGljcw==,size_13,color_FFFFFF,t_70,g_se,x_16#pic_center" width="55%">
+            </div>
+            <p style="text-align:center">图 3-17</p>
+            <div align="center">
+                <img src="https://img-blog.csdnimg.cn/3bd24614e5674a9eb68abc59f0fdc94a.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQWVyb2JhdGljcw==,size_16,color_FFFFFF,t_70,g_se,x_16#pic_center" width="60%">
+            </div>
+            <p style="text-align:center">图 3-18</p>
+            <p>e.g. 判断反常积分`\int_{5}^{\infty}\frac{|sin(x^4)|}{x^2}dx`的敛散性</p>
+            <p>因为`|sin(x^4)|\leq 1`，所以`\int_{5}^{\infty}\frac{|sin(x^4)|}{x^2}dx\leq \int_{5}^{\infty}\frac{1}{x^2}dx`</p>
+            <p>我们已经知道（根据`p`判别法），`\int_{5}^{\infty}\frac{1}{x^2}dx`是收敛的，因此`\int_{5}^{\infty}\frac{|sin(x^4)|}{x^2}dx`也是收敛的</p>
+            <p>e.g. 判断反常积分`\int_{0}^{1}\frac{1}{x^2+\sqrt(x)}dx`的敛散性</p>
+            <p>`\int_{0}^{1}\frac{1}{x^2+\sqrt(x)}dx\leq \int_{0}^{1}\frac{1}{\sqrt(x)}dx`</p>
+            <p>因为`\int_{0}^{1}\frac{1}{\sqrt(x)}dx`收敛，所以`\int_{0}^{1}\frac{1}{x^2+\sqrt(x)}dx`也收敛</p>
+            <p style="font-weight:bold">3.比较判别法的极限形式</p>
+            <p>对于无穷限的反常积分，设两个非负函数`f(x)`和`g(x)`在`[a,\infty)`上连续，`L=\lim_{x\rightarrow \infty}\frac{f(x)}{g(x)}`，</p>
+            <p>(1)当`0< L<\infty`时，`\int_{a}^{\infty}g(x)dx`与`\int_{a}^{\infty}f(x)dx`有相同的敛散性</p>
+            <p>(2)当`L=0`时，若`\int_{a}^{\infty}g(x)dx`收敛，`\int_{a}^{\infty}f(x)dx`也收敛（大收小必收）</p>
+            <p>(3)当`L=\infty`时，若`\int_{a}^{\infty}g(x)dx`发散，`\int_{a}^{\infty}f(x)dx`也发散（小发大必发）</p>
+            <br>
+            <p>对于无界函数的反常积分，设两个非负函数`f(x)`和`g(x)`在`(a,b]`上连续且点`a`是`f(x)`的瑕点，`L=\lim_{x\rightarrow a^{+}}\frac{f(x)}{g(x)}`，</p>
+            <p>(1)当`0< L<\infty`时，`\int_{a}^{b}g(x)dx`与`\int_{a}^{b}f(x)dx`有相同的敛散性</p>
+            <p>(2)当`L=0`时，若`\int_{a}^{b}g(x)dx`收敛，`\int_{a}^{b}f(x)dx`也收敛（大收小必收）</p>
+            <p>(3)当`L=\infty`时，若`\int_{a}^{b}g(x)dx`发散，`\int_{a}^{b}f(x)dx`也发散（小发大必发）</p>
+            <br>
+            <p>e.g. 判断反常积分`\int_{0}^{1}\frac{sin(x)}{x^2}`的敛散性</p>
+            <p>因为`\lim_{x\rightarrow 0^{+}}\frac{\frac{sin(x)}{x^2}}{\frac{1}{x}}=\lim_{x\rightarrow 0^{+}}\frac{sin(x)}{x}=1`，且`\int_{0}^{1}\frac{1}{x}dx`发散</p>
+            <p>所以`\int_{0}^{1}\frac{sin(x)}{x^3}`也发散</p>
+            <p>e.g. 判断反常积分`\int_{1}^{\infty}\frac{1}{x^2+\sqrt(x)}dx`的敛散性</p>
+            <p>因为`\lim_{x\rightarrow \infty}\frac{\frac{1}{x^2+\sqrt(x)}}{\frac{1}{x^2}}=1`，且`\int_{1}^{\infty}\frac{1}{x^2}dx`收敛</p>
+            <p>所以`\int_{1}^{\infty}\frac{1}{x^2+\sqrt(x)}dx`也收敛</p>
+            <p style="font-weight:bold">4.绝对收敛判别法</p>
+            <p>对于那些在积分区间里不停地在正负之间震荡的函数，我们可以用绝对收敛判别法：</p>
+            <p>如果`\int_{a}^{b}|f(x)|dx`是收敛的，`\int_{a}^{b}f(x)dx`也是收敛的</p>
+            <p>e.g. 判断反常积分`\int_{5}^{\infty}\frac{sin(x^4)}{x^2}dx`的敛散性</p>
+            <p>我们已经知道`\int_{5}^{\infty}\frac{|sin(x^4)|}{x^2}dx`是收敛的，因此根据绝对收敛判别法，`\int_{5}^{\infty}\frac{sin(x^4)}{x^2}dx`也是收敛的</p>
+            <h2><a name="3.12">3.12 积分练习</a></h2>
             <object data="Definite Integral to Riemann Sum.pdf" type="application/pdf" width="100%" height="700px"></object>
             <br><br><br><br>
             <object data="Long Division, Comp Sq.pdf" type="application/pdf" width="100%" height="700px"></object>
