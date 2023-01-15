@@ -60,6 +60,13 @@
     height: auto;
     float: left;
 }
+::-webkit-scrollbar {
+    display: none;
+}
+p {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
 @media screen and (max-width: 800px) {
     .content_container {
         float: left;
