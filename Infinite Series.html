@@ -57,13 +57,13 @@
             </div>
             <h2><a name="4.1">4.1 数列 Sequence</a></h2>
             <p>数列是按照一定顺序排列的一列数，记为`{a_n}`，数列中的每一个数都叫做这个数列的项，如`a_1`表示数列的第一项，`a_2`表示数列的第二项...（有时`n`可以从`0`开始）</p>
-            <p>项数有限的数列是”有穷数列“，而项数无限的数列是”无穷数列“</p>
+            <p>项数有限的数列是“有穷数列”，而项数无限的数列是“无穷数列”</p>
             <p>如`a_n=\frac{1}{n^2}(n\in Z^{+})`就是无穷数列，它长这样：`1,\frac{1}{4},\frac{1}{9},\frac{1}{16},...`</p>
             <p>数列的极限`\lim_{n\rightarrow \infty}a_n`与函数的极限`\lim_{x\rightarrow \infty}f(x)`类似</p>
             <p>`\lim_{n\rightarrow \infty}a_n=L`可以简单理解成当`n`趋于无穷时，`a_n`趋于`L`</p>
             <p>*严格的定义是：如果存在常数`L`，对于任意给定的正数`\epsilon`，总存在正整数`N`，使得当`n>N`时，`|a_n-L|<\epsilon`都成立，那么就说`L`是数列`{a_n}`的极限</p>
             <br>
-            <p>如果数列的极限存在（存在这么一个数`L`），那么我们就说这个数列是收敛的；如果不存在（极限趋于`\infty`/`-\infty`或者不断震荡而不趋于定值），那么我们说这个数列是发散的</p>
+            <p>如果数列的极限存在（存在这么一个数`L`），那么我们就说这个数列是收敛的；如果不存在（极限趋于`\infty\text{or}-\infty`或者不断震荡而不趋于定值），那么我们说这个数列是发散的</p>
             <p>比如`a_n=\frac{1}{n^2}``(\lim_{n\rightarrow \infty}\frac{1}{n^2}=0)`是收敛的；而`a_n=n^2`和`a_n=sin(n)`就是发散的</p>
             <p>此外，如果一个数列对应的函数的极限`\lim_{x\rightarrow \infty}f(x)`存在，该数列也具有相同的极限</p>
             <p>函数极限的四则运算、三明治定理（夹逼定理）和洛必达法则对数列同样适用</p>
@@ -84,9 +84,10 @@
             <p>`S_N=\sum_{n=1}^{N}a_n=a_1+a_2+...+a_N`</p>
             <p>无穷级数（简称级数）则是无穷数列所有项之和：`lim_{N\rightarrow \infty}\sum_{n=1}^{N}a_n`，记为`\sum_{n=1}^{\infty}a_n`</p>
             <p>如果存在实数`S`，使得`lim_{N\rightarrow \infty}\sum_{n=1}^{N}a_n=S`，则级数`\sum_{n=1}^{\infty}a_n`收敛到`S`；如果不存在，则说该级数发散</p>
-            <p>级数也不必从`n=1`开始，从其他数开始不会影响级数的敛散性，因为这只会差一个常数</p>
+            <p>级数也不必从`n=1`开始，从其他项数开始不会影响级数的敛散性，因为这只会差一个常数</p>
             <br>
-            <p>对于等比数列，我们有等比级数（几何级数）：`a_0(1+q+q^2+q^3+...)=\sum_{n=0}^{\infty}a_0 q^n`</p>
+            <p>对于等比数列，我们有等比级数（几何级数）：</p>
+            <p>`a_0(1+q+q^2+q^3+...)=\sum_{n=0}^{\infty}a_0 q^n`</p>
             <p>想要求这个无穷级数的值，我们可以先看它的部分和：`S_N=\sum_{n=0}^{N}a_0 q^n=a_0(1+q+q^2+...+q^N)`</p>
             <p>在等式两边乘以`q`，得到`q*S_N=a_0(q+q^2+...+q^N+q^{N+1})`</p>
             <p>再将两式错位相减，得到`(1-q)S_N=a_0(1-q^{N+1})\Rightarrow S_N=a_0*\frac{(1-q^{N+1})}{1-q}(q\ne 1)`</p>
@@ -95,7 +96,6 @@
             <p>如果`|q|\geq 1`，那么等比级数发散</p>
             <h2><a name="4.3">4.3 级数的敛散性判别 Test for convergence/divergence of series</a></h2>
             <p>不像等比级数，对于很多其他级数，我们无法很快求出它的值，但至少可以判断它的敛散性</p>
-            <p>级数有很多敛散性判别的方法，但不是每个都能判别级数的敛散性</p>
             <p>我们主要考虑正项级数（即级数的各项都是正数）；若级数的各项都是负数，则可以提出负号变成正项级数</p>
             <p>先来区分两个概念：绝对收敛和条件收敛</p>
             <p>绝对收敛指的是`\sum_{n=1}^{\infty}a_n`收敛，`\sum_{n=1}^{\infty}|a_n|`也收敛</p>
@@ -112,25 +112,27 @@
             <p>e.g. 判断级数`\sum_{n=2}^{\infty}\frac{4^n n!}{n^n}`的敛散性</p>
             <p>因为`\lim_{n\rightarrow \infty}|\frac{a_{n+1}}{a_n}|=\lim_{n\rightarrow \infty}|\frac{\frac{4^{n+1} (n+1)!}{(n+1)^(n+1)}}{\frac{4^n n!}{n^n}}|=\lim_{n\rightarrow \infty}|\frac{4}{(1+\frac{1}{n})^n}|=\frac{4}{e}>1` 所以该级数发散</p>
             <p style="font-weight:bold">3.积分判别法</p>
-            <p>一般对于同时含有`\frac{1}{n}`和`ln(n)`的正项级数，我们可以用积分判别法</p>
+            <p>对于一些正项级数，我们可以用积分判别法</p>
             <p>若对<span style="color:red;font-weight:bold">连续递减</span>函数`f(x)`有`a_n=f(n)`，则`\sum_{n=N}^{\infty}a_n`与`\int_{N}^{\infty}f(x)dx`（`N`为正整数）有相同的敛散性</p>
             <p>e.g. 判断级数`\sum_{n=2}^{\infty}\frac{1}{nln(n)}`的敛散性</p>
-            <p>将此级数换成函数的定积分：`\int_{2}^{\infty}\frac{1}{xln(x)}dx`并发现它是连续递减函数，可以用积分判别法</p>
+            <p>我们发现`f(x)=\frac{1}{xln(x)}`是连续递减函数，所以可以用积分判别法</p>
+            <p>将此级数换成函数的反常积分：`\int_{2}^{\infty}\frac{1}{xln(x)}dx`</p>
             <p>`\int_{2}^{\infty}\frac{1}{xln(x)}dx=\int_{ln(2)}^{\infty}\frac{1}{u}du`（`u=ln(x)`换元）</p>
             <p>根据反常积分的`p`判别法，可知该积分发散，所以级数`\sum_{n=2}^{\infty}\frac{1}{nln(n)}`也发散</p>
             <p style="font-weight:bold">4.`p`判别法</p>
             <p>根据级数的积分判别法，我们可以得出与无穷限反常积分的`p`判别法非常相似的级数的`p`判别法</p>
             <p>对于级数`\sum_{n=a}^{\infty}\frac{1}{n^p}(a\geq 1)`：当`p>1`时，该级数收敛；当`p\leq 1`时，该级数发散</p>
+            <p>对于任意的正实数`p`，我们称`\sum_{n=1}^{\infty}\frac{1}{n^p}`为`p`级数；当`p=1`时，我们称之为调和级数</p>
             <p style="font-weight:bold">5.比较判别法的一般形式</p>
             <p>我们在这里把`\sum_{n=1}^{\infty}a_n`当作待判别的级数</p>
-            <p>与无穷限的反常积分的比较判别法类似：（`a_n`和`b_n`是正项级数）</p>
+            <p>与无穷限的反常积分的比较判别法类似：（`\sum_{n=1}^{\infty}a_n`和`\sum_{n=1}^{\infty}b_n`是正项级数）</p>
             <p>若对于所有`n`都有`a_n\geq b_n`且`\sum_{n=1}^{\infty}b_n`发散，则`\sum_{n=1}^{\infty}a_n`发散（小发大必发）</p>
             <p>若对于所有`n`都有`a_n\leq b_n`且`\sum_{n=1}^{\infty}b_n`收敛，则`\sum_{n=1}^{\infty}a_n`收敛（大收小必收）</p>
             <p>e.g. 判断级数`\sum_{n=1}^{\infty}(\frac{1}{2})^n|sin(n)|`的敛散性</p>
             <p>因为`|sin(n)|\leq 1`，所以`\sum_{n=1}^{\infty}(\frac{1}{2})^n|sin(n)|\leq \sum_{n=1}^{\infty}(\frac{1}{2})^n`</p>
             <p>我们已知`\sum_{n=1}^{\infty}(\frac{1}{2})^n`是收敛的（公比`q`为`\frac{1}{2}`的等比级数），所以`\sum_{n=1}^{\infty}(\frac{1}{2})^n|sin(n)|`也收敛</p>
             <p style="font-weight:bold">6.比较判别法的极限形式</p>
-            <p>对于两个正项级数`a_n`和`b_n`，有`L=\lim_{n\rightarrow \infty}\frac{a_n}{b_n}`，</p>
+            <p>对于两个正项级数`\sum_{n=1}^{\infty}a_n`和`\sum_{n=1}^{\infty}b_n`，有`L=\lim_{n\rightarrow \infty}\frac{a_n}{b_n}`，</p>
             <p>(1)当`0< L<\infty`时，`\sum_{n=1}^{\infty}b_n`与`\sum_{n=1}^{\infty}a_n`有相同的敛散性</p>
             <p>(2)当`L=0`时，若`\sum_{n=1}^{\infty}b_n`收敛，`\sum_{n=1}^{\infty}a_n`也收敛（大收小必收）</p>
             <p>(3)当`L=\infty`时，若`\sum_{n=1}^{\infty}b_n`发散，`\sum_{n=1}^{\infty}a_n`也发散（小发大必发）</p>
@@ -142,13 +144,19 @@
             <p>若`\sum_{n=1}^{\infty}|a_n|`收敛，则`\sum_{n=1}^{\infty}a_n`也收敛</p>
             <p>如我们已知`\sum_{n=1}^{\infty}(\frac{1}{2})^n|sin(n)|`收敛，那么`\sum_{n=1}^{\infty}(\frac{1}{2})^n sin(n)`就绝对收敛</p>
             <p style="font-weight:bold">8.交错级数判别法</p>
-            <p>此判别法需满足三个条件：</p>
-            <p>(1)`a_n`的值在正负交替（如一正一负或一负一正）</p>
-            <p>(2)`\lim_{n\rightarrow \infty}|a_n|=0`</p>
-            <p>(3)`|a_n|`关于`n`递减</p>
-            <p>满足这三个条件的级数`\sum_{n=1}^{\infty}a_n`收敛</p>
-            <p>如级数`\sum_{n=1}^{\infty}\frac{(-1)^n}{n}`满足这三个条件因此收敛，而其绝对值形式`\sum_{n=1}^{\infty}\frac{1}{n}`却是发散的</p>
-            <p>所以`\sum_{n=1}^{\infty}\frac{(-1)^n}{n}`条件收敛</p>
+            <p>交错级数是正项和负项交替出现的级数，即形如</p>
+            <p>`a_1-a_2+a_3-a_4+...=\sum_{n=1}^{\infty}(-1)^{n+1} a_n`</p>
+            <p>或</p>
+            <p>`-a_1+a_2-a_3+...=\sum_{n=1}^{\infty}(-1)^{n} a_n`</p>
+            <p>其中，`a_n>0,n=1,2,3,...`</p>
+            <br>
+            <p>我们常用莱布尼茨判别法来判断交错级数的敛散性，如果交错级数满足以下两个条件：</p>
+            <p>(1)数列`{a_n}`单调递减</p>
+            <p>(2)`\lim_{n\rightarrow \infty}a_n=0`</p>
+            <p>那么该交错级数收敛</p>
+            <p>如典型交错调和级数：`\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n}`</p>
+            <p>满足条件(1)`a_n=\frac{1}{n}`单调递减；(2)`\lim_{n\rightarrow \infty}a_n=\lim_{n\rightarrow \infty}\frac{1}{n}=0`，所以该级数收敛</p>
+            <p>又因为`\sum_{n=1}^{\infty}|\frac{(-1)^{n+1}}{n}|=\sum_{n=1}^{\infty}\frac{1}{n}`发散，所以该级数条件收敛</p>
             <h2><a name="4.4">4.4 幂级数 Power series</a></h2>
             <p>关于`x=a`的幂级数指的是`\sum_{n=0}^{\infty}a_n(x-a)^n=a_0+a_1(x-a)+a_2(x-a)^2+...`</p>
             <p>我们知道当`x=a`时，幂级数肯定收敛；但是当`x`取其他值时，幂级数是收敛还是发散呢？</p>
