@@ -67,6 +67,15 @@ html {
     height: auto;
     float: left;
 }
+#back_to_top {
+    width: 31px;
+    height: 40px;
+    padding: 20px;
+    position: fixed;
+    cursor: pointer;
+    right: 0;
+    bottom: 0;
+}
 @media screen and (max-width: 1200px) and (min-width: 700px) {
     .content_container {
         float: left;
