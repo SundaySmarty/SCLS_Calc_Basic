@@ -22,18 +22,18 @@
 }
 .content_container {
     float: left;
-    width: 80%;
+    width: 48%;
+    margin-left: 16%;
+    margin-right: 36%;
 }
 .content_name {
-    width: 60%;
+    width: 100%;
     margin-top: 6%;
-    margin-left: 20%;
     font-weight: bold;
     font-size: 300%;
 }
 .content {
-    width: 60%;
-    margin-left: 20%;
+    width: 100%;
 }
 .catalog {
     width: 100%;
@@ -60,21 +60,50 @@
     height: auto;
     float: left;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) and (min-width: 700px) {
     .content_container {
         float: left;
-        width: 98%;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
     }
     .content_name {
-        width: 98%;
-        margin-left: 2%;
-        margin-right: 2%;
+        width: 100%;
         font-size: 170%;
     }
     .content {
-        width: 98%;
-        margin-left: 2%;
-        margin-right: 2%;
+        width: 100%;
+    }
+    .catalog_left {
+        width: 100%;
+    }
+    .catalog_right {
+        width: 100%;
+    }
+    .catalog_right_column {
+        width: 50%;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    p {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+}
+@media screen and (max-width: 700px) {
+    .content_container {
+        float: left;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .content_name {
+        width: 100%;
+        font-size: 170%;
+    }
+    .content {
+        width: 100%;
     }
     .catalog_left {
         width: 100%;
