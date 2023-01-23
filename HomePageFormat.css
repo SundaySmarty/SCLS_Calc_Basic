@@ -1,3 +1,10 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+}
+html {
+    overflow-x: hidden;
+}
 .header {
     width: 100%;
     background-color: thistle;
