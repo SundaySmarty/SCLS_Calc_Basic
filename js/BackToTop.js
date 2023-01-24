@@ -3,12 +3,12 @@ window.onload = function() {
     function getStyle(cssName, selectorName) {
         let cssTargetIndex, targetStyleIndex;
         for(let i = 0; i < cssStyleSheets.length; i++) {
-            if(typeof cssStyleSheets[i].href == "string") {
+            if(typeof cssStyleSheets[i].href === "string") {
                 if(cssStyleSheets[i].href.indexOf(cssName) >= 0)  cssTargetIndex = i;
             }
         }
         for(let i = 0; i < cssStyleSheets[cssTargetIndex].rules.length; i++) {
-            if(typeof cssStyleSheets[cssTargetIndex].rules[i].selectorText == "string") {
+            if(typeof cssStyleSheets[cssTargetIndex].rules[i].selectorText === "string") {
                 if(cssStyleSheets[cssTargetIndex].rules[i].selectorText == selectorName) targetStyleIndex = i;
             }
         }
@@ -19,7 +19,7 @@ window.onload = function() {
     var backToTop = cssStyleSheets[cssTargetIndex].rules[targetStyleIndex];
     window.onscroll = function() {
         var scrolltop = document.documentElement.scrollTop || document.body.scrollTop; //Get the scrollHeight of scrollbar
-        if(scrolltop < 500) {
+        if(scrolltop < 600) {
             backToTop.style.display = "none";
         }
         else {
