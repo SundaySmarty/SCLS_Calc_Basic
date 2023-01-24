@@ -17,7 +17,6 @@ window.onload = function() {
     var cssTargetIndex = getStyle("ChapterFormat.css", "#back_to_top")[0];
     var targetStyleIndex = getStyle("ChapterFormat.css", "#back_to_top")[1];
     var backToTop = cssStyleSheets[cssTargetIndex].rules[targetStyleIndex];
-    console.log(backToTop);
     window.onscroll = function() {
         var scrolltop = document.documentElement.scrollTop || document.body.scrollTop; //Get the scrollHeight of scrollbar
         if(scrolltop < 500) {
