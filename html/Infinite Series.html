@@ -61,311 +61,313 @@
                     </div>
                 </div>
             </div>
-            <h2><a name="4.1">4.1 数列 Sequence</a></h2>
-            <p>数列是按照一定顺序排列的一列数，记为`{a_n}`，数列中的每一个数都叫做这个数列的项，如`a_1`表示数列的第一项，`a_2`表示数列的第二项...（有时`n`可以从`0`开始）</p>
-            <p>项数有限的数列是“有穷数列”，而项数无限的数列是“无穷数列”</p>
-            <p>如`a_n=\frac{1}{n^2}(n\in Z^{+})`就是无穷数列，它长这样：`1,\frac{1}{4},\frac{1}{9},\frac{1}{16},...`</p>
-            <p>数列的极限`\lim_{n\rightarrow \infty}a_n`与函数的极限`\lim_{x\rightarrow \infty}f(x)`类似</p>
-            <p>`\lim_{n\rightarrow \infty}a_n=L`可以简单理解成当`n`趋于无穷时，`a_n`趋于`L`</p>
-            <p>*严格的定义是：如果存在常数`L`，对于任意给定的正数`\epsilon`，总存在正整数`N`，使得当`n>N`时，`|a_n-L|<\epsilon`都成立，那么就说`L`是数列`{a_n}`的极限</p>
-            <br>
-            <p>如果数列的极限存在（存在这么一个数`L`），那么我们就说这个数列是收敛的；如果不存在（极限趋于`\infty\text{or}-\infty`或者不断震荡而不趋于定值），那么我们说这个数列是发散的</p>
-            <p>比如`a_n=\frac{1}{n^2}``(\lim_{n\rightarrow \infty}\frac{1}{n^2}=0)`是收敛的；而`a_n=n^2`和`a_n=sin(n)`就是发散的</p>
-            <p>此外，如果一个数列对应的函数的极限`\lim_{x\rightarrow \infty}f(x)`存在，该数列也具有相同的极限</p>
-            <p>函数极限的四则运算、三明治定理（夹逼定理）和洛必达法则对数列同样适用</p>
-            <p>唯一要注意的是，对数列用洛必达法则时，需要将其先转换为对应的连续函数，如：</p>
-            <p>求`a_n=\frac{ln(n)}{n}`需要先令`f(x)=\frac{ln(x)}{x}`，然后用洛必达法则求出`\lim_{x\rightarrow \infty}f(x)=0`，从而得到`\lim_{n\rightarrow \infty}a_n=0`</p>
-            <br>
-            <p>这里有两个重要的数列：</p>
-            <p style="font-weight:bold">1.`lim_{n\rightarrow \infty}(1+\frac{k}{n})^n=e^k`（`k`是常数）</p>
-            <p style="font-weight:bold">2.等比数列（几何数列）`a_n=a_0*q^n(n\in N)`
-            <p>这里`n`从`0`开始取值，所以`a_0`在这里就是数列的首项</p>
-            <p>取不同公比`q`的值，我们可以总结出对于等比数列极限的规律：</p>
-            <div align="center">
-                <img src="../img/4-1.png" width="50%">
+            <div class="text">
+                <h2><a name="4.1">4.1 数列 Sequence</a></h2>
+                <p>数列是按照一定顺序排列的一列数，记为`{a_n}`，数列中的每一个数都叫做这个数列的项，如`a_1`表示数列的第一项，`a_2`表示数列的第二项...（有时`n`可以从`0`开始）</p>
+                <p>项数有限的数列是“有穷数列”，而项数无限的数列是“无穷数列”</p>
+                <p>如`a_n=\frac{1}{n^2}(n\in Z^{+})`就是无穷数列，它长这样：`1,\frac{1}{4},\frac{1}{9},\frac{1}{16},...`</p>
+                <p>数列的极限`\lim_{n\rightarrow \infty}a_n`与函数的极限`\lim_{x\rightarrow \infty}f(x)`类似</p>
+                <p>`\lim_{n\rightarrow \infty}a_n=L`可以简单理解成当`n`趋于无穷时，`a_n`趋于`L`</p>
+                <p>*严格的定义是：如果存在常数`L`，对于任意给定的正数`\epsilon`，总存在正整数`N`，使得当`n>N`时，`|a_n-L|<\epsilon`都成立，那么就说`L`是数列`{a_n}`的极限</p>
+                <br>
+                <p>如果数列的极限存在（存在这么一个数`L`），那么我们就说这个数列是收敛的；如果不存在（极限趋于`\infty\text{or}-\infty`或者不断震荡而不趋于定值），那么我们说这个数列是发散的</p>
+                <p>比如`a_n=\frac{1}{n^2}``(\lim_{n\rightarrow \infty}\frac{1}{n^2}=0)`是收敛的；而`a_n=n^2`和`a_n=sin(n)`就是发散的</p>
+                <p>此外，如果一个数列对应的函数的极限`\lim_{x\rightarrow \infty}f(x)`存在，该数列也具有相同的极限</p>
+                <p>函数极限的四则运算、三明治定理（夹逼定理）和洛必达法则对数列同样适用</p>
+                <p>唯一要注意的是，对数列用洛必达法则时，需要将其先转换为对应的连续函数，如：</p>
+                <p>求`a_n=\frac{ln(n)}{n}`需要先令`f(x)=\frac{ln(x)}{x}`，然后用洛必达法则求出`\lim_{x\rightarrow \infty}f(x)=0`，从而得到`\lim_{n\rightarrow \infty}a_n=0`</p>
+                <br>
+                <p>这里有两个重要的数列：</p>
+                <p style="font-weight:bold">1.`lim_{n\rightarrow \infty}(1+\frac{k}{n})^n=e^k`（`k`是常数）</p>
+                <p style="font-weight:bold">2.等比数列（几何数列）`a_n=a_0*q^n(n\in N)`
+                <p>这里`n`从`0`开始取值，所以`a_0`在这里就是数列的首项</p>
+                <p>取不同公比`q`的值，我们可以总结出对于等比数列极限的规律：</p>
+                <div align="center">
+                    <img src="../img/4-1.png" width="50%">
+                </div>
+                <p style="text-align:center">图 4-1</p>
+                <h2><a name="4.2">4.2 级数 Series</a></h2>
+                <p>如果从一个数列`{a_n}=a_1,a_2,...,a_n`的首项一直累加到第`N`项，我们就会得到部分和：</p>
+                <p>`S_N=\sum_{n=1}^{N}a_n=a_1+a_2+...+a_N`</p>
+                <p>无穷级数（简称级数）则是无穷数列所有项之和：`lim_{N\rightarrow \infty}\sum_{n=1}^{N}a_n`，记为`\sum_{n=1}^{\infty}a_n`</p>
+                <p>如果存在实数`S`，使得`lim_{N\rightarrow \infty}\sum_{n=1}^{N}a_n=S`，则级数`\sum_{n=1}^{\infty}a_n`收敛到`S`；如果不存在，则说该级数发散</p>
+                <p>级数也不必从`n=1`开始，从其他项数开始不会影响级数的敛散性，因为这只会差一个常数</p>
+                <br>
+                <p>对于等比数列，我们有等比级数（几何级数）：</p>
+                <p>`a_0(1+q+q^2+q^3+...)=\sum_{n=0}^{\infty}a_0 q^n`</p>
+                <p>想要求这个无穷级数的值，我们可以先看它的部分和：`S_N=\sum_{n=0}^{N}a_0 q^n=a_0(1+q+q^2+...+q^N)`</p>
+                <p>在等式两边乘以`q`，得到`q*S_N=a_0(q+q^2+...+q^N+q^{N+1})`</p>
+                <p>再将两式错位相减，得到`(1-q)S_N=a_0(1-q^{N+1})\Rightarrow S_N=a_0*\frac{(1-q^{N+1})}{1-q}(q\ne 1)`</p>
+                <p>当`q=1`时，`S_N=N*a_0`</p>
+                <p>如果`|q|<1`，那么等比级数收敛：`\sum_{n=0}^{\infty}a_0 q^n=\frac{a_0}{1-q}`（因为`lim_{N\rightarrow \infty}q^{N+1}=0`）</p>
+                <p>如果`|q|\geq 1`，那么等比级数发散</p>
+                <h2><a name="4.3">4.3 级数的敛散性判别 Test for convergence/divergence of series</a></h2>
+                <p>不像等比级数，对于很多其他级数，我们无法很快求出它的值，但至少可以判断它的敛散性</p>
+                <p>我们主要考虑正项级数（即级数的各项都是正数）；若级数的各项都是负数，则可以提出负号变成正项级数</p>
+                <p>先来区分两个概念：绝对收敛和条件收敛</p>
+                <p>绝对收敛指的是`\sum_{n=1}^{\infty}a_n`收敛，`\sum_{n=1}^{\infty}|a_n|`也收敛</p>
+                <p>条件收敛指的是`\sum_{n=1}^{\infty}a_n`收敛，而`\sum_{n=1}^{\infty}|a_n|`发散</p>
+                <p>下面将给出一些判别法的结论，过程可以自行证明</p>
+                <p style="font-weight:bold">1.第`n`项判别法</p>
+                <p>若`lim_{n\rightarrow \infty}a_n\ne 0`，或极限不存在，则级数`\sum_{n=1}^{\infty}a_n`发散</p>
+                <p>判断级数的敛散性时首先要用的就是这个方法，因为它可以帮你排除很多情况</p>
+                <p>要注意的是，这个方法不能判断级数的收敛，因为当`lim_{n\rightarrow \infty}a_n=0`时，级数既可能收敛也可能发散</p>
+                <p>比如`\sum_{n=0}^{\infty}x^2`显然发散，而`\sum_{n=0}^{\infty}\frac{1}{x}`无法根据第`n`项判别法判断它是收敛还是发散</p>
+                <p style="font-weight:bold">2.比值判别法</p>
+                <p>对于含有阶乘或者指数的正项级数，我们可以用比值判别法</p>
+                <p>若`L=\lim_{n\rightarrow \infty}|\frac{a_{n+1}}{a_n}|`，则`\sum_{n=1}^{\infty}a_n`在`L<1`时绝对收敛，在`L>1`时发散；但当`L=1`或极限不存在时，比值判别法无效</p>
+                <p>e.g. 判断级数`\sum_{n=2}^{\infty}\frac{4^n n!}{n^n}`的敛散性</p>
+                <p>因为`\lim_{n\rightarrow \infty}|\frac{a_{n+1}}{a_n}|=\lim_{n\rightarrow \infty}|\frac{\frac{4^{n+1} (n+1)!}{(n+1)^(n+1)}}{\frac{4^n n!}{n^n}}|=\lim_{n\rightarrow \infty}|\frac{4}{(1+\frac{1}{n})^n}|=\frac{4}{e}>1` 所以该级数发散</p>
+                <p style="font-weight:bold">3.积分判别法</p>
+                <p>对于一些正项级数，我们可以用积分判别法</p>
+                <p>若对<span style="color:red;font-weight:bold">连续递减</span>函数`f(x)`有`a_n=f(n)`，则`\sum_{n=N}^{\infty}a_n`与`\int_{N}^{\infty}f(x)dx`（`N`为正整数）有相同的敛散性</p>
+                <p>e.g. 判断级数`\sum_{n=2}^{\infty}\frac{1}{nln(n)}`的敛散性</p>
+                <p>我们发现`f(x)=\frac{1}{xln(x)}`是连续递减函数，所以可以用积分判别法</p>
+                <p>将此级数换成函数的反常积分：`\int_{2}^{\infty}\frac{1}{xln(x)}dx`</p>
+                <p>`\int_{2}^{\infty}\frac{1}{xln(x)}dx=\int_{ln(2)}^{\infty}\frac{1}{u}du`（`u=ln(x)`换元）</p>
+                <p>根据反常积分的`p`判别法，可知该积分发散，所以级数`\sum_{n=2}^{\infty}\frac{1}{nln(n)}`也发散</p>
+                <p style="font-weight:bold">4.`p`判别法</p>
+                <p>根据级数的积分判别法，我们可以得出与无穷限反常积分的`p`判别法非常相似的级数的`p`判别法</p>
+                <p>对于级数`\sum_{n=a}^{\infty}\frac{1}{n^p}(a\geq 1)`：当`p>1`时，该级数收敛；当`p\leq 1`时，该级数发散</p>
+                <p>对于任意的正实数`p`，我们称`\sum_{n=1}^{\infty}\frac{1}{n^p}`为`p`级数；当`p=1`时，我们称之为调和级数</p>
+                <p style="font-weight:bold">5.比较判别法的一般形式</p>
+                <p>我们在这里把`\sum_{n=1}^{\infty}a_n`当作待判别的级数</p>
+                <p>与无穷限的反常积分的比较判别法类似：（`\sum_{n=1}^{\infty}a_n`和`\sum_{n=1}^{\infty}b_n`是正项级数）</p>
+                <p>若对于所有`n`都有`a_n\geq b_n`且`\sum_{n=1}^{\infty}b_n`发散，则`\sum_{n=1}^{\infty}a_n`发散（小发大必发）</p>
+                <p>若对于所有`n`都有`a_n\leq b_n`且`\sum_{n=1}^{\infty}b_n`收敛，则`\sum_{n=1}^{\infty}a_n`收敛（大收小必收）</p>
+                <p>e.g. 判断级数`\sum_{n=1}^{\infty}(\frac{1}{2})^n|sin(n)|`的敛散性</p>
+                <p>因为`|sin(n)|\leq 1`，所以`\sum_{n=1}^{\infty}(\frac{1}{2})^n|sin(n)|\leq \sum_{n=1}^{\infty}(\frac{1}{2})^n`</p>
+                <p>我们已知`\sum_{n=1}^{\infty}(\frac{1}{2})^n`是收敛的（公比`q`为`\frac{1}{2}`的等比级数），所以`\sum_{n=1}^{\infty}(\frac{1}{2})^n|sin(n)|`也收敛</p>
+                <p style="font-weight:bold">6.比较判别法的极限形式</p>
+                <p>对于两个正项级数`\sum_{n=1}^{\infty}a_n`和`\sum_{n=1}^{\infty}b_n`，有`L=\lim_{n\rightarrow \infty}\frac{a_n}{b_n}`，</p>
+                <p>(1)当`0< L<\infty`时，`\sum_{n=1}^{\infty}b_n`与`\sum_{n=1}^{\infty}a_n`有相同的敛散性</p>
+                <p>(2)当`L=0`时，若`\sum_{n=1}^{\infty}b_n`收敛，`\sum_{n=1}^{\infty}a_n`也收敛（大收小必收）</p>
+                <p>(3)当`L=\infty`时，若`\sum_{n=1}^{\infty}b_n`发散，`\sum_{n=1}^{\infty}a_n`也发散（小发大必发）</p>
+                <p>e.g. 判断级数`\sum_{n=1}^{infty}\frac{n^2+3n+5}{n^3+2n^2+3}`的敛散性</p>
+                <p>因为`\lim_{n\rightarrow \infty}\frac{\frac{n^2+3n+5}{n^3+2n^2+3}}{\frac{n^2}{n^3}}=1`，且`\sum_{n=1}^{\infty}\frac{n^2}{n^3}=\sum_{n=1}^{\infty}\frac{1}{n}`发散</p>
+                <p>所以`\sum_{n=1}^{infty}\frac{n^2+3n+5}{n^3+2n^2+3}`也发散</p>
+                <p style="font-weight:bold">7.绝对收敛判别法</p>
+                <p>对于有正项也有负项的级数（且`lim_{n\rightarrow \infty}a_n=0`），我们首先考虑绝对收敛判别法</p>
+                <p>若`\sum_{n=1}^{\infty}|a_n|`收敛，则`\sum_{n=1}^{\infty}a_n`也收敛</p>
+                <p>如我们已知`\sum_{n=1}^{\infty}(\frac{1}{2})^n|sin(n)|`收敛，那么`\sum_{n=1}^{\infty}(\frac{1}{2})^n sin(n)`就绝对收敛</p>
+                <p style="font-weight:bold">8.交错级数判别法</p>
+                <p>交错级数是正项和负项交替出现的级数，即形如</p>
+                <p>`a_1-a_2+a_3-a_4+...=\sum_{n=1}^{\infty}(-1)^{n+1} a_n`</p>
+                <p>或</p>
+                <p>`-a_1+a_2-a_3+...=\sum_{n=1}^{\infty}(-1)^{n} a_n`</p>
+                <p>其中，`a_n>0,n=1,2,3,...`</p>
+                <br>
+                <p>我们常用莱布尼茨判别法来判断交错级数的敛散性，如果交错级数满足以下两个条件：</p>
+                <p>(1)数列`{a_n}`单调递减</p>
+                <p>(2)`\lim_{n\rightarrow \infty}a_n=0`</p>
+                <p>那么该交错级数收敛</p>
+                <p>如典型交错调和级数：`\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n}`</p>
+                <p>满足条件(1)`a_n=\frac{1}{n}`单调递减；(2)`\lim_{n\rightarrow \infty}a_n=\lim_{n\rightarrow \infty}\frac{1}{n}=0`，所以该级数收敛</p>
+                <p>又因为`\sum_{n=1}^{\infty}|\frac{(-1)^{n+1}}{n}|=\sum_{n=1}^{\infty}\frac{1}{n}`发散，所以该级数条件收敛</p>
+                <h2><a name="4.4">4.4 幂级数 Power series</a></h2>
+                <p>关于`x=a`的幂级数指的是`\sum_{n=0}^{\infty}a_n(x-a)^n=a_0+a_1(x-a)+a_2(x-a)^2+...`</p>
+                <p>我们知道当`x=a`时，幂级数肯定收敛；但是当`x`取其他值时，幂级数是收敛还是发散呢？</p>
+                <p>事实证明，只有如下三种情况：</p>
+                <div align="center">
+                    <img src="https://img-blog.csdnimg.cn/1caafd52ad394b5ea22c947a8b84463e.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQWVyb2JhdGljcw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" width="90%">
+                </div>
+                <p style="text-align:center">图 4-2</p>
+                <p>要注意收敛半径`R`围绕着的是收敛中心`x=a`</p>
+                <p>第一种情况是`0< R<\infty`，收敛区间除了包含`(a-R,a+R)`之外，还可能包含`a-R`和`a+R`两个端点，所以要另外判断</p>
+                <p>第二种情况是`R=\infty`；第三种情况是`R=0`</p>
+                <br>
+                <p>下面是一些例子：</p>
+                <p>第一种情况：求`\sum_{n=2}^{\infty}\frac{2^n(x-3)^n}{n ln(n)}`的收敛半径和收敛区间</p>
+                <p>用比值判别法：`L=\lim_{n\rightarrow \infty} |\frac{\frac{2^{n+1}(x-3)^{n+1}}{(n+1) ln(n+1)}}{\frac{2^n(x-3)^n}{n ln(n)}}|=\lim_{n\rightarrow \infty} 2|x-3|\frac{n}{n+1} \frac{ln(n)}{ln(n+1)}=2|x-3|`</p>
+                <p>由比值判别法，我们知道`L=2|x-3|<1\Rightarrow |x-3|<\frac{1}{2}`绝对收敛，而`L>1\Rightarrow |x-3|>\frac{1}{2}`发散，所以这个幂级数的收敛半径为`\frac{1}{2}`</p>
+                <p>现在来判断端点：</p>
+                <p>当`x-3=\frac{1}{2}`时，`\sum_{n=2}^{\infty}\frac{2^n(\frac{1}{2})^n}{n ln(n)}=\sum_{n=2}^{\infty}\frac{1}{n ln(n)}` 根据积分判别法，它发散</p>
+                <p>当`x-3=-\frac{1}{2}`时，`\sum_{n=2}^{\infty}\frac{2^n(-\frac{1}{2})^n}{n ln(n)}=\sum_{n=2}^{\infty}\frac{(-1)^n}{n ln(n)}` 根据交错级数判别法，它收敛</p>
+                <p>所以该幂级数在`|x-3|<\frac{1}{2}`绝对收敛，而在`x=\frac{5}{2}`条件收敛，它的收敛区间是`[\frac{5}{2},\frac{7}{2})`</p>
+                <p>第二种情况的一个例子是：`\sum_{n=0}^{\infty}\frac{x^n}{n!}` 用比值判别法你会发现它的`L`一直为`0`所以它的收敛半径是`infty`</p>
+                <p>第三种情况的一个例子是：`\sum_{n=0}^{\infty}n!x^n` 用比值判别法你会发现它的`L`一直为`\infty`所以它的收敛半径是`0`</p>
+                <h2><a name="4.5">4.5 泰勒多项式 Taylor polynomial</a></h2>
+                <p>我们在第二章中学过`f(x)`在`x=a`处的线性近似：`f(x)\approx L(x)=f(a)+f^{'}(a)(x-a)`</p>
+                <p>为什么我们只局限于线性近似呢？我们也可以用误差更小的`N`次多项式函数来近似</p>
+                <p>泰勒近似就是一种用多项式函数去逼近光滑函数（在定义域内具有任意阶导数的函数）的方法：</p>
+                <p>若`f(x)`在`x=a`光滑，则在所有次数为`N`或更低的多项式中，当`x`在`a`附近时，最近似于`f(x)`的是`P_{N}(x)=\sum_{n=0}^{N}\frac{f^{(n)}(a)}{n!}(x-a)^n=f(a)+f^{'}(a)(x-a)+\frac{f^{''}(a)}{2!}(x-a)^2+...+\frac{f^{(N)}(a)}{N!}(x-a)^N`</p>
+                <p>其中，`P_{N}(x)`叫做`f(x)`在`x=a`处的`N`阶泰勒多项式；注意：`0! =1`，`f^{(0)}(a)`和`f(a)`是一个东西</p>
+                <p>这样，对于所有从`0`到`N`的`n`，都有`P_{N}^{(n)}(a)=f^{(n)}(a)`</p>
+                <p>比如三阶泰勒多项式`P_{3}(x)=f(a)+f^{'}(a)(x-a)+\frac{f^{''}(a)}{2!}(x-a)^2+\frac{f^{(3)}(a)}{3!}(x-a)^3`</p>
+                <p>如果我们对它求二阶导的话，就可以得到：</p>
+                <p>`P_{3}^{'}(x)=f^{'}(a)+2*\frac{f^{''}(a)}{2!}(x-a)+3*\frac{f^{(3)}(a)}{3!}(x-a)^2`</p>
+                <p>`\Rightarrow P_{3}^{''}(x)=2*\frac{f^{''}(a)}{2!}+3*2*\frac{f^{(3)}(a)}{3!}(x-a)=f^{''}(a)+f^{(3)}(a)(x-a)`</p>
+                <p>当`x=a`时，`P_{3}^{''}(a)=f^{''}(a)`</p>
+                <p>既然这是近似的函数，那么误差(`f(x)-P_N(x)`)是什么呢？</p>
+                <p>对此，我们有`N`阶拉格朗日型余项（误差）`R_N(x)=\frac{f^{(N+1)}(c)}{(N+1)!}(x-a)^{N+1}`</p>
+                <p>其中`c`介于`x`与`a`之间，但是它一般不能确定</p>
+                <p>这样我们就可以写出关于`x=a`的`N`阶泰勒公式：`f(x)=P_{N}(x)+R_N(x)=\sum_{n=0}^{N}\frac{f^{(n)}(a)}{n!}(x-a)^n+\frac{f^{(N+1)}(c)}{(N+1)!}(x-a)^{N+1}`</p>
+                <p>特殊地，当`a=0`时，就是关于`x=0`的`N`阶泰勒公式（或者叫`N`阶麦克劳林公式）：`f(x)=P_{N}(x)+R_N(x)=\sum_{n=0}^{N}\frac{f^{(n)}(0)}{n!}x^n+\frac{f^{(N+1)}(c)}{(N+1)!}x^{N+1}`</p>
+                <p>这时`c`介于`x`与`0`之间</p>
+                <br>
+                <p>下面的例子可以帮助你更好地理解泰勒多项式和泰勒公式</p>
+                <p>我们现在想用泰勒多项式求`e^{0.9}`的近似值，怎么办呢？</p>
+                <p>首先构造一个函数`f(x)=e^x`，然后依次来看看它关于`x=a`的一阶、二阶和三阶泰勒多项式</p>
+                <p>这里我们选`a=0`因为`e^0=1`</p>
+                <p>再写泰勒多项式之前，我们得先知道一些关于`f(x)`的信息：</p>
+                <table width="50%" style="text-align:center">
+                    <tr>
+                        <th>`n`</th>
+                        <th>`f^{(n)}(x)`</th>
+                        <th>`f^{(n)}(0)`</th>
+                    </tr>
+                    <tr>
+                        <td>`0`</td>
+                        <td>`e^x`</td>
+                        <td>`1`</td>
+                    </tr>
+                    <tr>
+                        <td>`1`</td>
+                        <td>`e^x`</td>
+                        <td>`1`</td>
+                    </tr>
+                    <tr>
+                        <td>`2`</td>
+                        <td>`e^x`</td>
+                        <td>`1`</td>
+                    </tr>
+                    <tr>
+                        <td>`3`</td>
+                        <td>`e^x`</td>
+                        <td>`1`</td>
+                    </tr>
+                </table>
+                <p>很庆幸`f(x)=e^x`的`n`阶导数都是自己</p>
+                <p>接下来就可以写`N`阶泰勒多项式和`N`阶拉格朗日型余项了</p>
+                <p>一阶泰勒多项式：`P_1(x)=f(0)+f^{'}(0)x=1+x`</p>
+                <p>二阶泰勒多项式：`P_2(x)=P_1(x)+\frac{f^{''}(0)}{2!}x^2=1+x+\frac{x^2}{2}`</p>
+                <p>三阶泰勒多项式：`P_3(x)=P_2(x)+\frac{f^{(3)}(0)}{3!}x^3=1+x+\frac{x^2}{2}+\frac{x^3}{6}`</p>
+                <p>一阶拉格朗日型余项：`R_1(x)=\frac{f^{''}(c)}{2!}x^2=\frac{e^c}{2}x^2`</p>
+                <p>二阶拉格朗日型余项：`R_2(x)=\frac{f^{(3)}(c)}{3!}x^3=\frac{e^c}{6}x^3`</p>
+                <p>三阶拉格朗日型余项：`R_3(x)=\frac{f^{(4)}(c)}{4!}x^4=\frac{e^c}{24}x^4`</p>
+                <br>
+                <p>代入`x=0.9`求`f(0.9)=e^0.9`的近似</p>
+                <p>`P_1(0.9)=\frac{19}{10}=1.9`</p>
+                <p>`P_2(0.9)=\frac{461}{200}=2.305`</p>
+                <p>`P_3(0.9)=\frac{4853}{2000}\approx 2.4265`</p>
+                <p>尽管我们不能求出`c`具体的值，但我们仍然能求出余项（误差）绝对值的范围来</p>
+                <p>我们现在知道`c`在这里是介于`0`和`0.9`之间的，而且`f(x)=e^x`是增函数（假设我们不知道`e^0.9`具体的值，只知道它略小于`3`），所以（先代入`x=0.9`）</p>
+                <p>`|R_1(0.9)|=|\frac{e^c}{2}*0.9^2|=\frac{e^c}{2}*0.9^2<\frac{e^0.9}{2}*0.9^2<\frac{3}{2}*0.9^2=1.215`</p>
+                <p>`|R_2(0.9)|=|\frac{e^c}{6}*0.9^3|=\frac{e^c}{6}*0.9^3<\frac{e^0.9}{6}*0.9^3<\frac{3}{6}*0.9^3=0.3645`</p>
+                <p>`|R_3(0.9)|=|\frac{e^c}{24}*0.9^4|=\frac{e^c}{24}*0.9^4<\frac{e^0.9}{24}*0.9^4<\frac{3}{24}*0.9^4\approx 0.0820`</p>
+                <div align="center">
+                    <iframe src="https://www.desmos.com/calculator/nwru0yepi5?embed" width="700" height="700" style="border: 1px solid #ccc" frameborder=0></iframe>
+                </div>
+                <p>现在我们用计算机算出了`e^0.9`的实际值：`e\approx 2.4596`</p>
+                <p>将实际值与近似值的差计算出来，我们可以发现：真实的误差都在预计的误差范围内，而且随着泰勒多项式阶数的增加，近似值越来越接近实际值</p>
+                <h2><a name="4.6">4.6 泰勒级数 Taylor series</a></h2>
+                <p>有些（在定义域内有任意阶导数的）函数`f(x)`满足`\lim_{N\rightarrow \infty}R_N(x)=0`，当这样的函数展开成有无穷多阶的泰勒多项式时（这时候就叫泰勒级数了），误差会趋于零，`f(x)`就等于它的泰勒级数</p>
+                <p>用符号语言说就是：如果`f(x)`满足`\lim_{N\rightarrow \infty}R_N(x)=0`，那么`f(x)=\lim_{N\rightarrow \infty}(P_N(x)+R_N(x))=\lim_{N\rightarrow \infty}P_N(x)=\sum_{n=0}^{\infty}\frac{f^{(n)}(a)}{n!}(x-a)^n`</p>
+                <p>关于`x=0`的泰勒级数就叫麦克劳林级数，即`f(x)=\sum_{n=0}^{\infty}\frac{f^{(n)}(0)}{n!}x^n`</p>
+                <br>
+                <p>根据上一节的内容，我们知道`f(x)=e^x`关于`x=0`的`N`阶泰勒多项式为`P_N(x)=\sum_{n=0}^{N}\frac{x^n}{n!}=1+x+\frac{x^2}{2!}+...+\frac{x^N}{N!}`</p>
+                <p>它的`N`阶拉格朗日型余项是：`R_N(x)=\frac{e^c}{(N+1)!}x^{N+1}`（`c`介于`x`和`0`之间）</p>
+                <p>因为`\lim_{N\rightarrow \infty}\frac{x^{N+1}}{(N+1)!}=0`（可以自行证明）且`e^c`介于`e^0`和`e^x`之间，所以根据三明治定理可证`\lim_{N\rightarrow \infty}R_N(x)=0`</p>
+                <p>最后也就证明了`e^x=\sum_{n=0}^{\infty}\frac{x^n}{n!}=1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+...`</p>
+                <br>
+                <p>现在我们想关注`f(x)=sin(x)`能否展开为泰勒级数</p>
+                <p>我们还是选`a=0`因为这样做比较方便</p>
+                <p>和`f(x)=e^x`一样，我们还是先列出`sin(x)`的`N`阶导数然后写它的`N`阶泰勒多项式</p>
+                <table width="50%" style="text-align:center">
+                    <tr>
+                        <th>`n`</th>
+                        <th>`f^{(n)}(x)`</th>
+                        <th>`f^{(n)}(0)`</th>
+                    </tr>
+                    <tr>
+                        <td>`0`</td>
+                        <td>`sin(x)`</td>
+                        <td>`0`</td>
+                    </tr>
+                    <tr>
+                        <td>`1`</td>
+                        <td>`cos(x)`</td>
+                        <td>`1`</td>
+                    </tr>
+                    <tr>
+                        <td>`2`</td>
+                        <td>`-sin(x)`</td>
+                        <td>`0`</td>
+                    </tr>
+                    <tr>
+                        <td>`3`</td>
+                        <td>`-cos(x)`</td>
+                        <td>`-1`</td>
+                    </tr>
+                    <tr>
+                        <td>`\vdots`</td>
+                        <td>`\vdots`</td>
+                        <td>`\vdots`</td>
+                    </tr>
+                    <tr>
+                        <td>`4k`</td>
+                        <td>`sin(x)`</td>
+                        <td>`0`</td>
+                    </tr>
+                    <tr>
+                        <td>`4k+1`</td>
+                        <td>`cos(x)`</td>
+                        <td>`1`</td>
+                    </tr>
+                    <tr>
+                        <td>`4k+2`</td>
+                        <td>`-sin(x)`</td>
+                        <td>`0`</td>
+                    </tr>
+                    <tr>
+                        <td>`4k+3`</td>
+                        <td>`-cos(x)`</td>
+                        <td>`-1`</td>
+                    </tr>
+                    <tr>
+                        <td>`(k\in N)`</td>
+                    </tr>
+                </table>
+                <p>我们发现`sin(x)`的`N`阶导数只包含`\pm sin(x)`和`\pm cos(x)`，在`x=0`处的值是以`0,1,0, -1`为一周期不断循环，这样我们就可以写出它关于`x=0`的`N`阶泰勒多项式和拉格朗日型余项了</p>
+                <p>`P_N(x)=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\frac{x^7}{7!}+...+\frac{f^{(N)}(0)}{N!}x^N`</p>
+                <p>`R_N(x)=\frac{f^{(N+1)}(c)}{(N+1)!}x^{N+1}\Rightarrow |R_N(x)|=\frac{|f^{(N+1)}(c)|}{(N+1)!}|x|^{N+1}`（`c`介于`x`和`0`之间）</p>
+                <p>因为`|f^{(N+1)}(c)|`只可能是`|sin(x)|`或`|cos(x)|`，所以`0\leq |R_N(x)|\leq \frac{1}{(N+1)!}|x|^{N+1}`</p>
+                <p>又因为`\lim_{N\rightarrow \infty}\frac{|x|^{N+1}}{(N+1)!}=0`，所以`\lim_{N\rightarrow \infty}|R_N(x)|=0\Rightarrow \lim_{N\rightarrow \infty}R_N(x)=0`（三明治定理）</p>
+                <p>最后这也证明了`sin(x)=\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n+1}}{(2n+1)!}=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\frac{x^7}{7!}+...`</p>
+                <br>
+                <p>对于`f(x)=cos(x)`，我们也可以用类似的方法证明`cos(x)=\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n}}{(2n)!}=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\frac{x^6}{6!}+...`</p>
+                <p>`e^x`，`sin(x)`，`cos(x)`这三个函数都可展开成麦克劳林级数（幂级数），它们的收敛半径都为`\infty`</p>
+                <p>此外，我们可以写出关于等比级数的幂级数：`\frac{1}{1-x}=\sum_{n=0}^{\infty}x^n=1+x+x^2+...`，它的收敛区间为`(-1,1)`</p>
+                <br>
+                <p>我们可以用已有的泰勒级数去合成新的泰勒级数，有如下方法：</p>
+                <p style="font-weight:bold">1.代换</p>
+                <p>假如我们想求`e^{x^2}`的麦克劳林级数，我们可以把`e^x`的麦克劳林级数中的`x`代换成`x^2`</p>
+                <p>`e^{x^2}=\sum_{n=0}^{\infty}\frac{(x^2)^n}{n!}=1+x^2+\frac{(x^2)^2}{2!}+\frac{(x^2)^3}{3!}+...`</p>
+                <p>`\Rightarrow e^{x^2}=\sum_{n=0}^{\infty}\frac{x^{2n}}{n!}=1+x^2+\frac{x^4}{2!}+\frac{x^6}{3!}+...`</p>
+                <p>假如我们想求`\frac{1}{1+x^2}`的麦克劳林级数，我们可以把`\frac{1}{1-x}`的麦克劳林级数中的`x`代换成`-x^2`</p>
+                <p>`\frac{1}{1+x^2}=\sum_{n=0}^{\infty}(-x^2)^n=\sum_{n=0}^{\infty}(-1)^n x^{2n}=1-x^2+x^4-x^6+...</p>
+                <p>这个幂级数的收敛区间同样是`(-1,1)`</p>
+                <p style="font-weight:bold">2.求导</p>
+                <p>假如我们对`sin(x)=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\frac{x^7}{7!}+...`两边求导，就会得到</p>
+                <p>`cos(x)=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\frac{x^6}{6!}+...` 这是从另外一种途径证明`cos(x)`的麦克劳林级数</p>
+                <p style="font-weight:bold">3.求积分</p>
+                <p>对`\frac{1}{1+x^2}=1-x^2+x^4-x^6+...`两边求积分，可以得到`arctan(x)=C+x-\frac{x^3}{3}+\frac{x^5}{5}-\frac{x^7}{7}+...`</p>
+                <p>通过`arctan(0)=0`求出`C=0`，所以我们有`arctan(x)=x-\frac{x^3}{3}+\frac{x^5}{5}-\frac{x^7}{7}+...=\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n+1}}{2n+1}`</p>
+                <p>根据`\frac{1}{1+x^2}`的级数的收敛区间以及交错级数判别法，我们可以证明`arctan(x)`的级数的收敛区间应为`[-1,1]`</p>
+                <p style="font-weight:bold">4.四则运算</p>
+                <p>对于泰勒级数，我们显然可以对它们进行四则运算</p>
+                <p>如`sin(x)-e^x`的麦克劳林级数为`(x-\frac{x^3}{3!}+...)-(1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+...)=-1-\frac{x^2}{2!}-\frac{2x^3}{3!}`</p>
+                <br>
+                <p>我们总结出一些常用的幂级数：</p>
+                <div align="center">
+                    <img src="https://img-blog.csdnimg.cn/52eefc100a2e49c8b6b0cbd171f48d09.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQWVyb2JhdGljcw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" width="90%">
+                </div>
+                <p style="text-align:center">图 4-3</p>
+                <h2><a name="4.7">4.7 级数练习</a></h2>
+                <object data="../pdf/Calculus Extended 7-4, 7-5, 8-1.pdf" type="application/pdf" width="100%" height="700px"></object>
+                <hr>
+                <h1>级数是离散化的积分</h1>
             </div>
-            <p style="text-align:center">图 4-1</p>
-            <h2><a name="4.2">4.2 级数 Series</a></h2>
-            <p>如果从一个数列`{a_n}=a_1,a_2,...,a_n`的首项一直累加到第`N`项，我们就会得到部分和：</p>
-            <p>`S_N=\sum_{n=1}^{N}a_n=a_1+a_2+...+a_N`</p>
-            <p>无穷级数（简称级数）则是无穷数列所有项之和：`lim_{N\rightarrow \infty}\sum_{n=1}^{N}a_n`，记为`\sum_{n=1}^{\infty}a_n`</p>
-            <p>如果存在实数`S`，使得`lim_{N\rightarrow \infty}\sum_{n=1}^{N}a_n=S`，则级数`\sum_{n=1}^{\infty}a_n`收敛到`S`；如果不存在，则说该级数发散</p>
-            <p>级数也不必从`n=1`开始，从其他项数开始不会影响级数的敛散性，因为这只会差一个常数</p>
-            <br>
-            <p>对于等比数列，我们有等比级数（几何级数）：</p>
-            <p>`a_0(1+q+q^2+q^3+...)=\sum_{n=0}^{\infty}a_0 q^n`</p>
-            <p>想要求这个无穷级数的值，我们可以先看它的部分和：`S_N=\sum_{n=0}^{N}a_0 q^n=a_0(1+q+q^2+...+q^N)`</p>
-            <p>在等式两边乘以`q`，得到`q*S_N=a_0(q+q^2+...+q^N+q^{N+1})`</p>
-            <p>再将两式错位相减，得到`(1-q)S_N=a_0(1-q^{N+1})\Rightarrow S_N=a_0*\frac{(1-q^{N+1})}{1-q}(q\ne 1)`</p>
-            <p>当`q=1`时，`S_N=N*a_0`</p>
-            <p>如果`|q|<1`，那么等比级数收敛：`\sum_{n=0}^{\infty}a_0 q^n=\frac{a_0}{1-q}`（因为`lim_{N\rightarrow \infty}q^{N+1}=0`）</p>
-            <p>如果`|q|\geq 1`，那么等比级数发散</p>
-            <h2><a name="4.3">4.3 级数的敛散性判别 Test for convergence/divergence of series</a></h2>
-            <p>不像等比级数，对于很多其他级数，我们无法很快求出它的值，但至少可以判断它的敛散性</p>
-            <p>我们主要考虑正项级数（即级数的各项都是正数）；若级数的各项都是负数，则可以提出负号变成正项级数</p>
-            <p>先来区分两个概念：绝对收敛和条件收敛</p>
-            <p>绝对收敛指的是`\sum_{n=1}^{\infty}a_n`收敛，`\sum_{n=1}^{\infty}|a_n|`也收敛</p>
-            <p>条件收敛指的是`\sum_{n=1}^{\infty}a_n`收敛，而`\sum_{n=1}^{\infty}|a_n|`发散</p>
-            <p>下面将给出一些判别法的结论，过程可以自行证明</p>
-            <p style="font-weight:bold">1.第`n`项判别法</p>
-            <p>若`lim_{n\rightarrow \infty}a_n\ne 0`，或极限不存在，则级数`\sum_{n=1}^{\infty}a_n`发散</p>
-            <p>判断级数的敛散性时首先要用的就是这个方法，因为它可以帮你排除很多情况</p>
-            <p>要注意的是，这个方法不能判断级数的收敛，因为当`lim_{n\rightarrow \infty}a_n=0`时，级数既可能收敛也可能发散</p>
-            <p>比如`\sum_{n=0}^{\infty}x^2`显然发散，而`\sum_{n=0}^{\infty}\frac{1}{x}`无法根据第`n`项判别法判断它是收敛还是发散</p>
-            <p style="font-weight:bold">2.比值判别法</p>
-            <p>对于含有阶乘或者指数的正项级数，我们可以用比值判别法</p>
-            <p>若`L=\lim_{n\rightarrow \infty}|\frac{a_{n+1}}{a_n}|`，则`\sum_{n=1}^{\infty}a_n`在`L<1`时绝对收敛，在`L>1`时发散；但当`L=1`或极限不存在时，比值判别法无效</p>
-            <p>e.g. 判断级数`\sum_{n=2}^{\infty}\frac{4^n n!}{n^n}`的敛散性</p>
-            <p>因为`\lim_{n\rightarrow \infty}|\frac{a_{n+1}}{a_n}|=\lim_{n\rightarrow \infty}|\frac{\frac{4^{n+1} (n+1)!}{(n+1)^(n+1)}}{\frac{4^n n!}{n^n}}|=\lim_{n\rightarrow \infty}|\frac{4}{(1+\frac{1}{n})^n}|=\frac{4}{e}>1` 所以该级数发散</p>
-            <p style="font-weight:bold">3.积分判别法</p>
-            <p>对于一些正项级数，我们可以用积分判别法</p>
-            <p>若对<span style="color:red;font-weight:bold">连续递减</span>函数`f(x)`有`a_n=f(n)`，则`\sum_{n=N}^{\infty}a_n`与`\int_{N}^{\infty}f(x)dx`（`N`为正整数）有相同的敛散性</p>
-            <p>e.g. 判断级数`\sum_{n=2}^{\infty}\frac{1}{nln(n)}`的敛散性</p>
-            <p>我们发现`f(x)=\frac{1}{xln(x)}`是连续递减函数，所以可以用积分判别法</p>
-            <p>将此级数换成函数的反常积分：`\int_{2}^{\infty}\frac{1}{xln(x)}dx`</p>
-            <p>`\int_{2}^{\infty}\frac{1}{xln(x)}dx=\int_{ln(2)}^{\infty}\frac{1}{u}du`（`u=ln(x)`换元）</p>
-            <p>根据反常积分的`p`判别法，可知该积分发散，所以级数`\sum_{n=2}^{\infty}\frac{1}{nln(n)}`也发散</p>
-            <p style="font-weight:bold">4.`p`判别法</p>
-            <p>根据级数的积分判别法，我们可以得出与无穷限反常积分的`p`判别法非常相似的级数的`p`判别法</p>
-            <p>对于级数`\sum_{n=a}^{\infty}\frac{1}{n^p}(a\geq 1)`：当`p>1`时，该级数收敛；当`p\leq 1`时，该级数发散</p>
-            <p>对于任意的正实数`p`，我们称`\sum_{n=1}^{\infty}\frac{1}{n^p}`为`p`级数；当`p=1`时，我们称之为调和级数</p>
-            <p style="font-weight:bold">5.比较判别法的一般形式</p>
-            <p>我们在这里把`\sum_{n=1}^{\infty}a_n`当作待判别的级数</p>
-            <p>与无穷限的反常积分的比较判别法类似：（`\sum_{n=1}^{\infty}a_n`和`\sum_{n=1}^{\infty}b_n`是正项级数）</p>
-            <p>若对于所有`n`都有`a_n\geq b_n`且`\sum_{n=1}^{\infty}b_n`发散，则`\sum_{n=1}^{\infty}a_n`发散（小发大必发）</p>
-            <p>若对于所有`n`都有`a_n\leq b_n`且`\sum_{n=1}^{\infty}b_n`收敛，则`\sum_{n=1}^{\infty}a_n`收敛（大收小必收）</p>
-            <p>e.g. 判断级数`\sum_{n=1}^{\infty}(\frac{1}{2})^n|sin(n)|`的敛散性</p>
-            <p>因为`|sin(n)|\leq 1`，所以`\sum_{n=1}^{\infty}(\frac{1}{2})^n|sin(n)|\leq \sum_{n=1}^{\infty}(\frac{1}{2})^n`</p>
-            <p>我们已知`\sum_{n=1}^{\infty}(\frac{1}{2})^n`是收敛的（公比`q`为`\frac{1}{2}`的等比级数），所以`\sum_{n=1}^{\infty}(\frac{1}{2})^n|sin(n)|`也收敛</p>
-            <p style="font-weight:bold">6.比较判别法的极限形式</p>
-            <p>对于两个正项级数`\sum_{n=1}^{\infty}a_n`和`\sum_{n=1}^{\infty}b_n`，有`L=\lim_{n\rightarrow \infty}\frac{a_n}{b_n}`，</p>
-            <p>(1)当`0< L<\infty`时，`\sum_{n=1}^{\infty}b_n`与`\sum_{n=1}^{\infty}a_n`有相同的敛散性</p>
-            <p>(2)当`L=0`时，若`\sum_{n=1}^{\infty}b_n`收敛，`\sum_{n=1}^{\infty}a_n`也收敛（大收小必收）</p>
-            <p>(3)当`L=\infty`时，若`\sum_{n=1}^{\infty}b_n`发散，`\sum_{n=1}^{\infty}a_n`也发散（小发大必发）</p>
-            <p>e.g. 判断级数`\sum_{n=1}^{infty}\frac{n^2+3n+5}{n^3+2n^2+3}`的敛散性</p>
-            <p>因为`\lim_{n\rightarrow \infty}\frac{\frac{n^2+3n+5}{n^3+2n^2+3}}{\frac{n^2}{n^3}}=1`，且`\sum_{n=1}^{\infty}\frac{n^2}{n^3}=\sum_{n=1}^{\infty}\frac{1}{n}`发散</p>
-            <p>所以`\sum_{n=1}^{infty}\frac{n^2+3n+5}{n^3+2n^2+3}`也发散</p>
-            <p style="font-weight:bold">7.绝对收敛判别法</p>
-            <p>对于有正项也有负项的级数（且`lim_{n\rightarrow \infty}a_n=0`），我们首先考虑绝对收敛判别法</p>
-            <p>若`\sum_{n=1}^{\infty}|a_n|`收敛，则`\sum_{n=1}^{\infty}a_n`也收敛</p>
-            <p>如我们已知`\sum_{n=1}^{\infty}(\frac{1}{2})^n|sin(n)|`收敛，那么`\sum_{n=1}^{\infty}(\frac{1}{2})^n sin(n)`就绝对收敛</p>
-            <p style="font-weight:bold">8.交错级数判别法</p>
-            <p>交错级数是正项和负项交替出现的级数，即形如</p>
-            <p>`a_1-a_2+a_3-a_4+...=\sum_{n=1}^{\infty}(-1)^{n+1} a_n`</p>
-            <p>或</p>
-            <p>`-a_1+a_2-a_3+...=\sum_{n=1}^{\infty}(-1)^{n} a_n`</p>
-            <p>其中，`a_n>0,n=1,2,3,...`</p>
-            <br>
-            <p>我们常用莱布尼茨判别法来判断交错级数的敛散性，如果交错级数满足以下两个条件：</p>
-            <p>(1)数列`{a_n}`单调递减</p>
-            <p>(2)`\lim_{n\rightarrow \infty}a_n=0`</p>
-            <p>那么该交错级数收敛</p>
-            <p>如典型交错调和级数：`\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n}`</p>
-            <p>满足条件(1)`a_n=\frac{1}{n}`单调递减；(2)`\lim_{n\rightarrow \infty}a_n=\lim_{n\rightarrow \infty}\frac{1}{n}=0`，所以该级数收敛</p>
-            <p>又因为`\sum_{n=1}^{\infty}|\frac{(-1)^{n+1}}{n}|=\sum_{n=1}^{\infty}\frac{1}{n}`发散，所以该级数条件收敛</p>
-            <h2><a name="4.4">4.4 幂级数 Power series</a></h2>
-            <p>关于`x=a`的幂级数指的是`\sum_{n=0}^{\infty}a_n(x-a)^n=a_0+a_1(x-a)+a_2(x-a)^2+...`</p>
-            <p>我们知道当`x=a`时，幂级数肯定收敛；但是当`x`取其他值时，幂级数是收敛还是发散呢？</p>
-            <p>事实证明，只有如下三种情况：</p>
-            <div align="center">
-                <img src="https://img-blog.csdnimg.cn/1caafd52ad394b5ea22c947a8b84463e.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQWVyb2JhdGljcw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" width="90%">
-            </div>
-            <p style="text-align:center">图 4-2</p>
-            <p>要注意收敛半径`R`围绕着的是收敛中心`x=a`</p>
-            <p>第一种情况是`0< R<\infty`，收敛区间除了包含`(a-R,a+R)`之外，还可能包含`a-R`和`a+R`两个端点，所以要另外判断</p>
-            <p>第二种情况是`R=\infty`；第三种情况是`R=0`</p>
-            <br>
-            <p>下面是一些例子：</p>
-            <p>第一种情况：求`\sum_{n=2}^{\infty}\frac{2^n(x-3)^n}{n ln(n)}`的收敛半径和收敛区间</p>
-            <p>用比值判别法：`L=\lim_{n\rightarrow \infty} |\frac{\frac{2^{n+1}(x-3)^{n+1}}{(n+1) ln(n+1)}}{\frac{2^n(x-3)^n}{n ln(n)}}|=\lim_{n\rightarrow \infty} 2|x-3|\frac{n}{n+1} \frac{ln(n)}{ln(n+1)}=2|x-3|`</p>
-            <p>由比值判别法，我们知道`L=2|x-3|<1\Rightarrow |x-3|<\frac{1}{2}`绝对收敛，而`L>1\Rightarrow |x-3|>\frac{1}{2}`发散，所以这个幂级数的收敛半径为`\frac{1}{2}`</p>
-            <p>现在来判断端点：</p>
-            <p>当`x-3=\frac{1}{2}`时，`\sum_{n=2}^{\infty}\frac{2^n(\frac{1}{2})^n}{n ln(n)}=\sum_{n=2}^{\infty}\frac{1}{n ln(n)}` 根据积分判别法，它发散</p>
-            <p>当`x-3=-\frac{1}{2}`时，`\sum_{n=2}^{\infty}\frac{2^n(-\frac{1}{2})^n}{n ln(n)}=\sum_{n=2}^{\infty}\frac{(-1)^n}{n ln(n)}` 根据交错级数判别法，它收敛</p>
-            <p>所以该幂级数在`|x-3|<\frac{1}{2}`绝对收敛，而在`x=\frac{5}{2}`条件收敛，它的收敛区间是`[\frac{5}{2},\frac{7}{2})`</p>
-            <p>第二种情况的一个例子是：`\sum_{n=0}^{\infty}\frac{x^n}{n!}` 用比值判别法你会发现它的`L`一直为`0`所以它的收敛半径是`infty`</p>
-            <p>第三种情况的一个例子是：`\sum_{n=0}^{\infty}n!x^n` 用比值判别法你会发现它的`L`一直为`\infty`所以它的收敛半径是`0`</p>
-            <h2><a name="4.5">4.5 泰勒多项式 Taylor polynomial</a></h2>
-            <p>我们在第二章中学过`f(x)`在`x=a`处的线性近似：`f(x)\approx L(x)=f(a)+f^{'}(a)(x-a)`</p>
-            <p>为什么我们只局限于线性近似呢？我们也可以用误差更小的`N`次多项式函数来近似</p>
-            <p>泰勒近似就是一种用多项式函数去逼近光滑函数（在定义域内具有任意阶导数的函数）的方法：</p>
-            <p>若`f(x)`在`x=a`光滑，则在所有次数为`N`或更低的多项式中，当`x`在`a`附近时，最近似于`f(x)`的是`P_{N}(x)=\sum_{n=0}^{N}\frac{f^{(n)}(a)}{n!}(x-a)^n=f(a)+f^{'}(a)(x-a)+\frac{f^{''}(a)}{2!}(x-a)^2+...+\frac{f^{(N)}(a)}{N!}(x-a)^N`</p>
-            <p>其中，`P_{N}(x)`叫做`f(x)`在`x=a`处的`N`阶泰勒多项式；注意：`0! =1`，`f^{(0)}(a)`和`f(a)`是一个东西</p>
-            <p>这样，对于所有从`0`到`N`的`n`，都有`P_{N}^{(n)}(a)=f^{(n)}(a)`</p>
-            <p>比如三阶泰勒多项式`P_{3}(x)=f(a)+f^{'}(a)(x-a)+\frac{f^{''}(a)}{2!}(x-a)^2+\frac{f^{(3)}(a)}{3!}(x-a)^3`</p>
-            <p>如果我们对它求二阶导的话，就可以得到：</p>
-            <p>`P_{3}^{'}(x)=f^{'}(a)+2*\frac{f^{''}(a)}{2!}(x-a)+3*\frac{f^{(3)}(a)}{3!}(x-a)^2`</p>
-            <p>`\Rightarrow P_{3}^{''}(x)=2*\frac{f^{''}(a)}{2!}+3*2*\frac{f^{(3)}(a)}{3!}(x-a)=f^{''}(a)+f^{(3)}(a)(x-a)`</p>
-            <p>当`x=a`时，`P_{3}^{''}(a)=f^{''}(a)`</p>
-            <p>既然这是近似的函数，那么误差(`f(x)-P_N(x)`)是什么呢？</p>
-            <p>对此，我们有`N`阶拉格朗日型余项（误差）`R_N(x)=\frac{f^{(N+1)}(c)}{(N+1)!}(x-a)^{N+1}`</p>
-            <p>其中`c`介于`x`与`a`之间，但是它一般不能确定</p>
-            <p>这样我们就可以写出关于`x=a`的`N`阶泰勒公式：`f(x)=P_{N}(x)+R_N(x)=\sum_{n=0}^{N}\frac{f^{(n)}(a)}{n!}(x-a)^n+\frac{f^{(N+1)}(c)}{(N+1)!}(x-a)^{N+1}`</p>
-            <p>特殊地，当`a=0`时，就是关于`x=0`的`N`阶泰勒公式（或者叫`N`阶麦克劳林公式）：`f(x)=P_{N}(x)+R_N(x)=\sum_{n=0}^{N}\frac{f^{(n)}(0)}{n!}x^n+\frac{f^{(N+1)}(c)}{(N+1)!}x^{N+1}`</p>
-            <p>这时`c`介于`x`与`0`之间</p>
-            <br>
-            <p>下面的例子可以帮助你更好地理解泰勒多项式和泰勒公式</p>
-            <p>我们现在想用泰勒多项式求`e^{0.9}`的近似值，怎么办呢？</p>
-            <p>首先构造一个函数`f(x)=e^x`，然后依次来看看它关于`x=a`的一阶、二阶和三阶泰勒多项式</p>
-            <p>这里我们选`a=0`因为`e^0=1`</p>
-            <p>再写泰勒多项式之前，我们得先知道一些关于`f(x)`的信息：</p>
-            <table width="50%" style="text-align:center">
-                <tr>
-                    <th>`n`</th>
-                    <th>`f^{(n)}(x)`</th>
-                    <th>`f^{(n)}(0)`</th>
-                </tr>
-                <tr>
-                    <td>`0`</td>
-                    <td>`e^x`</td>
-                    <td>`1`</td>
-                </tr>
-                <tr>
-                    <td>`1`</td>
-                    <td>`e^x`</td>
-                    <td>`1`</td>
-                </tr>
-                <tr>
-                    <td>`2`</td>
-                    <td>`e^x`</td>
-                    <td>`1`</td>
-                </tr>
-                <tr>
-                    <td>`3`</td>
-                    <td>`e^x`</td>
-                    <td>`1`</td>
-                </tr>
-            </table>
-            <p>很庆幸`f(x)=e^x`的`n`阶导数都是自己</p>
-            <p>接下来就可以写`N`阶泰勒多项式和`N`阶拉格朗日型余项了</p>
-            <p>一阶泰勒多项式：`P_1(x)=f(0)+f^{'}(0)x=1+x`</p>
-            <p>二阶泰勒多项式：`P_2(x)=P_1(x)+\frac{f^{''}(0)}{2!}x^2=1+x+\frac{x^2}{2}`</p>
-            <p>三阶泰勒多项式：`P_3(x)=P_2(x)+\frac{f^{(3)}(0)}{3!}x^3=1+x+\frac{x^2}{2}+\frac{x^3}{6}`</p>
-            <p>一阶拉格朗日型余项：`R_1(x)=\frac{f^{''}(c)}{2!}x^2=\frac{e^c}{2}x^2`</p>
-            <p>二阶拉格朗日型余项：`R_2(x)=\frac{f^{(3)}(c)}{3!}x^3=\frac{e^c}{6}x^3`</p>
-            <p>三阶拉格朗日型余项：`R_3(x)=\frac{f^{(4)}(c)}{4!}x^4=\frac{e^c}{24}x^4`</p>
-            <br>
-            <p>代入`x=0.9`求`f(0.9)=e^0.9`的近似</p>
-            <p>`P_1(0.9)=\frac{19}{10}=1.9`</p>
-            <p>`P_2(0.9)=\frac{461}{200}=2.305`</p>
-            <p>`P_3(0.9)=\frac{4853}{2000}\approx 2.4265`</p>
-            <p>尽管我们不能求出`c`具体的值，但我们仍然能求出余项（误差）绝对值的范围来</p>
-            <p>我们现在知道`c`在这里是介于`0`和`0.9`之间的，而且`f(x)=e^x`是增函数（假设我们不知道`e^0.9`具体的值，只知道它略小于`3`），所以（先代入`x=0.9`）</p>
-            <p>`|R_1(0.9)|=|\frac{e^c}{2}*0.9^2|=\frac{e^c}{2}*0.9^2<\frac{e^0.9}{2}*0.9^2<\frac{3}{2}*0.9^2=1.215`</p>
-            <p>`|R_2(0.9)|=|\frac{e^c}{6}*0.9^3|=\frac{e^c}{6}*0.9^3<\frac{e^0.9}{6}*0.9^3<\frac{3}{6}*0.9^3=0.3645`</p>
-            <p>`|R_3(0.9)|=|\frac{e^c}{24}*0.9^4|=\frac{e^c}{24}*0.9^4<\frac{e^0.9}{24}*0.9^4<\frac{3}{24}*0.9^4\approx 0.0820`</p>
-            <div align="center">
-                <iframe src="https://www.desmos.com/calculator/nwru0yepi5?embed" width="700" height="700" style="border: 1px solid #ccc" frameborder=0></iframe>
-            </div>
-            <p>现在我们用计算机算出了`e^0.9`的实际值：`e\approx 2.4596`</p>
-            <p>将实际值与近似值的差计算出来，我们可以发现：真实的误差都在预计的误差范围内，而且随着泰勒多项式阶数的增加，近似值越来越接近实际值</p>
-            <h2><a name="4.6">4.6 泰勒级数 Taylor series</a></h2>
-            <p>有些（在定义域内有任意阶导数的）函数`f(x)`满足`\lim_{N\rightarrow \infty}R_N(x)=0`，当这样的函数展开成有无穷多阶的泰勒多项式时（这时候就叫泰勒级数了），误差会趋于零，`f(x)`就等于它的泰勒级数</p>
-            <p>用符号语言说就是：如果`f(x)`满足`\lim_{N\rightarrow \infty}R_N(x)=0`，那么`f(x)=\lim_{N\rightarrow \infty}(P_N(x)+R_N(x))=\lim_{N\rightarrow \infty}P_N(x)=\sum_{n=0}^{\infty}\frac{f^{(n)}(a)}{n!}(x-a)^n`</p>
-            <p>关于`x=0`的泰勒级数就叫麦克劳林级数，即`f(x)=\sum_{n=0}^{\infty}\frac{f^{(n)}(0)}{n!}x^n`</p>
-            <br>
-            <p>根据上一节的内容，我们知道`f(x)=e^x`关于`x=0`的`N`阶泰勒多项式为`P_N(x)=\sum_{n=0}^{N}\frac{x^n}{n!}=1+x+\frac{x^2}{2!}+...+\frac{x^N}{N!}`</p>
-            <p>它的`N`阶拉格朗日型余项是：`R_N(x)=\frac{e^c}{(N+1)!}x^{N+1}`（`c`介于`x`和`0`之间）</p>
-            <p>因为`\lim_{N\rightarrow \infty}\frac{x^{N+1}}{(N+1)!}=0`（可以自行证明）且`e^c`介于`e^0`和`e^x`之间，所以根据三明治定理可证`\lim_{N\rightarrow \infty}R_N(x)=0`</p>
-            <p>最后也就证明了`e^x=\sum_{n=0}^{\infty}\frac{x^n}{n!}=1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+...`</p>
-            <br>
-            <p>现在我们想关注`f(x)=sin(x)`能否展开为泰勒级数</p>
-            <p>我们还是选`a=0`因为这样做比较方便</p>
-            <p>和`f(x)=e^x`一样，我们还是先列出`sin(x)`的`N`阶导数然后写它的`N`阶泰勒多项式</p>
-            <table width="50%" style="text-align:center">
-                <tr>
-                    <th>`n`</th>
-                    <th>`f^{(n)}(x)`</th>
-                    <th>`f^{(n)}(0)`</th>
-                </tr>
-                <tr>
-                    <td>`0`</td>
-                    <td>`sin(x)`</td>
-                    <td>`0`</td>
-                </tr>
-                <tr>
-                    <td>`1`</td>
-                    <td>`cos(x)`</td>
-                    <td>`1`</td>
-                </tr>
-                <tr>
-                    <td>`2`</td>
-                    <td>`-sin(x)`</td>
-                    <td>`0`</td>
-                </tr>
-                <tr>
-                    <td>`3`</td>
-                    <td>`-cos(x)`</td>
-                    <td>`-1`</td>
-                </tr>
-                <tr>
-                    <td>`\vdots`</td>
-                    <td>`\vdots`</td>
-                    <td>`\vdots`</td>
-                </tr>
-                <tr>
-                    <td>`4k`</td>
-                    <td>`sin(x)`</td>
-                    <td>`0`</td>
-                </tr>
-                <tr>
-                    <td>`4k+1`</td>
-                    <td>`cos(x)`</td>
-                    <td>`1`</td>
-                </tr>
-                <tr>
-                    <td>`4k+2`</td>
-                    <td>`-sin(x)`</td>
-                    <td>`0`</td>
-                </tr>
-                <tr>
-                    <td>`4k+3`</td>
-                    <td>`-cos(x)`</td>
-                    <td>`-1`</td>
-                </tr>
-                <tr>
-                    <td>`(k\in N)`</td>
-                </tr>
-            </table>
-            <p>我们发现`sin(x)`的`N`阶导数只包含`\pm sin(x)`和`\pm cos(x)`，在`x=0`处的值是以`0,1,0, -1`为一周期不断循环，这样我们就可以写出它关于`x=0`的`N`阶泰勒多项式和拉格朗日型余项了</p>
-            <p>`P_N(x)=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\frac{x^7}{7!}+...+\frac{f^{(N)}(0)}{N!}x^N`</p>
-            <p>`R_N(x)=\frac{f^{(N+1)}(c)}{(N+1)!}x^{N+1}\Rightarrow |R_N(x)|=\frac{|f^{(N+1)}(c)|}{(N+1)!}|x|^{N+1}`（`c`介于`x`和`0`之间）</p>
-            <p>因为`|f^{(N+1)}(c)|`只可能是`|sin(x)|`或`|cos(x)|`，所以`0\leq |R_N(x)|\leq \frac{1}{(N+1)!}|x|^{N+1}`</p>
-            <p>又因为`\lim_{N\rightarrow \infty}\frac{|x|^{N+1}}{(N+1)!}=0`，所以`\lim_{N\rightarrow \infty}|R_N(x)|=0\Rightarrow \lim_{N\rightarrow \infty}R_N(x)=0`（三明治定理）</p>
-            <p>最后这也证明了`sin(x)=\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n+1}}{(2n+1)!}=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\frac{x^7}{7!}+...`</p>
-            <br>
-            <p>对于`f(x)=cos(x)`，我们也可以用类似的方法证明`cos(x)=\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n}}{(2n)!}=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\frac{x^6}{6!}+...`</p>
-            <p>`e^x`，`sin(x)`，`cos(x)`这三个函数都可展开成麦克劳林级数（幂级数），它们的收敛半径都为`\infty`</p>
-            <p>此外，我们可以写出关于等比级数的幂级数：`\frac{1}{1-x}=\sum_{n=0}^{\infty}x^n=1+x+x^2+...`，它的收敛区间为`(-1,1)`</p>
-            <br>
-            <p>我们可以用已有的泰勒级数去合成新的泰勒级数，有如下方法：</p>
-            <p style="font-weight:bold">1.代换</p>
-            <p>假如我们想求`e^{x^2}`的麦克劳林级数，我们可以把`e^x`的麦克劳林级数中的`x`代换成`x^2`</p>
-            <p>`e^{x^2}=\sum_{n=0}^{\infty}\frac{(x^2)^n}{n!}=1+x^2+\frac{(x^2)^2}{2!}+\frac{(x^2)^3}{3!}+...`</p>
-            <p>`\Rightarrow e^{x^2}=\sum_{n=0}^{\infty}\frac{x^{2n}}{n!}=1+x^2+\frac{x^4}{2!}+\frac{x^6}{3!}+...`</p>
-            <p>假如我们想求`\frac{1}{1+x^2}`的麦克劳林级数，我们可以把`\frac{1}{1-x}`的麦克劳林级数中的`x`代换成`-x^2`</p>
-            <p>`\frac{1}{1+x^2}=\sum_{n=0}^{\infty}(-x^2)^n=\sum_{n=0}^{\infty}(-1)^n x^{2n}=1-x^2+x^4-x^6+...</p>
-            <p>这个幂级数的收敛区间同样是`(-1,1)`</p>
-            <p style="font-weight:bold">2.求导</p>
-            <p>假如我们对`sin(x)=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\frac{x^7}{7!}+...`两边求导，就会得到</p>
-            <p>`cos(x)=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\frac{x^6}{6!}+...` 这是从另外一种途径证明`cos(x)`的麦克劳林级数</p>
-            <p style="font-weight:bold">3.求积分</p>
-            <p>对`\frac{1}{1+x^2}=1-x^2+x^4-x^6+...`两边求积分，可以得到`arctan(x)=C+x-\frac{x^3}{3}+\frac{x^5}{5}-\frac{x^7}{7}+...`</p>
-            <p>通过`arctan(0)=0`求出`C=0`，所以我们有`arctan(x)=x-\frac{x^3}{3}+\frac{x^5}{5}-\frac{x^7}{7}+...=\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n+1}}{2n+1}`</p>
-            <p>根据`\frac{1}{1+x^2}`的级数的收敛区间以及交错级数判别法，我们可以证明`arctan(x)`的级数的收敛区间应为`[-1,1]`</p>
-            <p style="font-weight:bold">4.四则运算</p>
-            <p>对于泰勒级数，我们显然可以对它们进行四则运算</p>
-            <p>如`sin(x)-e^x`的麦克劳林级数为`(x-\frac{x^3}{3!}+...)-(1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+...)=-1-\frac{x^2}{2!}-\frac{2x^3}{3!}`</p>
-            <br>
-            <p>我们总结出一些常用的幂级数：</p>
-            <div align="center">
-                <img src="https://img-blog.csdnimg.cn/52eefc100a2e49c8b6b0cbd171f48d09.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQWVyb2JhdGljcw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" width="90%">
-            </div>
-            <p style="text-align:center">图 4-3</p>
-            <h2><a name="4.7">4.7 级数练习</a></h2>
-            <object data="../pdf/Calculus Extended 7-4, 7-5, 8-1.pdf" type="application/pdf" width="100%" height="700px"></object>
-            <hr>
-            <h1>级数是离散化的积分</h1>
         </div>
     </div>
     <div id="back_to_top">
