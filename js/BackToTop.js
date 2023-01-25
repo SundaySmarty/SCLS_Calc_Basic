@@ -1,4 +1,4 @@
-window.onload = function() {
+window.addEventListener("DOMContentLoaded", function() {
     var cssStyleSheets = document.styleSheets;
     function getStyle(cssName, selectorName) {
         let cssTargetIndex, targetStyleIndex;
@@ -29,4 +29,4 @@ window.onload = function() {
     document.getElementById("back_to_top").onclick = function() {
         document.documentElement.scrollTop = document.body.scrollTop = 0;
     }
-}
+})
