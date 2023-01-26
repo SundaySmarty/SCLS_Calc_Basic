@@ -48,11 +48,12 @@ html {
 }
 .catalog_left {
     width: 15%;
-    height: auto;
     float: left;
     background-color: #F8F8FF;
     color: #778899;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .catalog_right {
     width: 85%;
@@ -96,6 +97,7 @@ html {
     }
     .catalog_left {
         width: 100%;
+        height: 60px;
     }
     .catalog_right {
         width: 100%;
@@ -127,6 +129,7 @@ html {
     }
     .catalog_left {
         width: 100%;
+        height: 60px;
     }
     .catalog_right {
         width: 100%;
