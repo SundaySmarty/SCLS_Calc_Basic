@@ -67,17 +67,18 @@
                 <p>其<span style="color:red;font-weight:bold">斜率</span>也可以写成下图的形式：`\frac{f(x+\Delta x)-f(x)}{\Delta x}=\frac{\Delta y}{\Delta x}`</p>
                 <p>`\frac{\Delta y}{\Delta x}`就是函数`f(x)`在某点`(x,f(x))`处增量为`\Delta x`的<span style="color:red;font-weight:bold">平均变化率</span></p>
                 <div align="center">
-                    <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.51wendang.com%2Fpic%2Fab88fd14d945d0da053ddf87%2F4-810-jpg_6-1080-0-0-1080.jpg&refer=http%3A%2F%2Fwww.51wendang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1657599662&t=a98987e614e4589285224bdb37d74840" width="80%">
+                    <img src="../img/2-1.png" width="80%">
                 </div>
                 <p style="text-align:center">图 2-1</p>
                 <p>此处可以联想到平均速度的概念：`\bar v=\frac{\Delta x}{\Delta t}`（`\Delta x`是位移）</p>
                 <h2><a name="2.2">2.2 切线和瞬时变化率 Tangent Line and Instantaneous Rate of Change</a></h2>
                 <p>当`\Delta x`越来越接近于0的时候，割线就越来越靠近过点`(x,f(x))`的切线</p>
                 <p>在这里我们姑且把（微小的）增量叫做`h`好了</p>
-                <p>用极限表示这条过`(x,f(x))`<span style="color:red;font-weight:bold">切线的斜率</span>就是：`\lim_{h\rightarrow 0}\frac{f(x+h)-f(x)}{h}`</p>
+                <p>用极限表示这条过`(x,f(x))`<span style="color:red;font-weight:bold">切线的斜率</span>就是：</p>
+                <p>`\lim_{h\rightarrow 0}\frac{f(x+h)-f(x)}{h}`</p>
                 <p>这就是在某点`(x,f(x))`处的<span style="color:red;font-weight:bold">瞬时变化率</span></p>
                 <div align="center">
-                    <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20171204%2Fee73475b065b44aa89df368f2f6cbab2.gif&refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1657599691&t=74ddab66d3ee8ff2418469e104913536" width="100%">
+                    <img src="../img/2-2.gif" width="100%">
                 </div>
                 <p style="text-align:center">图 2-2</p>
                 <p>这个瞬时变化率还有另外一种表示形式（等价转换），如下图：</p>
@@ -85,7 +86,7 @@
                 <p>`h`还是那个微小的增量，即`z-x`</p>
                 <p>看到下图的`f^{'}(x)`，你可能还不知道那是什么，没关系，你马上就知道了（你就当它是切线的斜率或者瞬时变化率）</p>
                 <div align="center">
-                    <img src="https://img-blog.csdnimg.cn/095114f538d24fdd9f75bd1cc2586527.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQWVyb2JhdGljcw==,size_11,color_FFFFFF,t_70,g_se,x_16#pic_center" width="60%">
+                    <img src="../img/2-3.png" width="60%">
                 </div>
                 <p style="text-align:center">图 2-3</p>
                 <p>此处又可以联想到瞬时速度的概念：`v=\lim_{\Delta t\rightarrow 0}\frac{\Delta x}{\Delta t}`</p>
@@ -113,7 +114,7 @@
                 <p>对于一个函数，<span style="color:red;font-weight:bold">可导必连续，不连续必不可导，连续不一定可导</span></p>
                 <p>下面是证明：</p>
                 <div align="center">
-                    <img src="https://img-blog.csdnimg.cn/4d901c883c684cf2ad62c24a0b0473a2.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQWVyb2JhdGljcw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" width="100%">
+                    <img src="../img/2-4.png" width="100%">
                 </div>
                 <p style="text-align:center">图 2-4</p>
                 <h2><a name="2.5">2.5 求导 Derivation</a></h2>
@@ -172,7 +173,7 @@
                 <p>相信你已经看到规律了：一个形如`f(x)=x^n`的函数的导数为`f^{'}(x)=nx^{n-1}`（`n\in Z`）</p>
                 <p>很遗憾的告诉你，这是个事实，如果你想看证明的话，我给你看；如果不想看，就跳过</p>
                 <div align="center">
-                    <img src="https://img-blog.csdnimg.cn/12cf1beab8774919bf2732bc89e2291a.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQWVyb2JhdGljcw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" width="80%">
+                    <img src="../img/2-5.png" width="80%">
                 </div>
                 <p style="text-align:center">图 2-5</p>
                 <p>并且这个指数不只适用于整数，它可以是任意实数，如下（极其重要）：</p>
@@ -182,7 +183,7 @@
                 <p>好了终于可以看图了！</p>
                 <p>举个例子，当`x=1`时，对于函数`f(x)=x^2`，我们有`f^{'}(x)=2x`，故`f(1)=1`且`f^{'}(x)=2`，所以我们看到图2-6（右）中函数在点`(1,1)`的切线的斜率为`2`</p>
                 <div align="center">
-                    <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fbkimg.cdn.bcebos.com%2Fpic%2F472309f7905298229e4f4439ddca7bcb0b46d4c8&refer=http%3A%2F%2Fbkimg.cdn.bcebos.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1657706998&t=67e0dbc53f26f33739c3c4fc42780e12" width="100%">
+                    <img src="../img/2-6.png" width="100%">
                 </div>
                 <p style="text-align:center">图 2-6</p>
                 <p>这样我们就可以求过函数在一个点的切线方程啦！</p>
@@ -194,20 +195,23 @@
                 <p>有了切线方程，我们就可以来做一些函数值的估算了</p>
                 <p>假设我们一直一个函数`y=f(x)`和一个特殊值`a`</p>
                 <p>我们找出通过`y=f(x)`函数图像上点`(a,f(a))`的切线，其斜率为`f^{'}(a)`，则它的方程是：`y-f(a)=f^{'}(a)*(x-a)`</p>
-                <p>假设切线为`y=L(x)`，那么`L(x)=f(a)+f^{'}(a)(x-a)`，这个切线函数被称为函数`y=f(x)`在`x=a`处的线性化，我们可以把`L(x)`作为`f(x)`的近似，变成`f(x)\approx L(x)=f(a)+f^{'}(a)(x-a)`</p>
+                <p>假设切线为`y=L(x)`，那么`L(x)=f(a)+f^{'}(a)(x-a)`，这个切线函数被称为函数`y=f(x)`在`x=a`处的线性化，我们可以把`L(x)`作为`f(x)`的近似，变成</p>
+                <p>`f(x)\approx L(x)=f(a)+f^{'}(a)(x-a)`</p>
                 <p>当`x`等于`a`的时候，这个近似是完美的（但是没太大意义）；当`x`非常接近`a`的时候，这个近似是特别好的（要的就是这个）；而`x`非常远离`a`的时候，这个近似可能就会很离谱（也没意义）</p>
                 <p>学到后面我们可以知道这个误差（实际函数值与近似值之差）是有个取值范围的</p>
                 <div align="center">
-                    <img src="https://img-blog.csdnimg.cn/e0af014267834abea3411c58757f5c66.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQWVyb2JhdGljcw==,size_12,color_FFFFFF,t_70,g_se,x_16#pic_center" width="70%">
+                    <img src="../img/2-7.png" width="70%">
                 </div>
                 <p style="text-align:center">图 2-7</p>
                 <p>是不是有点模糊？来看个例子吧</p>
                 <p>我们来用线性化估算一下`\sqrt{10}`</p>
                 <p>看看`10`离哪个平方数比较近，大家都知道是`9`</p>
                 <p>所以先假设我们有`f(x)=\sqrt{x}`和`a=9`（特殊值：因为`f(9)=\sqrt{9}=3`）</p>
-                <p>来求一下导数：`f^{'}(x)=\frac{d}{dx}(\sqrt{x})=\frac{d}{dx}(x^{\frac{1}{2}})=\frac{1}{2} x^{-\frac{1}{2}}=\frac{1}{2\sqrt{x}}`</p>
+                <p>来求一下导数：</p>
+                <p>`f^{'}(x)=\frac{d}{dx}(\sqrt{x})=\frac{d}{dx}(x^{\frac{1}{2}})=\frac{1}{2} x^{-\frac{1}{2}}=\frac{1}{2\sqrt{x}}`</p>
                 <p>那么`f^{'}(9)=\frac{1}{6}`</p>
-                <p>所以`f(x)`的线性化为`L(x)=f(a)+f^{'}(a)(x-a)=3+\frac{1}{6}(x-9)`</p>
+                <p>所以`f(x)`的线性化为</p>
+                <p>`L(x)=f(a)+f^{'}(a)(x-a)=3+\frac{1}{6}(x-9)`</p>
                 <p>最后代入`x=10`发现`\sqrt{10}=f(10)\approx L(10)=\frac{19}{6}`</p>
                 <p>`\sqrt{10}`的线性近似值就这样算出来啦</p>
                 <p>大家可以自行检验这个近似值和计算器的结果有多大差别哦</p>
@@ -220,15 +224,18 @@
                 <p>或者可以说：假设`h(x)=Cf(x)`，那么`h^{'}(x)=Cf^{'}(x)`</p>
                 <p>比如我们已经知道了`\frac{d}{dx}(x^2)=2x`，那么就可以有`\frac{d}{dx}(5x^2)=5*2x=10x`和`\frac{d}{dx}(-x^2)=-1*2x=-2x`等等</p>
                 <p style="font-weight:bold">2.函数的和与差</p>
-                <p>假设有两个函数`u`和`v`，那么`\frac{d}{dx}(u\pm v)=\frac{du}{dx}\pm \frac{dv}{dx}`</p>
+                <p>假设有两个函数`u`和`v`，那么</p>
+                <p>`\frac{d}{dx}(u\pm v)=\frac{du}{dx}\pm \frac{dv}{dx}`</p>
                 <p>或者可以说：假设`h(x)=f(x)\pm g(x)`，那么`h^{'}(x)=f^{'}(x)\pm g^{'}(x)`</p>
-                <p>比如：`\frac{d}{dx}(3x^5-2x^2+4+\frac{5}{x})=3*5x^4-2*2x^1+4*0+5*(-\frac{1}{x^2})=15x^4-4x-\frac{5}{x^2}`</p>
+                <p>比如：</p>
+                <p>`\frac{d}{dx}(3x^5-2x^2+4+\frac{5}{x})=3*5x^4-2*2x^1+4*0+5*(-\frac{1}{x^2})=15x^4-4x-\frac{5}{x^2}`</p>
                 <p style="font-weight:bold">3.函数的积（乘积法则 Product Rule）</p>
                 <p>函数乘积的导数可不像前两个一样，它往往不会等于函数导数的乘积</p>
                 <p>注意了，这里千万不能记错</p>
                 <p>下面是乘积法则，请仔细看</p>
                 <p>假设有两个函数`u`和`v`，那么`\frac{d}{dx}(uv)=\frac{du}{dx}v+\frac{dv}{dx}u`（口诀：前导后不导`+`后导前不导）</p>
-                <p>或者可以说：假设`h(x)=f(x)g(x)`，那么`h^{'}(x)=f^{'}(x)g(x)+f(x)g^{'}(x)`</p>
+                <p>或者可以说：假设`h(x)=f(x)g(x)`，那么</p>
+                <p>`h^{'}(x)=f^{'}(x)g(x)+f(x)g^{'}(x)`</p>
                 <p>比如：求`y=(2x^4+3x-1)(5x^8-9x^3-x^2)`的导数</p>
                 <p>可以看作这是两个函数`u=2x^4+3x-1`和`v=5x^8-9x^3-x^2`的乘积，这样我们就可以用乘积法则了</p>
                 <table width="70%" style="text-align:center">
@@ -241,18 +248,23 @@
                         <td>`\frac{dv}{dx}=40x^7-27x^2-2x`</td>
                     </tr>
                 </table>
-                <p>运用乘积法则，可以发现`\frac{dy}{dx}=\frac{d}{dx}(uv)=\frac{du}{dx}v+\frac{dv}{dx}u=(8x^3+3)(5x^8-9x^3-x^2)+(40x^7-27x^2-2x)(2x^4+3x-1)`</p>
+                <p>运用乘积法则，可以发现</p>
+                <p>`\frac{dy}{dx}=\frac{d}{dx}(uv)=\frac{du}{dx}v+\frac{dv}{dx}u=(8x^3+3)(5x^8-9x^3-x^2)+(40x^7-27x^2-2x)(2x^4+3x-1)`</p>
                 <p style="font-weight:bold">4.函数的商（商法则 Quotient Rule）</p>
                 <p>函数的商的导数也往往不等于函数导数的商！</p>
                 <p>下面是商法则，请仔细看</p>
-                <p>假设有两个函数`u`和`v`，那么`\frac{d}{dx}(\frac{u}{v})=\frac{\frac{du}{dx}v-\frac{dv}{dx}u}{v^2}`</p>
-                <p>或者可以说：假设`h(x)=\frac{f(x)}{g(x)}`，那么`h^{'}(x)=\frac{f^{'}(x)g(x)-f(x)g^{'}(x)}{(g(x))^2}`</p>
+                <p>假设有两个函数`u`和`v`，那么</p>
+                <p>`\frac{d}{dx}(\frac{u}{v})=\frac{\frac{du}{dx}v-\frac{dv}{dx}u}{v^2}`</p>
+                <p>或者可以说：假设`h(x)=\frac{f(x)}{g(x)}`，那么</p>
+                <p>`h^{'}(x)=\frac{f^{'}(x)g(x)-f(x)g^{'}(x)}{(g(x))^2}`</p>
                 <p>比如：求`y=\frac{2x^4+3x-1}{5x^8-9x^3-x^2}`的导数</p>
                 <p>同样的，我们可以看作是两个函数`u=2x^4+3x-1`和`v=5x^8-9x^3-x^2`的商，这样我们就可以用商法则了</p>
                 <p>`\frac{dy}{dx}=\frac{d}{dx}(\frac{u}{v})=\frac{\frac{du}{dx}v-\frac{dv}{dx}u}{v^2}=\frac{(8x^3+3)(5x^8-9x^3-x^2)-(40x^7-27x^2-2x)(2x^4+3x-1)}{(5x^8-9x^3-x^2)^2}`</p>
                 <p style="font-weight:bold">5.函数的复合（链式求导法则 Chain Rule）</p>
-                <p>如果`y`是`u`的函数，`u`是`x`的函数，那么`\frac{dy}{dx}=\frac{dy}{du} \frac{du}{dx}`</p>
-                <p>或者可以说：假设`h(x)=f(g(x))`，那么`h^{'}(x)=f^{'}(g(x))g^{'}(x)`</p>
+                <p>如果`y`是`u`的函数，`u`是`x`的函数，那么</p>
+                <p>`\frac{dy}{dx}=\frac{dy}{du} \frac{du}{dx}`</p>
+                <p>或者可以说：假设`h(x)=f(g(x))`，那么</p>
+                <p>`h^{'}(x)=f^{'}(g(x))g^{'}(x)`</p>
                 <p>你有可能会觉得这俩不是一个东西，但其实这是同等的</p>
                 <p>比如：求`y=(x^2+1)^99`的导数</p>
                 <p>要是你用乘积法则算的话就会十分的可笑，所以这时候就需要用到链式求导法则了</p>
@@ -274,7 +286,8 @@
                 <p>假设`y`是`x`的函数，那么`\frac{d}{dx}(x^2)`和`\frac{d}{dx}(y^2)`一样吗？</p>
                 <p>这两个显然是不一样的，第一个等于`2x`，那第二个呢？</p>
                 <p>我们可以根据链式求导法则来求`\frac{d}{dx}(y^2)`等于什么</p>
-                <p>我们令`u=y^2`，那么`\frac{d}{dx}(y^2)=\frac{du}{dx}=\frac{du}{dy} \frac{dy}{dx}=2y \frac{dy}{dx}`</p>
+                <p>我们令`u=y^2`，那么</p>
+                <p>`\frac{d}{dx}(y^2)=\frac{du}{dx}=\frac{du}{dy} \frac{dy}{dx}=2y \frac{dy}{dx}`</p>
                 <p>下面来举个例子</p>
                 <p>考虑一个方程`x^2+y^2=4`（这是一个圆心在原点、半径为`2`的圆），我们要求`\frac{dy}{dx}`，怎么做呢？</p>
                 <p>我们可以对这个方程两边进行隐函数求导</p>
@@ -298,13 +311,17 @@
                 <p>下面我们就来求反函数的导数是什么</p>
                 <p>假设函数`f(x)`有反函数，我们叫他`y=f^{-1}(x)`，那么`f(y)=x`</p>
                 <p>对`f(y)=x`两边关于`x`作隐函数求导，`\frac{d}{dx}(f(y))=\frac{d}{dx}(x)`（左边需要用链式求导法则）</p>
-                <p>得到：`f^{'}(y)\frac{dy}{dx}=1\Rightarrow frac{dy}{dx}=\frac{1}{f^{'}(y)}`</p>
-                <p>这样我们就知道了反函数的导数：如果`y=f^{-1}(x)`，则`frac{dy}{dx}=\frac{1}{f^{'}(y)}=\frac{1}{f^{'}(f^{-1}(x))}`</p>
+                <p>得到：</p>
+                <p>`f^{'}(y)\frac{dy}{dx}=1\Rightarrow frac{dy}{dx}=\frac{1}{f^{'}(y)}`</p>
+                <p>这样我们就知道了反函数的导数：如果`y=f^{-1}(x)`，则</p>
+                <p>`frac{dy}{dx}=\frac{1}{f^{'}(y)}=\frac{1}{f^{'}(f^{-1}(x))}`</p>
                 <p>e.g. 求`y=x^{\frac{1}{3}}`的导数</p>
-                <p>我们当然可以直接把它求出来，即是`\frac{dy}{dx}=\frac{1}{3}x^{-\frac{2}{3}}=\frac{1}{3x^\frac{2}{3}}`</p>
+                <p>我们当然可以直接把它求出来，即是</p>
+                <p>`\frac{dy}{dx}=\frac{1}{3}x^{-\frac{2}{3}}=\frac{1}{3x^\frac{2}{3}}`</p>
                 <p>但是我想要验证一下这个求反函数的导数的方法</p>
                 <p>假设`f(x)=x^3`，我们知道它在定义域上有反函数，即`y=f^{-1}(x)=x^{\frac{1}{3}}`</p>
-                <p>那么`\frac{dy}{dx}=\frac{1}{f^{'}(y)}=\frac{1}{3y^2}=\frac{1}{3(x^{\frac{1}{3}})^2}=\frac{1}{3x^\frac{2}{3}}`</p>
+                <p>那么</p>
+                <p>`\frac{dy}{dx}=\frac{1}{f^{'}(y)}=\frac{1}{3y^2}=\frac{1}{3(x^{\frac{1}{3}})^2}=\frac{1}{3x^\frac{2}{3}}`</p>
                 <p>看到没，这方法管用吧！</p>
                 <h2><a name="2.10">2.10 三角函数的导数</a></h2>
                 <p>我们现在已经知道了一个形如`f(x)=x^a`的函数的导数为`f^{'}(x)=ax^{a-1}`（`a\in R`）</p>
@@ -315,8 +332,9 @@
                 <p>有了这两个极限，我们就可以求一些其他的关于三角函数的极限了</p>
                 <p>e.g. 计算：`\lim_{x\rightarrow 0}\frac{1-cos(x)}{x}`</p>
                 <p>`\lim_{x\rightarrow 0}\frac{1-cos(x)}{x}=\lim_{x\rightarrow 0}\frac{1-cos(x)}{x}\times \frac{1+cos(x)}{1+cos(x)}=\lim_{x\rightarrow 0}\frac{sin^2(x)}{x}\times \frac{1}{1+cos(x)}`</p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`=\lim_{x\rightarrow 0}sin(x)\times \frac{sin(x)}{x}\times \frac{1}{1+cos(x)}=0\times 1\times \frac{1}{1+1}=0`</p>
-                <p>这样我们就得到了：`\lim_{x\rightarrow 0}\frac{1-cos(x)}{x}=0`</p>
+                <p>`=\lim_{x\rightarrow 0}sin(x)\times \frac{sin(x)}{x}\times \frac{1}{1+cos(x)}=0\times 1\times \frac{1}{1+1}=0`</p>
+                <p>这样我们就得到了：</p>
+                <p>`\lim_{x\rightarrow 0}\frac{1-cos(x)}{x}=0`</p>
                 <p>记住这个极限，待会求三角函数的导数的时候会用到</p>
                 <p>练习：计算`\lim_{x\rightarrow 0}\frac{1-cos(x)}{x^2}`和`\lim_{x\rightarrow \infty}\frac{3x^2+2x+5+sin(3000x^9)}{2x^2-1-cos(22x)}`</p>
                 <br>
@@ -326,9 +344,9 @@
                 <br>
                 <p>我们先来求`f(x)=sin(x)`的导数</p>
                 <p>`f^{'}(x)=\lim_{h\rightarrow 0}\frac{sin(x+h)-sin(x)}{h}=\lim_{h\rightarrow 0}\frac{sin(x)cos(h)+cos(x)sin(h)-sin(x)}{h}`</p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`=\lim_{h\rightarrow 0}\frac{sin(x)(cos(h)-1)+cos(x)sin(h)}{h}`</p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`=\lim_{h\rightarrow 0}(sin(x)(\frac{cos(h)-1}{h})+cos(x)(\frac{sin(h)}{h}))`</p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`=sin(x)\times 0+cos(x)\times 1=cos(x)`</p>
+                <p>`=\lim_{h\rightarrow 0}\frac{sin(x)(cos(h)-1)+cos(x)sin(h)}{h}`</p>
+                <p>`=\lim_{h\rightarrow 0}(sin(x)(\frac{cos(h)-1}{h})+cos(x)(\frac{sin(h)}{h}))`</p>
+                <p>`=sin(x)\times 0+cos(x)\times 1=cos(x)`</p>
                 <p>所以`f(x)=sin(x)`的导数为`f^{'}(x)=cos(x)`或者说`\frac{d}{dx}sin(x)=cos(x)`</p>
                 <br>
                 <p>接下来，大家来自行练习一下求函数`f(x)=cos(x)`的导数</p>
@@ -345,7 +363,8 @@
                 <br>
                 <p>还记得反三角函数吗？如果我们要求反三角函数的导数，只需要将上一节反函数的导数与三角函数的导数结合起来即可</p>
                 <p>e.g. 求`y=arcsin(x)`的导数</p>
-                <p>`y=arcsin(x)\Rightarrow sin(y)=x(x\in [-1,1], y\in[-\frac{\pi}{2},\frac{\pi}{2}])`（原函数）</p>
+                <p>`y=arcsin(x)\Rightarrow sin(y)=x(x\in [-1,1], y\in[-\frac{\pi}{2},\frac{\pi}{2}])`</p>
+                <p>（原函数）</p>
                 <p>`\frac{dy}{dx}=\frac{1}{cos(y)}`</p>
                 <p>`\because sin^{2}(y)+cos^{2}(y)=1 and cos(y)>0`</p>
                 <p>`\therefore cos(y)=\sqrt{1-sin^{2}(y)}=\sqrt{1-x^2}`</p>
@@ -361,13 +380,15 @@
                 <p>我们先设`h=\frac{x}{n}`，这样`n=\frac{x}{h}`，当`n\rightarrow \infty`时，`h\rightarrow 0^{+}`</p>
                 <p>`\lim_{n\rightarrow \infty}(1+\frac{x}{n})^n=\lim_{h\rightarrow 0^{+}}(1+h)^{\frac{x}{h}}=\lim_{h\rightarrow 0^{+}}((1+h)^{\frac{1}{h}})^x=e^x`</p>
                 <p>对于`x<0`，也同样成立（那时当`n\rightarrow \infty`时，`h\rightarrow 0^{-}`，只需令`t=-h`就可以证明）</p>
-                <p>最后，我们得到`e^x=\lim_{n\rightarrow \infty}(1+\frac{x}{n})^n=\lim_{h\rightarrow 0}(1+xh)^{\frac{1}{h}}`</p>
-                <p>当`x=1`时，我们有`e=\lim_{n\rightarrow \infty}(1+\frac{1}{n})^n=\lim_{h\rightarrow 0}(1+h)^{\frac{1}{h}}`</p>
+                <p>最后，我们得到</p>
+                <p>`e^x=\lim_{n\rightarrow \infty}(1+\frac{x}{n})^n=\lim_{h\rightarrow 0}(1+xh)^{\frac{1}{h}}`</p>
+                <p>当`x=1`时，我们有</p>
+                <p>`e=\lim_{n\rightarrow \infty}(1+\frac{1}{n})^n=\lim_{h\rightarrow 0}(1+h)^{\frac{1}{h}}`</p>
                 <br>
                 <p>接下来我们就可以来算指数函数和对数函数的导数啦！我们先从对数函数的导数算起</p>
                 <p>假设`f(x)=log_{a}(x)`</p>
                 <p>`f^{'}(x)=\lim_{h\rightarrow 0}\frac{log_{a}(x+h)-log_{a}(x)}{h}=\lim_{h\rightarrow 0}\frac{1}{h}log_{a}(\frac{x+h}{x})=\lim_{h\rightarrow 0}\frac{1}{h}log_{a}(1+\frac{1}{x}h)`</p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`=\lim_{h\rightarrow 0}log_{a}(1+\frac{1}{x}h)^{\frac{1}{h}}=log_{a}(e^{\frac{1}{x}})=\frac{1}{x}log_{a}(e)=\frac{1}{x} \frac{\ln(e)}{\ln(a)}=\frac{1}{x\ln(a)}`</p>
+                <p>`=\lim_{h\rightarrow 0}log_{a}(1+\frac{1}{x}h)^{\frac{1}{h}}=log_{a}(e^{\frac{1}{x}})=\frac{1}{x}log_{a}(e)=\frac{1}{x} \frac{\ln(e)}{\ln(a)}=\frac{1}{x\ln(a)}`</p>
                 <p>这样我们就有：`\frac{d}{dx}log_{a}(x)=\frac{1}{x\ln(a)}`</p>
                 <p>特殊地，当`a=e`时，我们有`\frac{d}{dx}\ln(x)=\frac{1}{x}`</p>
                 <br>
@@ -383,7 +404,8 @@
                 <p>当`x=0`时，`x-sin(x)`和`x^3`都为`0`，这样我们就可以运用洛必达法则了</p>
                 <p>`\lim_{x\rightarrow 0}\frac{x-sin(x)}{x^3}=\lim_{x\rightarrow 0}\frac{1-cos(x)}{3x^2}`</p>
                 <p>我们还可以再用洛必达法则（想想为啥）</p>
-                <p>于是就有：`\lim_{x\rightarrow 0}\frac{1-cos(x)}{3x^2}=\lim_{x\rightarrow 0}\frac{sin(x)}{6x}=\frac{1}{6}*1=\frac{1}{6}`</p>
+                <p>于是就有：</p>
+                <p>`\lim_{x\rightarrow 0}\frac{1-cos(x)}{3x^2}=\lim_{x\rightarrow 0}\frac{sin(x)}{6x}=\frac{1}{6}*1=\frac{1}{6}`</p>
                 <p>第二个例子：求`\lim_{x\rightarrow \infty}\frac{x^3}{e^x}`</p>
                 <p>同样地，我们发现`\lim_{x\rightarrow \infty}(x^3)=\infty and \lim_{x\rightarrow \infty}(e^x)=\infty`，这才可以用洛必达法则</p>
                 <p>`\lim_{x\rightarrow \infty}\frac{x^3}{e^x}=\lim_{x\rightarrow \infty}\frac{3x^2}{e^x}=\lim_{x\rightarrow \infty}\frac{6x}{e^x}=\lim_{x\rightarrow \infty}\frac{6}{e^x}=0`</p>
@@ -395,7 +417,7 @@
                 <p>如果当`x=a`时，`f(a)`是`y=f(x)`整个定义域上的最大值，那么我们就说`f(a)`是函数的最大值（Absolute Maximum）（如下图定义域为`(a,b)`的函数在`x=x_3`的位置）</p>
                 <p>最值必然也是极值，但极值不一定是最值</p>
                 <div align="center">
-                    <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F83105a2efe8ffac788eb5606a4aef71121316f1b.png&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1658231834&t=dd54b8fcd04d6f37cdebf5e281f155fe" width="50%">
+                    <img src="../img/2-8.png" width="50%">
                 </div>
                 <p style="text-align:center">图 2-8</p>
                 <p>这样我们把临界点的概念与局部极值联系起来，就引出了极值定理：</p>
@@ -465,7 +487,7 @@
                 <h2><a name="2.14">2.14 中值定理 Mean Value Theorem(MVT)</a></h2>
                 <p>假设函数`y=f(x)`在闭区间`[a,b]`连续，在开区间`(a,b)`内可导，那么在开区间`(a,b)`内至少有一点`c`使得`f^{'}(c)=\frac{f(b)-f(a)}{b-a}`</p>
                 <div align="center">
-                    <img src="https://ss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/baike/s=220/sign=7875307cf8dcd100c99cff23428a47be/83025aafa40f4bfbb85f0425034f78f0f7361837.jpg" width="50%">
+                    <img src="../img/2-9.png" width="50%">
                 </div>
                 <p style="text-align:center">图 2-9</p>
                 <h2><a name="2.15">2.15 常用函数的导数总结</a></h2>
