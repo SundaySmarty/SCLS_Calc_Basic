@@ -118,7 +118,7 @@ html {
         scrollbar-width: none;
     }
     .pdf_container {
-        overflow: auto;
+        overflow: scroll;
         -webkit-overflow-scrolling: touch;
     }
 }
