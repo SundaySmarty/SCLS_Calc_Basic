@@ -10,10 +10,10 @@
     <script type="text/javascript" src="../js/BackToTop.js"></script>
     <script type="text/javascript" src="../js/DisableScrolling.js"></script>
     <script type="text/javascript" src="../js/DisableDeveloperTools.js"></script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
+<!--    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>-->
     <!--\(...\) shows latex in text, \[...\] shows in the middle of a single line-->
-    <!--<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <div class="header">
@@ -61,76 +61,77 @@
                 <h2><a name="3.1">3.1 求和符号</a></h2>
                 <p>在学习积分和无穷级数之前，了解求和符号是很重要的</p>
                 <p>它是这样用的：</p>
-                <p>`\sum_{i=m}^{n}a_i=a_{m}+a_{m+1}+a_{m+2}+...+a_{n-2}+a_{n-1}+a_{n}`</p>
-                <p>（`m`一般小于`n`）</p>
-                <p>比如：`\sum_{i=1}^{6}i^2=1^2+2^2+3^2+4^2+5^2+6^2`</p>
-                <p>另外，我还要说一个有用的求和：`\sum_{i=a}^{b}(f(i)-f(i-1))=f(b)-f(a-1)`</p>
-                <p>比如：`\sum_{i=1}^{10}(i^2-(i-1)^2)=10^2-0^2=100`</p>
+                <p>\[\sum\limits_ {i=m}^{n}a_i=a_{m}+a_{m+1}+a_{m+2}+...+a_{n-2}+a_{n-1}+a_{n}\]</p>
+                <p>（\(m\)一般小于\(n\)）</p>
+                <p>比如：\(\sum\limits_ {i=1}^{6}i^2=1^2+2^2+3^2+4^2+5^2+6^2\)</p>
+                <p>另外，我还要说一个有用的求和：</p>
+                <p>\[\sum\limits_ {i=a}^{b}\left(f\left(i\right)-f\left(i-1\right)\right)=f\left(b\right)-f\left(a-1\right)\]</p>
+                <p>比如：\(\sum\limits_ {i=1}^{10}\left(i^2-\left(i-1\right)^2\right)=10^2-0^2=100\)</p>
                 <p>再给两个有用的运算法则：</p>
-                <p>`\sum_{i=m}^{n}(a_i+b_i)=\sum_{i=m}^{n}a_i+\sum_{i=m}^{n}b_i`</p>
-                <p>`\sum_{i=m}^{n}(C*a_i)=C\sum_{i=m}^{n}a_i`（`C`是常数）</p>
+                <p>\[\sum\limits_ {i=m}^{n}\left(a_i+b_i\right)=\sum\limits_ {i=m}^{n}a_i+\sum\limits_ {i=m}^{n}b_i\]</p>
+                <p>\[\sum\limits_ {i=m}^{n}\left(C\cdot a_i\right)=C\sum\limits_ {i=m}^{n}a_i\]（\(C\)是常数）</p>
                 <p>最后我还要给一个待会会用到的求和（可以根据上面的知识自行证明）</p>
-                <p>`\sum_{i=1}^{n}i^2=\frac{n(n+1)(2n+1)}{6}`</p>
+                <p>\[\sum\limits_ {i=1}^{n}i^2=\cfrac{n\left(n+1\right)\left(2n+1\right)}{6}\]</p>
                 <h2><a name="3.2">3.2 速度与位移</a></h2>
                 <p>给你一张位置-时间图，你应该可以根据导数的知识求出在某一时间点的瞬时速度</p>
                 <p>那如果给你一张速度-时间图，你可以求出在一段时间内的位移吗？</p>
-                <p>假设有一辆车沿着一条笔直的路前行，从下午三点钟到四点钟以`40\text{km/h}`的速度匀速行驶，在四点钟突然加速到`60\text{km/h}`并保持该速度一个小时至五点钟，那么它从下午三点到五点内的总位移是多少？</p>
-                <p>`\Delta x=40*(4-3)+60*(5-4)=100`</p>
+                <p>假设有一辆车沿着一条笔直的路前行，从下午三点钟到四点钟以\(40\text{km/h}\)的速度匀速行驶，在四点钟突然加速到\(60\text{km/h}\)并保持该速度一个小时至五点钟，那么它从下午三点到五点内的总位移是多少？</p>
+                <p>\[\Delta x=40\cdot \left(4-3\right)+60\cdot \left(5-4\right)=100\]</p>
                 <p>如下图所示，总位移就等于阴影部分的面积</p>
                 <div align="center">
                     <img src="../img/3-1.png" width="60%">
                 </div>
                 <p style="text-align:center">图 3-1</p>
                 <p>现在我们来看另一张速度-时间图像</p>
-                <p>根据下图，我们可以求出从`t=3`到`t=6`的总位移为`40*1+(-30)*2=-20`</p>
+                <p>根据下图，我们可以求出从\(t=3\)到\(t=6\)的总位移为\(40\cdot 1+\left(-30\right)\cdot 2=-20\)</p>
                 <p>这里我们同样可以用面积来求，但要注意这里的面积是有符号的<span style="color:red;font-weight:bold">有向面积</span>（signed area）</p>
-                <p>比如下图在`x`轴下方的那一块阴影部分的面积为`(-30)*2=-60`</p>
+                <p>比如下图在\(x\)轴下方的那一块阴影部分的面积为\(\left(-30\right)\cdot 2=-60\)</p>
                 <div align="center">
                     <img src="../img/3-2.png" width="60%">
                 </div>
                 <p style="text-align:center">图 3-2</p>
                 <h2><a name="3.3">3.3 定积分 Definite Integral</a></h2>
-                <p>我们引入一个记号`\int_{a}^{b}f(x)dx`来表示函数曲线`y=f(x)`，`x`轴，`x=a`和`x=b`所围成的有向面积</p>
-                <p>我们可以把`\int_{a}^{b}f(x)dx`读作”函数`y=f(x)`对于`x`从`a`到`b`的积分“</p>
-                <p>其中`f(x)`叫做被积函数（它也可以换成其他函数，如`g(x)`，`h(x)`等），`a`是积分下限，`b`是积分上限，`x`是积分变量（可以用任意其他字母代替，如`t`）</p>
+                <p>我们引入一个记号\(\displaystyle\int_{a}^{b}f\left(x\right)\mathrm{d} x\)来表示函数曲线\(y=f\left(x\right)\)，\(x\)轴，\(x=a\)和\(x=b\)所围成的有向面积</p>
+                <p>我们可以把\(\displaystyle\int_{a}^{b}f\left(x\right)\mathrm{d} x\)读作”函数\(y=f\left(x\right)\)对于\(x\)从\(a\)到\(b\)的积分“</p>
+                <p>其中\(f\left(x\right)\)叫做被积函数（它也可以换成其他函数，如\(g\left(x\right)\)，\(h\left(x\right)\)等），\(a\)是积分下限，\(b\)是积分上限，\(x\)是积分变量（可以用任意其他字母代替，如\(t\)）</p>
                 <div align="center">
                     <img src="../img/3-3.png" width="60%">
                 </div>
                 <p style="text-align:center">图 3-3</p>
-                <p>为了计算这个面积，我们可以把`[a,b]`分成`n`份，以每一份线段为底，以这一份线段中任意一点的函数值为高做矩形，这样我们可以用所有矩形的有向面积和来近似`\int_{a}^{b}f(x)dx`</p>
-                <p>当`n\rightarrow \infty`时，矩形的有向面积和就等于`\int_{a}^{b}f(x)dx`</p>
+                <p>为了计算这个面积，我们可以把\(\left[a,b\right]\)分成\(n\)份，以每一份线段为底，以这一份线段中任意一点的函数值为高做矩形，这样我们可以用所有矩形的有向面积和来近似\(\displaystyle\int_{a}^{b}f\left(x\right)\mathrm{d} x\)</p>
+                <p>当\(n\to \infty\)时，矩形的有向面积和就等于\(\displaystyle\int_{a}^{b}f\left(x\right)\mathrm{d} x\)</p>
                 <div align="center">
                     <img src="../img/3-4.png" width="70%">
                 </div>
                 <p style="text-align:center">图 3-4</p>
-                <p>我们用符号表示一下：假设你把`[a,b]`分成`n`份，其中最大区间我们把它叫做`\Delta x_{max}`</p>
+                <p>我们用符号表示一下：假设你把\(\left[a,b\right]\)分成\(n\)份，其中最大区间我们把它叫做\(\Delta x_{max}\)</p>
                 <p>那么</p>
-                <p>`\int_{a}^{b}f(x)dx=\lim_{\Delta x_{max}\rightarrow 0}\sum_{i=1}^{n}f(c_i)*(x_i-x_{i-1})`</p>
-                <p>其中`a=x_0\text{<}x_1\text{<}\cdots\text{<}x_{n-1}\text{<}x_n=b`并且对每一个`i=1,\cdots,n`都有`c_i`在`[x_{i-1},x_i]`内</p>
+                <p>\[\displaystyle\int_{a}^{b}f\left(x\right)\mathrm{d} x=\lim\limits_ {\Delta x_{max}\to 0}\sum\limits_ {i=1}^{n}f\left(c_i\right)\cdot \left(x_i-x_{i-1}\right)\]</p>
+                <p>其中\(a=x_0\text{<}x_1\text{<}\cdots\text{<}x_{n-1}\text{<}x_n=b\)并且对每一个\(i=1,\cdots,n\)都有\(c_i\)在\(\left[x_{i-1},x_i\right]\)内</p>
                 <div align="center">
                     <img src="../img/3-5.png" width="90%">
                 </div>
                 <p style="text-align:center">图 3-5</p>
-                <p>在积分表达式中出现的求和`\sum_{i=1}^{n}f(c_i)*(x_i-x_{i-1})`叫做黎曼和（Riemann Sum）</p>
-                <p>当矩形的高是线段左侧的函数值时，即是`\sum_{i=1}^{n}f(x_{i-1})*(x_i-x_{i-1})`，我们就叫它左黎曼和</p>
-                <p>当矩形的高是线段右侧的函数值时，即是`\sum_{i=1}^{n}f(x_i)*(x_i-x_{i-1})`，我们就叫它右黎曼和</p>
+                <p>在积分表达式中出现的求和\(\sum\limits_ {i=1}^{n}f\left(c_i\right)\cdot \left(x_i-x_{i-1}\right)\)叫做黎曼和（Riemann Sum）</p>
+                <p>当矩形的高是线段左侧的函数值时，即是\(\sum\limits_ {i=1}^{n}f\left(x_{i-1}\right)\cdot \left(x_i-x_{i-1}\right)\)，我们就叫它左黎曼和</p>
+                <p>当矩形的高是线段右侧的函数值时，即是\(\sum\limits_ {i=1}^{n}f\left(x_i\right)\cdot \left(x_i-x_{i-1}\right)\)，我们就叫它右黎曼和</p>
                 <div align="center">
                     <img src="../img/3-6.png" width="100%">
                 </div>
                 <p style="text-align:center">图 3-6</p>
-                <p>为了计算方便，我们打算把`[a,b]`平均分为`n`份，这样每个区间的长度就是`\Delta x=\frac{b-a}{n}`</p>
-                <p>如果我们采取用右黎曼和的话，那么第`i`个区间上的矩形的高就为`f(a+i\frac{b-a}{n})`（`i`从`1`开始）</p>
-                <p>这样当区间的个数`n`趋于无穷的时候，我们就可以有</p>
-                <p>`\int_{a}^{b}f(x)dx=\lim_{n\rightarrow \infty}(\sum_{i=1}^{n}f(a+i\frac{b-a}{n})*\frac{b-a}{n})`</p>
+                <p>为了计算方便，我们打算把\(\left[a,b\right]\)平均分为\(n\)份，这样每个区间的长度就是\(\Delta x=\cfrac{b-a}{n}\)</p>
+                <p>如果我们采取用右黎曼和的话，那么第\(i\)个区间上的矩形的高就为\(f\left(a+i\cfrac{b-a}{n}\right)\)（\(i\)从\(1\)开始）</p>
+                <p>这样当区间的个数\(n\)趋于无穷的时候，我们就可以有</p>
+                <p>\[\displaystyle\int_{a}^{b}f\left(x\right)\mathrm{d} x=\lim\limits_ {n\to \infty}\left(\sum\limits_ {i=1}^{n}f\left(a+i\cfrac{b-a}{n}\right)\cdot \cfrac{b-a}{n}\right)\]</p>
                 <br>
-                <p>e.g. 用黎曼和计算`\int_{0}^{2}x^2dx`</p>
-                <p>`\int_{0}^{2}x^2dx=\lim_{n\rightarrow \infty}(\sum_{i=1}^{n}(0+i\frac{2-0}{n})^2*\frac{2-0}{n})=\lim_{n\rightarrow \infty}(\frac{4}{n^2}*\frac{2}{n}\sum_{i=1}^{n}i^2)=\lim_{n\rightarrow \infty}(\frac{8}{n^3}*\frac{n(n+1)(2n+1)}{6})=\frac{8}{3}`</p>
+                <p>e.g. 用黎曼和计算\(\displaystyle\int_{0}^{2}x^2\mathrm{d} x\)</p>
+                <p>\[\displaystyle\int_{0}^{2}x^2\mathrm{d} x=\lim\limits_ {n\to \infty}\left(\sum\limits_ {i=1}^{n}\left(0+i\cfrac{2-0}{n}\right)^2\cdot \cfrac{2-0}{n}\right)=\lim\limits_ {n\to \infty}\left(\cfrac{4}{n^2}\cdot \cfrac{2}{n}\sum\limits_ {i=1}^{n}i^2\right)=\lim\limits_ {n\to \infty}\left(\cfrac{8}{n^3}\cdot \cfrac{n\left(n+1\right)\left(2n+1\right)}{6}\right)=\cfrac{8}{3}\]</p>
                 <div align="center">
                     <img src="../img/3-7.png" width="70%">
                 </div>
                 <p style="text-align:center">图 3-7</p>
-                <p>练习：用黎曼和计算`\int_{0}^{1}x^2dx`</p>
-                <p>你应该能得到`\int_{0}^{1}x^2dx=\frac{1}{3}`</p>
+                <p>练习：用黎曼和计算\(\displaystyle\int_{0}^{1}x^2\mathrm{d} x\)</p>
+                <p>你应该能得到\(\displaystyle\int_{0}^{1}x^2\mathrm{d} x=\cfrac{1}{3}\)</p>
                 <br>
                 <p>定积分的性质（这几条都很重要）：</p>
                 <div align="center">
@@ -143,14 +144,14 @@
                 <p style="text-align:center">图 3-9</p>
                 <h2><a name="3.4">3.4 微积分第一基本定理</a></h2>
                 <p>（这只是大致证明）</p>
-                <p>我们定义一个函数`F(x)=\int_{a}^{x}f(t)dt`</p>
-                <p>然后求`F(x)`关于`x`的导数</p>
-                <p>`F^{'}(x)=\frac{d}{dx}\int_{a}^{x}f(t)dt=\lim_{h\rightarrow 0}\frac{F(x+h)-F(x)}{h}`</p>
+                <p>我们定义一个函数\(F\left(x\right)=\displaystyle\int_{a}^{x}f\left(t\right)\mathrm{d} t\)</p>
+                <p>然后求\(F\left(x\right)\)关于\(x\)的导数</p>
+                <p>\[F^{\prime}\left(x\right)=\cfrac{\mathrm{d} }{\mathrm{d} x}\displaystyle\int_{a}^{x}f\left(t\right)\mathrm{d} t=\lim\limits_ {h\to 0}\cfrac{F\left(x+h\right)-F\left(x\right)}{h}\]</p>
                 <p>我们可以发现：</p>
-                <p>`F(x+h)-F(x)=\int_{x}^{x+h}f(t)dt\approx hf(x)`</p>
-                <p>当`h\rightarrow 0`时，这个估算就很精确</p>
+                <p>\[F\left(x+h\right)-F\left(x\right)=\displaystyle\int_{x}^{x+h}f\left(t\right)\mathrm{d} t\approx hf\left(x\right)\]</p>
+                <p>当\(h\to 0\)时，这个估算就很精确</p>
                 <p>这样我们可以得到：</p>
-                <p>`\lim_{h\rightarrow 0}\frac{F(x+h)-F(x)}{h}=f(x)\Rightarrow F^{'}(x)=\frac{d}{dx}\int_{a}^{x}f(t)dt=f(x)`</p>
+                <p>\[\lim\limits_ {h\to 0}\cfrac{F\left(x+h\right)-F\left(x\right)}{h}=f\left(x\right)\Rightarrow F^{\prime}\left(x\right)=\cfrac{\mathrm{d} }{\mathrm{d} x}\displaystyle\int_{a}^{x}f\left(t\right)\mathrm{d} t=f\left(x\right)\]</p>
                 <div align="center">
                     <img src="../img/3-10.png" width="70%">
                 </div>
@@ -161,272 +162,300 @@
                 <p style="text-align:center">图 3-11</p>
                 <!--<p>常数`a`的选择并不会影响求导的结果，你可以这样理解：汽车的初始时间（`a`）不会影响它的速度（求导结果）</p>-->
                 <h2><a name="3.5">3.5 原函数 Antiderivative</a></h2>
-                <p>假设我们有`f(t)=t^2,a=0`，那么`F(x)=\int_{0}^{x}t^2dt`</p>
-                <p>根据微积分第一基本定理，我们知道`F^{'}(x)=f(x)=x^2`</p>
-                <p>函数`F(x)`的导数是`x^2`，我们就说`F(x)`是`x^2`的原函数</p>
-                <p>那么`F(x)`可以等于什么呢？</p>
-                <p>我们发现当`F(x)=\frac{x^3}{3}+C`（`C`是常数）时，`F^{'}(x)=x^2`</p>
-                <p>这样就有`\int_{0}^{x}t^2dt=\frac{x^3}{3}+C`</p>
-                <p>当`x=0`时，</p>
-                <p>`\int_{0}^{0}t^2dt=0\Rightarrow C=0\Rightarrow \int_{0}^{x}t^2dt=\frac{x^3}{3}`</p>
-                <p>这样分别代入`x=1`和`x=2`，我们就有`\int_{0}^{1}t^2dt=\frac{1}{3}`和`\int_{0}^{2}t^2dt=\frac{8}{3}`，是不是很熟悉？</p>
+                <p>假设我们有\(f\left(t\right)=t^2\)，\(a=0\)，那么\(F\left(x\right)=\displaystyle\int_{0}^{x}t^2\mathrm{d} t\)</p>
+                <p>根据微积分第一基本定理，我们知道\(F^{\prime}\left(x\right)=f\left(x\right)=x^2\)</p>
+                <p>函数\(F\left(x\right)\)的导数是\(x^2\)，我们就说\(F\left(x\right)\)是\(x^2\)的原函数</p>
+                <p>那么\(F\left(x\right)\)可以等于什么呢？</p>
+                <p>我们发现当\(F\left(x\right)=\cfrac{x^3}{3}+C\)（\(C\)是常数）时，\(F^{\prime}\left(x\right)=x^2\)</p>
+                <p>这样就有</p>
+                <p>\[\displaystyle\int_{0}^{x}t^2\mathrm{d} t=\cfrac{x^3}{3}+C\]</p>
+                <p>当\(x=0\)时，</p>
+                <p>\[\displaystyle\int_{0}^{0}t^2\mathrm{d} t=0\Rightarrow C=0\Rightarrow \displaystyle\int_{0}^{x}t^2\mathrm{d} t=\cfrac{x^3}{3}\]</p>
+                <p>这样分别代入\(x=1\)和\(x=2\)，我们就有\(\displaystyle\int_{0}^{1}t^2\mathrm{d} t=\cfrac{1}{3}\)和\(\displaystyle\int_{0}^{2}t^2\mathrm{d} t=\cfrac{8}{3}\)，是不是很熟悉？</p>
                 <h2><a name="3.6">3.6 微积分第二基本定理</a></h2>
-                <p>相比`\int_{a}^{x}f(t)dt`，我们更希望了解`\int_{a}^{b}f(t)dt`</p>
-                <p>我们假设`G(x)=\int_{a}^{x}f(t)dt`</p>
-                <p>如果`F(x)`作为`f(x)`任意一个原函数，那么它与`G(x)`只会相差一个常数`C`，即`F(x)=G(x)+C`</p>
+                <p>相比\(\displaystyle\int_{a}^{x}f\left(t\right)\mathrm{d} t\)，我们更希望了解\(\displaystyle\int_{a}^{b}f\left(t\right)\mathrm{d} t\)</p>
+                <p>我们假设\(G\left(x\right)=\displaystyle\int_{a}^{x}f\left(t\right)\mathrm{d} t\)</p>
+                <p>如果\(F\left(x\right)\)作为\(f\left(x\right)\)任意一个原函数，那么它与\(G\left(x\right)\)只会相差一个常数\(C\)，即\(F\left(x\right)=G\left(x\right)+C\)</p>
                 <p>这样</p>
-                <p>`F(b)-F(a)=(G(b)+C)-(G(a)+C)=G(b)-G(a)=\int_{a}^{b}f(t)dt-\int_{a}^{a}f(t)dt=\int_{a}^{b}f(t)dt`</p>
-                <p>把`t`这个虚拟变量换成`x`，就得到</p>
-                <p>`\int_{a}^{b}f(x)dx=F(b)-F(a)=F(x)|_{a}^{b}`</p>
+                <p>\[F\left(b\right)-F\left(a\right)=\left(G\left(b\right)+C\right)-\left(G\left(a\right)+C\right)=G\left(b\right)-G\left(a\right)=\displaystyle\int_{a}^{b}f\left(t\right)\mathrm{d} t-\displaystyle\int_{a}^{a}f\left(t\right)\mathrm{d} t=\displaystyle\int_{a}^{b}f\left(t\right)\mathrm{d} t\]</p>
+                <p>把\(t\)这个虚拟变量换成\(x\)，就得到</p>
+                <p>\[\displaystyle\int_{a}^{b}f\left(x\right)\mathrm{d} x=F\left(b\right)-F\left(a\right)=F\left(x\right)\bigg|_{a}^{b}\]</p>
                 <p>e.g.</p>
-                <p>（1）求`\int_{1}^{2}x^2dx`</p>
-                <p>我们知道`\frac{x^3}{3}`是`x^2`的一个原函数</p>
+                <p>（1）求\(\displaystyle\int_{1}^{2}x^2\mathrm{d} x\)</p>
+                <p>我们知道\(\cfrac{x^3}{3}\)是\(x^2\)的一个原函数</p>
                 <p>所以</p>
-                <p>`\int_{1}^{2}x^2dx=\frac{x^3}{3}|_{1}^{2}``=\frac{8}{3}-\frac{1}{3}=\frac{7}{3}`</p>
-                <p>（2）求`\int_{0}^{\pi}sin(x)dx`</p>
-                <p>我们知道`-cos(x)`是`sin(x)`的一个原函数</p>
+                <p>\[\displaystyle\int_{1}^{2}x^2\mathrm{d} x=\cfrac{x^3}{3}\bigg|_{1}^{2}=\cfrac{8}{3}-\cfrac{1}{3}=\cfrac{7}{3}\]</p>
+                <p>（2）求\(\displaystyle\int_{0}^{\pi}\sin\left(x\right)\mathrm{d} x\)</p>
+                <p>我们知道\(-\cos\left(x\right)\)是\(\sin\left(x\right)\)的一个原函数</p>
                 <p>所以</p>
-                <p>`\int_{0}^{\pi}sin(x)dx=(-cos(x))|_{0}^{\pi}``=(-cos(\pi))-(-cos(0))=2`</p>
+                <p>\[\displaystyle\int_{0}^{\pi}\sin\left(x\right)\mathrm{d} x=\left(-\cos\left(x\right)\right)\bigg|_{0}^{\pi}=\left(-\cos\left(\pi\right)\right)-\left(-\cos\left(0\right)\right)=2\]</p>
                 <h2><a name="3.7">3.7 不定积分 Indefinite Integral</a></h2>
-                <p>为了更简单的表示原函数，我们引入了一个记号`\int f(x)dx`，它指的是”函数`f(x)`的原函数的集合“</p>
-                <p>如果`\frac{d}{dx}F(x)=f(x)`，那么`\int f(x)dx=F(x)+C`</p>
-                <p>比如`\frac{d}{dx}(\frac{x^3}{3})=x^2\Rightarrow \int x^2dx=\frac{x^3}{3}+C`，`\frac{d}{dx}(\frac{x^4}{4})=x^3\Rightarrow\int x^3dx=\frac{x^4}{4}+C`</p>
+                <p>为了更简单的表示原函数，我们引入了一个记号\(\displaystyle\int f\left(x\right)\mathrm{d} x\)，它指的是”函数\(f\left(x\right)\)的原函数的集合“</p>
+                <p>如果\(\cfrac{\mathrm{d} }{\mathrm{d} x}F\left(x\right)=f\left(x\right)\)，那么\(\displaystyle\int f\left(x\right)\mathrm{d} x=F\left(x\right)+C\)</p>
+                <p>比如</p>
+                <p>\[\cfrac{\mathrm{d} }{\mathrm{d} x}\left(\cfrac{x^3}{3}\right)=x^2\Rightarrow \displaystyle\int x^2\mathrm{d} x=\cfrac{x^3}{3}+C\]</p>
+                <p>\[\cfrac{\mathrm{d} }{\mathrm{d} x}\left(\cfrac{x^4}{4}\right)=x^3\Rightarrow\displaystyle\int x^3\mathrm{d} x=\cfrac{x^4}{4}+C\]</p>
                 <p>上述所有积分都是不定积分</p>
                 <p>注意：定积分的结果是一个数，而不定积分是一个函数的集合</p>
                 <p>不定积分的两个性质：</p>
-                <p>1.`\int (f(x)+g(x))dx=\int f(x)dx+\int g(x)dx`</p>
-                <p>2.`\int Cf(x)dx=C\int f(x)dx`（`C`是常数，与上面的`C`无关）</p>
+                <p>1.\(\displaystyle\int \left(f\left(x\right)+g\left(x\right)\right)\mathrm{d} x=\displaystyle\int f\left(x\right)\mathrm{d} x+\displaystyle\int g\left(x\right)\mathrm{d} x\)</p>
+                <p>2.\(\displaystyle\int Cf\left(x\right)\mathrm{d} x=C\displaystyle\int f\left(x\right)\mathrm{d} x\)（\(C\)是常数，与上面的\(C\)无关）</p>
                 <p>现在我们来计算一些不定积分：</p>
-                <p>第一个是`\int x^adx`（`a`是常数）</p>
-                <p>我们知道`\frac{d}{dx}(x^{a+1})=(a+1)x^a`</p>
-                <p>`\Rightarrow \int (a+1)x^adx=x^{a+1}+C`</p>
-                <p>所以当`a\ne -1`时，`\int x^adx=\frac{x^{a+1}}{a+1}+C`</p>
-                <p>那当`a=-1`时呢？也就是求`\int \frac{1}{x}dx`</p>
-                <p>我们知道`\frac{d}{dx}ln(x)=\frac{1}{x}`</p>
-                <p>然而这只有在`x>0`的情况下才成立</p>
-                <p>（当`x<0`时）我们又知道（根据链式法则）`\frac{d}{dx}ln(-x)=-1*\frac{1}{-x}=\frac{1}{x}`</p>
-                <p>这样我们就可以得到：`\int \frac{1}{x}dx=ln|x|+C`</p>
+                <p>第一个是\(\displaystyle\int x^a\mathrm{d} x\)（\(a\)是常数）</p>
+                <p>我们知道\(\cfrac{\mathrm{d} }{\mathrm{d} x}\left(x^{a+1}\right)=\left(a+1\right)x^a\)</p>
+                <p>\(\Rightarrow \displaystyle\int \left(a+1\right)x^a\mathrm{d} x=x^{a+1}+C\)</p>
+                <p>所以当\(a\ne -1\)时，\(\displaystyle\int x^a\mathrm{d} x=\cfrac{x^{a+1}}{a+1}+C\)</p>
+                <p>那当\(a=-1\)时呢？也就是求\(\displaystyle\int \cfrac{1}{x}\mathrm{d} x\)</p>
+                <p>我们知道\(\cfrac{\mathrm{d} }{\mathrm{d} x}\ln\left(x\right)=\cfrac{1}{x}\)</p>
+                <p>然而这只有在\(x>0\)的情况下才成立</p>
+                <p>（当\(x<0\)时）我们又知道（根据链式法则）\(\cfrac{\mathrm{d} }{\mathrm{d} x}\ln\left(-x\right)=-1\cdot \cfrac{1}{-x}=\cfrac{1}{x}\)</p>
+                <p>这样我们就可以得到：</p>
+                <p>\[\displaystyle\int \cfrac{1}{x}\mathrm{d} x=\ln|x|+C\]</p>
                 <br>
                 <p>下面我们来总结一下常用的积分公式</p>
-                <p>`\int x^adx=\frac{x^{a+1}}{a+1}+C(a\ne -1)`</p>
-                <p>`\int \frac{1}{x}dx=ln|x|+C`</p>
-                <p>`\int e^xdx=e^x+C`</p>
-                <p>`\int a^xdx=\frac{a^x}{ln(a)}+C`</p>
-                <p>`\int cos(x)dx=sin(x)+C`</p>
-                <p>`\int sin(x)dx=-cos(x)+C`</p>
-                <p>`\int sec^2(x)dx=tan(x)+C`</p>
-                <p>`\int sec(x)tan(x)dx=sec(x)+C`</p>
-                <p>`\int csc^2(x)dx=-cot(x)+C`</p>
-                <p>`\int csc(x)cot(x)dx=-csc(x)+C`</p>
-                <p>`\int \frac{1}{\sqrt{1-x^2}}dx=sin^{-1}(x)+C`</p>
-                <p>`\int \frac{1}{1+x^2}dx=tan^{-1}(x)+C`</p>
+                <p>\(\displaystyle\int x^a\mathrm{d} x=\cfrac{x^{a+1}}{a+1}+C\left(a\ne -1\right)\)</p>
+                <p>\(\displaystyle\int \cfrac{1}{x}\mathrm{d} x=\ln|x|+C\)</p>
+                <p>\(\displaystyle\int e^x\mathrm{d} x=e^x+C\)</p>
+                <p>\(\displaystyle\int a^x\mathrm{d} x=\cfrac{a^x}{\ln\left(a\right)}+C\)</p>
+                <p>\(\displaystyle\int \cos\left(x\right)\mathrm{d} x=\sin\left(x\right)+C\)</p>
+                <p>\(\displaystyle\int \sin\left(x\right)\mathrm{d} x=-\cos\left(x\right)+C\)</p>
+                <p>\(\displaystyle\int \sec^2\left(x\right)\mathrm{d} x=\tan\left(x\right)+C\)</p>
+                <p>\(\displaystyle\int \sec\left(x\right)\tan\left(x\right)\mathrm{d} x=\sec\left(x\right)+C\)</p>
+                <p>\(\displaystyle\int \csc^2\left(x\right)\mathrm{d} x=-\cot\left(x\right)+C\)</p>
+                <p>\(\displaystyle\int \csc\left(x\right)\cot\left(x\right)\mathrm{d} x=-\csc\left(x\right)+C\)</p>
+                <p>\(\displaystyle\int \cfrac{1}{\sqrt{1-x^2}}\mathrm{d} x=\sin^{-1}\left(x\right)+C\)</p>
+                <p>\(\displaystyle\int \cfrac{1}{1+x^2}\mathrm{d} x=\tan^{-1}\left(x\right)+C\)</p>
                 <br>
-                <p>根据链式求导法则，我们知道在导数公式里，如果用`ax`代替`x`，那么把每一个公式乘以`a`即可</p>
-                <p>比如：`\frac{d}{dx}e^{2x}=2e^{2x}`</p>
-                <p>那如果是积分，我们只需要把结果除以`a`</p>
-                <p>比如：`\int e^{2x}dx=\frac{1}{2}e^{2x}+C`</p>
+                <p>根据链式求导法则，我们知道在导数公式里，如果用\(ax\)代替\(x\)，那么把每一个公式乘以\(a\)即可</p>
+                <p>比如：\(\cfrac{\mathrm{d} }{\mathrm{d} x}e^{2x}=2e^{2x}\)</p>
+                <p>那如果是积分，我们只需要把结果除以\(a\)</p>
+                <p>比如：\(\displaystyle\int e^{2x}\mathrm{d} x=\cfrac{1}{2}e^{2x}+C\)</p>
                 <h2><a name="3.8">3.8 积分的方法</a></h2>
                 <p style="font-weight:bold">1.换元法</p>
-                <p>考虑一个不定积分：`\int x^2cos(x^3)dx`</p>
-                <p>这里我们可以用换元法：令`u=x^3`</p>
-                <p>这样我们就有：`\frac{du}{dx}=3x^2`</p>
-                <p>我们可以把`dx`移到等式右侧（这是可以用链式求导法则解释的），变成`du=3x^2dx`</p>
-                <p>`\int x^2cos(x^3)dx=\frac{1}{3} \int cos(x^3)*3x^2dx=\frac{1}{3} \int cos(u)du=\frac{1}{3} sin(u)+C=\frac{1}{3} sin(x^3)+C`</p>
+                <p>考虑一个不定积分：\(\displaystyle\int x^2\cos\left(x^3\right)\mathrm{d} x\)</p>
+                <p>这里我们可以用换元法：令\(u=x^3\)</p>
+                <p>这样我们就有：\(\cfrac{\mathrm{d} u}{\mathrm{d} x}=3x^2\)</p>
+                <p>我们可以把\(\mathrm{d} x\)移到等式右侧（这是可以用链式求导法则解释的），变成\(\mathrm{d} u=3x^2\mathrm{d} x\)</p>
+                <p>\[\displaystyle\int x^2\cos\left(x^3\right)\mathrm{d} x=\cfrac{1}{3} \displaystyle\int \cos\left(x^3\right)\cdot 3x^2\mathrm{d} x=\cfrac{1}{3} \displaystyle\int \cos\left(u\right)\mathrm{d} u=\cfrac{1}{3} \sin\left(u\right)+C=\cfrac{1}{3} \sin\left(x^3\right)+C\]</p>
                 <p>这样有了不定积分，我们算定积分就更加方便了</p>
-                <p>假如我们要算`\int_{0}^{\root[3]{\frac{\pi}{2}}}x^2cos(x^3)dx`</p>
-                <p>我们已经找到了`x^2cos(x^3)`的一个原函数，这样根据微积分第二基本定理，`\int_{0}^{\root[3]{\frac{\pi}{2}}}x^2cos(x^3)dx`就可以轻松求出</p>
-                <p>`\int_{0}^{\root[3]{\frac{\pi}{2}}}x^2cos(x^3)dx=\frac{1}{3} sin(x^3)|_{0}^{\root[3]{\frac{\pi}{2}}}``=\frac{1}{3}`</p>
+                <p>假如我们要算\(\displaystyle\int_{0}^{\sqrt[3]{\frac{\pi}{2}}}x^2\cos\left(x^3\right)\mathrm{d} x\)</p>
+                <p>我们已经找到了\(x^2\cos\left(x^3\right)\)的一个原函数，这样根据微积分第二基本定理，\(\displaystyle\int_{0}^{\sqrt[3]{\frac{\pi}{2}}}x^2\cos\left(x^3\right)\mathrm{d} x\)就可以轻松求出</p>
+                <p>\[\displaystyle\int_{0}^{\sqrt[3]{\frac{\pi}{2}}}x^2\cos\left(x^3\right)\mathrm{d} x=\cfrac{1}{3} \sin\left(x^3\right)\bigg|_{0}^{\sqrt[3]{\frac{\pi}{2}}}=\cfrac{1}{3}\]</p>
                 <br>
-                <p>我们再考虑另一个不定积分：`\int \frac{x}{x^2+8}dx`</p>
-                <p>这里我们可以令`u=x^2+8`，这样就有`du=2xdx`</p>
-                <p>`\int \frac{x}{x^2+8}dx=\frac{1}{2} \int \frac{1}{u}du=\frac{1}{2}ln|u|+C=\frac{1}{2}ln|x^2+8|+C`</p>
-                <p>从中我们可以发现一个重要结论：如果`f(x)`是可导函数，那么`\int \frac{f^{'}(x)}{f(x)}dx=ln|f(x)|+C`</p>
+                <p>我们再考虑另一个不定积分：\(\displaystyle\int \cfrac{x}{x^2+8}\mathrm{d} x\)</p>
+                <p>这里我们可以令\(u=x^2+8\)，这样就有\(\mathrm{d} u=2x\mathrm{d} x\)</p>
+                <p>\[\displaystyle\int \cfrac{x}{x^2+8}\mathrm{d} x=\cfrac{1}{2} \displaystyle\int \cfrac{1}{u}\mathrm{d} u=\cfrac{1}{2}\ln|u|+C=\cfrac{1}{2}\ln|x^2+8|+C\]</p>
+                <p>从中我们可以发现一个重要结论：如果\(f\left(x\right)\)是可导函数，那么</p>
+                <p>\[\displaystyle\int \cfrac{f^{\prime}\left(x\right)}{f\left(x\right)}\mathrm{d} x=\ln|f\left(x\right)|+C\]</p>
                 <br>
                 <p>至于什么时候可以换元，怎么换元，这就要多做题积累经验了</p>
                 <p style="font-weight:bold">2.长除法</p>
-                <p>考虑一个不定积分：`\int \frac{x^2+3x+1}{x+1}dx`</p>
+                <p>考虑一个不定积分：\(\displaystyle\int \cfrac{x^2+3x+1}{x+1}\mathrm{d} x\)</p>
                 <p>我们用长除法（没学过自己查）把它分解为：</p>
-                <p>`\int \frac{x^2+3x+1}{x+1}dx=\int (x+2)dx-\int \frac{1}{x+1}dx=\frac{x^2}{2}+2x-\ln|x+1|+C`</p>
+                <p>\[\displaystyle\int \cfrac{x^2+3x+1}{x+1}\mathrm{d} x=\displaystyle\int \left(x+2\right)\mathrm{d} x-\displaystyle\int \cfrac{1}{x+1}\mathrm{d} x=\cfrac{x^2}{2}+2x-\ln|x+1|+C\]</p>
                 <p style="font-weight:bold">3.配方</p>
-                <p>考虑一个不定积分：`\int \frac{1}{x^2+2x+2}dx`</p>
+                <p>考虑一个不定积分：\(\displaystyle\int \cfrac{1}{x^2+2x+2}\mathrm{d} x\)</p>
                 <p>我们可以对其分母进行配方：</p>
-                <p>`\int \frac{1}{x^2+2x+2}dx=\int \frac{1}{(x+1)^2+1}dx`</p>
-                <p>可以看作这里是个换元`u=x+1`</p>
+                <p>\[\displaystyle\int \cfrac{1}{x^2+2x+2}\mathrm{d} x=\displaystyle\int \cfrac{1}{\left(x+1\right)^2+1}\mathrm{d} x\]</p>
+                <p>可以看作这里是个换元\(u=x+1\)</p>
                 <p>这样我们就有：</p>
-                <p>`\int \frac{1}{u^2+1}du=\arctan(u)+C=\arctan(x+1)+C`</p>
+                <p>\[\displaystyle\int \cfrac{1}{u^2+1}\mathrm{d} u=\arctan\left(u\right)+C=\arctan\left(x+1\right)+C\]</p>
                 <p style="font-weight:bold">4.部分分式</p>
                 <p>对于一个有理函数（分母是不可约多项式或其幂，分子多项式的次数比分母多项式的次数要低），我们可以对它进行部分分式分解</p>
-                <p>若其分母有`(x+a)`，那么它可以分解为`\frac{A}{x+a}`的形式</p>
-                <p>若其分母有`(x+a)^2`，那么它可以分解为`\frac{A}{(x+a)^2}+\frac{B}{x+a}`的形式</p>
-                <p>若其分母有`(x^2+ax+b)`（在实数域内不可因式分解），那么它可以分解为`\frac{Ax+B}{x^2+ax+b}`的形式</p>
-                <p>若其分母有`(x+a)^3`，那么它可以分解为`\frac{A}{(x+a)^3}+\frac{B}{(x+a)^2}+\frac{C}{x+a}`的形式</p>
+                <p>若其分母有\(\left(x+a\right)\)，那么它可以分解为\(\cfrac{A}{x+a}\)的形式</p>
+                <p>若其分母有\(\left(x+a\right)^2\)，那么它可以分解为\(\cfrac{A}{\left(x+a\right)^2}+\cfrac{B}{x+a}\)的形式</p>
+                <p>若其分母有\(\left(x^2+ax+b\right)\)（在实数域内不可因式分解），那么它可以分解为\(\cfrac{Ax+B}{x^2+ax+b}\)的形式</p>
+                <p>若其分母有\(\left(x+a\right)^3\)，那么它可以分解为\(\cfrac{A}{\left(x+a\right)^3}+\cfrac{B}{\left(x+a\right)^2}+\cfrac{C}{x+a}\)的形式</p>
                 <p>以此类推···</p>
                 <br>
-                <p>比如我们要对`\frac{f(x)}{(x-1)(x+2)^2(x^2-4x+7)}`进行部分分式分解</p>
+                <p>比如我们要对\(\cfrac{f\left(x\right)}{\left(x-1\right)\left(x+2\right)^2\left(x^2-4x+7\right)}\)进行部分分式分解</p>
                 <p>它会变成</p>
-                <p>`\frac{A}{x-1}+\frac{B}{(x+2)^2}+\frac{C}{x+2}+\frac{Dx+E}{x^2-4x+7}`</p>
+                <p>\[\cfrac{A}{x-1}+\cfrac{B}{\left(x+2\right)^2}+\cfrac{C}{x+2}+\cfrac{Dx+E}{x^2-4x+7}\]</p>
                 <p>之后再解个多元一次方程组就可以求出这些待定的系数了</p>
                 <br>
-                <p>现在我们考虑一个不定积分：`\int \frac{x+2}{x^2-1}dx`</p>
-                <p>对分母进行因式分解，变成`\int \frac{x+2}{(x-1)(x+1)}dx`</p>
+                <p>现在我们考虑一个不定积分：\(\displaystyle\int \cfrac{x+2}{x^2-1}\mathrm{d} x\)</p>
+                <p>对分母进行因式分解，变成\(\displaystyle\int \cfrac{x+2}{\left(x-1\right)\left(x+1\right)}\mathrm{d} x\)</p>
                 <p>这样就可以进行部分分式分解了</p>
-                <p>`\int \frac{x+2}{(x-1)(x+1)}dx=\int (\frac{A}{x-1}+\frac{B}{x+1})dx`</p>
+                <p>\[\displaystyle\int \cfrac{x+2}{\left(x-1\right)\left(x+1\right)}\mathrm{d} x=\displaystyle\int \left(\cfrac{A}{x-1}+\cfrac{B}{x+1}\right)\mathrm{d} x\]</p>
                 <p>解个二元一次方程组：</p>
-                <p>`{A+B=1 &nbsp;&nbsp;&nbsp;&nbsp; A-B=2}\Rightarrow {A=\frac{3}{2} &nbsp;&nbsp;&nbsp;&nbsp; B=-frac{1}{2}}`</p>
-                <p>`\int \frac{x+2}{(x-1)(x+1)}dx=\int (\frac{3}{2(x-1)}-\frac{1}{2(x+1)})dx=\frac{3}{2} \int \frac{1}{x-1}dx-\frac{1}{2} \int \frac{1}{x+1}dx=\frac{3}{2} \ln|x-1|-\frac{1}{2} \ln|x+1|+C`</p>
+                <p>
+                    \[
+                        \left\{
+                            \begin{array}{ll}
+                                A+B=1 \\
+                                A-B=2
+                            \end{array}
+                        \right.
+                    \]
+                </p>
+                <p>
+                    \[
+                        \Rightarrow\left\{
+                            \begin{array}{ll}
+                                A=\cfrac{3}{2} \\
+                                B=-\cfrac{1}{2}
+                            \end{array}
+                        \right.
+                    \]
+                </p>
+                <p>\[\displaystyle\int \cfrac{x+2}{\left(x-1\right)\left(x+1\right)}\mathrm{d} x=\displaystyle\int \left(\cfrac{3}{2\left(x-1\right)}-\cfrac{1}{2\left(x+1\right)}\right)\mathrm{d} x=\cfrac{3}{2} \displaystyle\int \cfrac{1}{x-1}\mathrm{d} x-\cfrac{1}{2} \displaystyle\int \cfrac{1}{x+1}\mathrm{d} x=\cfrac{3}{2} \ln|x-1|-\cfrac{1}{2} \ln|x+1|+C\]</p>
                 <p style="font-weight:bold">5.分部积分法</p>
-                <p>还记得导数的乘积法则吗？我们先进行一些移项的操作，再对等式两边同时对`x`求积分</p>
-                <p>`\frac{d}{dx}(uv)=v\frac{du}{dx}+u\frac{dv}{dx}`</p>
-                <p>`u\frac{dv}{dx}=\frac{d}{dx}(uv)-v\frac{du}{dx}`</p>
-                <p>`\int u\frac{dv}{dx}dx=\int \frac{d}{dx}(uv)dx-\int v\frac{du}{dx}dx`</p>
-                <p>其中`\int \frac{d}{dx}(uv)dx`指的是`uv`的导数的原函数，结果应该为`uv+C`，但是因为后面一个不定积分它自带一个`+C`，所以这里直接写成`uv`即可</p>
-                <p>`\int u\frac{dv}{dx}dx=uv-\int v\frac{du}{dx}dx`</p>
+                <p>还记得导数的乘积法则吗？我们先进行一些移项的操作，再对等式两边同时对\(x\)求积分</p>
+                <p>\[\cfrac{\mathrm{d} }{\mathrm{d} x}\left(uv\right)=v\cfrac{\mathrm{d} u}{\mathrm{d} x}+u\cfrac{\mathrm{d} v}{\mathrm{d} x}\]</p>
+                <p>\[u\cfrac{\mathrm{d} v}{\mathrm{d} x}=\cfrac{\mathrm{d} }{\mathrm{d} x}\left(uv\right)-v\cfrac{\mathrm{d} u}{\mathrm{d} x}\]</p>
+                <p>\[\displaystyle\int u\cfrac{\mathrm{d} v}{\mathrm{d} x}\mathrm{d} x=\displaystyle\int \cfrac{\mathrm{d} }{\mathrm{d} x}\left(uv\right)\mathrm{d} x-\displaystyle\int v\cfrac{\mathrm{d} u}{\mathrm{d} x}\mathrm{d} x\]</p>
+                <p>其中\(\displaystyle\int \cfrac{\mathrm{d} }{\mathrm{d} x}\left(uv\right)\mathrm{d} x\)指的是\(uv\)的导数的原函数，结果应该为\(uv+C\)，但是因为后面一个不定积分它自带一个\(+C\)，所以这里直接写成\(uv\)即可</p>
+                <p>\[\displaystyle\int u\cfrac{\mathrm{d} v}{\mathrm{d} x}\mathrm{d} x=uv-\displaystyle\int v\cfrac{\mathrm{d} u}{\mathrm{d} x}\mathrm{d} x\]</p>
                 <p>这就是分部积分公式</p>
-                <p>但是我们经常会用它的简写形式：`\int udv=uv-\int vdu`</p>
+                <p>但是我们经常会用它的简写形式：</p>
+                <p>\[\displaystyle\int u\mathrm{d} v=uv-\displaystyle\int v\mathrm{d} u\]</p>
                 <br>
-                <p>现在我们来求一个不定积分`\int xe^xdx`</p>
-                <p>我们可以设`u=x`和`dv=e^xdx`，然后用我们的简写版分部积分公式</p>
-                <table width="50%" style="text-align:center">
+                <p>现在我们来求一个不定积分\(\displaystyle\int xe^x\mathrm{d} x\)</p>
+                <p>我们可以设\(u=x\)和\(\mathrm{d} v=e^x\mathrm{d} x\)，然后用我们的简写版分部积分公式</p>
+                <table width="50%" style="text-align:center" align="center">
                     <tr>
-                        <td>`u=x`</td>
-                        <td>`v=`</td>
+                        <td>\(u=x\)</td>
+                        <td>\(v=\)</td>
                     </tr>
                     <tr>
-                        <td>`du=`</td>
-                        <td>`dv=e^xdx`</td>
+                        <td>\(\mathrm{d} u=\)</td>
+                        <td>\(\mathrm{d} v=e^x\mathrm{d} x\)</td>
                     </tr>
                 </table>
-                <p>把表格补全：（这里的`v`就是根据`dv`求原函数并且可以忽略`+C`因为后面有不定积分）</p>
-                <table width="50%" style="text-align:center">
+                <p>把表格补全：（这里的\(v\)就是根据\(\mathrm{d} v\)求原函数并且可以忽略\(+C\)因为后面有不定积分）</p>
+                <table width="50%" style="text-align:center" align="center">
                     <tr>
-                        <td>`u=x`</td>
-                        <td>`v=e^x`</td>
+                        <td>\(u=x\)</td>
+                        <td>\(v=e^x\)</td>
                     </tr>
                     <tr>
-                        <td>`du=dx`</td>
-                        <td>`dv=e^xdx`</td>
+                        <td>\(\mathrm{d} u=\mathrm{d} x\)</td>
+                        <td>\(\mathrm{d} v=e^x\mathrm{d} x\)</td>
                     </tr>
                 </table>
                 <p>这样就有</p>
-                <p>`\int xe^xdx=xe^x-\int e^xdx=xe^x-e^x+C`</p>
+                <p>\[\displaystyle\int xe^x\mathrm{d} x=xe^x-\displaystyle\int e^x\mathrm{d} x=xe^x-e^x+C\]</p>
                 <br>
-                <p>再举个例子：`\int \ln(x)dx`</p>
+                <p>再举个例子：\(\displaystyle\int \ln\left(x\right)\mathrm{d} x\)</p>
                 <p>直接求求不出来，那就用分部积分试试</p>
-                <table width="50%" style="text-align:center">
+                <table width="50%" style="text-align:center" align="center">
                     <tr>
-                        <td>`u=\ln(x)`</td>
-                        <td>`v=x`</td>
+                        <td>\(u=\ln\left(x\right)\)</td>
+                        <td>\(v=x\)</td>
                     </tr>
                     <tr>
-                        <td>`du=\frac{1}{x}dx`</td>
-                        <td>`dv=dx`</td>
+                        <td>\(\mathrm{d} u=\cfrac{1}{x}\mathrm{d} x\)</td>
+                        <td>\(\mathrm{d} v=\mathrm{d} x\)</td>
                     </tr>
                 </table>
-                <p>`\int \ln(x)dx=x\ln(x)-\int 1dx=x\ln(x)-x+C`</p>
+                <p>\[\displaystyle\int \ln\left(x\right)\mathrm{d} x=x\ln\left(x\right)-\displaystyle\int 1\mathrm{d} x=x\ln\left(x\right)-x+C\]</p>
                 <p style="font-weight:bold">6.三角函数的积分</p>
                 <p>回忆一下几个三角恒等式</p>
-                <p>`sin^2(x)+cos^2(x)=1`</p>
-                <p>`tan^2(x)+1=sec^2(x)`</p>
-                <p>`cot^2(x)+1=csc^2(x)`</p>
-                <p>`cos^2(x)=\frac{1}{2} (1+cos(2x))`</p>
-                <p>`sin^2(x)=\frac{1}{2} (1-cos(2x))`</p>
+                <p>\[\sin^2\left(x\right)+\cos^2\left(x\right)=1\]</p>
+                <p>\[\tan^2\left(x\right)+1=\sec^2\left(x\right)\]</p>
+                <p>\[\cot^2\left(x\right)+1=\csc^2\left(x\right)\]</p>
+                <p>\[\cos^2\left(x\right)=\cfrac{1}{2} \left(1+\cos\left(2x\right)\right)\]</p>
+                <p>\[\sin^2\left(x\right)=\cfrac{1}{2} \left(1-\cos\left(2x\right)\right)\]</p>
                 <p>有了这些恒等式，我们就可以计算很多关于三角函数的积分了</p>
-                <p>考虑一个不定积分：`\int sin^2(x)cos^5(x)dx`</p>
-                <p>我们可以考虑从`cos^5(x)`里拆出一个`cos(x)`来，因为`5`是个奇数</p>
-                <p>`\int sin^2(x)cos^5(x)dx=\int sin^2(x)cos^4(x)cos(x)dx=\int sin^2(x)(1-sin^2(x))^2cos(x)dx`</p>
-                <p>现在就可以用换元法了：令`u=sin(x)`，那么`du=cos(x)dx`</p>
+                <p>考虑一个不定积分：\(\displaystyle\int \sin^2\left(x\right)\cos^5\left(x\right)\mathrm{d} x\)</p>
+                <p>我们可以考虑从\(\cos^5\left(x\right)\)里拆出一个\(\cos\left(x\right)\)来，因为\(5\)是个奇数</p>
+                <p>\[\displaystyle\int \sin^2\left(x\right)\cos^5\left(x\right)\mathrm{d} x=\displaystyle\int \sin^2\left(x\right)\cos^4\left(x\right)\cos\left(x\right)\mathrm{d} x=\displaystyle\int \sin^2\left(x\right)\left(1-\sin^2\left(x\right)\right)^2\cos\left(x\right)\mathrm{d} x\]</p>
+                <p>现在就可以用换元法了：令\(u=\sin\left(x\right)\)，那么\(\mathrm{d} u=\cos\left(x\right)\mathrm{d} x\)</p>
                 <p>这样就有</p>
-                <p>`\int sin^2(x)(1-sin^2(x))^2cos(x)dx=\int u^2(1-u^2)^2du=\int u^2du-\int 2u^4du+\int u^6du=\frac{u^3}{3}-\frac{2u^5}{5}+\frac{u^7}{7}+C`</p>
-                <p>最后再换回以`x`变量的积分：</p>
-                <p>`\int sin^2(x)cos^5(x)dx=\frac{sin^3(x)}{3}-\frac{2sin^5(x)}{5}+\frac{sin^7(x)}{7}+C`</p>
+                <p>\[\displaystyle\int \sin^2\left(x\right)\left(1-\sin^2\left(x\right)\right)^2\cos\left(x\right)\mathrm{d} x=\displaystyle\int u^2\left(1-u^2\right)^2\mathrm{d} u=\displaystyle\int u^2\mathrm{d} u-\displaystyle\int 2u^4\mathrm{d} u+\displaystyle\int u^6\mathrm{d} u=\cfrac{u^3}{3}-\cfrac{2u^5}{5}+\cfrac{u^7}{7}+C\]</p>
+                <p>最后再换回以\(x\)变量的积分：</p>
+                <p>\[\displaystyle\int \sin^2\left(x\right)\cos^5\left(x\right)\mathrm{d} x=\cfrac{\sin^3\left(x\right)}{3}-\cfrac{2\sin^5\left(x\right)}{5}+\cfrac{\sin^7\left(x\right)}{7}+C\]</p>
                 <br>
-                <p>再看另一个不定积分：`\int sin^2(x)cos^4(x)dx`</p>
+                <p>再看另一个不定积分：\(\displaystyle\int \sin^2\left(x\right)\cos^4\left(x\right)\mathrm{d} x\)</p>
                 <p>我们可以先把它降幂变成</p>
-                <p>`\int \frac{1}{2} (1-cos(2x)) (\frac{1}{2} (1+cos(2x)))^2dx=\frac{1}{8} \int (1+cos(2x)-cos^2(2x)-cos^3(2x))dx`</p>
-                <p>到这里我们需要求的就是`\int cos^2(2x)dx`和`\int cos^3(2x)dx`</p>
-                <p>`\int cos^2(2x)dx=\int \frac{1}{2} (1+cos(4x))dx=\frac{1}{2}x+\frac{1}{8}sin(4x)+C`</p>
-                <p>`\int cos^3(2x)dx=\int (1-sin^2(2x))cos(2x)dx`</p>
-                <p>令`u=sin(2x)`，那么`du=2cos(2x)dx`</p>
-                <p>`\int (1-sin^2(2x))cos(2x)dx=\frac{1}{2} \int (1-u^2)du=\frac{u}{2}-\frac{u^3}{6}+C=\frac{sin(2x)}{2}-\frac{sin^3(2x)}{6}+C`</p>
-                <p>`\frac{1}{8} \int (1+cos(2x)-cos^2(2x)-cos^3(2x))dx=\frac{1}{8}(x+\frac{sin(2x)}{2}-(\frac{1}{2}x+\frac{1}{8}sin(4x))-(\frac{sin(2x)}{2}-\frac{sin^3(2x)}{6}))+C`</p>
-                <p>`\Rightarrow \int sin^2(x)cos^4(x)dx=\frac{x}{16}+\frac{sin^3(2x)}{48}-\frac{sin(4x)}{64}+C`</p>
+                <p>\[\displaystyle\int \cfrac{1}{2} \left(1-\cos\left(2x\right)\right) \left(\cfrac{1}{2} \left(1+\cos\left(2x\right)\right)\right)^2\mathrm{d} x=\cfrac{1}{8} \displaystyle\int \left(1+\cos\left(2x\right)-\cos^2\left(2x\right)-\cos^3\left(2x\right)\right)\mathrm{d} x\]</p>
+                <p>到这里我们需要求的就是\(\displaystyle\int \cos^2\left(2x\right)\mathrm{d} x\)和\(\displaystyle\int \cos^3\left(2x\right)\mathrm{d} x\)</p>
+                <p>\[\displaystyle\int \cos^2\left(2x\right)\mathrm{d} x=\displaystyle\int \cfrac{1}{2} \left(1+\cos\left(4x\right)\right)\mathrm{d} x=\cfrac{1}{2}x+\cfrac{1}{8}\sin\left(4x\right)+C\]</p>
+                <p>\[\displaystyle\int \cos^3\left(2x\right)\mathrm{d} x=\displaystyle\int \left(1-\sin^2\left(2x\right)\right)\cos\left(2x\right)\mathrm{d} x\]</p>
+                <p>令\(u=\sin\left(2x\right)\)，那么\(\mathrm{d} u=2\cos\left(2x\right)\mathrm{d} x\)</p>
+                <p>\[\displaystyle\int \left(1-\sin^2\left(2x\right)\right)\cos\left(2x\right)\mathrm{d} x=\cfrac{1}{2} \displaystyle\int \left(1-u^2\right)\mathrm{d} u=\cfrac{u}{2}-\cfrac{u^3}{6}+C=\cfrac{\sin\left(2x\right)}{2}-\cfrac{\sin^3\left(2x\right)}{6}+C\]</p>
+                <p>\[\cfrac{1}{8} \displaystyle\int \left(1+\cos\left(2x\right)-\cos^2\left(2x\right)-\cos^3\left(2x\right)\right)\mathrm{d} x=\cfrac{1}{8}\left(x+\cfrac{\sin\left(2x\right)}{2}-\left(\cfrac{1}{2}x+\cfrac{1}{8}\sin\left(4x\right)\right)-\left(\cfrac{\sin\left(2x\right)}{2}-\cfrac{\sin^3\left(2x\right)}{6}\right)\right)+C\]</p>
+                <p>\[\Rightarrow \displaystyle\int \sin^2\left(x\right)\cos^4\left(x\right)\mathrm{d} x=\cfrac{x}{16}+\cfrac{\sin^3\left(2x\right)}{48}-\cfrac{\sin\left(4x\right)}{64}+C\]</p>
                 <br>
-                <p>看完`sin`和`cos`，我们来看`tan`</p>
-                <p>我们从`\int tan(x)dx`开始：</p>
-                <p>`\int tan(x)dx=\int \frac{sin(x)}{cos(x)}dx=-ln|cos(x)|+C`</p>
-                <p>接着是`\int tan^2(x)dx`</p>
-                <p>`\int tan^2(x)dx=\int (sec^2(x)-1)dx=tan(x)-x+C`</p>
-                <p>现在我们可以来计算`\int tan^4(x)dx`</p>
-                <p>`\int tan^4(x)dx=\int tan^2(x)tan^2(x)dx=\int tan^2(x)(sec^2(x)-1)dx=\int tan^2(x)sec^2(x)dx-\int tan^2(x)dx`</p>
-                <p>这里我们需要解决的就是`\int tan^2(x)sec^2(x)dx`</p>
-                <p>很明显，我们可以用换元法：令`u=tan(x)`，那么`du=sec^2(x)dx`</p>
-                <p>`\int tan^2(x)sec^2(x)dx=\int u^2du=\frac{u^3}{3}+C=\frac{tan^3(x)}{3}+C`</p>
-                <p>这样就有`\int tan^4(x)dx=\frac{tan^3(x)}{3}-tan(x)+x+C`</p>
+                <p>看完\(\sin\)和\(\cos\)，我们来看\(\tan\)</p>
+                <p>我们从\(\displaystyle\int \tan\left(x\right)\mathrm{d} x\)开始：</p>
+                <p>\[\displaystyle\int \tan\left(x\right)\mathrm{d} x=\displaystyle\int \cfrac{\sin\left(x\right)}{\cos\left(x\right)}\mathrm{d} x=-\ln|\cos\left(x\right)|+C\]</p>
+                <p>接着是\(\displaystyle\int \tan^2\left(x\right)\mathrm{d} x\)</p>
+                <p>\[\displaystyle\int \tan^2\left(x\right)\mathrm{d} x=\displaystyle\int \left(\sec^2\left(x\right)-1\right)\mathrm{d} x=\tan\left(x\right)-x+C\]</p>
+                <p>现在我们可以来计算\(\displaystyle\int \tan^4\left(x\right)\mathrm{d} x\)</p>
+                <p>\[\displaystyle\int \tan^4\left(x\right)\mathrm{d} x=\displaystyle\int \tan^2\left(x\right)\tan^2\left(x\right)\mathrm{d} x=\displaystyle\int \tan^2\left(x\right)\left(\sec^2\left(x\right)-1\right)\mathrm{d} x=\displaystyle\int \tan^2\left(x\right)\sec^2\left(x\right)\mathrm{d} x-\displaystyle\int \tan^2\left(x\right)\mathrm{d} x\]</p>
+                <p>这里我们需要解决的就是\(\displaystyle\int \tan^2\left(x\right)\sec^2\left(x\right)\mathrm{d} x\)</p>
+                <p>很明显，我们可以用换元法：令\(u=\tan\left(x\right)\)，那么\(\mathrm{d} u=\sec^2\left(x\right)\mathrm{d} x\)</p>
+                <p>\[\displaystyle\int \tan^2\left(x\right)\sec^2\left(x\right)\mathrm{d} x=\displaystyle\int u^2\mathrm{d} u=\cfrac{u^3}{3}+C=\cfrac{\tan^3\left(x\right)}{3}+C\]</p>
+                <p>这样就有</p>
+                <p>\[\displaystyle\int \tan^4\left(x\right)\mathrm{d} x=\cfrac{\tan^3\left(x\right)}{3}-\tan\left(x\right)+x+C\]</p>
                 <br>
-                <p>最后来看`sec`</p>
-                <p>我们从`\int sec(x)dx`开始</p>
+                <p>最后来看\(\sec\)</p>
+                <p>我们从\(\displaystyle\int \sec\left(x\right)\mathrm{d} x\)开始</p>
                 <p>这里有个巧妙的求法：</p>
-                <p>`\int sec(x)dx=\int sec(x)*\frac{sec(x)+tan(x)}{sec(x)+tan(x)}dx=\int \frac{sec^2(x)+sec(x)tan(x)}{sec(x)+tan(x)}dx=\ln|sec(x)+tan(x)|+C`</p>
-                <p>另外根据常用积分公式，我们很容易得到`\int sec^2(x)=tan(x)+C`</p>
-                <p>现在我们来计算`\int sec^3(x)dx`</p>
-                <p>`\int sec^3(x)dx=\int sec(x)sec^2(x)dx`</p>
+                <p>\[\displaystyle\int \sec\left(x\right)\mathrm{d} x=\displaystyle\int \sec\left(x\right)\cdot \cfrac{\sec\left(x\right)+\tan\left(x\right)}{\sec\left(x\right)+\tan\left(x\right)}\mathrm{d} x=\displaystyle\int \cfrac{\sec^2\left(x\right)+\sec\left(x\right)\tan\left(x\right)}{\sec\left(x\right)+\tan\left(x\right)}\mathrm{d} x=\ln|\sec\left(x\right)+\tan\left(x\right)|+C\]</p>
+                <p>另外根据常用积分公式，我们很容易得到\(\displaystyle\int \sec^2\left(x\right)\mathrm{d} x=\tan\left(x\right)+C\)</p>
+                <p>现在我们来计算\(\displaystyle\int \sec^3\left(x\right)\mathrm{d} x\)</p>
+                <p>\[\displaystyle\int \sec^3\left(x\right)\mathrm{d} x=\displaystyle\int \sec\left(x\right)\sec^2\left(x\right)\mathrm{d} x\]</p>
                 <p>这里我们可以用分部积分法：</p>
-                <p>设`u=sec(x)`和`dv=sec^2(x)dx`</p>
-                <table width="50%" style="text-align:center">
+                <p>设\(u=\sec\left(x\right)\)和\(\mathrm{d} v=\sec^2\left(x\right)\mathrm{d} x\)</p>
+                <table width="50%" style="text-align:center" align="center">
                     <tr>
-                        <td>`u=sec(x)`</td>
-                        <td>`v=tan(x)`</td>
+                        <td>\(u=\sec\left(x\right)\)</td>
+                        <td>\(v=\tan\left(x\right)\)</td>
                     </tr>
                     <tr>
-                        <td>`du=sec(x)tan(x)dx`</td>
-                        <td>`dv=sec^2(x)dx`</td>
+                        <td>\(\mathrm{d} u=\sec\left(x\right)\tan\left(x\right)\mathrm{d} x\)</td>
+                        <td>\(\mathrm{d} v=\sec^2\left(x\right)\mathrm{d} x\)</td>
                     </tr>
                 </table>
                 <p>这样就有</p>
-                <p>`\int sec^3(x)dx=sec(x)tan(x)-\int sec(x)tan^2(x)dx=sec(x)tan(x)-\int sec(x)(sec^2(x)-1)dx`</p>
-                <p>`\int sec^3(x)dx=sec(x)tan(x)+\int sec(x)dx-\int sec^3(x)dx=sec(x)tan(x)+\ln|sec(x)+tan(x)|+C_1-\int sec^3(x)dx`</p>
-                <p>`\Rightarrow 2\int sec^3(x)dx=sec(x)tan(x)+\ln|sec(x)+tan(x)|+C_1`</p>
-                <p>`\Rightarrow \int sec^3(x)dx=\frac{1}{2}sec(x)tan(x)+\frac{1}{2}\ln|sec(x)+tan(x)|+C`</p>
+                <p>\[\displaystyle\int \sec^3\left(x\right)\mathrm{d} x=\sec\left(x\right)\tan\left(x\right)-\displaystyle\int \sec\left(x\right)\tan^2\left(x\right)\mathrm{d} x=\sec\left(x\right)\tan\left(x\right)-\displaystyle\int \sec\left(x\right)\left(\sec^2\left(x\right)-1\right)\mathrm{d} x\]</p>
+                <p>\[\displaystyle\int \sec^3\left(x\right)\mathrm{d} x=\sec\left(x\right)\tan\left(x\right)+\displaystyle\int \sec\left(x\right)\mathrm{d} x-\displaystyle\int \sec^3\left(x\right)\mathrm{d} x=\sec\left(x\right)\tan\left(x\right)+\ln|\sec\left(x\right)+\tan\left(x\right)|+C_1-\displaystyle\int \sec^3\left(x\right)\mathrm{d} x\]</p>
+                <p>\[\Rightarrow 2\displaystyle\int \sec^3\left(x\right)\mathrm{d} x=\sec\left(x\right)\tan\left(x\right)+\ln|\sec\left(x\right)+\tan\left(x\right)|+C_1\]</p>
+                <p>\[\Rightarrow \displaystyle\int \sec^3\left(x\right)\mathrm{d} x=\cfrac{1}{2}\sec\left(x\right)\tan\left(x\right)+\cfrac{1}{2}\ln|\sec\left(x\right)+\tan\left(x\right)|+C\]</p>
                 <p style="font-weight:bold">7.三角换元法</p>
-                <p>（结合图3-12和图3-13看，`a`是正实数）</p>
-                <p>①.积分里有`\sqrt{a^2-x^2}`大都可以这样做：</p>
-                <p>我们设`x=a sin(\theta)`，那么可以得到`dx=a cos(\theta)d\theta`和`\theta=arcsin(\frac{x}{a})(\theta \in [-\frac{\pi}{2},\frac{\pi}{2}]\Rightarrow cos(\theta)\geq 0)`</p>
+                <p>（结合图3-12和图3-13看，\(a\)是正实数）</p>
+                <p>①.积分里有\(\sqrt{a^2-x^2}\)大都可以这样做：</p>
+                <p>我们设\(x=a \sin\left(\theta\right)\)，那么可以得到\(\mathrm{d} x=a \cos\left(\theta\right)\mathrm{d} \theta\)和\(\theta=\arcsin\left(\cfrac{x}{a}\right)\left(\theta \in \left[-\cfrac{\pi}{2},\cfrac{\pi}{2}\right]\Rightarrow \cos\left(\theta\right)\geq 0\right)\)</p>
                 <p>这样就有</p>
-                <p>`a^2-x^2=a^2 cos^2(\theta)\Rightarrow \sqrt{a^2-x^2}=a cos(\theta)`</p>
-                <p>e.g. 计算一个不定积分`\int \frac{x^2}{(9-x^2)^{\frac{3}{2}}}dx`</p>
-                <p>这里我们可以设`x=3sin(\theta)`，那么就有</p>
-                <p>`dx=3cos(\theta)d\theta`和`\theta=arcsin(\frac{x}{3})(\theta \in [-\frac{\pi}{2},\frac{\pi}{2}])`</p>
-                <p>`\int \frac{x^2}{(9-x^2)^{\frac{3}{2}}}dx=\int \frac{9sin^2(\theta)}{(9cos^2(\theta))^{\frac{3}{2}}}3cos(\theta)d\theta=\int \frac{9sin^2(\theta)}{27cos^3(\theta)}3cos(\theta)d\theta=\int tan^2(\theta)d\theta=tan(\theta)-\theta+C`</p>
-                <p>这里`\theta`我们知道是`arcsin(\frac{x}{3})`，`tan(\theta)`我们可以根据图3-12的三角形求出：</p>
-                <p>`tan(\theta)=\frac{x}{\sqrt{9-x^2}}`</p>
-                <p>`\Rightarrow \int \frac{x^2}{(9-x^2)^{\frac{3}{2}}}dx=\frac{x}{\sqrt{9-x^2}}-arcsin(\frac{x}{3})+C`</p>
+                <p>\[a^2-x^2=a^2 \cos^2\left(\theta\right)\Rightarrow \sqrt{a^2-x^2}=a \cos\left(\theta\right)\]</p>
+                <p>e.g. 计算一个不定积分\(\displaystyle\int \cfrac{x^2}{\left(9-x^2\right)^{\frac{3}{2}}}\mathrm{d} x\)</p>
+                <p>这里我们可以设\(x=3\sin\left(\theta\right)\)，那么就有</p>
+                <p>\(\mathrm{d} x=3\cos\left(\theta\right)\mathrm{d} \theta\)和\(\theta=\arcsin\left(\cfrac{x}{3}\right)\left(\theta \in \left[-\cfrac{\pi}{2},\cfrac{\pi}{2}\right]\right)\)</p>
+                <p>\[\displaystyle\int \cfrac{x^2}{\left(9-x^2\right)^{\frac{3}{2}}}\mathrm{d} x=\displaystyle\int \cfrac{9\sin^2\left(\theta\right)}{\left(9\cos^2\left(\theta\right)\right)^{\frac{3}{2}}}3\cos\left(\theta\right)\mathrm{d} \theta=\displaystyle\int \cfrac{9\sin^2\left(\theta\right)}{27\cos^3\left(\theta\right)}3\cos\left(\theta\right)\mathrm{d} \theta=\displaystyle\int \tan^2\left(\theta\right)\mathrm{d} \theta=\tan\left(\theta\right)-\theta+C\]</p>
+                <p>这里\(\theta\)我们知道是\(\arcsin\left(\cfrac{x}{3}\right)\)，\(\tan\left(\theta\right)\)我们可以根据图3-12的三角形求出：</p>
+                <p>\[\tan\left(\theta\right)=\cfrac{x}{\sqrt{9-x^2}}\]</p>
+                <p>\[\Rightarrow \displaystyle\int \cfrac{x^2}{\left(9-x^2\right)^{\frac{3}{2}}}\mathrm{d} x=\cfrac{x}{\sqrt{9-x^2}}-\arcsin\left(\cfrac{x}{3}\right)+C\]</p>
                 <br>
-                <p>②.积分里有`\sqrt{x^2+a^2}`大都可以这样做：</p>
-                <p>我们设`x=a tan(\theta)`，那么可以得到</p>
-                <p>`dx=a sec^2(\theta)d\theta`和`\theta=arctan(\frac{x}{a})(\theta \in (-\frac{\pi}{2},\frac{\pi}{2})\Rightarrow sec(\theta)> 0)`</p>
+                <p>②.积分里有\(\sqrt{x^2+a^2}\)大都可以这样做：</p>
+                <p>我们设\(x=a \tan\left(\theta\right)\)，那么可以得到</p>
+                <p>\(\mathrm{d} x=a \sec^2\left(\theta\right)\mathrm{d} \theta\)和\(\theta=\arctan\left(\cfrac{x}{a}\right)\left(\theta \in \left(-\cfrac{\pi}{2},\cfrac{\pi}{2}\right)\Rightarrow \sec\left(\theta\right)> 0\right)\)</p>
                 <p>这样就有</p>
-                <p>`x^2+a^2=a^2 sec^2(\theta)\Rightarrow \sqrt{x^2+a^2}=a sec(\theta)`</p>
-                <p>e.g. 计算一个不定积分`\int \frac{1}{(x^2+16)^{\frac{3}{2}}}dx`</p>
-                <p>我们可以设`x=4tan(\theta)`，那么就有</p>
-                <p>`dx=4sec^2(\theta)d\theta`和`\theta=arctan(\frac{x}{4})(\theta \in (-\frac{\pi}{2},\frac{\pi}{2}))`</p>
-                <p>`\int \frac{1}{(x^2+16)^{\frac{3}{2}}}dx=\int \frac{1}{(16sec^2(\theta))^{\frac{3}{2}}}4sec^2(\theta)d\theta=\frac{1}{16}\int cos(\theta)d\theta=\frac{1}{16}sin(\theta)+C=\frac{x}{16\sqrt{x^2+16}}+C`</p>
+                <p>\[x^2+a^2=a^2 \sec^2\left(\theta\right)\Rightarrow \sqrt{x^2+a^2}=a \sec\left(\theta\right)\]</p>
+                <p>e.g. 计算一个不定积分\(\displaystyle\int \cfrac{1}{\left(x^2+16\right)^{\frac{3}{2}}}\mathrm{d} x\)</p>
+                <p>我们可以设\(x=4\tan\left(\theta\right)\)，那么就有</p>
+                <p>\(\mathrm{d} x=4\sec^2\left(\theta\right)\mathrm{d} \theta\)和\(\theta=\arctan\left(\cfrac{x}{4}\right)\left(\theta \in \left(-\cfrac{\pi}{2},\cfrac{\pi}{2}\right)\right)\)</p>
+                <p>\[\displaystyle\int \cfrac{1}{\left(x^2+16\right)^{\frac{3}{2}}}\mathrm{d} x=\displaystyle\int \cfrac{1}{\left(16\sec^2\left(\theta\right)\right)^{\frac{3}{2}}}4\sec^2\left(\theta\right)\mathrm{d} \theta=\cfrac{1}{16}\displaystyle\int \cos\left(\theta\right)\mathrm{d} \theta=\cfrac{1}{16}\sin\left(\theta\right)+C=\cfrac{x}{16\sqrt{x^2+16}}+C\]</p>
                 <br>
-                <p>③.积分里有`\sqrt{x^2-a^2}`大都可以这样做：</p>
-                <p>我们设`x=sec(\theta)`，那么可以得到</p>
-                <p>`dx=sec(\theta)tan(\theta)d\theta`和`\theta=arcsec(\frac{x}{a})(\theta \in [0,\frac{\pi}{2})\cup (\frac{\pi}{2},\pi]\Rightarrow`当`\theta \in [0,\frac{\pi}{2})`时，`tan(\theta)\geq 0`；当`\theta \in (\frac{\pi}{2},\pi]`时，`tan(\theta)\leq 0)`</p>
-                <p>这样就有`x^2-a^2=a^2 tan^2(\theta)\Rightarrow`当`\theta \in [0,\frac{\pi}{2})`，即`x>a`时，`\sqrt{x^2-a^2}=a tan(\theta)`；当`\theta \in (\frac{\pi}{2},\pi]`，即`x<-a`时，`\sqrt{x^2-a^2}=-a tan(\theta)`</p>
-                <p>e.g. 计算一个不定积分`\int \frac{1}{x^3 \sqrt{x^2-4}}dx`</p>
-                <p>我们可以设`x=2sec(\theta)`，那么就有</p>
-                <p>`dx=2sec(\theta)tan(\theta)d\theta`和`\theta=arcsec(\frac{x}{2})(\theta \in [0,\frac{\pi}{2})\cup (\frac{\pi}{2},\pi])`</p>
-                <p>`\int \frac{1}{x^3 \sqrt{x^2-4}}dx=\int \frac{1}{8sec^3(\theta) \sqrt{4tan^2(\theta)}}2sec(\theta)tan(\theta)d\theta`</p>
+                <p>③.积分里有\(\sqrt{x^2-a^2}\)大都可以这样做：</p>
+                <p>我们设\(x=\sec\left(\theta\right)\)，那么可以得到</p>
+                <p>\(\mathrm{d} x=\sec\left(\theta\right)\tan\left(\theta\right)\mathrm{d} \theta\)和\(\theta=\operatorname{arcsec}\left(\cfrac{x}{a}\right)\left(\theta \in \left[0,\cfrac{\pi}{2}\right)\cup \left(\cfrac{\pi}{2},\pi\right]\right)\)</p>
+                <p>\(\Rightarrow\)当\(\theta \in \left[0,\cfrac{\pi}{2}\right)\)时，\(\tan\left(\theta\right)\geq 0\)；当\(\theta \in \left(\cfrac{\pi}{2},\pi\right]\)时，\(\tan\left(\theta\right)\leq 0\)</p>
+                <p>这样就有\(x^2-a^2=a^2 \tan^2\left(\theta\right)\)</p>
+                <p>\(\Rightarrow\)当\(\theta \in \left[0,\cfrac{\pi}{2}\right)\)，即\(x>a\)时，\(\sqrt{x^2-a^2}=a \tan\left(\theta\right)\)；当\(\theta \in \left(\cfrac{\pi}{2},\pi\right]\)，即\(x<-a\)时，\(\sqrt{x^2-a^2}=-a \tan\left(\theta\right)\)</p>
+                <p>e.g. 计算一个不定积分\(\displaystyle\int \cfrac{1}{x^3 \sqrt{x^2-4}}\mathrm{d} x\)</p>
+                <p>我们可以设\(x=2\sec\left(\theta\right)\)，那么就有</p>
+                <p>\(\mathrm{d} x=2\sec\left(\theta\right)\tan\left(\theta\right)\mathrm{d} \theta\)和\(\theta=\operatorname{arcsec}\left(\cfrac{x}{2}\right)\left(\theta \in \left[0,\cfrac{\pi}{2}\right)\cup \left(\cfrac{\pi}{2},\pi\right]\right)\)</p>
+                <p>\[\displaystyle\int \cfrac{1}{x^3 \sqrt{x^2-4}}\mathrm{d} x=\displaystyle\int \cfrac{1}{8\sec^3\left(\theta\right) \sqrt{4\tan^2\left(\theta\right)}}2\sec\left(\theta\right)\tan\left(\theta\right)\mathrm{d} \theta\]</p>
                 <p>分类讨论：</p>
-                <p>⑴.当`x>2`时，</p>
-                <p>`\int \frac{1}{x^3 \sqrt{x^2-4}}dx=\int \frac{1}{8sec^3(\theta) 2 tan(\theta)}2sec(\theta)tan(\theta)d\theta=\frac{1}{8}\int cos^2(\theta)d\theta`</p>
-                <p>`=\frac{1}{8}\int \frac{1}{2}(1+cos(2\theta))d\theta=\frac{\theta}{16}+\frac{sin(2\theta)}{32}+C=\frac{arcsec(\frac{x}{2})}{16}+\frac{2*\frac{\sqrt{x^2-4}}{x}*\frac{2}{x}}{32}+C=\frac{arcsec(\frac{x}{2})}{16}+\frac{\sqrt{x^2-4}}{8x^2}+C`</p>
-                <p>⑵.当`x<-2`时，</p>
-                <p>`\int \frac{1}{x^3 \sqrt{x^2-4}}dx=\int \frac{1}{8sec^3(\theta) (-2 tan(\theta))}2sec(\theta)tan(\theta)d\theta=-\frac{1}{8}\int cos^2(\theta)d\theta`</p>
-                <p>`=-\frac{1}{8}\int \frac{1}{2}(1+cos(2\theta))d\theta=-\frac{\theta}{16}-\frac{sin(2\theta)}{32}+C=-\frac{arcsec(\frac{x}{2})}{16}-\frac{2*(-\frac{\sqrt{x^2-4}}{x})*\frac{2}{x}}{32}+C=-\frac{arcsec(\frac{x}{2})}{16}+\frac{\sqrt{x^2-4}}{8x^2}+C`</p>
-                <p>⑶.当`-2\leq x\leq 2`时，`\frac{1}{x^3 \sqrt{x^2-4}}`无意义</p>
+                <p>⑴.当\(x>2\)时，</p>
+                <p>\[\displaystyle\int \cfrac{1}{x^3 \sqrt{x^2-4}}\mathrm{d} x=\displaystyle\int \cfrac{1}{8\sec^3\left(\theta\right) 2 \tan\left(\theta\right)}2\sec\left(\theta\right)\tan\left(\theta\right)\mathrm{d} \theta=\cfrac{1}{8}\displaystyle\int \cos^2\left(\theta\right)\mathrm{d} \theta\]</p>
+                <p>\[=\cfrac{1}{8}\displaystyle\int \cfrac{1}{2}\left(1+\cos\left(2\theta\right)\right)\mathrm{d} \theta=\cfrac{\theta}{16}+\cfrac{\sin\left(2\theta\right)}{32}+C=\cfrac{\operatorname{arcsec}\left(\cfrac{x}{2}\right)}{16}+\cfrac{2\cdot \cfrac{\sqrt{x^2-4}}{x}\cdot \cfrac{2}{x}}{32}+C=\cfrac{\operatorname{arcsec}\left(\cfrac{x}{2}\right)}{16}+\cfrac{\sqrt{x^2-4}}{8x^2}+C\]</p>
+                <p>⑵.当\(x<-2\)时，</p>
+                <p>\[\displaystyle\int \cfrac{1}{x^3 \sqrt{x^2-4}}\mathrm{d} x=\displaystyle\int \cfrac{1}{8\sec^3\left(\theta\right) \left(-2 \tan\left(\theta\right)\right)}2\sec\left(\theta\right)\tan\left(\theta\right)\mathrm{d} \theta=-\cfrac{1}{8}\displaystyle\int \cos^2\left(\theta\right)\mathrm{d} \theta\]</p>
+                <p>\[=-\cfrac{1}{8}\displaystyle\int \cfrac{1}{2}\left(1+\cos\left(2\theta\right)\right)\mathrm{d} \theta=-\cfrac{\theta}{16}-\cfrac{\sin\left(2\theta\right)}{32}+C=-\cfrac{\operatorname{arcsec}\left(\cfrac{x}{2}\right)}{16}-\cfrac{2\cdot \left(-\cfrac{\sqrt{x^2-4}}{x}\right)\cdot \cfrac{2}{x}}{32}+C=-\cfrac{\operatorname{arcsec}\left(\cfrac{x}{2}\right)}{16}+\cfrac{\sqrt{x^2-4}}{8x^2}+C\]</p>
+                <p>⑶.当\(-2\leq x\leq 2\)时，\(\cfrac{1}{x^3 \sqrt{x^2-4}}\)无意义</p>
                 <div align="center">
                     <img src="../img/3-12.png" width="100%">
                 </div>
@@ -437,68 +466,70 @@
                 <p style="text-align:center">图 3-13</p>
                 <h2><a name="3.9">3.9 积分的平均值和积分中值定理</a></h2>
                 <p>我们知道平均速度等于总位移除以总时间</p>
-                <p>假设时间从`a`到`b`，在`t`时刻的速度为`v(t)`，那么在这段时间里总位移就为`\int_{a}^{b} v(t)dt`，总时间为`(b-a)`</p>
-                <p>平均速度也就是`\frac{\int_{a}^{b} v(t)dt}{b-a}`</p>
-                <p>类比平均速度，我们可以把函数`f(x)`在区间`[a,b]`上的平均值`\bar{f(x)}`（下图中用`f_{av}`代替）定义为`\frac{\int_{a}^{b} f(x)dx}{b-a}`</p>
-                <p>比如`f(x)=x^2`在`[0,2]`的平均值是`\frac{\int_{0}^{2} x^2dx}{2-0}=\frac{1}{2}*\frac{8}{3}=\frac{4}{3}`</p>
+                <p>假设时间从\(a\)到\(b\)，在\(t\)时刻的速度为\(v\left(t\right)\)，那么在这段时间里总位移就为\(\displaystyle\int_{a}^{b} v\left(t\right)\mathrm{d} t\)，总时间为\(\left(b-a\right)\)</p>
+                <p>平均速度也就是\(\cfrac{\displaystyle\int_{a}^{b} v\left(t\right)\mathrm{d} t}{b-a}\)</p>
+                <p>类比平均速度，我们可以把函数\(f\left(x\right)\)在区间\(\left[a,b\right]\)上的平均值\(\overline{f\left(x\right)}\)（下图中用\(f_{av}\)代替）定义为\(\cfrac{\displaystyle\int_{a}^{b} f\left(x\right)\mathrm{d} x}{b-a}\)</p>
+                <p>比如\(f\left(x\right)=x^2\)在\(\left[0,2\right]\)的平均值是\(\cfrac{\displaystyle\int_{0}^{2} x^2\mathrm{d} x}{2-0}=\cfrac{1}{2}\cdot \cfrac{8}{3}=\cfrac{4}{3}\)</p>
                 <div align="center">
                     <img src="../img/3-14.png" width="80%">
                 </div>
                 <p style="text-align:center">图 3-14</p>
-                <p>我们把`\bar{f(x)}=\frac{\int_{a}^{b} f(x)dx}{b-a}`两边同乘`(b-a)`，可以得到`\int_{a}^{b} f(x)dx=\bar{f(x)}*(b-a)`</p>
+                <p>我们把\(\overline{f\left(x\right)}=\cfrac{\displaystyle\int_{a}^{b} f\left(x\right)\mathrm{d} x}{b-a}\)两边同乘\(\left(b-a\right)\)，可以得到</p>
+                <p>\[\displaystyle\int_{a}^{b} f\left(x\right)\mathrm{d} x=\overline{f\left(x\right)}\cdot \left(b-a\right)\]</p>
                 <p>这就是下图说的内容：这两个图像阴影部分面积相等</p>
                 <div align="center">
                     <img src="../img/3-15.png" width="100%">
                 </div>
                 <p style="text-align:center">图 3-15</p>
-                <p>我们可以发现水平线`y=\bar{f(x)}`和函数`y=f(x)`总会有一个交点，我们将其横坐标记为`c`</p>
-                <p>这样就有了积分中值定理：如果函数`f(x)`在`[a,b]`连续，那么在`(a,b)`内总有一点`c`，满足`f(c)=\frac{\int_{a}^{b} f(x)dx}{b-a}`</p>
+                <p>我们可以发现水平线\(y=\overline{f\left(x\right)}\)和函数\(y=f\left(x\right)\)总会有一个交点，我们将其横坐标记为\(c\)</p>
+                <p>这样就有了积分中值定理：如果函数\(f\left(x\right)\)在\(\left[a,b\right]\)连续，那么在\(\left(a,b\right)\)内总有一点\(c\)，满足\(f\left(c\right)=\cfrac{\displaystyle\int_{a}^{b} f\left(x\right)\mathrm{d} x}{b-a}\)</p>
                 <div align="center">
                     <img src="../img/3-16.png" width="80%">
                 </div>
                 <p style="text-align:center">图 3-16</p>
                 <h2><a name="3.10">3.10 反常积分 Improper Integral</a></h2>
                 <p style="font-weight:bold">1.无穷限的反常积分（第一类反常积分）</p>
-                <p>设函数`f(x)`在区间`[a,\infty)`上连续，取`t>a`，如果`\lim_{t\rightarrow \infty}\int_{a}^{t}f(x)dx`存在，则称此极限为`f(x)`在`[a,\infty)`上的反常积分，记作`\int_{a}^{\infty}f(x)dx`，即`\int_{a}^{\infty}f(x)dx=\lim_{t\rightarrow \infty}\int_{a}^{t}f(x)dx`</p>
-                <p>这是也称反常积分`\int_{a}^{\infty}f(x)dx`收敛；若极限不存在，则称其发散</p>
-                <p>同理，如果`f(x)`在`(-\infty,b]`上连续且极限`\lim_{t\rightarrow -\infty}\int_{t}^{b}f(x)dx`存在（取`t< b`），那么`\int_{-\infty}^{b}f(x)dx=\lim_{t\rightarrow -\infty}\int_{t}^{b}f(x)dx`收敛；若极限不存在则称其发散</p>
-                <p>如果`f(x)`在`(-\infty,\infty)`上连续且`\int_{-\infty}^{0}f(x)dx`和`\int_{0}^{\infty}f(x)dx`都收敛，则`\int_{-\infty}^{\infty}f(x)dx=\int_{-\infty}^{0}f(x)dx+\int_{0}^{\infty}f(x)dx`收敛；若有一个发散则称其发散</p>
+                <p>设函数\(f\left(x\right)\)在区间\(\left[a,\infty\right)\)上连续，取\(t>a\)，如果\(\lim\limits_ {t\to \infty}\displaystyle\int_{a}^{t}f\left(x\right)\mathrm{d} x\)存在，则称此极限为\(f\left(x\right)\)在\(\left[a,\infty\right)\)上的反常积分，记作\(\displaystyle\int_{a}^{\infty}f\left(x\right)\mathrm{d} x\)，即</p>
+                <p>\[\displaystyle\int_{a}^{\infty}f\left(x\right)\mathrm{d} x=\lim\limits_ {t\to \infty}\displaystyle\int_{a}^{t}f\left(x\right)\mathrm{d} x\]</p>
+                <p>这是也称反常积分\(\displaystyle\int_{a}^{\infty}f\left(x\right)\mathrm{d} x\)收敛；若极限不存在，则称其发散</p>
+                <p>同理，如果\(f\left(x\right)\)在\(\left(-\infty,b\right]\)上连续且极限\(\lim\limits_ {t\to -\infty}\displaystyle\int_{t}^{b}f\left(x\right)\mathrm{d} x\)存在（取\(t< b\)），那么\(\displaystyle\int_{-\infty}^{b}f\left(x\right)\mathrm{d} x=\lim\limits_ {t\to -\infty}\displaystyle\int_{t}^{b}f\left(x\right)\mathrm{d} x\)收敛；若极限不存在则称其发散</p>
+                <p>如果\(f\left(x\right)\)在\(\left(-\infty,\infty\right)\)上连续且\(\displaystyle\int_{-\infty}^{0}f\left(x\right)\mathrm{d} x\)和\(\displaystyle\int_{0}^{\infty}f\left(x\right)\mathrm{d} x\)都收敛，则\(\displaystyle\int_{-\infty}^{\infty}f\left(x\right)\mathrm{d} x=\displaystyle\int_{-\infty}^{0}f\left(x\right)\mathrm{d} x+\displaystyle\int_{0}^{\infty}f\left(x\right)\mathrm{d} x\)收敛；若有一个发散则称其发散</p>
                 <br>
-                <p>e.g. 判断反常积分`\int_{a}^{\infty}\frac{1}{x^p}dx(a>0)`的敛散性（收敛还是发散）</p>
-                <p>当`p=1`时，`\int_{a}^{\infty}\frac{1}{x^p}dx=\int_{a}^{\infty}\frac{1}{x}dx=ln(x)|_{a}^{\infty}``=\infty` 显然发散</p>
-                <p>当`p<1`时，`\int_{a}^{\infty}\frac{1}{x^p}dx=\frac{x^{1-p}}{1-p}|_{a}^{\infty}``=\infty` 显然发散</p>
-                <p>当`p>1`时，`\int_{a}^{\infty}\frac{1}{x^p}dx=\frac{x^{1-p}}{1-p}|_{a}^{\infty}``=frac{a^{1-p}}{p-1}`</p>
-                <p>因此，当`p>1`时，`\int_{a}^{\infty}\frac{1}{x^p}dx(a>0)`收敛；当`p\leq 1`时，`\int_{a}^{\infty}\frac{1}{x^p}dx(a>0)`发散</p>
+                <p>e.g. 判断反常积分\(\displaystyle\int_{a}^{\infty}\cfrac{1}{x^p}\mathrm{d} x\left(a>0\right)\)的敛散性（收敛还是发散）</p>
+                <p>当\(p=1\)时，\(\displaystyle\int_{a}^{\infty}\cfrac{1}{x^p}\mathrm{d} x=\displaystyle\int_{a}^{\infty}\cfrac{1}{x}\mathrm{d} x=\ln\left(x\right)\bigg|_{a}^{\infty}\)\(=\infty\) 显然发散</p>
+                <p>当\(p<1\)时，\(\displaystyle\int_{a}^{\infty}\cfrac{1}{x^p}\mathrm{d} x=\cfrac{x^{1-p}}{1-p}\bigg|_{a}^{\infty}\)\(=\infty\) 显然发散</p>
+                <p>当\(p>1\)时，\(\displaystyle\int_{a}^{\infty}\cfrac{1}{x^p}\mathrm{d} x=\cfrac{x^{1-p}}{1-p}\bigg|_{a}^{\infty}\)\(=\cfrac{a^{1-p}}{p-1}\)</p>
+                <p>因此，当\(p>1\)时，\(\displaystyle\int_{a}^{\infty}\cfrac{1}{x^p}\mathrm{d} x\left(a>0\right)\)收敛；当\(p\leq 1\)时，\(\displaystyle\int_{a}^{\infty}\cfrac{1}{x^p}\mathrm{d} x\left(a>0\right)\)发散</p>
                 <div align="center">
                     <iframe src="https://www.desmos.com/calculator/xjbixcvixm?embed" width="650" height="650" style="border: 1px solid #ccc" frameborder=0></iframe>
                 </div>
                 <p style="font-weight:bold">2.无界函数的反常积分（第二类反常积分）</p>
-                <p>如果函数`f(x)`在点`a`的任一邻域内都无界，那么点`a`称为`f(x)`的瑕点</p>
-                <p>设函数`f(x)`在`(a,b]`上连续，点`a`为`f(x)`的瑕点，取`t>a`，若`\lim_{t\rightarrow a^{+}}\int_{t}^{b}f(x)dx`存在，则称此极限为`f(x)`在`(a,b]`上的反常积分，记作`\int_{a}^{b}f(x)dx`，且该反常积分收敛；否则称其发散</p>
-                <p>同理，设函数`f(x)`在`[a,b)`上连续，点`b`为`f(x)`的瑕点，取`t< b`，若`\lim_{t\rightarrow b^{-}}\int_{a}^{t}f(x)dx`存在，则称此极限为`f(x)`在`[a,b)`上的反常积分，记作`\int_{a}^{b}f(x)dx`，且该反常积分收敛；否则称其发散</p>
-                <p>类似地，设函数`f(x)`在`[a,b]`除点`c(c\in [a,b])`连续，点`c`为`f(x)`的瑕点，如果`\int_{a}^{c}f(x)dx`和`\int_{c}^{b}f(x)dx`都收敛，则`\int_{a}^{b}f(x)dx=\int_{a}^{c}f(x)dx+\int_{c}^{b}f(x)dx`收敛；否则称其发散</p>
-                <p>e.g. 判断反常积分`\int_{0}^{a}\frac{1}{x^p}dx(a>0)`的敛散性</p>
-                <p>当`p=1`时，`\int_{0}^{a}\frac{1}{x^p}dx=\int_{0}^{a}\frac{1}{x}dx=ln(x)|_{0}^{a}``=\infty` 显然发散</p>
-                <p>当`p<1`时，`\int_{0}^{a}\frac{1}{x^p}dx=\frac{x^{1-p}}{1-p}|_{0}^{a}``=\frac{a^{1-p}}{1-p}` 显然收敛</p>
-                <p>当`p>1`时，`\int_{0}^{a}\frac{1}{x^p}dx=\frac{x^{1-p}}{1-p}|_{0}^{a}``=\infty` 显然发散</p>
-                <p>因此，当`p<1`时，`\int_{0}^{a}\frac{1}{x^p}dx(a>0)`收敛；当`p\geq 1`时，`\int_{0}^{a}\frac{1}{x^p}dx(a>0)`发散</p>
+                <p>如果函数\(f\left(x\right)\)在点\(a\)的任一邻域内都无界，那么点\(a\)称为\(f\left(x\right)\)的瑕点</p>
+                <p>设函数\(f\left(x\right)\)在\(\left(a,b\right]\)上连续，点\(a\)为\(f\left(x\right)\)的瑕点，取\(t>a\)，若\(\lim\limits_ {t\to a^{+}}\displaystyle\int_{t}^{b}f\left(x\right)\mathrm{d} x\)存在，则称此极限为\(f\left(x\right)\)在\(\left(a,b\right]\)上的反常积分，记作\(\displaystyle\int_{a}^{b}f\left(x\right)\mathrm{d} x\)，且该反常积分收敛；否则称其发散</p>
+                <p>同理，设函数\(f\left(x\right)\)在\(\left[a,b\right)\)上连续，点\(b\)为\(f\left(x\right)\)的瑕点，取\(t< b\)，若\(\lim\limits_ {t\to b^{-}}\displaystyle\int_{a}^{t}f\left(x\right)\mathrm{d} x\)存在，则称此极限为\(f\left(x\right)\)在\(\left[a,b\right)\)上的反常积分，记作\(\displaystyle\int_{a}^{b}f\left(x\right)\mathrm{d} x\)，且该反常积分收敛；否则称其发散</p>
+                <p>类似地，设函数\(f\left(x\right)\)在\(\left[a,b\right]\)除点\(c\left(c\in \left[a,b\right]\right)\)连续，点\(c\)为\(f\left(x\right)\)的瑕点，如果\(\displaystyle\int_{a}^{c}f\left(x\right)\mathrm{d} x\)和\(\displaystyle\int_{c}^{b}f\left(x\right)\mathrm{d} x\)都收敛，则\(\displaystyle\int_{a}^{b}f\left(x\right)\mathrm{d} x=\displaystyle\int_{a}^{c}f\left(x\right)\mathrm{d} x+\displaystyle\int_{c}^{b}f\left(x\right)\mathrm{d} x\)收敛；否则称其发散</p>
+                <p>e.g. 判断反常积分\(\displaystyle\int_{0}^{a}\cfrac{1}{x^p}\mathrm{d} x\left(a>0\right)\)的敛散性</p>
+                <p>当\(p=1\)时，\(\displaystyle\int_{0}^{a}\cfrac{1}{x^p}\mathrm{d} x=\displaystyle\int_{0}^{a}\cfrac{1}{x}\mathrm{d} x=\ln\left(x\right)\bigg|_{0}^{a}\)\(=\infty\) 显然发散</p>
+                <p>当\(p<1\)时，\(\displaystyle\int_{0}^{a}\cfrac{1}{x^p}\mathrm{d} x=\cfrac{x^{1-p}}{1-p}\bigg|_{0}^{a}\)\(=\cfrac{a^{1-p}}{1-p}\) 显然收敛</p>
+                <p>当\(p>1\)时，\(\displaystyle\int_{0}^{a}\cfrac{1}{x^p}\mathrm{d} x=\cfrac{x^{1-p}}{1-p}\bigg|_{0}^{a}\)\(=\infty\) 显然发散</p>
+                <p>因此，当\(p<1\)时，\(\displaystyle\int_{0}^{a}\cfrac{1}{x^p}\mathrm{d} x\left(a>0\right)\)收敛；当\(p\geq 1\)时，\(\displaystyle\int_{0}^{a}\cfrac{1}{x^p}\mathrm{d} x\left(a>0\right)\)发散</p>
                 <h2><a name="3.11">3.11 反常积分的敛散性判别</a></h2>
                 <p>尽管有很多反常积分不易求解，我们仍然可以判断它们的敛散性</p>
                 <p>我们主要考虑的是对于非负函数的反常积分；如果函数是非正的，可以把负号提出来归为非负函数的情况</p>
                 <p>下面将提供一些判别法的结论，过程可以自行证明</p>
-                <p style="font-weight:bold">1.`p`判别法</p>
+                <p style="font-weight:bold">1.\(p\)判别法</p>
                 <p>根据3.10的内容，我们知道：</p>
-                <p>当`p>1`时，`\int_{a}^{\infty}\frac{1}{x^p}dx(a>0)`收敛；当`p\leq 1`时，`\int_{a}^{\infty}\frac{1}{x^p}dx(a>0)`发散</p>
-                <p>当`p<1`时，`\int_{0}^{a}\frac{1}{x^p}dx(a>0)`收敛；当`p\geq 1`时，`\int_{0}^{a}\frac{1}{x^p}dx(a>0)`发散</p>
+                <p>当\(p>1\)时，\(\displaystyle\int_{a}^{\infty}\cfrac{1}{x^p}\mathrm{d} x\left(a>0\right)\)收敛；当\(p\leq 1\)时，\(\displaystyle\int_{a}^{\infty}\cfrac{1}{x^p}\mathrm{d} x\left(a>0\right)\)发散</p>
+                <p>当\(p<1\)时，\(\displaystyle\int_{0}^{a}\cfrac{1}{x^p}\mathrm{d} x\left(a>0\right)\)收敛；当\(p\geq 1\)时，\(\displaystyle\int_{0}^{a}\cfrac{1}{x^p}\mathrm{d} x\left(a>0\right)\)发散</p>
                 <p style="font-weight:bold">2.比较判别法的一般形式</p>
-                <p>我们在这里把`f(x)`当作待判别的函数</p>
-                <p>对于无穷限的反常积分，设两个非负函数`f(x)`和`g(x)`在`[a,\infty)`上连续，</p>
-                <p>(1)如果在`[a,\infty)`上有`f(x)\geq g(x)`且`\int_{a}^{\infty}g(x)dx`发散，那么`\int_{a}^{\infty}f(x)dx`也发散（小发大必发）</p>
-                <p>(2)如果在`[a,\infty)`上有`f(x)\leq g(x)`且`\int_{a}^{\infty}g(x)dx`收敛，那么`\int_{a}^{\infty}f(x)dx`也收敛（大收小必收）</p>
+                <p>我们在这里把\(f\left(x\right)\)当作待判别的函数</p>
+                <p>对于无穷限的反常积分，设两个非负函数\(f\left(x\right)\)和\(g\left(x\right)\)在\(\left[a,\infty\right)\)上连续，</p>
+                <p>(1)如果在\(\left[a,\infty\right)\)上有\(f\left(x\right)\geq g\left(x\right)\)且\(\displaystyle\int_{a}^{\infty}g\left(x\right)\mathrm{d} x\)发散，那么\(\displaystyle\int_{a}^{\infty}f\left(x\right)\mathrm{d} x\)也发散（小发大必发）</p>
+                <p>(2)如果在\(\left[a,\infty\right)\)上有\(f\left(x\right)\leq g\left(x\right)\)且\(\displaystyle\int_{a}^{\infty}g\left(x\right)\mathrm{d} x\)收敛，那么\(\displaystyle\int_{a}^{\infty}f\left(x\right)\mathrm{d} x\)也收敛（大收小必收）</p>
                 <br>
-                <p>对于无界函数的反常积分，设两个非负函数`f(x)`和`g(x)`在`(a,b]`上连续且点`a`是`f(x)`的瑕点，</p>
-                <p>(1)如果在`(a,b]`上有`f(x)\geq g(x)`且`\int_{a}^{b}g(x)dx`发散，那么`\int_{a}^{b}f(x)dx`也发散（小发大必发）</p>
-                <p>(2)如果在`(a,b]`上有`f(x)\leq g(x)`且`\int_{a}^{b}g(x)dx`收敛，那么`\int_{a}^{b}f(x)dx`也收敛（大收小必收）</p>
+                <p>对于无界函数的反常积分，设两个非负函数\(f\left(x\right)\)和\(g\left(x\right)\)在\(\left(a,b\right]\)上连续且点\(a\)是\(f\left(x\right)\)的瑕点，</p>
+                <p>(1)如果在\(\left(a,b\right]\)上有\(f\left(x\right)\geq g\left(x\right)\)且\(\displaystyle\int_{a}^{b}g\left(x\right)\mathrm{d} x\)发散，那么\(\displaystyle\int_{a}^{b}f\left(x\right)\mathrm{d} x\)也发散（小发大必发）</p>
+                <p>(2)如果在\(\left(a,b\right]\)上有\(f\left(x\right)\leq g\left(x\right)\)且\(\displaystyle\int_{a}^{b}g\left(x\right)\mathrm{d} x\)收敛，那么\(\displaystyle\int_{a}^{b}f\left(x\right)\mathrm{d} x\)也收敛（大收小必收）</p>
                 <div align="center">
                     <img src="../img/3-17.png" width="55%">
                 </div>
@@ -507,35 +538,35 @@
                     <img src="../img/3-18.png" width="60%">
                 </div>
                 <p style="text-align:center">图 3-18</p>
-                <p>e.g. 判断反常积分`\int_{5}^{\infty}\frac{|sin(x^4)|}{x^2}dx`的敛散性</p>
-                <p>因为`|sin(x^4)|\leq 1`，所以</p>
-                <p>`\int_{5}^{\infty}\frac{|sin(x^4)|}{x^2}dx\leq \int_{5}^{\infty}\frac{1}{x^2}dx`</p>
-                <p>我们已经知道（根据`p`判别法），`\int_{5}^{\infty}\frac{1}{x^2}dx`是收敛的，因此`\int_{5}^{\infty}\frac{|sin(x^4)|}{x^2}dx`也是收敛的</p>
-                <p>e.g. 判断反常积分`\int_{0}^{1}\frac{1}{x^2+\sqrt(x)}dx`的敛散性</p>
-                <p>`\int_{0}^{1}\frac{1}{x^2+\sqrt(x)}dx\leq \int_{0}^{1}\frac{1}{\sqrt(x)}dx`</p>
-                <p>因为`\int_{0}^{1}\frac{1}{\sqrt(x)}dx`收敛，所以`\int_{0}^{1}\frac{1}{x^2+\sqrt(x)}dx`也收敛</p>
+                <p>e.g. 判断反常积分\(\displaystyle\int_{5}^{\infty}\cfrac{|\sin\left(x^4\right)|}{x^2}\mathrm{d} x\)的敛散性</p>
+                <p>因为\(|\sin\left(x^4\right)|\leq 1\)，所以</p>
+                <p>\[\displaystyle\int_{5}^{\infty}\cfrac{|\sin\left(x^4\right)|}{x^2}\mathrm{d} x\leq \displaystyle\int_{5}^{\infty}\cfrac{1}{x^2}\mathrm{d} x\]</p>
+                <p>我们已经知道（根据\(p\)判别法），\(\displaystyle\int_{5}^{\infty}\cfrac{1}{x^2}\mathrm{d} x\)是收敛的，因此\(\displaystyle\int_{5}^{\infty}\cfrac{|\sin\left(x^4\right)|}{x^2}\mathrm{d} x\)也是收敛的</p>
+                <p>e.g. 判断反常积分\(\displaystyle\int_{0}^{1}\cfrac{1}{x^2+\sqrt{x}}\mathrm{d} x\)的敛散性</p>
+                <p>\[\displaystyle\int_{0}^{1}\cfrac{1}{x^2+\sqrt{x}}\mathrm{d} x\leq \displaystyle\int_{0}^{1}\cfrac{1}{\sqrt{x}}\mathrm{d} x\]</p>
+                <p>因为\(\displaystyle\int_{0}^{1}\cfrac{1}{\sqrt{x}}\mathrm{d} x\)收敛，所以\(\displaystyle\int_{0}^{1}\cfrac{1}{x^2+\sqrt{x}}\mathrm{d} x\)也收敛</p>
                 <p style="font-weight:bold">3.比较判别法的极限形式</p>
-                <p>对于无穷限的反常积分，设两个非负函数`f(x)`和`g(x)`在`[a,\infty)`上连续，`L=\lim_{x\rightarrow \infty}\frac{f(x)}{g(x)}`，</p>
-                <p>(1)当`0< L<\infty`时，`\int_{a}^{\infty}g(x)dx`与`\int_{a}^{\infty}f(x)dx`有相同的敛散性</p>
-                <p>(2)当`L=0`时，若`\int_{a}^{\infty}g(x)dx`收敛，`\int_{a}^{\infty}f(x)dx`也收敛（大收小必收）</p>
-                <p>(3)当`L=\infty`时，若`\int_{a}^{\infty}g(x)dx`发散，`\int_{a}^{\infty}f(x)dx`也发散（小发大必发）</p>
+                <p>对于无穷限的反常积分，设两个非负函数\(f\left(x\right)\)和\(g\left(x\right)\)在\(\left[a,\infty\right)\)上连续，\(L=\lim\limits_ {x\to \infty}\cfrac{f\left(x\right)}{g\left(x\right)}\)，</p>
+                <p>(1)当\(0< L<\infty\)时，\(\displaystyle\int_{a}^{\infty}g\left(x\right)\mathrm{d} x\)与\(\displaystyle\int_{a}^{\infty}f\left(x\right)\mathrm{d} x\)有相同的敛散性</p>
+                <p>(2)当\(L=0\)时，若\(\displaystyle\int_{a}^{\infty}g\left(x\right)\mathrm{d} x\)收敛，\(\displaystyle\int_{a}^{\infty}f\left(x\right)\mathrm{d} x\)也收敛（大收小必收）</p>
+                <p>(3)当\(L=\infty\)时，若\(\displaystyle\int_{a}^{\infty}g\left(x\right)\mathrm{d} x\)发散，\(\displaystyle\int_{a}^{\infty}f\left(x\right)\mathrm{d} x\)也发散（小发大必发）</p>
                 <br>
-                <p>对于无界函数的反常积分，设两个非负函数`f(x)`和`g(x)`在`(a,b]`上连续且点`a`是`f(x)`的瑕点，`L=\lim_{x\rightarrow a^{+}}\frac{f(x)}{g(x)}`，</p>
-                <p>(1)当`0< L<\infty`时，`\int_{a}^{b}g(x)dx`与`\int_{a}^{b}f(x)dx`有相同的敛散性</p>
-                <p>(2)当`L=0`时，若`\int_{a}^{b}g(x)dx`收敛，`\int_{a}^{b}f(x)dx`也收敛（大收小必收）</p>
-                <p>(3)当`L=\infty`时，若`\int_{a}^{b}g(x)dx`发散，`\int_{a}^{b}f(x)dx`也发散（小发大必发）</p>
+                <p>对于无界函数的反常积分，设两个非负函数\(f\left(x\right)\)和\(g\left(x\right)\)在\(\left(a,b\right]\)上连续且点\(a\)是\(f\left(x\right)\)的瑕点，\(L=\lim\limits_ {x\to a^{+}}\cfrac{f\left(x\right)}{g\left(x\right)}\)，</p>
+                <p>(1)当\(0< L<\infty\)时，\(\displaystyle\int_{a}^{b}g\left(x\right)\mathrm{d} x\)与\(\displaystyle\int_{a}^{b}f\left(x\right)\mathrm{d} x\)有相同的敛散性</p>
+                <p>(2)当\(L=0\)时，若\(\displaystyle\int_{a}^{b}g\left(x\right)\mathrm{d} x\)收敛，\(\displaystyle\int_{a}^{b}f\left(x\right)\mathrm{d} x\)也收敛（大收小必收）</p>
+                <p>(3)当\(L=\infty\)时，若\(\displaystyle\int_{a}^{b}g\left(x\right)\mathrm{d} x\)发散，\(\displaystyle\int_{a}^{b}f\left(x\right)\mathrm{d} x\)也发散（小发大必发）</p>
                 <br>
-                <p>e.g. 判断反常积分`\int_{0}^{1}\frac{sin(x)}{x^2}`的敛散性</p>
-                <p>因为`\lim_{x\rightarrow 0^{+}}\frac{\frac{sin(x)}{x^2}}{\frac{1}{x}}=\lim_{x\rightarrow 0^{+}}\frac{sin(x)}{x}=1`，且`\int_{0}^{1}\frac{1}{x}dx`发散</p>
-                <p>所以`\int_{0}^{1}\frac{sin(x)}{x^3}`也发散</p>
-                <p>e.g. 判断反常积分`\int_{1}^{\infty}\frac{1}{x^2+\sqrt(x)}dx`的敛散性</p>
-                <p>因为`\lim_{x\rightarrow \infty}\frac{\frac{1}{x^2+\sqrt(x)}}{\frac{1}{x^2}}=1`，且`\int_{1}^{\infty}\frac{1}{x^2}dx`收敛</p>
-                <p>所以`\int_{1}^{\infty}\frac{1}{x^2+\sqrt(x)}dx`也收敛</p>
+                <p>e.g. 判断反常积分\(\displaystyle\int_{0}^{1}\cfrac{\sin\left(x\right)}{x^2}\mathrm{d} x\)的敛散性</p>
+                <p>因为\(\lim\limits_ {x\to 0^{+}}\cfrac{\cfrac{\sin\left(x\right)}{x^2}}{\cfrac{1}{x}}=\lim\limits_ {x\to 0^{+}}\cfrac{\sin\left(x\right)}{x}=1\)，且\(\displaystyle\int_{0}^{1}\cfrac{1}{x}\mathrm{d} x\)发散</p>
+                <p>所以\(\displaystyle\int_{0}^{1}\cfrac{\sin\left(x\right)}{x^2}\mathrm{d} x\)也发散</p>
+                <p>e.g. 判断反常积分\(\displaystyle\int_{1}^{\infty}\cfrac{1}{x^2+\sqrt{x}}\mathrm{d} x\)的敛散性</p>
+                <p>因为\(\lim\limits_ {x\to \infty}\cfrac{\cfrac{1}{x^2+\sqrt{x}}}{\cfrac{1}{x^2}}=1\)，且\(\displaystyle\int_{1}^{\infty}\cfrac{1}{x^2}\mathrm{d} x\)收敛</p>
+                <p>所以\(\displaystyle\int_{1}^{\infty}\cfrac{1}{x^2+\sqrt{x}}\mathrm{d} x\)也收敛</p>
                 <p style="font-weight:bold">4.绝对收敛判别法</p>
                 <p>对于那些在积分区间里不停地在正负之间震荡的函数，我们可以用绝对收敛判别法：</p>
-                <p>如果`\int_{a}^{b}|f(x)|dx`是收敛的，`\int_{a}^{b}f(x)dx`也是收敛的</p>
-                <p>e.g. 判断反常积分`\int_{5}^{\infty}\frac{sin(x^4)}{x^2}dx`的敛散性</p>
-                <p>我们已经知道`\int_{5}^{\infty}\frac{|sin(x^4)|}{x^2}dx`是收敛的，因此根据绝对收敛判别法，`\int_{5}^{\infty}\frac{sin(x^4)}{x^2}dx`也是收敛的</p>
+                <p>如果\(\displaystyle\int_{a}^{b}|f\left(x\right)|\mathrm{d} x\)是收敛的，\(\displaystyle\int_{a}^{b}f\left(x\right)\mathrm{d} x\)也是收敛的</p>
+                <p>e.g. 判断反常积分\(\displaystyle\int_{5}^{\infty}\cfrac{\sin\left(x^4\right)}{x^2}\mathrm{d} x\)的敛散性</p>
+                <p>我们已经知道\(\displaystyle\int_{5}^{\infty}\cfrac{|\sin\left(x^4\right)|}{x^2}\mathrm{d} x\)是收敛的，因此根据绝对收敛判别法，\(\displaystyle\int_{5}^{\infty}\cfrac{\sin\left(x^4\right)}{x^2}\mathrm{d} x\)也是收敛的</p>
                 <h2><a name="3.12">3.12 积分练习</a></h2>
                 <object data="../pdf/Definite Integral to Riemann Sum.pdf" type="application/pdf" width="100%" height="700px">
                     <a href="../pdf/Definite Integral to Riemann Sum.pdf" style="color:blue">Definite Integral to Riemann Sum.pdf</a>
