@@ -113,21 +113,19 @@ html {
     p.scrollbar {
         overflow-x: auto;
         overflow-y: hidden;
-        scrollbar-width: none;
+        scrollbar-width: thin;
     }
     p::-webkit-scrollbar {
         height: 4px;
         background-color: #F5F5F5;
     }
     p::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
-        border-radius: 5px;
-        background-color: #F5F5F5;
+        height: 4px;
     }
     p::-webkit-scrollbar-thumb {
         border-radius: 5px;
         -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.1);
-        background-color: #555;
+        background-color: #CCC;
     }
 }
 
@@ -161,20 +159,18 @@ html {
     p.scrollbar {
         overflow-x: auto;
         overflow-y: hidden;
-        scrollbar-width: none;
+        scrollbar-width: thin;
     }
     p::-webkit-scrollbar {
         height: 4px;
         background-color: #F5F5F5;
     }
     p::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
-        border-radius: 5px;
-        background-color: #F5F5F5;
+        height: 4px;
     }
     p::-webkit-scrollbar-thumb {
         border-radius: 5px;
         -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.1);
-        background-color: #555;
+        background-color: #CCC;
     }
 }
