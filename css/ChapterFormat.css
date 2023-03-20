@@ -110,13 +110,24 @@ html {
     .catalog_right_column {
         width: 50%;
     }
-    ::-webkit-scrollbar {
-        display: none;
-    }
-    p {
-        overflow-x: scroll;
+    p.scrollbar {
+        overflow-x: auto;
         overflow-y: hidden;
         scrollbar-width: none;
+    }
+    p::-webkit-scrollbar {
+        height: 4px;
+        background-color: #F5F5F5;
+    }
+    p::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+        border-radius: 5px;
+        background-color: #F5F5F5;
+    }
+    p::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.1);
+        background-color: #555;
     }
 }
 
@@ -147,12 +158,23 @@ html {
     .catalog_right_column {
         width: 100%;
     }
-    ::-webkit-scrollbar {
-        display: none;
-    }
-    p {
-        overflow-x: scroll;
+    p.scrollbar {
+        overflow-x: auto;
         overflow-y: hidden;
         scrollbar-width: none;
+    }
+    p::-webkit-scrollbar {
+        height: 4px;
+        background-color: #F5F5F5;
+    }
+    p::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+        border-radius: 5px;
+        background-color: #F5F5F5;
+    }
+    p::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.1);
+        background-color: #555;
     }
 }
