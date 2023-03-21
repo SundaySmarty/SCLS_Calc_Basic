@@ -61,54 +61,54 @@
             <div class="text">
                 <h2><a name="2.1">2.1 割线和平均变化率 Secant Line and Average Rate of Change</a></h2>
                 <p>假设函数\(y=f\left(x\right)\)图像上有两点\(\left(x_1,f\left(x_1\right)\right)\)和\(\left(x_2,f\left(x_2\right)\right)\)，则过这两点的直线（割线）的斜率为</p>
-                <p class="scrollbar">\[\cfrac{f\left(x_2\right)-f\left(x_1\right)}{x_2-x_1}\]</p>
-                <p>其<span style="color:red;font-weight:bold">斜率</span>也可以写成下图的形式：\(\cfrac{f\left(x+\Delta x\right)-f\left(x\right)}{\Delta x}=\cfrac{\Delta y}{\Delta x}\)</p>
-                <p>\(\cfrac{\Delta y}{\Delta x}\)就是函数\(f\left(x\right)\)在某点\(\left(x,f\left(x\right)\right)\)处增量为\(\Delta x\)的<span style="color:red;font-weight:bold">平均变化率</span></p>
+                <p class="scrollbar">\[\dfrac{f\left(x_2\right)-f\left(x_1\right)}{x_2-x_1}\]</p>
+                <p>其<span style="color:red;font-weight:bold">斜率</span>也可以写成下图的形式：\(\dfrac{f\left(x+\Delta x\right)-f\left(x\right)}{\Delta x}=\dfrac{\Delta y}{\Delta x}\)</p>
+                <p>\(\dfrac{\Delta y}{\Delta x}\)就是函数\(f\left(x\right)\)在某点\(\left(x,f\left(x\right)\right)\)处增量为\(\Delta x\)的<span style="color:red;font-weight:bold">平均变化率</span></p>
                 <div align="center">
                     <img src="../img/2-1.png" width="80%">
                 </div>
                 <p style="text-align:center">图 2-1</p>
-                <p>此处可以联想到平均速度的概念：\(\overline v=\cfrac{\Delta x}{\Delta t}\)（\(\Delta x\)是位移）</p>
+                <p>此处可以联想到平均速度的概念：\(\overline v=\dfrac{\Delta x}{\Delta t}\)（\(\Delta x\)是位移）</p>
                 <h2><a name="2.2">2.2 切线和瞬时变化率 Tangent Line and Instantaneous Rate of Change</a></h2>
                 <p>当\(\Delta x\)越来越接近于0的时候，割线就越来越靠近过点\(\left(x,f\left(x\right)\right)\)的切线</p>
                 <p>在这里我们姑且把（微小的）增量叫做\(h\)好了</p>
                 <p>用极限表示这条过\(\left(x,f\left(x\right)\right)\)<span style="color:red;font-weight:bold">切线的斜率</span>就是：</p>
-                <p class="scrollbar">\[\lim\limits_{h\to 0}\cfrac{f\left(x+h\right)-f\left(x\right)}{h}\]</p>
+                <p class="scrollbar">\[\lim\limits_{h\to 0}\dfrac{f\left(x+h\right)-f\left(x\right)}{h}\]</p>
                 <p>这就是在某点\(\left(x,f\left(x\right)\right)\)处的<span style="color:red;font-weight:bold">瞬时变化率</span></p>
                 <div align="center">
                     <img src="../img/2-2.gif" width="100%">
                 </div>
                 <p style="text-align:center">图 2-2</p>
                 <p>这个瞬时变化率还有另外一种表示形式（等价转换），如下图：</p>
-                <p>\(\lim\limits_{z\to x}\cfrac{f\left(z\right)-f\left(x\right)}{z-x}\)（可以理解为点\(Q\)越来越接近点\(P\)，对于下图来说）</p>
+                <p>\(\lim\limits_{z\to x}\dfrac{f\left(z\right)-f\left(x\right)}{z-x}\)（可以理解为点\(Q\)越来越接近点\(P\)，对于下图来说）</p>
                 <p>\(h\)还是那个微小的增量，即\(z-x\)</p>
                 <p>看到下图的\(f^{\prime}\left(x\right)\)，你可能还不知道那是什么，没关系，你马上就知道了（你就当它是切线的斜率或者瞬时变化率）</p>
                 <div align="center">
                     <img src="../img/2-3.png" width="60%">
                 </div>
                 <p style="text-align:center">图 2-3</p>
-                <p>此处又可以联想到瞬时速度的概念：\(v=\lim\limits_{\Delta t\to 0}\cfrac{\Delta x}{\Delta t}\)</p>
+                <p>此处又可以联想到瞬时速度的概念：\(v=\lim\limits_{\Delta t\to 0}\dfrac{\Delta x}{\Delta t}\)</p>
                 <h2><a name="2.3">2.3 导数 Derivative</a></h2>
                 <p>对于\(y=f\left(x\right)\)，通过\(\left(x,f\left(x\right)\right)\)的切线的斜率也可以是关于\(x\)的一个函数，这个函数叫做导函数，简称导数（所以它不是一个数），记作\(f^{\prime}\left(x\right)\)（现在你应该知道这是啥了）</p>
                 <p>我们说：对\(f\left(x\right)\)关于变量\(x\)求导得到函数\(f^{\prime}\left(x\right)\)</p>
                 <p>上一节的<span style="color:red;font-weight:bold">平均变化率的极限</span>即是导数，我们表示为</p>
-                <p class="scrollbar">\[f^{\prime}\left(x\right)=\lim\limits_{h\to 0}\cfrac{f\left(x+h\right)-f\left(x\right)}{h}\]</p>
-                <p>或者说是\(f^{\prime}\left(x\right)=\lim\limits_{z\to x}\cfrac{f\left(z\right)-f\left(x\right)}{z-x}\)（虽然表达的一个意思，但是我们不太用这个）</p>
+                <p class="scrollbar">\[f^{\prime}\left(x\right)=\lim\limits_{h\to 0}\dfrac{f\left(x+h\right)-f\left(x\right)}{h}\]</p>
+                <p>或者说是\(f^{\prime}\left(x\right)=\lim\limits_{z\to x}\dfrac{f\left(z\right)-f\left(x\right)}{z-x}\)（虽然表达的一个意思，但是我们不太用这个）</p>
                 <p>如果这个极限存在，我们就说\(f\left(x\right)\)在\(x\)点可导；若不存在，即不可导</p>
                 <p>比如函数\(y=|x|\)在\(x=0\)处就是不可导的（在那里有个尖角）</p>
                 <p>这样我们又可以有左导数和右导数的概念，就像左极限和右极限一样</p>
                 <br>
                 <p>一个函数的导数（的记号）还有另一种表示形式（对于函数\(y=f\left(x\right)\)）</p>
-                <p>我们知道导数的定义是\(\lim\limits_{h\to 0}\cfrac{f\left(x+h\right)-f\left(x\right)}{h}\)，又可以把它写成\(\lim\limits_{\Delta x\to 0}\cfrac{\Delta y}{\Delta x}\)（见2.1开头，加个极限就是瞬时变化率）</p>
-                <p>于是我们可以用\(\mathrm{d} x\)来代替\(\Delta x\)，\(\mathrm{d} y\)来代替\(\Delta y\)，就变成了\(\cfrac{\mathrm{d} y}{\mathrm{d} x}\)</p>
+                <p>我们知道导数的定义是\(\lim\limits_{h\to 0}\dfrac{f\left(x+h\right)-f\left(x\right)}{h}\)，又可以把它写成\(\lim\limits_{\Delta x\to 0}\dfrac{\Delta y}{\Delta x}\)（见2.1开头，加个极限就是瞬时变化率）</p>
+                <p>于是我们可以用\(\mathrm{d} x\)来代替\(\Delta x\)，\(\mathrm{d} y\)来代替\(\Delta y\)，就变成了\(\dfrac{\mathrm{d} y}{\mathrm{d} x}\)</p>
                 <p>其中\(\mathrm{d} x\)表示\(x\)中的十分微小的变化，\(y\)也类似</p>
-                <p>所以如果\(y=f\left(x\right)\)，那么可以用\(\cfrac{\mathrm{d} y}{\mathrm{d} x}\)（或者\(\cfrac{\mathrm{d} }{\mathrm{d} x}f\left(x\right)\)）代替\(f^{\prime}\left(x\right)\)，它俩是一个东西</p>
-                <p>如果函数是\(x=u\left(t\right)\)，那么它的导数就是\(u^{\prime}\left(t\right)\)或者\(\cfrac{\mathrm{d} x}{\mathrm{d} t}\)或者\(\cfrac{\mathrm{d} }{\mathrm{d} t}u\left(t\right)\)</p>
+                <p>所以如果\(y=f\left(x\right)\)，那么可以用\(\dfrac{\mathrm{d} y}{\mathrm{d} x}\)（或者\(\dfrac{\mathrm{d} }{\mathrm{d} x}f\left(x\right)\)）代替\(f^{\prime}\left(x\right)\)，它俩是一个东西</p>
+                <p>如果函数是\(x=u\left(t\right)\)，那么它的导数就是\(u^{\prime}\left(t\right)\)或者\(\dfrac{\mathrm{d} x}{\mathrm{d} t}\)或者\(\dfrac{\mathrm{d} }{\mathrm{d} t}u\left(t\right)\)</p>
                 <br>
                 <p>这两种表示形式都有各自的好处，以后就知道了（你可别以为\(f^{\prime}\left(x\right)\)写的方便只需要加一个小撇就一直用它了）</p>
                 <br>
-                <p>此外，导数的导数叫二阶导，可以用\(f^{\prime\prime}\left(x\right)\)，\(f^{\left(2\right)}\left(x\right)\)或者\(\cfrac{\mathrm{d} ^2 y}{\mathrm{d} x^2}\)表示</p>
-                <p>以此类推，\(n\)阶导可以用\(f^{n}\left(x\right)\)或者\(\cfrac{\mathrm{d} ^n y}{\mathrm{d} x^n}\)表示</p>
+                <p>此外，导数的导数叫二阶导，可以用\(f^{\prime\prime}\left(x\right)\)，\(f^{\left(2\right)}\left(x\right)\)或者\(\dfrac{\mathrm{d} ^2 y}{\mathrm{d} x^2}\)表示</p>
+                <p>以此类推，\(n\)阶导可以用\(f^{n}\left(x\right)\)或者\(\dfrac{\mathrm{d} ^n y}{\mathrm{d} x^n}\)表示</p>
                 <h2><a name="2.4">2.4 可导性和连续性的关系 The Relationship between differentiability and continuity</a></h2>
                 <p>对于一个函数，<span style="color:red;font-weight:bold">可导必连续，不连续必不可导，连续不一定可导</span></p>
                 <p>下面是证明：</p>
@@ -120,29 +120,29 @@
                 <p>不好意思概念讲了那么多，现在来点具体点的东西</p>
                 <p>举例子的时间到了</p>
                 <p><span style="font-weight:bold">1.</span>假设有一个<span style="font-weight:bold">常值函数</span>\(y=f\left(x\right)=C\)（\(C\)是常数），我们来求它的导数</p>
-                <p>根据导数的定义\(f^{\prime}\left(x\right)=\lim\limits_{h\to 0}\cfrac{f\left(x+h\right)-f\left(x\right)}{h}\)，代入\(f\left(x\right)=C\)以及\(f\left(x+h\right)=C\)</p>
-                <p class="scrollbar">\[f^{\prime}\left(x\right)=\lim\limits_{h\to 0}\cfrac{f\left(x+h\right)-f\left(x\right)}{h}=\lim\limits_{h\to 0}\cfrac{C-C}{h}=\lim\limits_{h\to 0}0=0\]</p>
-                <p>也可以写作\(\cfrac{\mathrm{d} y}{\mathrm{d} x}=0\)（在\(y=f\left(x\right)\)的情况下）或者\(\cfrac{\mathrm{d} }{\mathrm{d} x}\left(C\right)=0\)</p>
+                <p>根据导数的定义\(f^{\prime}\left(x\right)=\lim\limits_{h\to 0}\dfrac{f\left(x+h\right)-f\left(x\right)}{h}\)，代入\(f\left(x\right)=C\)以及\(f\left(x+h\right)=C\)</p>
+                <p class="scrollbar">\[f^{\prime}\left(x\right)=\lim\limits_{h\to 0}\dfrac{f\left(x+h\right)-f\left(x\right)}{h}=\lim\limits_{h\to 0}\dfrac{C-C}{h}=\lim\limits_{h\to 0}0=0\]</p>
+                <p>也可以写作\(\dfrac{\mathrm{d} y}{\mathrm{d} x}=0\)（在\(y=f\left(x\right)\)的情况下）或者\(\dfrac{\mathrm{d} }{\mathrm{d} x}\left(C\right)=0\)</p>
                 <p>我们发现常值函数的导数为\(0\)，这很合理因为它是一条水平的直线，函数上任意一点切线的斜率都为\(0\)</p>
                 <p>所以如果\(f\left(x\right)=1\)的话，那么它的导数肯定就是\(f^{\prime}\left(x\right)=0\)</p>
                 <br>
                 <p><span style="font-weight:bold">2.</span>假设有一个<span style="font-weight:bold">一次函数</span>\(y=f\left(x\right)=kx+b\)（\(k\)和\(b\)都是常数）</p>
-                <p>还是根据导数的定义来做（因为你第一次学到这里没有别的工具）\(f^{\prime}\left(x\right)=\lim\limits_{h\to 0}\cfrac{f\left(x+h\right)-f\left(x\right)}{h}\)，代入\(f\left(x\right)=kx+b\)以及\(f\left(x+h\right)=k\left(x+h\right)+b\)</p>
-                <p class="scrollbar">\[f^{\prime}\left(x\right)=\lim\limits_{h\to 0}\cfrac{f\left(x+h\right)-f\left(x\right)}{h}=\lim\limits_{h\to 0}\cfrac{\left(k\left(x+h\right)+b\right)-\left(kx+b\right)}{h}=\lim\limits_{h\to 0}\cfrac{kh}{h}=\lim\limits_{h\to 0}k=k\]</p>
-                <p>也可以写作\(\cfrac{\mathrm{d} y}{\mathrm{d} x}=k\)（在\(y=f\left(x\right)\)的情况下）或者\(\cfrac{\mathrm{d} }{\mathrm{d} x}\left(kx+b\right)=k\)</p>
+                <p>还是根据导数的定义来做（因为你第一次学到这里没有别的工具）\(f^{\prime}\left(x\right)=\lim\limits_{h\to 0}\dfrac{f\left(x+h\right)-f\left(x\right)}{h}\)，代入\(f\left(x\right)=kx+b\)以及\(f\left(x+h\right)=k\left(x+h\right)+b\)</p>
+                <p class="scrollbar">\[f^{\prime}\left(x\right)=\lim\limits_{h\to 0}\dfrac{f\left(x+h\right)-f\left(x\right)}{h}=\lim\limits_{h\to 0}\dfrac{\left(k\left(x+h\right)+b\right)-\left(kx+b\right)}{h}=\lim\limits_{h\to 0}\dfrac{kh}{h}=\lim\limits_{h\to 0}k=k\]</p>
+                <p>也可以写作\(\dfrac{\mathrm{d} y}{\mathrm{d} x}=k\)（在\(y=f\left(x\right)\)的情况下）或者\(\dfrac{\mathrm{d} }{\mathrm{d} x}\left(kx+b\right)=k\)</p>
                 <p>这也是很显而易见的，因为一次函数的图像就是一条倾斜的直线，函数上任意一点切线的斜率就是\(k\)</p>
                 <p>所以如果\(f\left(x\right)=x\)的话，那么它的导数肯定就是\(f^{\prime}\left(x\right)=1\)</p>
                 <br>
                 <p><span style="font-weight:bold">3.</span>再来看一下一个最简单的<span style="font-weight:bold">二次函数</span>的导数\(y=f\left(x\right)=x^2\)</p>
                 <p>一样的：这次代入的是\(f\left(x\right)=x^2\)以及\(f\left(x+h\right)=\left(x+h\right)^2\)</p>
-                <p class="scrollbar">\[f^{\prime}\left(x\right)=\lim\limits_{h\to 0}\cfrac{f\left(x+h\right)-f\left(x\right)}{h}=\lim\limits_{h\to 0}\cfrac{\left(x+h\right)^2-x^2}{h}=\lim\limits_{h\to 0}\cfrac{2xh+h^2}{h}=\lim\limits_{h\to 0}\left(2x+h\right)=2x\]</p>
-                <p>也可以写作\(\cfrac{\mathrm{d} y}{\mathrm{d} x}=2x\)（在\(y=f\left(x\right)\)的情况下）或者\(\cfrac{\mathrm{d} }{\mathrm{d} x}\left(x^2\right)=2x\)</p>
-                <p>这个就没有那么显而易见了，我们待会来看张图，现在我还想再求一个函数的导数，这个函数就是\(y=f\left(x\right)=\cfrac{1}{x}\)</p>
+                <p class="scrollbar">\[f^{\prime}\left(x\right)=\lim\limits_{h\to 0}\dfrac{f\left(x+h\right)-f\left(x\right)}{h}=\lim\limits_{h\to 0}\dfrac{\left(x+h\right)^2-x^2}{h}=\lim\limits_{h\to 0}\dfrac{2xh+h^2}{h}=\lim\limits_{h\to 0}\left(2x+h\right)=2x\]</p>
+                <p>也可以写作\(\dfrac{\mathrm{d} y}{\mathrm{d} x}=2x\)（在\(y=f\left(x\right)\)的情况下）或者\(\dfrac{\mathrm{d} }{\mathrm{d} x}\left(x^2\right)=2x\)</p>
+                <p>这个就没有那么显而易见了，我们待会来看张图，现在我还想再求一个函数的导数，这个函数就是\(y=f\left(x\right)=\dfrac{1}{x}\)</p>
                 <br>
-                <p><span style="font-weight:bold">4.</span>最简单的<span style="font-weight:bold">反比例函数</span>：\(y=f\left(x\right)=\cfrac{1}{x}\)</p>
-                <p>很简单：我们代入\(f\left(x\right)=\cfrac{1}{x}\)和\(f\left(x+h\right)=\cfrac{1}{x+h}\)</p>
-                <p class="scrollbar">\[f^{\prime}\left(x\right)=\lim\limits_{h\to 0}\cfrac{f\left(x+h\right)-f\left(x\right)}{h}=\lim\limits_{h\to 0}\cfrac{\cfrac{1}{x+h}-\cfrac{1}{x}}{h}=\lim\limits_{h\to 0}-\cfrac{h}{hx\left(x+h\right)}=-\lim\limits_{h\to 0}\cfrac{1}{x\left(x+h\right)}=-\cfrac{1}{x\cdot x}=-\cfrac{1}{x^2}\]</p>
-                <p>也可以写作\(\cfrac{\mathrm{d} y}{\mathrm{d} x}=-\cfrac{1}{x^2}\)（在\(y=f\left(x\right)\)的情况下）或者\(\cfrac{\mathrm{d} }{\mathrm{d} x}\left(\cfrac{1}{x}\right)=-\cfrac{1}{x^2}\)</p>
+                <p><span style="font-weight:bold">4.</span>最简单的<span style="font-weight:bold">反比例函数</span>：\(y=f\left(x\right)=\dfrac{1}{x}\)</p>
+                <p>很简单：我们代入\(f\left(x\right)=\dfrac{1}{x}\)和\(f\left(x+h\right)=\dfrac{1}{x+h}\)</p>
+                <p class="scrollbar">\[f^{\prime}\left(x\right)=\lim\limits_{h\to 0}\dfrac{f\left(x+h\right)-f\left(x\right)}{h}=\lim\limits_{h\to 0}\dfrac{\dfrac{1}{x+h}-\dfrac{1}{x}}{h}=\lim\limits_{h\to 0}-\dfrac{h}{hx\left(x+h\right)}=-\lim\limits_{h\to 0}\dfrac{1}{x\left(x+h\right)}=-\dfrac{1}{x\cdot x}=-\dfrac{1}{x^2}\]</p>
+                <p>也可以写作\(\dfrac{\mathrm{d} y}{\mathrm{d} x}=-\dfrac{1}{x^2}\)（在\(y=f\left(x\right)\)的情况下）或者\(\dfrac{\mathrm{d} }{\mathrm{d} x}\left(\dfrac{1}{x}\right)=-\dfrac{1}{x^2}\)</p>
                 <p>这个也不怎么显而易见，所以来看张图吧</p>
                 <p>诶，我突然发现了一个规律，你看我们之后再看图吧，好不好？</p>
                 <p>我先来列一张表，这样比较直观</p>
@@ -188,8 +188,8 @@
                 <p>这样我们就可以求过函数在一个点的切线方程啦！</p>
                 <p>我们知道了切线的斜率\(k\)，又知道了点的坐标\(\left(x_0,y_0\right)\)，所以写切线方程首选就是点斜式呀！\(y-y_0=k\left(x-x_0\right)\)</p>
                 <p>e.g. 求函数\(y=f\left(x\right)=x^2\)图像在\(x=1\)处的切线方程</p>
-                <p>我们已经知道了点的坐标是\(\left(1,1\right)\)，切线的斜率是\(k=f^{\prime}\left(1\right)=\cfrac{\mathrm{d} y}{\mathrm{d} x}\bigg|_{x=1}=2\)（\(\bigg|_{x=1}\)就是当\(x=1\)的时候），所以切线方程就是：\(y-1=2\left(x-1\right)\)</p>
-                <p>现在轮到你来写出函数\(y=f\left(x\right)=\cfrac{1}{x}\)图像在\(x=1\)处的切线方程啦！（别想着偷懒直接照图写！）快试一试叭！</p>
+                <p>我们已经知道了点的坐标是\(\left(1,1\right)\)，切线的斜率是\(k=f^{\prime}\left(1\right)=\dfrac{\mathrm{d} y}{\mathrm{d} x}\bigg|_{x=1}=2\)（\(\bigg|_{x=1}\)就是当\(x=1\)的时候），所以切线方程就是：\(y-1=2\left(x-1\right)\)</p>
+                <p>现在轮到你来写出函数\(y=f\left(x\right)=\dfrac{1}{x}\)图像在\(x=1\)处的切线方程啦！（别想着偷懒直接照图写！）快试一试叭！</p>
                 <h2><a name="2.6">2.6 线性近似 Linear Approximation</a></h2>
                 <p>有了切线方程，我们就可以来做一些函数值的估算了</p>
                 <p>假设我们一直一个函数\(y=f\left(x\right)\)和一个特殊值\(a\)</p>
@@ -208,11 +208,11 @@
                 <p>看看\(10\)离哪个平方数比较近，大家都知道是\(9\)</p>
                 <p>所以先假设我们有\(f\left(x\right)=\sqrt{x}\)和\(a=9\)（特殊值：因为\(f\left(9\right)=\sqrt{9}=3\)）</p>
                 <p>来求一下导数：</p>
-                <p class="scrollbar">\[f^{\prime}\left(x\right)=\cfrac{\mathrm{d} }{\mathrm{d} x}\left(\sqrt{x}\right)=\cfrac{\mathrm{d} }{\mathrm{d} x}\left(x^{\frac{1}{2}}\right)=\cfrac{1}{2} x^{-\frac{1}{2}}=\cfrac{1}{2\sqrt{x}}\]</p>
-                <p>那么\(f^{\prime}\left(9\right)=\cfrac{1}{6}\)</p>
+                <p class="scrollbar">\[f^{\prime}\left(x\right)=\dfrac{\mathrm{d} }{\mathrm{d} x}\left(\sqrt{x}\right)=\dfrac{\mathrm{d} }{\mathrm{d} x}\left(x^{\frac{1}{2}}\right)=\dfrac{1}{2} x^{-\frac{1}{2}}=\dfrac{1}{2\sqrt{x}}\]</p>
+                <p>那么\(f^{\prime}\left(9\right)=\dfrac{1}{6}\)</p>
                 <p>所以\(f\left(x\right)\)的线性化为</p>
-                <p class="scrollbar">\[L\left(x\right)=f\left(a\right)+f^{\prime}\left(a\right)\left(x-a\right)=3+\cfrac{1}{6}\left(x-9\right)\]</p>
-                <p>最后代入\(x=10\)发现\(\sqrt{10}=f\left(10\right)\approx L\left(10\right)=\cfrac{19}{6}\)</p>
+                <p class="scrollbar">\[L\left(x\right)=f\left(a\right)+f^{\prime}\left(a\right)\left(x-a\right)=3+\dfrac{1}{6}\left(x-9\right)\]</p>
+                <p>最后代入\(x=10\)发现\(\sqrt{10}=f\left(10\right)\approx L\left(10\right)=\dfrac{19}{6}\)</p>
                 <p>\(\sqrt{10}\)的线性近似值就这样算出来啦</p>
                 <p>大家可以自行检验这个近似值和计算器的结果有多大差别哦</p>
                 <br>
@@ -220,20 +220,20 @@
                 <h2><a name="2.7">2.7 导数的运算法则</a></h2>
                 <p style="font-weight:bold">1.函数的常数倍</p>
                 <p>一个函数的常数倍的导数等于这个常数乘以该函数的导数</p>
-                <p>假设有一个函数\(u=f\left(x\right)\)，我们就叫它\(u\)，那么\(\cfrac{\mathrm{d} }{\mathrm{d} x}\left(Cu\right)=C\cfrac{\mathrm{d} u}{\mathrm{d} x}\)（\(C\)是常数）</p>
+                <p>假设有一个函数\(u=f\left(x\right)\)，我们就叫它\(u\)，那么\(\dfrac{\mathrm{d} }{\mathrm{d} x}\left(Cu\right)=C\dfrac{\mathrm{d} u}{\mathrm{d} x}\)（\(C\)是常数）</p>
                 <p>或者可以说：假设\(h\left(x\right)=Cf\left(x\right)\)，那么\(h^{\prime}\left(x\right)=Cf^{\prime}\left(x\right)\)</p>
-                <p>比如我们已经知道了\(\cfrac{\mathrm{d} }{\mathrm{d} x}\left(x^2\right)=2x\)，那么就可以有\(\cfrac{\mathrm{d} }{\mathrm{d} x}\left(5x^2\right)=5\cdot 2x=10x\)和\(\cfrac{\mathrm{d} }{\mathrm{d} x}\left(-x^2\right)=-1\cdot 2x=-2x\)等等</p>
+                <p>比如我们已经知道了\(\dfrac{\mathrm{d} }{\mathrm{d} x}\left(x^2\right)=2x\)，那么就可以有\(\dfrac{\mathrm{d} }{\mathrm{d} x}\left(5x^2\right)=5\cdot 2x=10x\)和\(\dfrac{\mathrm{d} }{\mathrm{d} x}\left(-x^2\right)=-1\cdot 2x=-2x\)等等</p>
                 <p style="font-weight:bold">2.函数的和与差</p>
                 <p>假设有两个函数\(u\)和\(v\)，那么</p>
-                <p class="scrollbar">\[\cfrac{\mathrm{d} }{\mathrm{d} x}\left(u\pm v\right)=\cfrac{\mathrm{d} u}{\mathrm{d} x}\pm \cfrac{\mathrm{d} v}{\mathrm{d} x}\]</p>
+                <p class="scrollbar">\[\dfrac{\mathrm{d} }{\mathrm{d} x}\left(u\pm v\right)=\dfrac{\mathrm{d} u}{\mathrm{d} x}\pm \dfrac{\mathrm{d} v}{\mathrm{d} x}\]</p>
                 <p>或者可以说：假设\(h\left(x\right)=f\left(x\right)\pm g\left(x\right)\)，那么\(h^{\prime}\left(x\right)=f^{\prime}\left(x\right)\pm g^{\prime}\left(x\right)\)</p>
                 <p>比如：</p>
-                <p class="scrollbar">\[\cfrac{\mathrm{d} }{\mathrm{d} x}\left(3x^5-2x^2+4+\cfrac{5}{x}\right)=3\cdot 5x^4-2\cdot 2x^1+4\cdot 0+5\cdot \left(-\cfrac{1}{x^2}\right)=15x^4-4x-\cfrac{5}{x^2}\]</p>
+                <p class="scrollbar">\[\dfrac{\mathrm{d} }{\mathrm{d} x}\left(3x^5-2x^2+4+\dfrac{5}{x}\right)=3\cdot 5x^4-2\cdot 2x^1+4\cdot 0+5\cdot \left(-\dfrac{1}{x^2}\right)=15x^4-4x-\dfrac{5}{x^2}\]</p>
                 <p style="font-weight:bold">3.函数的积（乘积法则 Product Rule）</p>
                 <p>函数乘积的导数可不像前两个一样，它往往不会等于函数导数的乘积</p>
                 <p>注意了，这里千万不能记错</p>
                 <p>下面是乘积法则，请仔细看</p>
-                <p>假设有两个函数\(u\)和\(v\)，那么\(\cfrac{\mathrm{d} }{\mathrm{d} x}\left(uv\right)=\cfrac{\mathrm{d} u}{\mathrm{d} x}v+\cfrac{\mathrm{d} v}{\mathrm{d} x}u\)（口诀：前导后不导\(+\)后导前不导）</p>
+                <p>假设有两个函数\(u\)和\(v\)，那么\(\dfrac{\mathrm{d} }{\mathrm{d} x}\left(uv\right)=\dfrac{\mathrm{d} u}{\mathrm{d} x}v+\dfrac{\mathrm{d} v}{\mathrm{d} x}u\)（口诀：前导后不导\(+\)后导前不导）</p>
                 <p>或者可以说：假设\(h\left(x\right)=f\left(x\right)g\left(x\right)\)，那么</p>
                 <p class="scrollbar">\[h^{\prime}\left(x\right)=f^{\prime}\left(x\right)g\left(x\right)+f\left(x\right)g^{\prime}\left(x\right)\]</p>
                 <p>比如：求\(y=\left(2x^4+3x-1\right)\left(5x^8-9x^3-x^2\right)\)的导数</p>
@@ -244,25 +244,25 @@
                         <td>\(v=5x^8-9x^3-x^2\)</td>
                     </tr>
                     <tr>
-                        <td>\(\cfrac{\mathrm{d} u}{\mathrm{d} x}=8x^3+3\)</td>
-                        <td>\(\cfrac{\mathrm{d} v}{\mathrm{d} x}=40x^7-27x^2-2x\)</td>
+                        <td>\(\dfrac{\mathrm{d} u}{\mathrm{d} x}=8x^3+3\)</td>
+                        <td>\(\dfrac{\mathrm{d} v}{\mathrm{d} x}=40x^7-27x^2-2x\)</td>
                     </tr>
                 </table>
                 <p>运用乘积法则，可以发现</p>
-                <p class="scrollbar">\[\cfrac{\mathrm{d} y}{\mathrm{d} x}=\cfrac{\mathrm{d} }{\mathrm{d} x}\left(uv\right)=\cfrac{\mathrm{d} u}{\mathrm{d} x}v+\cfrac{\mathrm{d} v}{\mathrm{d} x}u=\left(8x^3+3\right)\left(5x^8-9x^3-x^2\right)+\left(40x^7-27x^2-2x\right)\left(2x^4+3x-1\right)\]</p>
+                <p class="scrollbar">\[\dfrac{\mathrm{d} y}{\mathrm{d} x}=\dfrac{\mathrm{d} }{\mathrm{d} x}\left(uv\right)=\dfrac{\mathrm{d} u}{\mathrm{d} x}v+\dfrac{\mathrm{d} v}{\mathrm{d} x}u=\left(8x^3+3\right)\left(5x^8-9x^3-x^2\right)+\left(40x^7-27x^2-2x\right)\left(2x^4+3x-1\right)\]</p>
                 <p style="font-weight:bold">4.函数的商（商法则 Quotient Rule）</p>
                 <p>函数的商的导数也往往不等于函数导数的商！</p>
                 <p>下面是商法则，请仔细看</p>
                 <p>假设有两个函数\(u\)和\(v\)，那么</p>
-                <p class="scrollbar">\[\cfrac{\mathrm{d} }{\mathrm{d} x}\left(\cfrac{u}{v}\right)=\cfrac{\cfrac{\mathrm{d} u}{\mathrm{d} x}v-\cfrac{\mathrm{d} v}{\mathrm{d} x}u}{v^2}\]</p>
-                <p>或者可以说：假设\(h\left(x\right)=\cfrac{f\left(x\right)}{g\left(x\right)}\)，那么</p>
-                <p class="scrollbar">\[h^{\prime}\left(x\right)=\cfrac{f^{\prime}\left(x\right)g\left(x\right)-f\left(x\right)g^{\prime}\left(x\right)}{\left(g\left(x\right)\right)^2}\]</p>
-                <p>比如：求\(y=\cfrac{2x^4+3x-1}{5x^8-9x^3-x^2}\)的导数</p>
+                <p class="scrollbar">\[\dfrac{\mathrm{d} }{\mathrm{d} x}\left(\dfrac{u}{v}\right)=\dfrac{\dfrac{\mathrm{d} u}{\mathrm{d} x}v-\dfrac{\mathrm{d} v}{\mathrm{d} x}u}{v^2}\]</p>
+                <p>或者可以说：假设\(h\left(x\right)=\dfrac{f\left(x\right)}{g\left(x\right)}\)，那么</p>
+                <p class="scrollbar">\[h^{\prime}\left(x\right)=\dfrac{f^{\prime}\left(x\right)g\left(x\right)-f\left(x\right)g^{\prime}\left(x\right)}{\left(g\left(x\right)\right)^2}\]</p>
+                <p>比如：求\(y=\dfrac{2x^4+3x-1}{5x^8-9x^3-x^2}\)的导数</p>
                 <p>同样的，我们可以看作是两个函数\(u=2x^4+3x-1\)和\(v=5x^8-9x^3-x^2\)的商，这样我们就可以用商法则了</p>
-                <p class="scrollbar">\[\cfrac{\mathrm{d} y}{\mathrm{d} x}=\cfrac{\mathrm{d} }{\mathrm{d} x}\left(\cfrac{u}{v}\right)=\cfrac{\cfrac{\mathrm{d} u}{\mathrm{d} x}v-\cfrac{\mathrm{d} v}{\mathrm{d} x}u}{v^2}=\cfrac{\left(8x^3+3\right)\left(5x^8-9x^3-x^2\right)-\left(40x^7-27x^2-2x\right)\left(2x^4+3x-1\right)}{\left(5x^8-9x^3-x^2\right)^2}\]</p>
+                <p class="scrollbar">\[\dfrac{\mathrm{d} y}{\mathrm{d} x}=\dfrac{\mathrm{d} }{\mathrm{d} x}\left(\dfrac{u}{v}\right)=\dfrac{\dfrac{\mathrm{d} u}{\mathrm{d} x}v-\dfrac{\mathrm{d} v}{\mathrm{d} x}u}{v^2}=\dfrac{\left(8x^3+3\right)\left(5x^8-9x^3-x^2\right)-\left(40x^7-27x^2-2x\right)\left(2x^4+3x-1\right)}{\left(5x^8-9x^3-x^2\right)^2}\]</p>
                 <p style="font-weight:bold">5.函数的复合（链式求导法则 Chain Rule）</p>
                 <p>如果\(y\)是\(u\)的函数，\(u\)是\(x\)的函数，那么</p>
-                <p class="scrollbar">\[\cfrac{\mathrm{d} y}{\mathrm{d} x}=\cfrac{\mathrm{d} y}{\mathrm{d} u} \cfrac{\mathrm{d} u}{\mathrm{d} x}\]</p>
+                <p class="scrollbar">\[\dfrac{\mathrm{d} y}{\mathrm{d} x}=\dfrac{\mathrm{d} y}{\mathrm{d} u} \dfrac{\mathrm{d} u}{\mathrm{d} x}\]</p>
                 <p>或者可以说：假设\(h\left(x\right)=f\left(g\left(x\right)\right)\)，那么</p>
                 <p class="scrollbar">\[h^{\prime}\left(x\right)=f^{\prime}\left(g\left(x\right)\right)g^{\prime}\left(x\right)\]</p>
                 <p>你有可能会觉得这俩不是一个东西，但其实这是同等的</p>
@@ -275,26 +275,26 @@
                         <td>\(u=x^2+1\)</td>
                     </tr>
                     <tr>
-                        <td>\(\cfrac{\mathrm{d} y}{\mathrm{d} u}=99u^{98}\)</td>
-                        <td>\(\cfrac{\mathrm{d} u}{\mathrm{d} x}=2x\)</td>
+                        <td>\(\dfrac{\mathrm{d} y}{\mathrm{d} u}=99u^{98}\)</td>
+                        <td>\(\dfrac{\mathrm{d} u}{\mathrm{d} x}=2x\)</td>
                     </tr>
                 </table>
-                <p class="scrollbar">\[\cfrac{\mathrm{d} y}{\mathrm{d} x}=\cfrac{\mathrm{d} y}{\mathrm{d} u} \cfrac{\mathrm{d} u}{\mathrm{d} x}=99u^{98}\cdot 2x=198xu^{98}=198x\left(x^2+1\right)^{98}\]</p>
+                <p class="scrollbar">\[\dfrac{\mathrm{d} y}{\mathrm{d} x}=\dfrac{\mathrm{d} y}{\mathrm{d} u} \dfrac{\mathrm{d} u}{\mathrm{d} x}=99u^{98}\cdot 2x=198xu^{98}=198x\left(x^2+1\right)^{98}\]</p>
                 <br>
                 <p>这样我们导数的运算法则就介绍完啦！你可能会有疑问：为什么不给我们看证明过程？那我告诉你：AP微积分里会给你推的，这里只要熟记结论即可！</p>
                 <h2><a name="2.8">2.8 隐函数求导 Implicit Differentiation</a></h2>
-                <p>假设\(y\)是\(x\)的函数，那么\(\cfrac{\mathrm{d} }{\mathrm{d} x}\left(x^2\right)\)和\(\cfrac{\mathrm{d} }{\mathrm{d} x}\left(y^2\right)\)一样吗？</p>
+                <p>假设\(y\)是\(x\)的函数，那么\(\dfrac{\mathrm{d} }{\mathrm{d} x}\left(x^2\right)\)和\(\dfrac{\mathrm{d} }{\mathrm{d} x}\left(y^2\right)\)一样吗？</p>
                 <p>这两个显然是不一样的，第一个等于\(2x\)，那第二个呢？</p>
-                <p>我们可以根据链式求导法则来求\(\cfrac{\mathrm{d} }{\mathrm{d} x}\left(y^2\right)\)等于什么</p>
+                <p>我们可以根据链式求导法则来求\(\dfrac{\mathrm{d} }{\mathrm{d} x}\left(y^2\right)\)等于什么</p>
                 <p>我们令\(u=y^2\)，那么</p>
-                <p class="scrollbar">\[\cfrac{\mathrm{d} }{\mathrm{d} x}\left(y^2\right)=\cfrac{\mathrm{d} u}{\mathrm{d} x}=\cfrac{\mathrm{d} u}{\mathrm{d} y} \cfrac{\mathrm{d} y}{\mathrm{d} x}=2y \cfrac{\mathrm{d} y}{\mathrm{d} x}\]</p>
+                <p class="scrollbar">\[\dfrac{\mathrm{d} }{\mathrm{d} x}\left(y^2\right)=\dfrac{\mathrm{d} u}{\mathrm{d} x}=\dfrac{\mathrm{d} u}{\mathrm{d} y} \dfrac{\mathrm{d} y}{\mathrm{d} x}=2y \dfrac{\mathrm{d} y}{\mathrm{d} x}\]</p>
                 <p>下面来举个例子</p>
-                <p>考虑一个方程\(x^2+y^2=4\)（这是一个圆心在原点、半径为\(2\)的圆），我们要求\(\cfrac{\mathrm{d} y}{\mathrm{d} x}\)，怎么做呢？</p>
+                <p>考虑一个方程\(x^2+y^2=4\)（这是一个圆心在原点、半径为\(2\)的圆），我们要求\(\dfrac{\mathrm{d} y}{\mathrm{d} x}\)，怎么做呢？</p>
                 <p>我们可以对这个方程两边进行隐函数求导</p>
-                <p class="scrollbar">\[\cfrac{\mathrm{d} }{\mathrm{d} x}\left(x^2+y^2\right)=\cfrac{\mathrm{d} }{\mathrm{d} x}\left(4\right)\]</p>
-                <p class="scrollbar">\[2x+2y\cfrac{\mathrm{d} y}{\mathrm{d} x}=0\]</p>
-                <p class="scrollbar">\[\cfrac{\mathrm{d} y}{\mathrm{d} x}=-\cfrac{x}{y}\]</p>
-                <p>这说明在这个圆上的点\(\left(x,y\right)\)处的切线的斜率是\(-\cfrac{x}{y}\)，大家可以手动验证一下</p>
+                <p class="scrollbar">\[\dfrac{\mathrm{d} }{\mathrm{d} x}\left(x^2+y^2\right)=\dfrac{\mathrm{d} }{\mathrm{d} x}\left(4\right)\]</p>
+                <p class="scrollbar">\[2x+2y\dfrac{\mathrm{d} y}{\mathrm{d} x}=0\]</p>
+                <p class="scrollbar">\[\dfrac{\mathrm{d} y}{\mathrm{d} x}=-\dfrac{x}{y}\]</p>
+                <p>这说明在这个圆上的点\(\left(x,y\right)\)处的切线的斜率是\(-\dfrac{x}{y}\)，大家可以手动验证一下</p>
                 <h2><a name="2.9">2.9 反函数的导数</a></h2>
                 <p>在讨论反函数的导数之前，我们得先判断一个函数是否有反函数</p>
                 <p>假设有一个函数，它的导数（在定义域内）总是正的，那么（想象一下它的图像）它一定是单调递增函数，这种情况下它在定义域内一定有反函数</p>
@@ -310,127 +310,127 @@
                 <br>
                 <p>下面我们就来求反函数的导数是什么</p>
                 <p>假设函数\(f\left(x\right)\)有反函数，我们叫他\(y=f^{-1}\left(x\right)\)，那么\(f\left(y\right)=x\)</p>
-                <p>对\(f\left(y\right)=x\)两边关于\(x\)作隐函数求导，\(\cfrac{\mathrm{d} }{\mathrm{d} x}\left(f\left(y\right)\right)=\cfrac{\mathrm{d} }{\mathrm{d} x}\left(x\right)\)（左边需要用链式求导法则）</p>
+                <p>对\(f\left(y\right)=x\)两边关于\(x\)作隐函数求导，\(\dfrac{\mathrm{d} }{\mathrm{d} x}\left(f\left(y\right)\right)=\dfrac{\mathrm{d} }{\mathrm{d} x}\left(x\right)\)（左边需要用链式求导法则）</p>
                 <p>得到：</p>
-                <p class="scrollbar">\[f^{\prime}\left(y\right)\cfrac{\mathrm{d} y}{\mathrm{d} x}=1\Rightarrow \cfrac{\mathrm{d} y}{\mathrm{d} x}=\cfrac{1}{f^{\prime}\left(y\right)}\]</p>
+                <p class="scrollbar">\[f^{\prime}\left(y\right)\dfrac{\mathrm{d} y}{\mathrm{d} x}=1\Rightarrow \dfrac{\mathrm{d} y}{\mathrm{d} x}=\dfrac{1}{f^{\prime}\left(y\right)}\]</p>
                 <p>这样我们就知道了反函数的导数：如果\(y=f^{-1}\left(x\right)\)，则</p>
-                <p class="scrollbar">\[\cfrac{\mathrm{d} y}{\mathrm{d} x}=\cfrac{1}{f^{\prime}\left(y\right)}=\cfrac{1}{f^{\prime}\left(f^{-1}\left(x\right)\right)}\]</p>
+                <p class="scrollbar">\[\dfrac{\mathrm{d} y}{\mathrm{d} x}=\dfrac{1}{f^{\prime}\left(y\right)}=\dfrac{1}{f^{\prime}\left(f^{-1}\left(x\right)\right)}\]</p>
                 <p>e.g. 求\(y=x^{\frac{1}{3}}\)的导数</p>
                 <p>我们当然可以直接把它求出来，即是</p>
-                <p class="scrollbar">\[\cfrac{\mathrm{d} y}{\mathrm{d} x}=\cfrac{1}{3}x^{-\frac{2}{3}}=\cfrac{1}{3x^\frac{2}{3}}\]</p>
+                <p class="scrollbar">\[\dfrac{\mathrm{d} y}{\mathrm{d} x}=\dfrac{1}{3}x^{-\frac{2}{3}}=\dfrac{1}{3x^\frac{2}{3}}\]</p>
                 <p>但是我想要验证一下这个求反函数的导数的方法</p>
                 <p>假设\(f\left(x\right)=x^3\)，我们知道它在定义域上有反函数，即\(y=f^{-1}\left(x\right)=x^{\frac{1}{3}}\)</p>
                 <p>那么</p>
-                <p class="scrollbar">\[\cfrac{\mathrm{d} y}{\mathrm{d} x}=\cfrac{1}{f^{\prime}\left(y\right)}=\cfrac{1}{3y^2}=\cfrac{1}{3\left(x^{\frac{1}{3}}\right)^2}=\cfrac{1}{3x^\frac{2}{3}}\]</p>
+                <p class="scrollbar">\[\dfrac{\mathrm{d} y}{\mathrm{d} x}=\dfrac{1}{f^{\prime}\left(y\right)}=\dfrac{1}{3y^2}=\dfrac{1}{3\left(x^{\frac{1}{3}}\right)^2}=\dfrac{1}{3x^\frac{2}{3}}\]</p>
                 <p>看到没，这方法管用吧！</p>
                 <h2><a name="2.10">2.10 三角函数的导数</a></h2>
                 <p>我们现在已经知道了一个形如\(f\left(x\right)=x^a\)的函数的导数为\(f^{\prime}\left(x\right)=ax^{a-1}\)（\(a\in R\)）</p>
                 <p>现在让我们来看看三角函数的导数如何求</p>
                 <p>既然极限是导数的前提，那么我们就先来看一下三角函数的极限</p>
                 <p>不知道大家还记不记得（你必须记得），在上一章里面有个重要的极限</p>
-                <p class="scrollbar">\[\lim\limits_{x\to 0}\cfrac{\sin\left(x\right)}{x}=1\]</p>
+                <p class="scrollbar">\[\lim\limits_{x\to 0}\dfrac{\sin\left(x\right)}{x}=1\]</p>
                 <p>另外，根据余弦函数在定义域内的连续性，有个显而易见的极限：</p>
                 <p class="scrollbar">\[\lim\limits_{x\to 0}\cos\left(x\right)=\cos\left(0\right)=1\]</p>
                 <p>有了这两个极限，我们就可以求一些其他的关于三角函数的极限了</p>
-                <p>e.g. 计算：\(\lim\limits_{x\to 0}\cfrac{1-\cos\left(x\right)}{x}\)</p>
+                <p>e.g. 计算：\(\lim\limits_{x\to 0}\dfrac{1-\cos\left(x\right)}{x}\)</p>
                 <p class="scrollbar">
                     \[\begin{align*}
-                        \lim\limits_{x\to 0}\cfrac{1-\cos\left(x\right)}{x} &= \lim\limits_{x\to 0}\cfrac{1-\cos\left(x\right)}{x}\cdot \cfrac{1+\cos\left(x\right)}{1+\cos\left(x\right)}=\lim\limits_{x\to 0}\cfrac{\sin^2\left(x\right)}{x}\cdot \cfrac{1}{1+\cos\left(x\right)} \\
-                        &= \lim\limits_{x\to 0}\sin\left(x\right)\cdot \cfrac{\sin\left(x\right)}{x}\cdot \cfrac{1}{1+\cos\left(x\right)}=0\cdot 1\cdot \cfrac{1}{1+1}=0
+                        \lim\limits_{x\to 0}\dfrac{1-\cos\left(x\right)}{x} &= \lim\limits_{x\to 0}\dfrac{1-\cos\left(x\right)}{x}\cdot \dfrac{1+\cos\left(x\right)}{1+\cos\left(x\right)}=\lim\limits_{x\to 0}\dfrac{\sin^2\left(x\right)}{x}\cdot \dfrac{1}{1+\cos\left(x\right)} \\
+                        &= \lim\limits_{x\to 0}\sin\left(x\right)\cdot \dfrac{\sin\left(x\right)}{x}\cdot \dfrac{1}{1+\cos\left(x\right)}=0\cdot 1\cdot \dfrac{1}{1+1}=0
                     \end{align*}\]
                 </p>
                 <p>这样我们就得到了：</p>
-                <p class="scrollbar">\[\lim\limits_{x\to 0}\cfrac{1-\cos\left(x\right)}{x}=0\]</p>
+                <p class="scrollbar">\[\lim\limits_{x\to 0}\dfrac{1-\cos\left(x\right)}{x}=0\]</p>
                 <p>记住这个极限，待会求三角函数的导数的时候会用到</p>
-                <p>练习：计算\(\lim\limits_{x\to 0}\cfrac{1-\cos\left(x\right)}{x^2}\)和\(\lim\limits_{x\to \infty}\cfrac{3x^2+2x+5+\sin\left(3000x^9\right)}{2x^2-1-\cos\left(22x\right)}\)</p>
+                <p>练习：计算\(\lim\limits_{x\to 0}\dfrac{1-\cos\left(x\right)}{x^2}\)和\(\lim\limits_{x\to \infty}\dfrac{3x^2+2x+5+\sin\left(3000x^9\right)}{2x^2-1-\cos\left(22x\right)}\)</p>
                 <br>
                 <p>现在终于可以来求导了</p>
-                <p>别忘记这两个极限：\(\lim\limits_{x\to 0}\cfrac{\sin\left(x\right)}{x}=1\)和\(\lim\limits_{x\to 0}\cfrac{1-\cos\left(x\right)}{x}=0\)</p>
-                <p>以及导数的定义：\(f^{\prime}\left(x\right)=\lim\limits_{h\to 0}\cfrac{f\left(x+h\right)-f\left(x\right)}{h}\)</p>
+                <p>别忘记这两个极限：\(\lim\limits_{x\to 0}\dfrac{\sin\left(x\right)}{x}=1\)和\(\lim\limits_{x\to 0}\dfrac{1-\cos\left(x\right)}{x}=0\)</p>
+                <p>以及导数的定义：\(f^{\prime}\left(x\right)=\lim\limits_{h\to 0}\dfrac{f\left(x+h\right)-f\left(x\right)}{h}\)</p>
                 <br>
                 <p>我们先来求\(f\left(x\right)=\sin\left(x\right)\)的导数</p>
                 <p class="scrollbar">
                     \[\begin{align*}
-                        f^{\prime}\left(x\right) &= \lim\limits_{h\to 0}\cfrac{\sin\left(x+h\right)-\sin\left(x\right)}{h} \\
-                        &= \lim\limits_{h\to 0}\cfrac{\sin\left(x\right)\cos\left(h\right)+\cos\left(x\right)\sin\left(h\right)-\sin\left(x\right)}{h} \\
-                        &= \lim\limits_{h\to 0}\cfrac{\sin\left(x\right)\left(\cos\left(h\right)-1\right)+\cos\left(x\right)\sin\left(h\right)}{h} \\
-                        &= \lim\limits_{h\to 0}\left(\sin\left(x\right)\left(\cfrac{\cos\left(h\right)-1}{h}\right)+\cos\left(x\right)\left(\cfrac{\sin\left(h\right)}{h}\right)\right) \\
+                        f^{\prime}\left(x\right) &= \lim\limits_{h\to 0}\dfrac{\sin\left(x+h\right)-\sin\left(x\right)}{h} \\
+                        &= \lim\limits_{h\to 0}\dfrac{\sin\left(x\right)\cos\left(h\right)+\cos\left(x\right)\sin\left(h\right)-\sin\left(x\right)}{h} \\
+                        &= \lim\limits_{h\to 0}\dfrac{\sin\left(x\right)\left(\cos\left(h\right)-1\right)+\cos\left(x\right)\sin\left(h\right)}{h} \\
+                        &= \lim\limits_{h\to 0}\left(\sin\left(x\right)\left(\dfrac{\cos\left(h\right)-1}{h}\right)+\cos\left(x\right)\left(\dfrac{\sin\left(h\right)}{h}\right)\right) \\
                         &= \sin\left(x\right)\cdot 0+\cos\left(x\right)\cdot 1 \\
                         &= \cos\left(x\right)
                     \end{align*}\]
                 </p>
-                <p>所以\(f\left(x\right)=\sin\left(x\right)\)的导数为\(f^{\prime}\left(x\right)=\cos\left(x\right)\)或者说\(\cfrac{\mathrm{d} }{\mathrm{d} x}\sin\left(x\right)=\cos\left(x\right)\)</p>
+                <p>所以\(f\left(x\right)=\sin\left(x\right)\)的导数为\(f^{\prime}\left(x\right)=\cos\left(x\right)\)或者说\(\dfrac{\mathrm{d} }{\mathrm{d} x}\sin\left(x\right)=\cos\left(x\right)\)</p>
                 <br>
                 <p>接下来，大家来自行练习一下求函数\(f\left(x\right)=\cos\left(x\right)\)的导数</p>
-                <p>如果你求解正确，你应该会看到\(\cfrac{\mathrm{d} }{\mathrm{d} x}\cos\left(x\right)=-\sin\left(x\right)\)（注意这里有一个负号）</p>
+                <p>如果你求解正确，你应该会看到\(\dfrac{\mathrm{d} }{\mathrm{d} x}\cos\left(x\right)=-\sin\left(x\right)\)（注意这里有一个负号）</p>
                 <br>
                 <p>现在我们有了\(\sin\left(x\right)\)和\(\cos\left(x\right)\)的导数，我们就可以用导数的运算法则来对\(\tan\left(x\right)\)，\(\cot\left(x\right)\)，\(\sec\left(x\right)\)和\(\csc\left(x\right)\)进行求导啦</p>
-                <p>以\(\tan\left(x\right)\)为例，我们可以把\(\tan\left(x\right)\)写成\(\cfrac{\sin\left(x\right)}{\cos\left(x\right)}\)并用商法则对其进行求导</p>
-                <p class="scrollbar">\[\cfrac{\mathrm{d} }{\mathrm{d} x}\tan\left(x\right)=\cfrac{\mathrm{d} }{\mathrm{d} x}\left(\cfrac{\sin\left(x\right)}{\cos\left(x\right)}\right)=\cfrac{\cos\left(x\right)\cos\left(x\right)-\left(-\sin\left(x\right)\right)\sin\left(x\right)}{\cos^{2}\left(x\right)}=\cfrac{1}{\cos^{2}\left(x\right)}=\sec^{2}\left(x\right)\]</p>
+                <p>以\(\tan\left(x\right)\)为例，我们可以把\(\tan\left(x\right)\)写成\(\dfrac{\sin\left(x\right)}{\cos\left(x\right)}\)并用商法则对其进行求导</p>
+                <p class="scrollbar">\[\dfrac{\mathrm{d} }{\mathrm{d} x}\tan\left(x\right)=\dfrac{\mathrm{d} }{\mathrm{d} x}\left(\dfrac{\sin\left(x\right)}{\cos\left(x\right)}\right)=\dfrac{\cos\left(x\right)\cos\left(x\right)-\left(-\sin\left(x\right)\right)\sin\left(x\right)}{\cos^{2}\left(x\right)}=\dfrac{1}{\cos^{2}\left(x\right)}=\sec^{2}\left(x\right)\]</p>
                 <p>剩下的三个三角函数的导数就让你自己来试试咯</p>
                 <p>没算错的话你会发现：</p>
-                <p class="scrollbar">\[\cfrac{\mathrm{d} }{\mathrm{d} x}\cot\left(x\right)=-\csc^{2}\left(x\right)\]</p>
-                <p class="scrollbar">\[\cfrac{\mathrm{d} }{\mathrm{d} x}\sec\left(x\right)=\sec\left(x\right)\tan\left(x\right)\]</p>
-                <p class="scrollbar">\[\cfrac{\mathrm{d} }{\mathrm{d} x}\csc\left(x\right)=-\csc\left(x\right)\cot\left(x\right)\]</p>
+                <p class="scrollbar">\[\dfrac{\mathrm{d} }{\mathrm{d} x}\cot\left(x\right)=-\csc^{2}\left(x\right)\]</p>
+                <p class="scrollbar">\[\dfrac{\mathrm{d} }{\mathrm{d} x}\sec\left(x\right)=\sec\left(x\right)\tan\left(x\right)\]</p>
+                <p class="scrollbar">\[\dfrac{\mathrm{d} }{\mathrm{d} x}\csc\left(x\right)=-\csc\left(x\right)\cot\left(x\right)\]</p>
                 <br>
                 <p>还记得反三角函数吗？如果我们要求反三角函数的导数，只需要将上一节反函数的导数与三角函数的导数结合起来即可</p>
                 <p>e.g. 求\(y=\arcsin\left(x\right)\)的导数</p>
-                <p class="scrollbar">\[y=\arcsin\left(x\right)\Rightarrow \sin\left(y\right)=x\left(x\in \left[-1,1\right], y\in\left[-\cfrac{\pi}{2},\cfrac{\pi}{2}\right]\right)\]</p>
-                <p class="scrollbar">\(\cfrac{\mathrm{d} y}{\mathrm{d} x}=\cfrac{1}{\cos\left(y\right)}\)</p>
+                <p class="scrollbar">\[y=\arcsin\left(x\right)\Rightarrow \sin\left(y\right)=x\left(x\in \left[-1,1\right], y\in\left[-\dfrac{\pi}{2},\dfrac{\pi}{2}\right]\right)\]</p>
+                <p class="scrollbar">\(\dfrac{\mathrm{d} y}{\mathrm{d} x}=\dfrac{1}{\cos\left(y\right)}\)</p>
                 <p class="scrollbar">\(\because \sin^{2}\left(y\right)+\cos^{2}\left(y\right)=1 \enspace and \enspace \cos\left(y\right)>0\)</p>
                 <p class="scrollbar">\(\therefore \cos\left(y\right)=\sqrt{1-\sin^{2}\left(y\right)}=\sqrt{1-x^2}\)</p>
-                <p class="scrollbar">\(\Rightarrow \cfrac{\mathrm{d} y}{\mathrm{d} x}=\cfrac{1}{\sqrt{1-x^2}}\)</p>
+                <p class="scrollbar">\(\Rightarrow \dfrac{\mathrm{d} y}{\mathrm{d} x}=\dfrac{1}{\sqrt{1-x^2}}\)</p>
                 <p>这样我们就得到了：</p>
-                <p class="scrollbar">\[\cfrac{\mathrm{d} }{\mathrm{d} x}\arcsin\left(x\right)=\cfrac{1}{\sqrt{1-x^2}}\left(x\in \left(-1,1\right)\right)\]</p>
+                <p class="scrollbar">\[\dfrac{\mathrm{d} }{\mathrm{d} x}\arcsin\left(x\right)=\dfrac{1}{\sqrt{1-x^2}}\left(x\in \left(-1,1\right)\right)\]</p>
                 <p>同理，我们还可以知道（一定要自己算哦）：</p>
-                <p class="scrollbar">\[\cfrac{\mathrm{d} }{\mathrm{d} x}\arccos\left(x\right)=-\cfrac{1}{\sqrt{1-x^2}}\left(x\in \left(-1,1\right)\right)\]</p>
-                <p class="scrollbar">\[\cfrac{\mathrm{d} }{\mathrm{d} x}\arctan\left(x\right)=\cfrac{1}{1+x^2}\left(x\in R\right)\]</p>
+                <p class="scrollbar">\[\dfrac{\mathrm{d} }{\mathrm{d} x}\arccos\left(x\right)=-\dfrac{1}{\sqrt{1-x^2}}\left(x\in \left(-1,1\right)\right)\]</p>
+                <p class="scrollbar">\[\dfrac{\mathrm{d} }{\mathrm{d} x}\arctan\left(x\right)=\dfrac{1}{1+x^2}\left(x\in R\right)\]</p>
                 <h2><a name="2.11">2.11 指数函数和对数函数的导数</a></h2>
-                <p>回忆一下上一章那个极其重要的极限：\(e=\lim\limits_{n\to \infty}\left(1+\cfrac{1}{n}\right)^n\)</p>
+                <p>回忆一下上一章那个极其重要的极限：\(e=\lim\limits_{n\to \infty}\left(1+\dfrac{1}{n}\right)^n\)</p>
                 <p>我们还可以表示为\(e=\lim\limits_{h\to 0^{+}}\left(1+h\right)^{\frac{1}{h}}\)</p>
-                <p>现在我们要计算\(\lim\limits_{n\to \infty}\left(1+\cfrac{x}{n}\right)^n\)（这里可以当\(x\)是个大于\(0\)的常数）</p>
-                <p>我们先设\(h=\cfrac{x}{n}\)，这样\(n=\cfrac{x}{h}\)，当\(n\to \infty\)时，\(h\to 0^{+}\)</p>
-                <p class="scrollbar">\(\lim\limits_{n\to \infty}\left(1+\cfrac{x}{n}\right)^n=\lim\limits_{h\to 0^{+}}\left(1+h\right)^{\frac{x}{h}}=\lim\limits_{h\to 0^{+}}\left(\left(1+h\right)^{\frac{1}{h}}\right)^x=e^x\)</p>
+                <p>现在我们要计算\(\lim\limits_{n\to \infty}\left(1+\dfrac{x}{n}\right)^n\)（这里可以当\(x\)是个大于\(0\)的常数）</p>
+                <p>我们先设\(h=\dfrac{x}{n}\)，这样\(n=\dfrac{x}{h}\)，当\(n\to \infty\)时，\(h\to 0^{+}\)</p>
+                <p class="scrollbar">\(\lim\limits_{n\to \infty}\left(1+\dfrac{x}{n}\right)^n=\lim\limits_{h\to 0^{+}}\left(1+h\right)^{\frac{x}{h}}=\lim\limits_{h\to 0^{+}}\left(\left(1+h\right)^{\frac{1}{h}}\right)^x=e^x\)</p>
                 <p>对于\(x<0\)，也同样成立（那时当\(n\to \infty\)时，\(h\to 0^{-}\)，只需令\(t=-h\)就可以证明）</p>
                 <p>最后，我们得到</p>
-                <p class="scrollbar">\[e^x=\lim\limits_{n\to \infty}\left(1+\cfrac{x}{n}\right)^n=\lim\limits_{h\to 0}\left(1+xh\right)^{\frac{1}{h}}\]</p>
+                <p class="scrollbar">\[e^x=\lim\limits_{n\to \infty}\left(1+\dfrac{x}{n}\right)^n=\lim\limits_{h\to 0}\left(1+xh\right)^{\frac{1}{h}}\]</p>
                 <p>当\(x=1\)时，我们有</p>
-                <p class="scrollbar">\[e=\lim\limits_{n\to \infty}\left(1+\cfrac{1}{n}\right)^n=\lim\limits_{h\to 0}\left(1+h\right)^{\frac{1}{h}}\]</p>
+                <p class="scrollbar">\[e=\lim\limits_{n\to \infty}\left(1+\dfrac{1}{n}\right)^n=\lim\limits_{h\to 0}\left(1+h\right)^{\frac{1}{h}}\]</p>
                 <br>
                 <p>接下来我们就可以来算指数函数和对数函数的导数啦！我们先从对数函数的导数算起</p>
                 <p>假设\(f\left(x\right)=\log_{a}\left(x\right)\)</p>
                 <p class="scrollbar">
                     \[\begin{align*}
-                        f^{\prime}\left(x\right) &= \lim\limits_{h\to 0}\cfrac{\log_{a}\left(x+h\right)-\log_{a}\left(x\right)}{h}=\lim\limits_{h\to 0}\cfrac{1}{h}\log_{a}\left(\cfrac{x+h}{x}\right)=\lim\limits_{h\to 0}\cfrac{1}{h}\log_{a}\left(1+\cfrac{1}{x}h\right) \\
-                        &= \lim\limits_{h\to 0}\log_{a}\left(1+\cfrac{1}{x}h\right)^{\frac{1}{h}}=\log_{a}\left(e^{\frac{1}{x}}\right)=\cfrac{1}{x}\log_{a}\left(e\right)=\cfrac{1}{x} \cfrac{\ln\left(e\right)}{\ln\left(a\right)}=\cfrac{1}{x\ln\left(a\right)}
+                        f^{\prime}\left(x\right) &= \lim\limits_{h\to 0}\dfrac{\log_{a}\left(x+h\right)-\log_{a}\left(x\right)}{h}=\lim\limits_{h\to 0}\dfrac{1}{h}\log_{a}\left(\dfrac{x+h}{x}\right)=\lim\limits_{h\to 0}\dfrac{1}{h}\log_{a}\left(1+\dfrac{1}{x}h\right) \\
+                        &= \lim\limits_{h\to 0}\log_{a}\left(1+\dfrac{1}{x}h\right)^{\frac{1}{h}}=\log_{a}\left(e^{\frac{1}{x}}\right)=\dfrac{1}{x}\log_{a}\left(e\right)=\dfrac{1}{x} \dfrac{\ln\left(e\right)}{\ln\left(a\right)}=\dfrac{1}{x\ln\left(a\right)}
                     \end{align*}\]
                 </p>
                 <p>这样我们就有：</p>
-                <p class="scrollbar">\[\cfrac{\mathrm{d} }{\mathrm{d} x}\log_{a}\left(x\right)=\cfrac{1}{x\ln\left(a\right)}\]</p>
+                <p class="scrollbar">\[\dfrac{\mathrm{d} }{\mathrm{d} x}\log_{a}\left(x\right)=\dfrac{1}{x\ln\left(a\right)}\]</p>
                 <p>特殊地，当\(a=e\)时，我们有</p>
-                <p class="scrollbar">\[\cfrac{\mathrm{d} }{\mathrm{d} x}\ln\left(x\right)=\cfrac{1}{x}\]</p>
+                <p class="scrollbar">\[\dfrac{\mathrm{d} }{\mathrm{d} x}\ln\left(x\right)=\dfrac{1}{x}\]</p>
                 <br>
                 <p>我们知道\(\log_{a}\left(x\right)\)与\(a^x\)互为反函数，所以我们可以用反函数的导数来求\(a^x\)的导数</p>
                 <p>假设有个函数\(y=a^x\)，那么就有\(x=\log_{a}\left(y\right)\)</p>
-                <p class="scrollbar">\(\cfrac{\mathrm{d} y}{\mathrm{d} x}=\cfrac{1}{\cfrac{1}{y\ln\left(a\right)}}=y\ln\left(a\right)=a^x \ln\left(a\right)\)</p>
+                <p class="scrollbar">\(\dfrac{\mathrm{d} y}{\mathrm{d} x}=\dfrac{1}{\dfrac{1}{y\ln\left(a\right)}}=y\ln\left(a\right)=a^x \ln\left(a\right)\)</p>
                 <p>这样我们就有：</p>
-                <p class="scrollbar">\[\cfrac{\mathrm{d} }{\mathrm{d} x}\left(a^x\right)=a^x \ln\left(a\right)\]</p>
+                <p class="scrollbar">\[\dfrac{\mathrm{d} }{\mathrm{d} x}\left(a^x\right)=a^x \ln\left(a\right)\]</p>
                 <p>特殊地，当\(a=e\)时，我们有</p>
-                <p class="scrollbar">\[\cfrac{\mathrm{d} }{\mathrm{d} x}\left(e^x\right)=e^x\]</p>
+                <p class="scrollbar">\[\dfrac{\mathrm{d} }{\mathrm{d} x}\left(e^x\right)=e^x\]</p>
                 <p>（这是相当好玩的，因为它的导数就等于自己！）</p>
                 <h2><a name="2.12">2.12 洛必达法则 L’Hospital’s Rule</a></h2>
                 <p>上一章计算极限的时候跟你说过我要介绍一个特别好的方法，现在就是兑现承诺的时候啦！</p>
                 <p>如果\(f\left(a\right)=g\left(a\right)=0\)或者\(\lim\limits_{x\to a}f\left(x\right)=\pm \infty \enspace and \enspace \lim\limits_{x\to a}g\left(x\right)=\pm \infty\)，那么</p>
-                <p class="scrollbar">\[\lim\limits_{x\to a}\cfrac{f\left(x\right)}{g\left(x\right)}=\lim\limits_{x\to a}\cfrac{f^{\prime}\left(x\right)}{g^{\prime}\left(x\right)}\]</p>
-                <p>第一个例子：求\(\lim\limits_{x\to 0}\cfrac{x-\sin\left(x\right)}{x^3}\)</p>
+                <p class="scrollbar">\[\lim\limits_{x\to a}\dfrac{f\left(x\right)}{g\left(x\right)}=\lim\limits_{x\to a}\dfrac{f^{\prime}\left(x\right)}{g^{\prime}\left(x\right)}\]</p>
+                <p>第一个例子：求\(\lim\limits_{x\to 0}\dfrac{x-\sin\left(x\right)}{x^3}\)</p>
                 <p>当\(x=0\)时，\(x-\sin\left(x\right)\)和\(x^3\)都为\(0\)，这样我们就可以运用洛必达法则了</p>
-                <p class="scrollbar">\[\lim\limits_{x\to 0}\cfrac{x-\sin\left(x\right)}{x^3}=\lim\limits_{x\to 0}\cfrac{1-\cos\left(x\right)}{3x^2}\]</p>
+                <p class="scrollbar">\[\lim\limits_{x\to 0}\dfrac{x-\sin\left(x\right)}{x^3}=\lim\limits_{x\to 0}\dfrac{1-\cos\left(x\right)}{3x^2}\]</p>
                 <p>我们还可以再用洛必达法则（想想为啥）</p>
                 <p>于是就有：</p>
-                <p class="scrollbar">\[\lim\limits_{x\to 0}\cfrac{1-\cos\left(x\right)}{3x^2}=\lim\limits_{x\to 0}\cfrac{\sin\left(x\right)}{6x}=\cfrac{1}{6}\cdot 1=\cfrac{1}{6}\]</p>
-                <p>第二个例子：求\(\lim\limits_{x\to \infty}\cfrac{x^3}{e^x}\)</p>
+                <p class="scrollbar">\[\lim\limits_{x\to 0}\dfrac{1-\cos\left(x\right)}{3x^2}=\lim\limits_{x\to 0}\dfrac{\sin\left(x\right)}{6x}=\dfrac{1}{6}\cdot 1=\dfrac{1}{6}\]</p>
+                <p>第二个例子：求\(\lim\limits_{x\to \infty}\dfrac{x^3}{e^x}\)</p>
                 <p>同样地，我们发现\(\lim\limits_{x\to \infty}\left(x^3\right)=\infty \enspace and \enspace \lim\limits_{x\to \infty}\left(e^x\right)=\infty\)，这才可以用洛必达法则</p>
-                <p class="scrollbar">\[\lim\limits_{x\to \infty}\cfrac{x^3}{e^x}=\lim\limits_{x\to \infty}\cfrac{3x^2}{e^x}=\lim\limits_{x\to \infty}\cfrac{6x}{e^x}=\lim\limits_{x\to \infty}\cfrac{6}{e^x}=0\]</p>
+                <p class="scrollbar">\[\lim\limits_{x\to \infty}\dfrac{x^3}{e^x}=\lim\limits_{x\to \infty}\dfrac{3x^2}{e^x}=\lim\limits_{x\to \infty}\dfrac{6x}{e^x}=\lim\limits_{x\to \infty}\dfrac{6}{e^x}=0\]</p>
                 <p>一些其他的极限形式也可以用洛必达法则，但是我们在这里不会提到</p>
                 <h2><a name="2.13">2.13 极值定理 Extreme Value Theorem(EVT)</a></h2>
                 <p>先说一下临界点（Critical points）的概念：在\(x=c\)处的导数为\(0\)或者不存在，我们就称\(x=c\)为临界点</p>
@@ -507,29 +507,29 @@
                 <p>如果二阶导为负，那么函数在该点凹向下（就像一个倒扣的碗），而且如果导数也为\(0\)，那么该点一定是局部极大值</p>
                 <p>（此处引入一个概念：拐点是二阶导为\(0\)的点但二阶导为\(0\)的点不一定是拐点）</p>
                 <h2><a name="2.14">2.14 中值定理 Mean Value Theorem(MVT)</a></h2>
-                <p>假设函数\(y=f\left(x\right)\)在闭区间\(\left[a,b\right]\)连续，在开区间\(\left(a,b\right)\)内可导，那么在开区间\(\left(a,b\right)\)内至少有一点\(c\)使得\(f^{\prime}\left(c\right)=\cfrac{f\left(b\right)-f\left(a\right)}{b-a}\)</p>
+                <p>假设函数\(y=f\left(x\right)\)在闭区间\(\left[a,b\right]\)连续，在开区间\(\left(a,b\right)\)内可导，那么在开区间\(\left(a,b\right)\)内至少有一点\(c\)使得\(f^{\prime}\left(c\right)=\dfrac{f\left(b\right)-f\left(a\right)}{b-a}\)</p>
                 <div align="center">
                     <img src="../img/2-9.png" width="50%">
                 </div>
                 <p style="text-align:center">图 2-9</p>
                 <h2><a name="2.15">2.15 常用函数的导数总结</a></h2>
-                <p class="scrollbar">\(\cfrac{\mathrm{d} }{\mathrm{d} x}x^a=ax^{a-1}\)</p>
+                <p class="scrollbar">\(\dfrac{\mathrm{d} }{\mathrm{d} x}x^a=ax^{a-1}\)</p>
                 <br>
-                <p class="scrollbar">\(\cfrac{\mathrm{d} }{\mathrm{d} x}\sin\left(x\right)=\cos\left(x\right)\)</p>
-                <p class="scrollbar">\(\cfrac{\mathrm{d} }{\mathrm{d} x}\cos\left(x\right)=-\sin\left(x\right)\)</p>
-                <p class="scrollbar">\(\cfrac{\mathrm{d} }{\mathrm{d} x}\tan\left(x\right)=\sec^{2}\left(x\right)\)</p>
-                <p class="scrollbar">\(\cfrac{\mathrm{d} }{\mathrm{d} x}\cot\left(x\right)=-\csc^{2}\left(x\right)\)</p>
-                <p class="scrollbar">\(\cfrac{\mathrm{d} }{\mathrm{d} x}\sec\left(x\right)=\sec\left(x\right)\tan\left(x\right)\)</p>
-                <p class="scrollbar">\(\cfrac{\mathrm{d} }{\mathrm{d} x}\csc\left(x\right)=-\csc\left(x\right)\cot\left(x\right)\)</p>
+                <p class="scrollbar">\(\dfrac{\mathrm{d} }{\mathrm{d} x}\sin\left(x\right)=\cos\left(x\right)\)</p>
+                <p class="scrollbar">\(\dfrac{\mathrm{d} }{\mathrm{d} x}\cos\left(x\right)=-\sin\left(x\right)\)</p>
+                <p class="scrollbar">\(\dfrac{\mathrm{d} }{\mathrm{d} x}\tan\left(x\right)=\sec^{2}\left(x\right)\)</p>
+                <p class="scrollbar">\(\dfrac{\mathrm{d} }{\mathrm{d} x}\cot\left(x\right)=-\csc^{2}\left(x\right)\)</p>
+                <p class="scrollbar">\(\dfrac{\mathrm{d} }{\mathrm{d} x}\sec\left(x\right)=\sec\left(x\right)\tan\left(x\right)\)</p>
+                <p class="scrollbar">\(\dfrac{\mathrm{d} }{\mathrm{d} x}\csc\left(x\right)=-\csc\left(x\right)\cot\left(x\right)\)</p>
                 <br>
-                <p class="scrollbar">\(\cfrac{\mathrm{d} }{\mathrm{d} x}\arcsin\left(x\right)=\cfrac{1}{\sqrt{1-x^2}}\left(x\in \left(-1,1\right)\right)\)</p>
-                <p class="scrollbar">\(\cfrac{\mathrm{d} }{\mathrm{d} x}\arccos\left(x\right)=-\cfrac{1}{\sqrt{1-x^2}}\left(x\in \left(-1,1\right)\right)\)</p>
-                <p class="scrollbar">\(\cfrac{\mathrm{d} }{\mathrm{d} x}\arctan\left(x\right)=\cfrac{1}{1+x^2}\left(x\in R\right)\)</p>
+                <p class="scrollbar">\(\dfrac{\mathrm{d} }{\mathrm{d} x}\arcsin\left(x\right)=\dfrac{1}{\sqrt{1-x^2}}\left(x\in \left(-1,1\right)\right)\)</p>
+                <p class="scrollbar">\(\dfrac{\mathrm{d} }{\mathrm{d} x}\arccos\left(x\right)=-\dfrac{1}{\sqrt{1-x^2}}\left(x\in \left(-1,1\right)\right)\)</p>
+                <p class="scrollbar">\(\dfrac{\mathrm{d} }{\mathrm{d} x}\arctan\left(x\right)=\dfrac{1}{1+x^2}\left(x\in R\right)\)</p>
                 <br>
-                <p class="scrollbar">\(\cfrac{\mathrm{d} }{\mathrm{d} x}\log_{a}\left(x\right)=\cfrac{1}{x\ln\left(a\right)}\)</p>
-                <p class="scrollbar">\(\cfrac{\mathrm{d} }{\mathrm{d} x}\ln\left(x\right)=\cfrac{1}{x}\)</p>
-                <p class="scrollbar">\(\cfrac{\mathrm{d} }{\mathrm{d} x}\left(a^x\right)=a^x \ln\left(a\right)\)</p>
-                <p class="scrollbar">\(\cfrac{\mathrm{d} }{\mathrm{d} x}\left(e^x\right)=e^x\)</p>
+                <p class="scrollbar">\(\dfrac{\mathrm{d} }{\mathrm{d} x}\log_{a}\left(x\right)=\dfrac{1}{x\ln\left(a\right)}\)</p>
+                <p class="scrollbar">\(\dfrac{\mathrm{d} }{\mathrm{d} x}\ln\left(x\right)=\dfrac{1}{x}\)</p>
+                <p class="scrollbar">\(\dfrac{\mathrm{d} }{\mathrm{d} x}\left(a^x\right)=a^x \ln\left(a\right)\)</p>
+                <p class="scrollbar">\(\dfrac{\mathrm{d} }{\mathrm{d} x}\left(e^x\right)=e^x\)</p>
                 <h2><a name="2.16">2.16 一些导数练习</a></h2>
                 <a href="https://www.khanacademy.org/math/ap-calculus-bc/bc-differentiation-1-new/test/bc-differentiation-1-new-unit-test?modal=1" target="_blank">导数练习1</a>
                 <a href="https://www.khanacademy.org/math/ap-calculus-bc/bc-differentiation-2-new/quiz/bc-differentiation-2-new-quiz-1?modal=1" target="_blank">导数练习2</a>

@@ -60,7 +60,7 @@
                 <p>或者说\(\lim\limits_{x\to a^{-}}f\left(x\right)=\lim\limits_{x\to a^{+}}f\left(x\right)=L\)（其中\(\lim\limits_{x\to a^{-}}f\left(x\right)\)是左极限，\(\lim\limits_{x\to a^{+}}f\left(x\right)\)是右极限）</p>
                 <p>⚠\(\lim\limits_{x\to a}f\left(x\right)\)<span style="color:red;font-weight:bold">不一定等于</span>\(f\left(a\right)\)</p>
                 <p>⚠\(f\left(a\right)\)没有定义的时候，\(\lim\limits_{x\to a}f\left(x\right)\)也<span style="color:red;font-weight:bold">可以</span>存在</p>
-                <p>e.g. \(\lim\limits_{x\to 0^{-}}\cfrac{|x|}{x}=-1\)和\(\lim\limits_{x\to 0^{+}}\cfrac{|x|}{x}=1\)</p>
+                <p>e.g. \(\lim\limits_{x\to 0^{-}}\dfrac{|x|}{x}=-1\)和\(\lim\limits_{x\to 0^{+}}\dfrac{|x|}{x}=1\)</p>
                 <div align="center">
                     <img src="../img/1-1.png" width="100%">
                 </div>
@@ -78,14 +78,14 @@
                 <br>
                 <p>在\(x=a\)有垂直渐近线：\(\lim\limits_{x\to a^{-}}f\left(x\right)\)和\(\lim\limits_{x\to a^{+}}f\left(x\right)\)中，至少有一个极限是\(+\infty\)或\(-\infty\)（后文用\(\infty\)将代替\(+\infty\)）</p>
                 <p>一个函数<span style="color:red;font-weight:bold">可以有无数条</span>垂直渐近线，比如\(f\left(x\right)=\tan\left(x\right)\)</p>
-                <p>e.g \(\lim\limits_{x\to 0^{-}}\cfrac{1}{x}=-\infty\)和\(\lim\limits_{x\to 0^{+}}\cfrac{1}{x}=\infty\)（但是\(\lim\limits_{x\to 0}\cfrac{1}{x} \text{DNE}\)）</p>
-                <p>所以\(f\left(x\right)=\cfrac{1}{x}\)有一条垂直渐近线\(x=0\)</p>
+                <p>e.g \(\lim\limits_{x\to 0^{-}}\dfrac{1}{x}=-\infty\)和\(\lim\limits_{x\to 0^{+}}\dfrac{1}{x}=\infty\)（但是\(\lim\limits_{x\to 0}\dfrac{1}{x} \text{DNE}\)）</p>
+                <p>所以\(f\left(x\right)=\dfrac{1}{x}\)有一条垂直渐近线\(x=0\)</p>
                 <br>
                 <p>在\(y=L\)处有一条左侧水平渐近线：\(\lim\limits_{x\to-\infty}f\left(x\right)=L\)</p>
                 <p>在\(y=L\)处有一条右侧水平渐近线：\(\lim\limits_{x\to\infty}f\left(x\right)=L\)</p>
                 <p>一个函数<span style="color:red;font-weight:bold">最多两条</span>水平渐近线，比如\(f\left(x\right)=\arctan\left(x\right)\)</p>
-                <p>e.g. \(\lim\limits_{x\to-\infty}\cfrac{1}{x}=\lim\limits_{x\to\infty}\cfrac{1}{x}=0\)</p>
-                <p>所以\(f\left(x\right)=\cfrac{1}{x}\)有一条水平渐近线\(y=0\)</p>
+                <p>e.g. \(\lim\limits_{x\to-\infty}\dfrac{1}{x}=\lim\limits_{x\to\infty}\dfrac{1}{x}=0\)</p>
+                <p>所以\(f\left(x\right)=\dfrac{1}{x}\)有一条水平渐近线\(y=0\)</p>
                 <h2><a name="1.4">1.4 真正的定义（严格但是不需要掌握）</a></h2>
                 <p>\(\lim\limits_{x\to a}f\left(x\right)=L\)表示，对于任选的\(\varepsilon>0\)，可以选取\(\delta>0\)，使得：对于所有满足\(0<|x-a|<\delta\)的\(x\)，有\(|f\left(x\right)-L|<\varepsilon\)</p>
                 <h2><a name="1.5">1.5 极限运算法则</a></h2>
@@ -112,18 +112,18 @@
                 <p>根据极限的运算法则及连续性的定义，我们可以计算一些有理函数的极限</p>
                 <p style="font-weight:bold">1. \(x\to a\)时的有理函数的极限</p>
                 <p>这里有个简单的例子，如图1-5所示</p>
-                <p>你会发现，这个函数在\(x=1\)处不连续。如果你把\(1\)代入，这个分式会变成\(\cfrac{0}{0}\)（不定式），这显然是不成立的。既然不连续怎么还会有极限呢？注意，取极限的过程是无限接近\(1\)又永远不等于\(1\)，这意味着可以将分式进行变形转化为在\(x=1\)处连续的函数从而根据连续函数的极限求得极限值。</p>
+                <p>你会发现，这个函数在\(x=1\)处不连续。如果你把\(1\)代入，这个分式会变成\(\dfrac{0}{0}\)（不定式），这显然是不成立的。既然不连续怎么还会有极限呢？注意，取极限的过程是无限接近\(1\)又永远不等于\(1\)，这意味着可以将分式进行变形转化为在\(x=1\)处连续的函数从而根据连续函数的极限求得极限值。</p>
                 <div align="center">
                     <img src="../img/1-5.png" width="70%">
                 </div>
                 <p style="text-align:center">图 1-5</p>
-                <p>为什么这里（\(\lim\limits_{x\to 1}\cfrac{x^2+x-2}{x^2-x}=\lim\limits_{x\to 1}\cfrac{x+2}{x}\)）可以直接上下同除以\(\left(x-1\right)\)？ 因为这是极限（注意是无限接近而永不相等）</p>
-                <p>另外还要注意：为什么\(\lim\limits_{x\to 1}\cfrac{x+2}{x}\)可以直接脱去极限符号变成\(\cfrac{1+2}{1}=3\)？ 这是因为函数\(\cfrac{x+2}{x}\)在\(x=1\)连续，连续函数在\(x=a\)处的极限就等于此处的函数值（熟练之后一看便知了）</p>
+                <p>为什么这里\(\lim\limits_{x\to 1}\dfrac{x^2+x-2}{x^2-x}=\lim\limits_{x\to 1}\dfrac{x+2}{x}\)可以直接上下同除以\(\left(x-1\right)\)？ 因为这是极限（注意是无限接近而永不相等）</p>
+                <p>另外还要注意：为什么\(\lim\limits_{x\to 1}\dfrac{x+2}{x}\)可以直接脱去极限符号变成\(\dfrac{1+2}{1}=3\)？ 这是因为函数\(\dfrac{x+2}{x}\)在\(x=1\)连续，连续函数在\(x=a\)处的极限就等于此处的函数值（熟练之后一看便知了）</p>
                 <br>
                 <p style="font-weight:bold">2. \(x\to \infty\)时的有理函数的极限</p>
                 <p>假设有一个多项式（<span style="color:red;font-weight:bold">降幂排列</span>）\(p\left(x\right)=3x^3-1000x^2+5x-7\)，其首项\(p_{L}\left(x\right)=3x^3\)，则</p>
-                <p class="scrollbar">\[\lim\limits_{x\to \infty}\cfrac{p\left(x\right)}{p_{L}\left(x\right)}=\lim\limits_{x\to \infty}\left(1-\cfrac{1000}{3x}+\cfrac{5}{3x^2}-\cfrac{7}{3x^3}\right)=1\]</p>
-                <p>注意：\(\lim\limits_{x\to \infty}\cfrac{C}{x^n}=0\)（\(C\)是常数，\(n>0\)）</p>
+                <p class="scrollbar">\[\lim\limits_{x\to \infty}\dfrac{p\left(x\right)}{p_{L}\left(x\right)}=\lim\limits_{x\to \infty}\left(1-\dfrac{1000}{3x}+\dfrac{5}{3x^2}-\dfrac{7}{3x^3}\right)=1\]</p>
+                <p>注意：\(\lim\limits_{x\to \infty}\dfrac{C}{x^n}=0\)（\(C\)是常数，\(n>0\)）</p>
                 <p>下面是个例子</p>
                 <div align="center">
                     <img src="../img/1-6.png" width="80%">
@@ -138,16 +138,16 @@
                     <img src="../img/1-7.png" width="70%">
                 </div>
                 <p style="text-align:center">图 1-7</p>
-                <p>e.g. 证明\(\lim\limits_{x\to \infty}\cfrac{\sin\left(x\right)}{x}=0\)</p>
+                <p>e.g. 证明\(\lim\limits_{x\to \infty}\dfrac{\sin\left(x\right)}{x}=0\)</p>
                 <p class="scrollbar">\(\because -1\leq \sin\left(x\right)\leq 1\)</p>
-                <p class="scrollbar">\(\Rightarrow -\cfrac{1}{x}\leq \cfrac{\sin\left(x\right)}{x}\leq \cfrac{1}{x}\)</p>
-                <p>\(\because \lim\limits_{x\to \infty}-\cfrac{1}{x}=0\)和\(\lim\limits_{x\to \infty}\cfrac{1}{x}=0\)</p>
-                <p>\(\Rightarrow \lim\limits_{x\to \infty}\cfrac{\sin\left(x\right)}{x}=0\)（三明治定理）</p>
+                <p class="scrollbar">\(\Rightarrow -\dfrac{1}{x}\leq \dfrac{\sin\left(x\right)}{x}\leq \dfrac{1}{x}\)</p>
+                <p>\(\because \lim\limits_{x\to \infty}-\dfrac{1}{x}=0\)和\(\lim\limits_{x\to \infty}\dfrac{1}{x}=0\)</p>
+                <p>\(\Rightarrow \lim\limits_{x\to \infty}\dfrac{\sin\left(x\right)}{x}=0\)（三明治定理）</p>
                 <div align="center">
                     <iframe src="https://www.desmos.com/calculator/aocjozgrz9?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
                 </div>
                 <h2><a name="1.9">1.9 两个重要的极限</a></h2>
-                <p>1. \(\lim\limits_{x\to 0} \cfrac{\sin\left(x\right)}{x}=1\)（看图1-8）</p>
+                <p>1. \(\lim\limits_{x\to 0} \dfrac{\sin\left(x\right)}{x}=1\)（看图1-8）</p>
                 <p>下面是证明：</p>
                 <div align="center">
                     <img src="../img/1-8.png" width="70%">
@@ -155,7 +155,7 @@
                 <p style="text-align:center">图 1-8</p>
                 <p>证明完了右极限，左极限只需要令\(t=-x\)就可以证明，双侧极限也就证明完毕了</p>
                 <br>
-                <p>2. \(\lim\limits_{n\to \infty}\left(1+\cfrac{1}{n}\right)^{n}=e\)（这是\(e\)的一个定义）</p>
+                <p>2. \(\lim\limits_{n\to \infty}\left(1+\dfrac{1}{n}\right)^{n}=e\)（这是\(e\)的一个定义）</p>
                 <h2><a name="1.10">1.10 介值定理 Intermediate Value Theorem(IVT)</a></h2>
                 <p>在引入介值定理之前，我们来说一下零点定理：</p>
                 <p>\(f\left(x\right)\)在\(\left[a,b\right]\)上<span style="color:red;font-weight:bold">连续</span>并且\(f\left(a\right)<0\)且\(f\left(b\right)>0\)（或\(f\left(a\right)>0\)且\(f\left(b\right)<0\)），那么在区间\(\left(a,b\right)\)上至少有一点\(c\)，使得\(f\left(c\right)=0\)</p>

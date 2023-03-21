@@ -118,6 +118,7 @@ html {
     p::-webkit-scrollbar {
         height: 4px;
         background-color: #F5F5F5;
+        -webkit-appearance: none;
     }
     p::-webkit-scrollbar-track {
         height: 4px;
@@ -164,6 +165,7 @@ html {
     p::-webkit-scrollbar {
         height: 4px;
         background-color: #F5F5F5;
+        -webkit-appearance: none;
     }
     p::-webkit-scrollbar-track {
         height: 4px;
