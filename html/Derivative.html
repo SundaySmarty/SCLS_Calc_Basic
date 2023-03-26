@@ -6,19 +6,81 @@
     <title>Derivative</title>
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="../css/ChapterFormat.css">
-    <script type="text/javascript" src="../js/BackToTop.js"></script>
+    <script type="text/javascript" src="../js/CssStyleSheets.js"></script>
     <script type="text/javascript" src="../js/DisableScrolling.js"></script>
     <script type="text/javascript" src="../js/DisableDeveloperTools.js"></script>
+    <script type="text/javascript" src="../js/Menu.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <div class="header">
+        <div class="menu_button" onclick="Menu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
         <div class="logo">
             <img src="../img/butterfly-effect.jpg" alt="Butterfly Effect" style="width:50px;height:50px;vertical-align:middle;">
         </div>
         <div class="heading">
             <h2>Calculus BASIC</h2>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="menu_list">
+            <a style="color: white; font-weight: bold; font-size: 30px">目录</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#2.1" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">2.1 割线和平均变化率</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#2.2" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">2.2 切线和瞬时变化率</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#2.3" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">2.3 导数</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#2.4" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">2.4 可导性和连续性的关系</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#2.5" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">2.5 求导</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#2.6" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">2.6 线性估算</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#2.7" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">2.7 导数的运算法则</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#2.8" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">2.8 隐函数求导</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#2.9" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">2.9 反函数的导数</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#2.10" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">2.10 三角函数的导数</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#2.11" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">2.11 指数函数和对数函数的导数</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#2.12" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">2.12 洛必达法则</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#2.13" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">2.13 极值定理</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#2.14" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">2.14 中值定理</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#2.15" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">2.15 常用函数的导数总结</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#2.16" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">2.16 一些导数练习</a>
+        </div>
+        <div class="menu_list" style="text-align: right">
+            <p style="color: white">SCLS Calc Basic</p>
         </div>
     </div>
     <div class="content_container">

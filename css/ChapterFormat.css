@@ -10,7 +10,13 @@ html {
     background-color: thistle;
     color: white;
     text-align: left;
-    padding: 8px;
+    padding: 4px;
+}
+.menu_button {
+    display: none;
+}
+.menu {
+    display: none;
 }
 .logo {
     font-size: 0;
@@ -131,6 +137,48 @@ html {
 }
 
 @media screen and (max-width: 700px) {
+    .menu_button {
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+        margin-left: 5%;
+    }
+    .menu {
+        width: 100%;
+        background-image: linear-gradient(thistle, #F5D5EC);
+    }
+    .menu_list {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 3.5%;
+        padding-bottom: 3.5%;
+    }
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #FFF;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    .change .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+    .change .bar2 {
+        opacity: 0;
+    }
+    .change .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+    }
+    .visible_content {
+        display: none;
+    }
+    .visible_menu {
+        display: block;
+    }
+    .logo {
+        margin-left: 5%;
+    }
     .content_container {
         float: left;
         width: 90%;
@@ -145,17 +193,7 @@ html {
         width: 100%;
     }
     .catalog {
-        display: block;
-    }
-    .catalog_left {
-        width: 100%;
-        height: 60px;
-    }
-    .catalog_right {
-        width: 100%;
-    }
-    .catalog_right_column {
-        width: 100%;
+        display: none;
     }
     p.scrollbar {
         overflow-x: auto;

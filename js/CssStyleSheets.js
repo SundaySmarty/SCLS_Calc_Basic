@@ -1,4 +1,5 @@
 window.addEventListener("DOMContentLoaded", function() {
+    // find elements
     var cssStyleSheets = document.styleSheets;
     function getStyle(cssName, selectorName) {
         let cssTargetIndex, targetStyleIndex;
@@ -17,6 +18,14 @@ window.addEventListener("DOMContentLoaded", function() {
     var cssTargetIndex = getStyle("ChapterFormat.css", "#back_to_top")[0];
     var targetStyleIndex = getStyle("ChapterFormat.css", "#back_to_top")[1];
     var backToTop = cssStyleSheets[cssTargetIndex].cssRules[targetStyleIndex];
+
+    // set menu minHeight
+    var cssTargetIndex1 = getStyle("ChapterFormat.css", ".menu")[0];
+    var targetStyleIndex1 = getStyle("ChapterFormat.css", ".menu")[1];
+    var menu = cssStyleSheets[cssTargetIndex1].cssRules[targetStyleIndex1];
+    menu.style.minHeight = (window.screen.availHeight - document.getElementsByClassName("header")[0].offsetHeight) + "px";
+
+    // back to top
     window.onscroll = function() {
         var scrolltop = document.documentElement.scrollTop || document.body.scrollTop; //Get the scrollHeight of scrollbar
         if(scrolltop < 600) {

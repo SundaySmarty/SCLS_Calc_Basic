@@ -6,19 +6,69 @@
     <title>Integral</title>
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="../css/ChapterFormat.css">
-    <script type="text/javascript" src="../js/BackToTop.js"></script>
+    <script type="text/javascript" src="../js/CssStyleSheets.js"></script>
     <script type="text/javascript" src="../js/DisableScrolling.js"></script>
     <script type="text/javascript" src="../js/DisableDeveloperTools.js"></script>
+    <script type="text/javascript" src="../js/Menu.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <div class="header">
+        <div class="menu_button" onclick="Menu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
         <div class="logo">
             <img src="../img/butterfly-effect.jpg" alt="Butterfly Effect" style="width:50px;height:50px;vertical-align:middle;">
         </div>
         <div class="heading">
             <h2>Calculus BASIC</h2>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="menu_list">
+            <a style="color: white; font-weight: bold; font-size: 30px">目录</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#3.1" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">3.1 求和符号</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#3.2" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">3.2 速度与位移</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#3.3" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">3.3 定积分</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#3.4" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">3.4 微积分第一基本定理</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#3.5" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">3.5 原函数</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#3.6" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">3.6 微积分第二基本定理</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#3.7" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">3.7 不定积分</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#3.8" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">3.8 积分的方法</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#3.9" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">3.9 积分的平均值和积分中值定理</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#3.10" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">3.10 反常积分</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#3.11" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">3.11 反常积分的敛散性判别</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#3.12" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">3.12 积分练习</a>
+        </div>
+        <div class="menu_list" style="text-align: right">
+            <p style="color: white">SCLS Calc Basic</p>
         </div>
     </div>
     <div class="content_container">

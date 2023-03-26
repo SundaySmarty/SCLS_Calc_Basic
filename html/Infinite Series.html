@@ -6,19 +6,54 @@
     <title>Infinite Series</title>
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="../css/ChapterFormat.css">
-    <script type="text/javascript" src="../js/BackToTop.js"></script>
+    <script type="text/javascript" src="../js/CssStyleSheets.js"></script>
     <script type="text/javascript" src="../js/DisableScrolling.js"></script>
     <script type="text/javascript" src="../js/DisableDeveloperTools.js"></script>
+    <script type="text/javascript" src="../js/Menu.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <div class="header">
+        <div class="menu_button" onclick="Menu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
         <div class="logo">
             <img src="../img/butterfly-effect.jpg" alt="Butterfly Effect" style="width:50px;height:50px;vertical-align:middle;">
         </div>
         <div class="heading">
             <h2>Calculus BASIC</h2>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="menu_list">
+            <a style="color: white; font-weight: bold; font-size: 30px">目录</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#4.1" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">4.1 数列</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#4.2" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">4.2 级数</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#4.3" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">4.3 级数的敛散性判别</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#4.4" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">4.4 幂级数</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#4.5" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">4.5 泰勒多项式</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#4.6" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">4.6 泰勒级数</a>
+        </div>
+        <div class="menu_list">
+            <a onclick="moveMenu()" href="#4.7" target="_self" style="text-decoration: none; color: white; font-weight: bold; font-size: 18px">4.7 级数练习</a>
+        </div>
+        <div class="menu_list" style="text-align: right">
+            <p style="color: white">SCLS Calc Basic</p>
         </div>
     </div>
     <div class="content_container">
@@ -270,7 +305,7 @@
                 <p class="scrollbar">\(\left|R_2\left(0.9\right)\right|=\left|\dfrac{e^c}{6}\cdot 0.9^3\right|=\dfrac{e^c}{6}\cdot 0.9^3<\dfrac{e^{0.9}}{6}\cdot 0.9^3<\dfrac{3}{6}\cdot 0.9^3=0.3645\)</p>
                 <p class="scrollbar">\(\left|R_3\left(0.9\right)\right|=\left|\dfrac{e^c}{24}\cdot 0.9^4\right|=\dfrac{e^c}{24}\cdot 0.9^4<\dfrac{e^{0.9}}{24}\cdot 0.9^4<\dfrac{3}{24}\cdot 0.9^4\approx 0.0820\)</p>
                 <div align="center">
-                    <iframe src="https://www.desmos.com/calculator/nwru0yepi5?embed" width="700" height="700" style="border: 1px solid #ccc" frameborder=0></iframe>
+                    <iframe src="https://www.desmos.com/calculator/nwru0yepi5?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
                 </div>
                 <p>现在我们用计算机算出了\(e^{0.9}\)的实际值：\(e\approx 2.4596\)</p>
                 <p>将实际值与近似值的差计算出来，我们可以发现：真实的误差都在预计的误差范围内，而且随着泰勒多项式阶数的增加，近似值越来越接近实际值</p>
