@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta id="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <title>Integral</title>
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="../css/ChapterFormat.css">
@@ -105,10 +105,10 @@
                 </div>
             </div>
             <div class="text">
-                <h2><a name="3.1">3.1 求和符号</a></h2>
+                <h2><a id="3.1">3.1 求和符号</a></h2>
                 <p>在学习积分和无穷级数之前，了解求和符号是很重要的</p>
                 <p>它是这样用的：</p>
-                <p class="scrollbar">\[\sum\limits_ {i=m}^{n}a_i=a_{m}+a_{m+1}+a_{m+2}+...+a_{n-2}+a_{n-1}+a_{n}\]</p>
+                <p class="scrollbar">\[\sum\limits_ {i=m}^{n}a_i=a_{m}+a_{m+1}+a_{m+2}+\cdots+a_{n-2}+a_{n-1}+a_{n}\]</p>
                 <p>（\(m\)一般小于\(n\)）</p>
                 <p>比如：\(\sum\limits_ {i=1}^{6}i^2=1^2+2^2+3^2+4^2+5^2+6^2\)</p>
                 <p>另外，我还要说一个有用的求和：</p>
@@ -119,7 +119,7 @@
                 <p>\[\sum\limits_ {i=m}^{n}\left(C\cdot a_i\right)=C\sum\limits_ {i=m}^{n}a_i\]（\(C\)是常数）</p>
                 <p>最后我还要给一个待会会用到的求和（可以根据上面的知识自行证明）</p>
                 <p class="scrollbar">\[\sum\limits_ {i=1}^{n}i^2=\dfrac{n\left(n+1\right)\left(2n+1\right)}{6}\]</p>
-                <h2><a name="3.2">3.2 速度与位移</a></h2>
+                <h2><a id="3.2">3.2 速度与位移</a></h2>
                 <p>给你一张位置-时间图，你应该可以根据导数的知识求出在某一时间点的瞬时速度</p>
                 <p>那如果给你一张速度-时间图，你可以求出在一段时间内的位移吗？</p>
                 <p>假设有一辆车沿着一条笔直的路前行，从下午三点钟到四点钟以\(40\text{km/h}\)的速度匀速行驶，在四点钟突然加速到\(60\text{km/h}\)并保持该速度一个小时至五点钟，那么它从下午三点到五点内的总位移是多少？</p>
@@ -137,7 +137,7 @@
                     <img src="../img/3-2.png" width="60%">
                 </div>
                 <p style="text-align:center">图 3-2</p>
-                <h2><a name="3.3">3.3 定积分 Definite Integral</a></h2>
+                <h2><a id="3.3">3.3 定积分 Definite Integral</a></h2>
                 <p>我们引入一个记号\(\displaystyle\int_{a}^{b}f\left(x\right)\mathrm{d} x\)来表示函数曲线\(y=f\left(x\right)\)，\(x\)轴，\(x=a\)和\(x=b\)所围成的有向面积</p>
                 <p>我们可以把\(\displaystyle\int_{a}^{b}f\left(x\right)\mathrm{d} x\)读作”函数\(y=f\left(x\right)\)对于\(x\)从\(a\)到\(b\)的积分“</p>
                 <p>其中\(f\left(x\right)\)叫做被积函数（它也可以换成其他函数，如\(g\left(x\right)\)，\(h\left(x\right)\)等），\(a\)是积分下限，\(b\)是积分上限，\(x\)是积分变量（可以用任意其他字母代替，如\(t\)）</p>
@@ -189,7 +189,7 @@
                     <img src="../img/3-9.png" width="100%">
                 </div>
                 <p style="text-align:center">图 3-9</p>
-                <h2><a name="3.4">3.4 微积分第一基本定理</a></h2>
+                <h2><a id="3.4">3.4 微积分第一基本定理</a></h2>
                 <p>（这只是大致证明）</p>
                 <p>我们定义一个函数\(F\left(x\right)=\displaystyle\int_{a}^{x}f\left(t\right)\mathrm{d} t\)</p>
                 <p>然后求\(F\left(x\right)\)关于\(x\)的导数</p>
@@ -208,7 +208,7 @@
                 </div>
                 <p style="text-align:center">图 3-11</p>
                 <!--<p>常数`a`的选择并不会影响求导的结果，你可以这样理解：汽车的初始时间（`a`）不会影响它的速度（求导结果）</p>-->
-                <h2><a name="3.5">3.5 原函数 Antiderivative</a></h2>
+                <h2><a id="3.5">3.5 原函数 Antiderivative</a></h2>
                 <p>假设我们有\(f\left(t\right)=t^2\)，\(a=0\)，那么\(F\left(x\right)=\displaystyle\int_{0}^{x}t^2\mathrm{d} t\)</p>
                 <p>根据微积分第一基本定理，我们知道\(F^{\prime}\left(x\right)=f\left(x\right)=x^2\)</p>
                 <p>函数\(F\left(x\right)\)的导数是\(x^2\)，我们就说\(F\left(x\right)\)是\(x^2\)的原函数</p>
@@ -219,7 +219,7 @@
                 <p>当\(x=0\)时，</p>
                 <p class="scrollbar">\[\displaystyle\int_{0}^{0}t^2\mathrm{d} t=0\Rightarrow C=0\Rightarrow \displaystyle\int_{0}^{x}t^2\mathrm{d} t=\dfrac{x^3}{3}\]</p>
                 <p>这样分别代入\(x=1\)和\(x=2\)，我们就有\(\displaystyle\int_{0}^{1}t^2\mathrm{d} t=\dfrac{1}{3}\)和\(\displaystyle\int_{0}^{2}t^2\mathrm{d} t=\dfrac{8}{3}\)，是不是很熟悉？</p>
-                <h2><a name="3.6">3.6 微积分第二基本定理</a></h2>
+                <h2><a id="3.6">3.6 微积分第二基本定理</a></h2>
                 <p>相比\(\displaystyle\int_{a}^{x}f\left(t\right)\mathrm{d} t\)，我们更希望了解\(\displaystyle\int_{a}^{b}f\left(t\right)\mathrm{d} t\)</p>
                 <p>我们假设\(G\left(x\right)=\displaystyle\int_{a}^{x}f\left(t\right)\mathrm{d} t\)</p>
                 <p>如果\(F\left(x\right)\)作为\(f\left(x\right)\)任意一个原函数，那么它与\(G\left(x\right)\)只会相差一个常数\(C\)，即\(F\left(x\right)=G\left(x\right)+C\)</p>
@@ -236,7 +236,7 @@
                 <p>我们知道\(-\cos\left(x\right)\)是\(\sin\left(x\right)\)的一个原函数</p>
                 <p>所以</p>
                 <p class="scrollbar">\[\displaystyle\int_{0}^{\pi}\sin\left(x\right)\mathrm{d} x=\left(-\cos\left(x\right)\right)\bigg|_{0}^{\pi}=\left(-\cos\left(\pi\right)\right)-\left(-\cos\left(0\right)\right)=2\]</p>
-                <h2><a name="3.7">3.7 不定积分 Indefinite Integral</a></h2>
+                <h2><a id="3.7">3.7 不定积分 Indefinite Integral</a></h2>
                 <p>为了更简单的表示原函数，我们引入了一个记号\(\displaystyle\int f\left(x\right)\mathrm{d} x\)，它指的是”函数\(f\left(x\right)\)的原函数的集合“</p>
                 <p>如果\(\dfrac{\mathrm{d} }{\mathrm{d} x}F\left(x\right)=f\left(x\right)\)，那么\(\displaystyle\int f\left(x\right)\mathrm{d} x=F\left(x\right)+C\)</p>
                 <p>比如</p>
@@ -277,7 +277,7 @@
                 <p>比如：\(\dfrac{\mathrm{d} }{\mathrm{d} x}e^{2x}=2e^{2x}\)</p>
                 <p>那如果是积分，我们只需要把结果除以\(a\)</p>
                 <p>比如：\(\displaystyle\int e^{2x}\mathrm{d} x=\dfrac{1}{2}e^{2x}+C\)</p>
-                <h2><a name="3.8">3.8 积分的方法</a></h2>
+                <h2><a id="3.8">3.8 积分的方法</a></h2>
                 <p style="font-weight:bold">1.换元法</p>
                 <p>考虑一个不定积分：\(\displaystyle\int x^2\cos\left(x^3\right)\mathrm{d} x\)</p>
                 <p>这里我们可以用换元法：令\(u=x^3\)</p>
@@ -511,7 +511,7 @@
                     <img src="../img/3-13.png" width="100%">
                 </div>
                 <p style="text-align:center">图 3-13</p>
-                <h2><a name="3.9">3.9 积分的平均值和积分中值定理</a></h2>
+                <h2><a id="3.9">3.9 积分的平均值和积分中值定理</a></h2>
                 <p>我们知道平均速度等于总位移除以总时间</p>
                 <p>假设时间从\(a\)到\(b\)，在\(t\)时刻的速度为\(v\left(t\right)\)，那么在这段时间里总位移就为\(\displaystyle\int_{a}^{b} v\left(t\right)\mathrm{d} t\)，总时间为\(\left(b-a\right)\)</p>
                 <p>平均速度也就是\(\dfrac{\displaystyle\int_{a}^{b} v\left(t\right)\mathrm{d} t}{b-a}\)</p>
@@ -534,7 +534,7 @@
                     <img src="../img/3-16.png" width="80%">
                 </div>
                 <p style="text-align:center">图 3-16</p>
-                <h2><a name="3.10">3.10 反常积分 Improper Integral</a></h2>
+                <h2><a id="3.10">3.10 反常积分 Improper Integral</a></h2>
                 <p style="font-weight:bold">1.无穷限的反常积分（第一类反常积分）</p>
                 <p>设函数\(f\left(x\right)\)在区间\(\left[a,\infty\right)\)上连续，取\(t>a\)，如果\(\lim\limits_ {t\to \infty}\displaystyle\int_{a}^{t}f\left(x\right)\mathrm{d} x\)存在，则称此极限为\(f\left(x\right)\)在\(\left[a,\infty\right)\)上的反常积分，记作\(\displaystyle\int_{a}^{\infty}f\left(x\right)\mathrm{d} x\)，即</p>
                 <p class="scrollbar">\[\displaystyle\int_{a}^{\infty}f\left(x\right)\mathrm{d} x=\lim\limits_ {t\to \infty}\displaystyle\int_{a}^{t}f\left(x\right)\mathrm{d} x\]</p>
@@ -560,7 +560,7 @@
                 <p>当\(p<1\)时，\(\displaystyle\int_{0}^{a}\dfrac{1}{x^p}\mathrm{d} x=\dfrac{x^{1-p}}{1-p}\bigg|_{0}^{a}\)\(=\dfrac{a^{1-p}}{1-p}\) 显然收敛</p>
                 <p>当\(p>1\)时，\(\displaystyle\int_{0}^{a}\dfrac{1}{x^p}\mathrm{d} x=\dfrac{x^{1-p}}{1-p}\bigg|_{0}^{a}\)\(=\infty\) 显然发散</p>
                 <p>因此，当\(p<1\)时，\(\displaystyle\int_{0}^{a}\dfrac{1}{x^p}\mathrm{d} x\left(a>0\right)\)收敛；当\(p\geq 1\)时，\(\displaystyle\int_{0}^{a}\dfrac{1}{x^p}\mathrm{d} x\left(a>0\right)\)发散</p>
-                <h2><a name="3.11">3.11 反常积分的敛散性判别</a></h2>
+                <h2><a id="3.11">3.11 反常积分的敛散性判别</a></h2>
                 <p>尽管有很多反常积分不易求解，我们仍然可以判断它们的敛散性</p>
                 <p>我们主要考虑的是对于非负函数的反常积分；如果函数是非正的，可以把负号提出来归为非负函数的情况</p>
                 <p>下面将提供一些判别法的结论，过程可以自行证明</p>
@@ -614,7 +614,7 @@
                 <p>如果\(\displaystyle\int_{a}^{b}|f\left(x\right)|\mathrm{d} x\)是收敛的，\(\displaystyle\int_{a}^{b}f\left(x\right)\mathrm{d} x\)也是收敛的</p>
                 <p>e.g. 判断反常积分\(\displaystyle\int_{5}^{\infty}\dfrac{\sin\left(x^4\right)}{x^2}\mathrm{d} x\)的敛散性</p>
                 <p>我们已经知道\(\displaystyle\int_{5}^{\infty}\dfrac{|\sin\left(x^4\right)|}{x^2}\mathrm{d} x\)是收敛的，因此根据绝对收敛判别法，\(\displaystyle\int_{5}^{\infty}\dfrac{\sin\left(x^4\right)}{x^2}\mathrm{d} x\)也是收敛的</p>
-                <h2><a name="3.12">3.12 积分练习</a></h2>
+                <h2><a id="3.12">3.12 积分练习</a></h2>
                 <object data="../pdf/Definite Integral to Riemann Sum.pdf" type="application/pdf" width="100%" height="700px">
                     <a href="../pdf/Definite Integral to Riemann Sum.pdf" style="color:blue">Definite Integral to Riemann Sum.pdf</a>
                 </object>

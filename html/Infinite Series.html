@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta id="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <title>Infinite Series</title>
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="../css/ChapterFormat.css">
@@ -85,10 +85,10 @@
                 </div>
             </div>
             <div class="text">
-                <h2><a name="4.1">4.1 数列 Sequence</a></h2>
+                <h2><a id="4.1">4.1 数列 Sequence</a></h2>
                 <p>数列是按照一定顺序排列的一列数，记为\({a_n}\)，数列中的每一个数都叫做这个数列的项，如\(a_1\)表示数列的第一项，\(a_2\)表示数列的第二项...（有时\(n\)可以从\(0\)开始）</p>
                 <p>项数有限的数列是“有穷数列”，而项数无限的数列是“无穷数列”</p>
-                <p>如\(a_n=\dfrac{1}{n^2}\left(n\in Z^{+}\right)\)就是无穷数列，它长这样：\(1,\dfrac{1}{4},\dfrac{1}{9},\dfrac{1}{16},...\)</p>
+                <p>如\(a_n=\dfrac{1}{n^2}\left(n\in Z^{+}\right)\)就是无穷数列，它长这样：\(1,\dfrac{1}{4},\dfrac{1}{9},\dfrac{1}{16},\cdots\)</p>
                 <p>数列的极限\(\lim\limits_{n\to \infty}a_n\)与函数的极限\(\lim\limits_{x\to \infty}f\left(x\right)\)类似</p>
                 <p>\(\lim\limits_{n\to \infty}a_n=L\)可以简单理解成当\(n\)趋于无穷时，\(a_n\)趋于\(L\)</p>
                 <p>* 严格的定义是：如果存在常数\(L\)，对于任意给定的正数\(\epsilon\)，总存在正整数\(N\)，使得当\(n>N\)时，\(\left|a_n-L\right|<\epsilon\)都成立，那么就说\(L\)是数列\(\{a_n\}\)的极限</p>
@@ -115,25 +115,25 @@
                         \end{cases}
                     \]
                 </p>
-                <h2><a name="4.2">4.2 级数 Series</a></h2>
-                <p>如果从一个数列\(\{a_n\}=a_1,a_2,...,a_n\)的首项一直累加到第\(N\)项，我们就会得到部分和：</p>
-                <p class="scrollbar">\[S_N=\sum\limits_{n=1}^{N}a_n=a_1+a_2+...+a_N\]</p>
+                <h2><a id="4.2">4.2 级数 Series</a></h2>
+                <p>如果从一个数列\(\{a_n\}=a_1,a_2,\cdots,a_n\)的首项一直累加到第\(N\)项，我们就会得到部分和：</p>
+                <p class="scrollbar">\[S_N=\sum\limits_{n=1}^{N}a_n=a_1+a_2+\cdots+a_N\]</p>
                 <p>无穷级数（简称级数）则是无穷数列所有项之和：\(\lim\limits_{N\to \infty}\sum\limits_{n=1}^{N}a_n\)，记为\(\sum\limits_{n=1}^{\infty}a_n\)</p>
                 <p>如果存在实数\(S\)，使得\(\lim\limits_{N\to \infty}\sum\limits_{n=1}^{N}a_n=S\)，则级数\(\sum\limits_{n=1}^{\infty}a_n\)收敛到\(S\)；如果不存在，则说该级数发散</p>
                 <p>级数也不必从\(n=1\)开始，从其他项数开始不会影响级数的敛散性，因为这只会差一个常数</p>
                 <br>
                 <p>对于等比数列，我们有等比级数（几何级数）：</p>
-                <p class="scrollbar">\[a_0\left(1+q+q^2+q^3+...\right)=\sum\limits_{n=0}^{\infty}a_0 q^n\]</p>
+                <p class="scrollbar">\[a_0\left(1+q+q^2+q^3+\cdots\right)=\sum\limits_{n=0}^{\infty}a_0 q^n\]</p>
                 <p>想要求这个无穷级数的值，我们可以先看它的部分和：</p>
-                <p class="scrollbar">\[S_N=\sum\limits_{n=0}^{N}a_0 q^n=a_0\left(1+q+q^2+...+q^N\right)\]</p>
+                <p class="scrollbar">\[S_N=\sum\limits_{n=0}^{N}a_0 q^n=a_0\left(1+q+q^2+\cdots+q^N\right)\]</p>
                 <p>在等式两边乘以\(q\)，得到</p>
-                <p class="scrollbar">\[q\cdot S_N=a_0\left(q+q^2+...+q^N+q^{N+1}\right)\]</p>
+                <p class="scrollbar">\[q\cdot S_N=a_0\left(q+q^2+\cdots+q^N+q^{N+1}\right)\]</p>
                 <p>再将两式错位相减，得到</p>
                 <p class="scrollbar">\[\left(1-q\right)S_N=a_0\left(1-q^{N+1}\right)\Rightarrow S_N=a_0\cdot \dfrac{\left(1-q^{N+1}\right)}{1-q}\left(q\ne 1\right)\]</p>
                 <p>当\(q=1\)时，\(S_N=N\cdot a_0\)</p>
                 <p>如果\(\left|q\right|<1\)，那么等比级数收敛：\(\sum\limits_{n=0}^{\infty}a_0 q^n=\dfrac{a_0}{1-q}\)（因为\(\lim\limits_{N\to \infty}q^{N+1}=0\)）</p>
                 <p>如果\(\left|q\right|\geq 1\)，那么等比级数发散</p>
-                <h2><a name="4.3">4.3 级数的敛散性判别 Test for convergence/divergence of series</a></h2>
+                <h2><a id="4.3">4.3 级数的敛散性判别 Test for convergence/divergence of series</a></h2>
                 <p>不像等比级数，对于很多其他级数，我们无法很快求出它的值，但至少可以判断它的敛散性</p>
                 <p>我们主要考虑正项级数（即级数的各项都是正数）；若级数的各项都是负数，则可以提出负号变成正项级数</p>
                 <p>先来区分两个概念：绝对收敛和条件收敛</p>
@@ -188,10 +188,10 @@
                 <p>如我们已知\(\sum\limits_{n=1}^{\infty}\left(\dfrac{1}{2}\right)^n\left|\sin\left(n\right)\right|\)收敛，那么\(\sum\limits_{n=1}^{\infty}\left(\dfrac{1}{2}\right)^n \sin\left(n\right)\)就绝对收敛</p>
                 <p style="font-weight:bold">8.交错级数判别法</p>
                 <p>交错级数是正项和负项交替出现的级数，即形如</p>
-                <p class="scrollbar">\[a_1-a_2+a_3-a_4+...=\sum\limits_{n=1}^{\infty}\left(-1\right)^{n+1} a_n\]</p>
+                <p class="scrollbar">\[a_1-a_2+a_3-a_4+\cdots=\sum\limits_{n=1}^{\infty}\left(-1\right)^{n+1} a_n\]</p>
                 <p>或</p>
-                <p class="scrollbar">\[-a_1+a_2-a_3+...=\sum\limits_{n=1}^{\infty}\left(-1\right)^{n} a_n\]</p>
-                <p>其中，\(a_n>0,n=1,2,3,...\)</p>
+                <p class="scrollbar">\[-a_1+a_2-a_3+\cdots=\sum\limits_{n=1}^{\infty}\left(-1\right)^{n} a_n\]</p>
+                <p>其中，\(a_n>0,n=1,2,3,\cdots\)</p>
                 <br>
                 <p>我们常用莱布尼茨判别法来判断交错级数的敛散性，如果交错级数满足以下两个条件：</p>
                 <p>(1)数列\(\{a_n\}\)单调递减</p>
@@ -204,13 +204,13 @@
                 <p>(2)\(\lim\limits_{n\to \infty}a_n=\lim\limits_{n\to \infty}\dfrac{1}{n}=0\)</p>
                 <p>所以该级数收敛</p>
                 <p>又因为\(\sum\limits_{n=1}^{\infty}\left|\dfrac{\left(-1\right)^{n+1}}{n}\right|=\sum\limits_{n=1}^{\infty}\dfrac{1}{n}\)发散，所以该级数条件收敛</p>
-                <h2><a name="4.4">4.4 幂级数 Power series</a></h2>
+                <h2><a id="4.4">4.4 幂级数 Power series</a></h2>
                 <p>关于\(x=a\)的幂级数指的是</p>
-                <p class="scrollbar">\[\sum\limits_{n=0}^{\infty}a_n\left(x-a\right)^n=a_0+a_1\left(x-a\right)+a_2\left(x-a\right)^2+...\]</p>
+                <p class="scrollbar">\[\sum\limits_{n=0}^{\infty}a_n\left(x-a\right)^n=a_0+a_1\left(x-a\right)+a_2\left(x-a\right)^2+\cdots\]</p>
                 <p>我们知道当\(x=a\)时，幂级数肯定收敛；但是当\(x\)取其他值时，幂级数是收敛还是发散呢？</p>
                 <p>事实证明，只有如下三种情况：</p>
                 <div align="center">
-                    <img src="../img/4-1.png" width="90%">
+                    <img src="../img/4-1.png" width="80%">
                 </div>
                 <p style="text-align:center">图 4-1</p>
                 <p>要注意收敛半径\(R\)围绕着的是收敛中心\(x=a\)</p>
@@ -221,20 +221,20 @@
                 <p>第一种情况：求\(\sum\limits_{n=2}^{\infty}\dfrac{2^n\left(x-3\right)^n}{n \ln\left(n\right)}\)的收敛半径和收敛区间</p>
                 <p>用比值判别法：</p>
                 <p class="scrollbar">\[L=\lim\limits_{n\to \infty} \left|\dfrac{\dfrac{2^{n+1}\left(x-3\right)^{n+1}}{\left(n+1\right) \ln\left(n+1\right)}}{\dfrac{2^n\left(x-3\right)^n}{n \ln\left(n\right)}}\right|=\lim\limits_{n\to \infty} 2\left|x-3\right|\dfrac{n}{n+1} \dfrac{\ln\left(n\right)}{\ln\left(n+1\right)}=2\left|x-3\right|\]</p>
-                <p>由比值判别法，我们知道\(L=2\left|x-3\right|<1\Rightarrow \left|x-3\right|<\dfrac{1}{2}\)绝对收敛，而\(L>1\Rightarrow \left|x-3\right|>\dfrac{1}{2}\)发散，所以这个幂级数的收敛半径为\(\dfrac{1}{2}\)</p>
+                <p>由比值判别法，我们知道\(L=2\left|x-3\right|<1\Rightarrow \left|x-3\right|<\dfrac{1}{2}\)时绝对收敛，而\(L>1\Rightarrow \left|x-3\right|>\dfrac{1}{2}\)发散，所以这个幂级数的收敛半径为\(\dfrac{1}{2}\)</p>
                 <p>现在来判断端点：</p>
                 <p>当\(x-3=\dfrac{1}{2}\)时，\(\sum\limits_{n=2}^{\infty}\dfrac{2^n\left(\dfrac{1}{2}\right)^n}{n \ln\left(n\right)}=\sum\limits_{n=2}^{\infty}\dfrac{1}{n \ln\left(n\right)}\) 根据积分判别法，它发散</p>
                 <p>当\(x-3=-\dfrac{1}{2}\)时，\(\sum\limits_{n=2}^{\infty}\dfrac{2^n\left(-\dfrac{1}{2}\right)^n}{n \ln\left(n\right)}=\sum\limits_{n=2}^{\infty}\dfrac{\left(-1\right)^n}{n \ln\left(n\right)}\) 根据交错级数判别法，它收敛</p>
                 <p>所以该幂级数在\(\left|x-3\right|<\dfrac{1}{2}\)绝对收敛，而在\(x=\dfrac{5}{2}\)条件收敛，它的收敛区间是\(\left[\dfrac{5}{2},\dfrac{7}{2}\right)\)</p>
                 <p>第二种情况的一个例子是：\(\sum\limits_{n=0}^{\infty}\dfrac{x^n}{n!}\) 用比值判别法你会发现它的\(L\)一直为\(0\)所以它的收敛半径是\(\infty\)</p>
                 <p>第三种情况的一个例子是：\(\sum\limits_{n=0}^{\infty}n!x^n\) 用比值判别法你会发现它的\(L\)一直为\(\infty\)所以它的收敛半径是\(0\)</p>
-                <h2><a name="4.5">4.5 泰勒多项式 Taylor polynomial</a></h2>
+                <h2><a id="4.5">4.5 泰勒多项式 Taylor polynomial</a></h2>
                 <p>我们在第二章中学过\(f\left(x\right)\)在\(x=a\)处的线性近似：</p>
                 <p class="scrollbar">\[f\left(x\right)\approx L\left(x\right)=f\left(a\right)+f^{\prime}\left(a\right)\left(x-a\right)\]</p>
                 <p>为什么我们只局限于线性近似呢？我们也可以用误差更小的\(N\)次多项式函数来近似</p>
                 <p>泰勒近似就是一种用多项式函数去逼近光滑函数（在定义域内具有任意阶导数的函数）的方法：</p>
                 <p>若\(f\left(x\right)\)在\(x=a\)光滑，则在所有次数为\(N\)或更低的多项式中，当\(x\)在\(a\)附近时，最近似于\(f\left(x\right)\)的是</p>
-                <p class="scrollbar">\[P_{N}\left(x\right)=\sum\limits_{n=0}^{N}\dfrac{f^{\left(n\right)}\left(a\right)}{n!}\left(x-a\right)^n=f\left(a\right)+f^{\prime}\left(a\right)\left(x-a\right)+\dfrac{f^{\prime\prime}\left(a\right)}{2!}\left(x-a\right)^2+...+\dfrac{f^{\left(N\right)}\left(a\right)}{N!}\left(x-a\right)^N\]</p>
+                <p class="scrollbar">\[P_{N}\left(x\right)=\sum\limits_{n=0}^{N}\dfrac{f^{\left(n\right)}\left(a\right)}{n!}\left(x-a\right)^n=f\left(a\right)+f^{\prime}\left(a\right)\left(x-a\right)+\dfrac{f^{\prime\prime}\left(a\right)}{2!}\left(x-a\right)^2+\cdots+\dfrac{f^{\left(N\right)}\left(a\right)}{N!}\left(x-a\right)^N\]</p>
                 <p>其中，\(P_{N}\left(x\right)\)叫做\(f\left(x\right)\)在\(x=a\)处的\(N\)阶泰勒多项式；注意：\(0! =1\)，\(f^{\left(0\right)}\left(a\right)\)和\(f\left(a\right)\)是一个东西</p>
                 <p>这样，对于所有从\(0\)到\(N\)的\(n\)，都有</p>
                 <p class="scrollbar">\[P_{N}^{\left(n\right)}\left(a\right)=f^{\left(n\right)}\left(a\right)\]</p>
@@ -257,7 +257,7 @@
                 <p>下面的例子可以帮助你更好地理解泰勒多项式和泰勒公式</p>
                 <p>我们现在想用泰勒多项式求\(e^{0.9}\)的近似值，怎么办呢？</p>
                 <p>首先构造一个函数\(f\left(x\right)=e^x\)，然后依次来看看它关于\(x=a\)的一阶、二阶和三阶泰勒多项式</p>
-                <p>这里我们选\(a=0\)因为\(e^0=1\)</p>
+                <p>这里我们选\(a=0\)因为\(0\)距离\(0.9\)不远且\(e^0=1\)</p>
                 <p>再写泰勒多项式之前，我们得先知道一些关于\(f\left(x\right)\)的信息：</p>
                 <table width="50%" style="text-align:center" align="center">
                     <tr>
@@ -309,7 +309,7 @@
                 </div>
                 <p>现在我们用计算机算出了\(e^{0.9}\)的实际值：\(e\approx 2.4596\)</p>
                 <p>将实际值与近似值的差计算出来，我们可以发现：真实的误差都在预计的误差范围内，而且随着泰勒多项式阶数的增加，近似值越来越接近实际值</p>
-                <h2><a name="4.6">4.6 泰勒级数 Taylor series</a></h2>
+                <h2><a id="4.6">4.6 泰勒级数 Taylor series</a></h2>
                 <p>有些（在定义域内有任意阶导数的）函数\(f\left(x\right)\)满足\(\lim\limits_{N\to \infty}R_N\left(x\right)=0\)，当这样的函数展开成有无穷多阶的泰勒多项式时（这时候就叫泰勒级数了），误差会趋于零，\(f\left(x\right)\)就等于它的泰勒级数</p>
                 <p>用符号语言说就是：如果\(f\left(x\right)\)满足\(\lim\limits_{N\to \infty}R_N\left(x\right)=0\)，那么</p>
                 <p class="scrollbar">\[f\left(x\right)=\lim\limits_{N\to \infty}\left(P_N\left(x\right)+R_N\left(x\right)\right)=\lim\limits_{N\to \infty}P_N\left(x\right)=\sum\limits_{n=0}^{\infty}\dfrac{f^{\left(n\right)}\left(a\right)}{n!}\left(x-a\right)^n\]</p>
@@ -317,11 +317,11 @@
                 <p class="scrollbar">\[f\left(x\right)=\sum\limits_{n=0}^{\infty}\dfrac{f^{\left(n\right)}\left(0\right)}{n!}x^n\]</p>
                 <br>
                 <p>根据上一节的内容，我们知道\(f\left(x\right)=e^x\)关于\(x=0\)的\(N\)阶泰勒多项式为</p>
-                <p class="scrollbar">\[P_N\left(x\right)=\sum\limits_{n=0}^{N}\dfrac{x^n}{n!}=1+x+\dfrac{x^2}{2!}+...+\dfrac{x^N}{N!}\]</p>
+                <p class="scrollbar">\[P_N\left(x\right)=\sum\limits_{n=0}^{N}\dfrac{x^n}{n!}=1+x+\dfrac{x^2}{2!}+\cdots+\dfrac{x^N}{N!}\]</p>
                 <p>它的\(N\)阶拉格朗日型余项是：\(R_N\left(x\right)=\dfrac{e^c}{\left(N+1\right)!}x^{N+1}\)（\(c\)介于\(x\)和\(0\)之间）</p>
                 <p>因为\(\lim\limits_{N\to \infty}\dfrac{x^{N+1}}{\left(N+1\right)!}=0\)（可以自行证明）且\(e^c\)介于\(e^0\)和\(e^x\)之间，所以根据三明治定理可证\(\lim\limits_{N\to \infty}R_N\left(x\right)=0\)</p>
                 <p>最后也就证明了</p>
-                <p class="scrollbar">\[e^x=\sum\limits_{n=0}^{\infty}\dfrac{x^n}{n!}=1+x+\dfrac{x^2}{2!}+\dfrac{x^3}{3!}+...\]</p>
+                <p class="scrollbar">\[e^x=\sum\limits_{n=0}^{\infty}\dfrac{x^n}{n!}=1+x+\dfrac{x^2}{2!}+\dfrac{x^3}{3!}+\cdots\]</p>
                 <br>
                 <p>现在我们想关注\(f\left(x\right)=\sin\left(x\right)\)能否展开为泰勒级数</p>
                 <p>我们还是选\(a=0\)因为这样做比较方便</p>
@@ -382,7 +382,7 @@
                     </tr>
                 </table>
                 <p>我们发现\(\sin\left(x\right)\)的\(N\)阶导数只包含\(\pm \sin\left(x\right)\)和\(\pm \cos\left(x\right)\)，在\(x=0\)处的值是以\(0,1,0, -1\)为一周期不断循环，这样我们就可以写出它关于\(x=0\)的\(N\)阶泰勒多项式和拉格朗日型余项了</p>
-                <p class="scrollbar">\[P_N\left(x\right)=x-\dfrac{x^3}{3!}+\dfrac{x^5}{5!}-\dfrac{x^7}{7!}+...+\dfrac{f^{\left(N\right)}\left(0\right)}{N!}x^N\]</p>
+                <p class="scrollbar">\[P_N\left(x\right)=x-\dfrac{x^3}{3!}+\dfrac{x^5}{5!}-\dfrac{x^7}{7!}+\cdots+\dfrac{f^{\left(N\right)}\left(0\right)}{N!}x^N\]</p>
                 <p class="scrollbar">\[R_N\left(x\right)=\dfrac{f^{\left(N+1\right)}\left(c\right)}{\left(N+1\right)!}x^{N+1}\Rightarrow \left|R_N\left(x\right)\right|=\dfrac{\left|f^{\left(N+1\right)}\left(c\right)\right|}{\left(N+1\right)!}\left|x\right|^{N+1}\]</p>
                 <p>（\(c\)介于\(x\)和\(0\)之间）</p>
                 <p>因为\(\left|f^{\left(N+1\right)}\left(c\right)\right|\)只可能是\(\left|\sin\left(x\right)\right|\)或\(\left|\cos\left(x\right)\right|\)，所以</p>
@@ -391,41 +391,41 @@
                 <p class="scrollbar">\[\lim\limits_{N\to \infty}\left|R_N\left(x\right)\right|=0\Rightarrow \lim\limits_{N\to \infty}R_N\left(x\right)=0\]</p>
                 <p>（三明治定理）</p>
                 <p>最后这也证明了</p>
-                <p class="scrollbar">\[\sin\left(x\right)=\sum\limits_{n=0}^{\infty}\dfrac{\left(-1\right)^n x^{2n+1}}{\left(2n+1\right)!}=x-\dfrac{x^3}{3!}+\dfrac{x^5}{5!}-\dfrac{x^7}{7!}+...\]</p>
+                <p class="scrollbar">\[\sin\left(x\right)=\sum\limits_{n=0}^{\infty}\dfrac{\left(-1\right)^n x^{2n+1}}{\left(2n+1\right)!}=x-\dfrac{x^3}{3!}+\dfrac{x^5}{5!}-\dfrac{x^7}{7!}+\cdots\]</p>
                 <br>
                 <p>对于\(f\left(x\right)=\cos\left(x\right)\)，我们也可以用类似的方法证明</p>
-                <p class="scrollbar">\[\cos\left(x\right)=\sum\limits_{n=0}^{\infty}\dfrac{\left(-1\right)^n x^{2n}}{\left(2n\right)!}=1-\dfrac{x^2}{2!}+\dfrac{x^4}{4!}-\dfrac{x^6}{6!}+...\]</p>
+                <p class="scrollbar">\[\cos\left(x\right)=\sum\limits_{n=0}^{\infty}\dfrac{\left(-1\right)^n x^{2n}}{\left(2n\right)!}=1-\dfrac{x^2}{2!}+\dfrac{x^4}{4!}-\dfrac{x^6}{6!}+\cdots\]</p>
                 <p>\(e^x\)，\(\sin\left(x\right)\)，\(\cos\left(x\right)\)这三个函数都可展开成麦克劳林级数（幂级数），它们的收敛半径都为\(\infty\)</p>
-                <p>此外，我们可以写出关于等比级数的幂级数：\(\dfrac{1}{1-x}=\sum\limits_{n=0}^{\infty}x^n=1+x+x^2+...\)，它的收敛区间为\(\left(-1,1\right)\)</p>
+                <p>此外，我们可以写出关于等比级数的幂级数：\(\dfrac{1}{1-x}=\sum\limits_{n=0}^{\infty}x^n=1+x+x^2+\cdots\)，它的收敛区间为\(\left(-1,1\right)\)</p>
                 <br>
                 <p>我们可以用已有的泰勒级数去合成新的泰勒级数，有如下方法：</p>
                 <p style="font-weight:bold">1.代换</p>
                 <p>假如我们想求\(e^{x^2}\)的麦克劳林级数，我们可以把\(e^x\)的麦克劳林级数中的\(x\)代换成\(x^2\)</p>
-                <p class="scrollbar">\[e^{x^2}=\sum\limits_{n=0}^{\infty}\dfrac{\left(x^2\right)^n}{n!}=1+x^2+\dfrac{\left(x^2\right)^2}{2!}+\dfrac{\left(x^2\right)^3}{3!}+...\]</p>
-                <p class="scrollbar">\[\Rightarrow e^{x^2}=\sum\limits_{n=0}^{\infty}\dfrac{x^{2n}}{n!}=1+x^2+\dfrac{x^4}{2!}+\dfrac{x^6}{3!}+...\]</p>
+                <p class="scrollbar">\[e^{x^2}=\sum\limits_{n=0}^{\infty}\dfrac{\left(x^2\right)^n}{n!}=1+x^2+\dfrac{\left(x^2\right)^2}{2!}+\dfrac{\left(x^2\right)^3}{3!}+\cdots\]</p>
+                <p class="scrollbar">\[\Rightarrow e^{x^2}=\sum\limits_{n=0}^{\infty}\dfrac{x^{2n}}{n!}=1+x^2+\dfrac{x^4}{2!}+\dfrac{x^6}{3!}+\cdots\]</p>
                 <p>假如我们想求\(\dfrac{1}{1+x^2}\)的麦克劳林级数，我们可以把\(\dfrac{1}{1-x}\)的麦克劳林级数中的\(x\)代换成\(-x^2\)</p>
-                <p class="scrollbar">\[\dfrac{1}{1+x^2}=\sum\limits_{n=0}^{\infty}\left(-x^2\right)^n=\sum\limits_{n=0}^{\infty}\left(-1\right)^n x^{2n}=1-x^2+x^4-x^6+...\]</p>
+                <p class="scrollbar">\[\dfrac{1}{1+x^2}=\sum\limits_{n=0}^{\infty}\left(-x^2\right)^n=\sum\limits_{n=0}^{\infty}\left(-1\right)^n x^{2n}=1-x^2+x^4-x^6+\cdots\]</p>
                 <p>这个幂级数的收敛区间同样是\(\left(-1,1\right)\)</p>
                 <p style="font-weight:bold">2.求导</p>
-                <p>假如我们对\(\sin\left(x\right)=x-\dfrac{x^3}{3!}+\dfrac{x^5}{5!}-\dfrac{x^7}{7!}+...\)两边求导，就会得到</p>
-                <p>\(\cos\left(x\right)=1-\dfrac{x^2}{2!}+\dfrac{x^4}{4!}-\dfrac{x^6}{6!}+...\) 这是从另外一种途径证明\(\cos\left(x\right)\)的麦克劳林级数</p>
+                <p>假如我们对\(\sin\left(x\right)=x-\dfrac{x^3}{3!}+\dfrac{x^5}{5!}-\dfrac{x^7}{7!}+\cdots\)两边求导，就会得到</p>
+                <p>\(\cos\left(x\right)=1-\dfrac{x^2}{2!}+\dfrac{x^4}{4!}-\dfrac{x^6}{6!}+\cdots\) 这是从另外一种途径证明\(\cos\left(x\right)\)的麦克劳林级数</p>
                 <p style="font-weight:bold">3.求积分</p>
-                <p>对\(\dfrac{1}{1+x^2}=1-x^2+x^4-x^6+...\)两边求积分，可以得到</p>
-                <p class="scrollbar">\[\arctan\left(x\right)=C+x-\dfrac{x^3}{3}+\dfrac{x^5}{5}-\dfrac{x^7}{7}+...\]</p>
+                <p>对\(\dfrac{1}{1+x^2}=1-x^2+x^4-x^6+\cdots\)两边求积分，可以得到</p>
+                <p class="scrollbar">\[\arctan\left(x\right)=C+x-\dfrac{x^3}{3}+\dfrac{x^5}{5}-\dfrac{x^7}{7}+\cdots\]</p>
                 <p>通过\(\arctan\left(0\right)=0\)求出\(C=0\)，所以我们有</p>
-                <p class="scrollbar">\[\arctan\left(x\right)=x-\dfrac{x^3}{3}+\dfrac{x^5}{5}-\dfrac{x^7}{7}+...=\sum\limits_{n=0}^{\infty}\dfrac{\left(-1\right)^n x^{2n+1}}{2n+1}\]</p>
+                <p class="scrollbar">\[\arctan\left(x\right)=x-\dfrac{x^3}{3}+\dfrac{x^5}{5}-\dfrac{x^7}{7}+\cdots=\sum\limits_{n=0}^{\infty}\dfrac{\left(-1\right)^n x^{2n+1}}{2n+1}\]</p>
                 <p>根据\(\dfrac{1}{1+x^2}\)的级数的收敛区间以及交错级数判别法，我们可以证明\(\arctan\left(x\right)\)的级数的收敛区间应为\(\left[-1,1\right]\)</p>
                 <p style="font-weight:bold">4.四则运算</p>
                 <p>对于泰勒级数，我们显然可以对它们进行四则运算</p>
                 <p>如\(\sin\left(x\right)-e^x\)的麦克劳林级数为</p>
-                <p class="scrollbar">\[\left(x-\dfrac{x^3}{3!}+...\right)-\left(1+x+\dfrac{x^2}{2!}+\dfrac{x^3}{3!}+...\right)=-1-\dfrac{x^2}{2!}-\dfrac{2x^3}{3!}\]</p>
+                <p class="scrollbar">\[\left(x-\dfrac{x^3}{3!}+\cdots\right)-\left(1+x+\dfrac{x^2}{2!}+\dfrac{x^3}{3!}+\cdots\right)=-1-\dfrac{x^2}{2!}-\dfrac{2x^3}{3!}\]</p>
                 <br>
                 <p>我们总结出一些常用的幂级数：</p>
                 <div align="center">
                     <img src="../img/4-2.png" width="90%">
                 </div>
                 <p style="text-align:center">图 4-2</p>
-                <h2><a name="4.7">4.7 级数练习</a></h2>
+                <h2><a id="4.7">4.7 级数练习</a></h2>
                 <object data="../pdf/Calculus Extended 7-4, 7-5, 8-1.pdf" type="application/pdf" width="100%" height="700px">
                     <a href="../pdf/Calculus Extended 7-4, 7-5, 8-1.pdf" style="color:blue">Calculus Extended 7-4, 7-5, 8-1.pdf</a>
                 </object>
