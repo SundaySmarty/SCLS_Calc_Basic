@@ -22,8 +22,15 @@ window.addEventListener("DOMContentLoaded", function() {
     // set menu minHeight
     var cssTargetIndex1 = getStyle("ChapterFormat.css", ".menu")[0];
     var targetStyleIndex1 = getStyle("ChapterFormat.css", ".menu")[1];
+    var headerHeight = document.getElementsByClassName("header")[0].offsetHeight;
     var menu = cssStyleSheets[cssTargetIndex1].cssRules[targetStyleIndex1];
-    menu.style.minHeight = (window.screen.availHeight - document.getElementsByClassName("header")[0].offsetHeight) + "px";
+    menu.style.marginTop = headerHeight + "px";
+    menu.style.minHeight = (window.screen.availHeight - headerHeight) + "px";
+
+    var cssTargetIndex2 = getStyle("ChapterFormat.css", ".content_container")[0];
+    var targetStyleIndex2 = getStyle("ChapterFormat.css", ".content_container")[1];
+    var contentContainer = cssStyleSheets[cssTargetIndex2].cssRules[targetStyleIndex2];
+    contentContainer.style.marginTop = headerHeight + "px";
 
     // back to top
     window.onscroll = function() {
